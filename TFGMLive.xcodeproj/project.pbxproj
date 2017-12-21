@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ECE1FEC618300693DF0 /* AppDelegate.swift */; };
-		83784ED11FEC618300693DF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ED01FEC618300693DF0 /* ViewController.swift */; };
+		83784ED11FEC618300693DF0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ED01FEC618300693DF0 /* TableViewController.swift */; };
 		83784ED41FEC618300693DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED21FEC618300693DF0 /* Main.storyboard */; };
 		83784ED61FEC618300693DF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED51FEC618300693DF0 /* Assets.xcassets */; };
 		83784ED91FEC618300693DF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED71FEC618300693DF0 /* LaunchScreen.storyboard */; };
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		83784ECB1FEC618300693DF0 /* TFGMLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFGMLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83784ECE1FEC618300693DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83784ED01FEC618300693DF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83784ED01FEC618300693DF0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		83784ED31FEC618300693DF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83784ED51FEC618300693DF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83784ED81FEC618300693DF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				83784ECE1FEC618300693DF0 /* AppDelegate.swift */,
-				83784ED01FEC618300693DF0 /* ViewController.swift */,
+				83784ED01FEC618300693DF0 /* TableViewController.swift */,
 				83784ED21FEC618300693DF0 /* Main.storyboard */,
 				83784ED51FEC618300693DF0 /* Assets.xcassets */,
 				83784ED71FEC618300693DF0 /* LaunchScreen.storyboard */,
@@ -199,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83784ED11FEC618300693DF0 /* ViewController.swift in Sources */,
+				83784ED11FEC618300693DF0 /* TableViewController.swift in Sources */,
 				83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
 				INFOPLIST_FILE = TFGMLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive;
@@ -368,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
 				INFOPLIST_FILE = TFGMLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive;
