@@ -7,6 +7,8 @@ struct Response: Decodable {
 class AddStationTableViewController: UITableViewController {
     
     var stations: [Station] = []
+    var filteredStations: [Station] = []
+    var searchActive = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,7 @@ class AddStationTableViewController: UITableViewController {
             }.sorted(by: { (station1, station2) -> Bool in
                 station1.StationLocation < station2.StationLocation
             })
+        filteredStations = stations
         DispatchQueue.main.async {
             self.tableView.reloadData()
             self.refreshControl?.endRefreshing()
@@ -37,15 +40,45 @@ class AddStationTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchActive {
+            return filteredStations.count
+        }
         return stations.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StationCell", for: indexPath)
-        let station = stations[indexPath.row]
+        let station = searchActive ? filteredStations[indexPath.row] : stations[indexPath.row]
         cell.textLabel?.text = station.StationLocation
         cell.detailTextLabel?.text = "towards \(station.Dest0)"
         return cell
+    }
+}
+
+extension AddStationTableViewController: UISearchBarDelegate {
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchActive = true
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchActive = false
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredStations = stations.filter({ station in
+            return station.StationLocation.contains(searchText)
+        })
+        searchActive = filteredStations.count > 0
+        tableView.reloadData()
     }
 }
 
