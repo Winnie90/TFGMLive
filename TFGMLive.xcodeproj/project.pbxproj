@@ -14,6 +14,7 @@
 		83784ED91FEC618300693DF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED71FEC618300693DF0 /* LaunchScreen.storyboard */; };
 		839716891FED468600C44131 /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 839716881FED468600C44131 /* stations.json */; };
 		8397168B1FED46A800C44131 /* AddStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397168A1FED46A800C44131 /* AddStationTableViewController.swift */; };
+		8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397168C1FED578A00C44131 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		83784EF31FEC80C400693DF0 /* TFGMLiveTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TFGMLiveTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		839716881FED468600C44131 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
 		8397168A1FED46A800C44131 /* AddStationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStationTableViewController.swift; sourceTree = "<group>"; };
+		8397168C1FED578A00C44131 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				83784ECE1FEC618300693DF0 /* AppDelegate.swift */,
 				83784ED01FEC618300693DF0 /* TramsTableViewController.swift */,
 				8397168A1FED46A800C44131 /* AddStationTableViewController.swift */,
+				8397168C1FED578A00C44131 /* SettingsTableViewController.swift */,
 				83784ED21FEC618300693DF0 /* Main.storyboard */,
 				83784EF61FED444700693DF0 /* Resources */,
 			);
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */,
 				83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */,
 				83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */,
 				8397168B1FED46A800C44131 /* AddStationTableViewController.swift in Sources */,

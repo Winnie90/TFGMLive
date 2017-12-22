@@ -9,34 +9,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Stations-->
+        <!--Settings-->
         <scene sceneID="yDM-xX-qQP">
             <objects>
-                <tableViewController title="Stations" id="OYc-Bn-Pyt" sceneMemberID="viewController">
+                <tableViewController title="Settings" id="OYc-Bn-Pyt" customClass="SettingsTableViewController" customModule="TFGMLive" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6up-u1-RP4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="TMp-Sk-X7Q">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsStationCell" textLabel="A3p-vv-FuX" detailTextLabel="JnX-7y-tx3" style="IBUITableViewCellStyleSubtitle" id="TMp-Sk-X7Q">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TMp-Sk-X7Q" id="rvR-QI-Thp">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A3p-vv-FuX">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JnX-7y-tx3">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="OYc-Bn-Pyt" id="RKG-eV-Hxg"/>
-                            <outlet property="delegate" destination="OYc-Bn-Pyt" id="W9W-LW-i74"/>
+                            <outlet property="dataSource" destination="OYc-Bn-Pyt" id="aWd-Wq-fCE"/>
+                            <outlet property="delegate" destination="OYc-Bn-Pyt" id="mtw-96-4nH"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="YOx-BV-wQh">
-                        <barButtonItem key="leftBarButtonItem" systemItem="save" id="4nF-Dg-6h2"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="save" id="4nF-Dg-6h2">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="OYc-Bn-Pyt" id="XyN-AQ-IDo"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fxM-z2-bCe">
                             <connections>
-                                <segue destination="60n-4U-E6M" kind="show" id="dLl-9V-9Wq"/>
+                                <action selector="stationButtonPressed:" destination="OYc-Bn-Pyt" id="YWh-Qc-OfR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -48,7 +68,7 @@
         <!--Add Station-->
         <scene sceneID="v5L-Mg-UL2">
             <objects>
-                <tableViewController title="Add Station" id="60n-4U-E6M" customClass="AddStationTableViewController" customModule="TFGMLive" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="AddStation" title="Add Station" id="60n-4U-E6M" customClass="AddStationTableViewController" customModule="TFGMLive" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HnD-8C-ZB2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

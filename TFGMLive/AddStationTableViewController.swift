@@ -6,6 +6,7 @@ struct Response: Decodable {
 
 class AddStationTableViewController: UITableViewController {
     
+    var stationSelected: (Station) -> () = { _ in }
     var stations: [Station] = []
     var filteredStations: [Station] = []
     var searchActive = false
@@ -29,7 +30,6 @@ class AddStationTableViewController: UITableViewController {
         filteredStations = stations
         DispatchQueue.main.async {
             self.tableView.reloadData()
-            self.refreshControl?.endRefreshing()
         }
     }
     
@@ -52,6 +52,12 @@ class AddStationTableViewController: UITableViewController {
         cell.textLabel?.text = station.StationLocation
         cell.detailTextLabel?.text = "towards \(station.Dest0)"
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let station = searchActive ? filteredStations[indexPath.row] : stations[indexPath.row]
+        stationSelected(station)
+        navigationController?.popViewController(animated: true)
     }
 }
 
