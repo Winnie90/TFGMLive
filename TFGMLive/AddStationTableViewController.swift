@@ -23,9 +23,9 @@ class AddStationTableViewController: UITableViewController {
         let parsedStationData = try? JSONDecoder().decode(Response.self, from: data)
         stations = (parsedStationData?.value)!
         stations = stations.filterDuplicates { (station1, station2) -> Bool in
-            return station1.AtcoCode == station2.AtcoCode
+            return station1.stationUid == station2.stationUid
             }.sorted(by: { (station1, station2) -> Bool in
-                station1.StationLocation < station2.StationLocation
+                station1.name < station2.name
             })
         filteredStations = stations
         DispatchQueue.main.async {
@@ -49,8 +49,12 @@ class AddStationTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StationCell", for: indexPath)
         let station = searchActive ? filteredStations[indexPath.row] : stations[indexPath.row]
-        cell.textLabel?.text = station.StationLocation
-        cell.detailTextLabel?.text = "towards \(station.Dest0)"
+        cell.textLabel?.text = station.name
+        if let destination = station.trams.first?.destination {
+            cell.detailTextLabel?.text = "towards \(destination)"
+        } else {
+            cell.detailTextLabel?.text = ""
+        }
         return cell
     }
     
@@ -81,7 +85,7 @@ extension AddStationTableViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredStations = stations.filter({ station in
-            return station.StationLocation.contains(searchText)
+            return station.name.contains(searchText)
         })
         searchActive = filteredStations.count > 0
         tableView.reloadData()

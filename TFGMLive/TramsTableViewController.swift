@@ -1,32 +1,62 @@
 import UIKit
 
-struct Station: Decodable {
-    let AtcoCode: String
-    let StationLocation: String
-    let Dest0: String
-    let Wait0: String
-    let Dest1: String
-    let Wait1: String
-    let Dest2: String
-    let Wait2: String
-    let Dest3: String
-    let Wait3: String
+struct Station: Codable {
+    let identifier: Int
+    let stationUid: String
+    let name: String
+    let trams: [Tram]
 }
 
-struct Tram {
+extension Station {
+    enum StationKeys: String, CodingKey {
+        case stationUid = "AtcoCode"
+        case identifier = "Id"
+        case name = "StationLocation"
+        case firstTramDestination = "Dest0"
+        case firstTramWaitingTime = "Wait0"
+        case secondTramDestination = "Dest1"
+        case secondTramWaitingTime = "Wait1"
+        case thirdTramDestination = "Dest2"
+        case thirdTramWaitingTime = "Wait2"
+        case fourthTramDestination = "Dest3"
+        case fourthTramWaitingTime = "Wait3"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: StationKeys.self)
+        
+        let stationUid: String = try container.decode(String.self, forKey: .stationUid)
+        let identifier: Int = try container.decode(Int.self, forKey: .identifier)
+        let name: String = try container.decode(String.self, forKey: .name)
+        let firstTramDestination: String = try container.decode(String.self, forKey: .firstTramDestination)
+        let firstTramWaitingTime: String = try container.decode(String.self, forKey: .firstTramWaitingTime)
+        let secondTramDestination: String = try container.decode(String.self, forKey: .secondTramDestination)
+        let secondTramWaitingTime: String = try container.decode(String.self, forKey: .secondTramWaitingTime)
+        let thirdTramDestination: String = try container.decode(String.self, forKey: .thirdTramDestination)
+        let thirdTramWaitingTime: String = try container.decode(String.self, forKey: .thirdTramWaitingTime)
+        let fourthTramDestination: String = try container.decode(String.self, forKey: .fourthTramDestination)
+        let fourthTramWaitingTime: String = try container.decode(String.self, forKey: .fourthTramWaitingTime)
+        
+        self.init(identifier: identifier,
+                  stationUid: stationUid,
+                  name: name,
+                  trams:[
+                    Tram(destination: firstTramDestination, waitTime: firstTramWaitingTime),
+                    Tram(destination: secondTramDestination, waitTime: secondTramWaitingTime),
+                    Tram(destination: thirdTramDestination, waitTime: thirdTramWaitingTime),
+                    Tram(destination: fourthTramDestination, waitTime: fourthTramWaitingTime)
+            ]
+        )
+    }
+}
+
+struct Tram: Codable {
     let destination: String
     let waitTime: String
 }
 
 class TramsTableViewController: UITableViewController {
     
-    var station = Station(AtcoCode: "",
-                          StationLocation: "",
-                          Dest0: "", Wait0: "",
-                          Dest1: "", Wait1: "",
-                          Dest2: "", Wait2: "",
-                          Dest3: "", Wait3: ""
-    )
     var trams: [Tram] = []
     
     override func viewDidLoad() {
@@ -38,7 +68,12 @@ class TramsTableViewController: UITableViewController {
     }
     
     @objc func performRequest() {
-        let urlString = "https://api.tfgm.com/odata/Metrolinks(1)"
+        var requestId = 1
+        if let stations = UserDefaults.standard.array(forKey: "stations") as? [Station],
+            let requestIdentifier = stations.first?.identifier{
+            requestId = requestIdentifier
+        }
+        let urlString = "https://api.tfgm.com/odata/Metrolinks(\(requestId))"
         guard let escapedUrl = urlString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed),
             let url = URL(string: escapedUrl) else {
                 return
@@ -51,16 +86,10 @@ class TramsTableViewController: UITableViewController {
                 self.showError()
             }
             if let data = data,
-                let parsedStationData = try? JSONDecoder().decode(Station.self, from: data) {
-                self.station = parsedStationData
-                self.trams = [
-                    Tram(destination: self.station.Dest0, waitTime: self.station.Wait0),
-                    Tram(destination: self.station.Dest1, waitTime: self.station.Wait1),
-                    Tram(destination: self.station.Dest2, waitTime: self.station.Wait2),
-                    Tram(destination: self.station.Dest3, waitTime: self.station.Wait3)
-                ]
+                let station = try? JSONDecoder().decode(Station.self, from: data) {
+                self.trams = station.trams
                 DispatchQueue.main.async {
-                    self.title = self.station.StationLocation
+                    self.title = station.name
                     self.tableView.reloadData()
                     self.refreshControl?.endRefreshing()
                 }

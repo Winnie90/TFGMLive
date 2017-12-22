@@ -1,7 +1,7 @@
 import UIKit
 
 class SettingsTableViewController: UITableViewController {
-
+    
     var stations: [Station] = []
     
     override func viewDidLoad() {
@@ -15,8 +15,12 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsStationCell", for: indexPath)
         let station = stations[indexPath.row]
-        cell.textLabel?.text = station.StationLocation
-        cell.detailTextLabel?.text = "towards \(station.Dest0)"
+        cell.textLabel?.text = station.name
+        if let destination = station.trams.first?.destination {
+            cell.detailTextLabel?.text = "towards \(destination)"
+        } else {
+            cell.detailTextLabel?.text = ""
+        }
         return cell
     }
     
@@ -32,6 +36,7 @@ class SettingsTableViewController: UITableViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: Any) {
+        UserDefaults.standard.set(stations, forKey: "stations")
         dismiss(animated: true)
     }
 }
