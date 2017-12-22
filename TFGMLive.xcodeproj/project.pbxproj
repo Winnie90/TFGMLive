@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ECE1FEC618300693DF0 /* AppDelegate.swift */; };
-		83784ED11FEC618300693DF0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ED01FEC618300693DF0 /* TableViewController.swift */; };
+		83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ED01FEC618300693DF0 /* TramsTableViewController.swift */; };
 		83784ED41FEC618300693DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED21FEC618300693DF0 /* Main.storyboard */; };
 		83784ED61FEC618300693DF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED51FEC618300693DF0 /* Assets.xcassets */; };
 		83784ED91FEC618300693DF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED71FEC618300693DF0 /* LaunchScreen.storyboard */; };
-		83784EE41FEC618300693DF0 /* TFGMLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784EE31FEC618300693DF0 /* TFGMLiveTests.swift */; };
+		839716891FED468600C44131 /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 839716881FED468600C44131 /* stations.json */; };
+		8397168B1FED46A800C44131 /* AddStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397168A1FED46A800C44131 /* AddStationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +29,16 @@
 /* Begin PBXFileReference section */
 		83784ECB1FEC618300693DF0 /* TFGMLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFGMLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83784ECE1FEC618300693DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83784ED01FEC618300693DF0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		83784ED01FEC618300693DF0 /* TramsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramsTableViewController.swift; sourceTree = "<group>"; };
 		83784ED31FEC618300693DF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83784ED51FEC618300693DF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83784ED81FEC618300693DF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83784EDA1FEC618300693DF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83784EDF1FEC618300693DF0 /* TFGMLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFGMLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		83784EE31FEC618300693DF0 /* TFGMLiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFGMLiveTests.swift; sourceTree = "<group>"; };
 		83784EE51FEC618300693DF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83784EF31FEC80C400693DF0 /* TFGMLiveTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TFGMLiveTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		839716881FED468600C44131 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
+		8397168A1FED46A800C44131 /* AddStationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				83784ECE1FEC618300693DF0 /* AppDelegate.swift */,
-				83784ED01FEC618300693DF0 /* TableViewController.swift */,
+				83784ED01FEC618300693DF0 /* TramsTableViewController.swift */,
+				8397168A1FED46A800C44131 /* AddStationTableViewController.swift */,
 				83784ED21FEC618300693DF0 /* Main.storyboard */,
-				83784ED51FEC618300693DF0 /* Assets.xcassets */,
-				83784ED71FEC618300693DF0 /* LaunchScreen.storyboard */,
-				83784EDA1FEC618300693DF0 /* Info.plist */,
+				83784EF61FED444700693DF0 /* Resources */,
 			);
 			path = TFGMLive;
 			sourceTree = "<group>";
@@ -90,10 +92,21 @@
 		83784EE21FEC618300693DF0 /* TFGMLiveTests */ = {
 			isa = PBXGroup;
 			children = (
-				83784EE31FEC618300693DF0 /* TFGMLiveTests.swift */,
 				83784EE51FEC618300693DF0 /* Info.plist */,
+				83784EF31FEC80C400693DF0 /* TFGMLiveTests-Bridging-Header.h */,
 			);
 			path = TFGMLiveTests;
+			sourceTree = "<group>";
+		};
+		83784EF61FED444700693DF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				839716881FED468600C44131 /* stations.json */,
+				83784ED51FEC618300693DF0 /* Assets.xcassets */,
+				83784ED71FEC618300693DF0 /* LaunchScreen.storyboard */,
+				83784EDA1FEC618300693DF0 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 					};
 					83784EDE1FEC618300693DF0 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 83784ECA1FEC618300693DF0;
 					};
@@ -181,6 +195,7 @@
 			files = (
 				83784ED91FEC618300693DF0 /* LaunchScreen.storyboard in Resources */,
 				83784ED61FEC618300693DF0 /* Assets.xcassets in Resources */,
+				839716891FED468600C44131 /* stations.json in Resources */,
 				83784ED41FEC618300693DF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,8 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83784ED11FEC618300693DF0 /* TableViewController.swift in Sources */,
+				83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */,
 				83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */,
+				8397168B1FED46A800C44131 /* AddStationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +224,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83784EE41FEC618300693DF0 /* TFGMLiveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
-				INFOPLIST_FILE = TFGMLive/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TFGMLive/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,7 +385,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
-				INFOPLIST_FILE = TFGMLive/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TFGMLive/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -384,11 +399,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
 				INFOPLIST_FILE = TFGMLiveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLiveTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TFGMLiveTests/TFGMLiveTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFGMLive.app/TFGMLive";
@@ -400,11 +419,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
 				INFOPLIST_FILE = TFGMLiveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLiveTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TFGMLiveTests/TFGMLiveTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFGMLive.app/TFGMLive";

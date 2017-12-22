@@ -1,6 +1,7 @@
 import UIKit
 
 struct Station: Decodable {
+    let AtcoCode: String
     let StationLocation: String
     let Dest0: String
     let Wait0: String
@@ -17,13 +18,15 @@ struct Tram {
     let waitTime: String
 }
 
-class TableViewController: UITableViewController {
+class TramsTableViewController: UITableViewController {
     
-    var station = Station(StationLocation: "",
+    var station = Station(AtcoCode: "",
+                          StationLocation: "",
                           Dest0: "", Wait0: "",
                           Dest1: "", Wait1: "",
                           Dest2: "", Wait2: "",
-                          Dest3: "", Wait3: "")
+                          Dest3: "", Wait3: ""
+    )
     var trams: [Tram] = []
     
     override func viewDidLoad() {
