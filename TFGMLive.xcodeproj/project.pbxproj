@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		836E7ABC1FF031EA005BE455 /* ContainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E7ABB1FF031EA005BE455 /* ContainingViewController.swift */; };
 		83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ECE1FEC618300693DF0 /* AppDelegate.swift */; };
 		83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ED01FEC618300693DF0 /* TramsTableViewController.swift */; };
 		83784ED41FEC618300693DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED21FEC618300693DF0 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397168C1FED578A00C44131 /* SettingsTableViewController.swift */; };
 		839716911FEFCC4800C44131 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716901FEFCC4800C44131 /* Station.swift */; };
 		839716931FEFCC6D00C44131 /* Tram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716921FEFCC6D00C44131 /* Tram.swift */; };
+		839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716941FEFCDEA00C44131 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		836E7ABB1FF031EA005BE455 /* ContainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainingViewController.swift; sourceTree = "<group>"; };
 		83784ECB1FEC618300693DF0 /* TFGMLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFGMLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83784ECE1FEC618300693DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83784ED01FEC618300693DF0 /* TramsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramsTableViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		8397168C1FED578A00C44131 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		839716901FEFCC4800C44131 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		839716921FEFCC6D00C44131 /* Tram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tram.swift; sourceTree = "<group>"; };
+		839716941FEFCDEA00C44131 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +90,13 @@
 		83784ECD1FEC618300693DF0 /* TFGMLive */ = {
 			isa = PBXGroup;
 			children = (
-				8397168F1FEFCC2200C44131 /* Model */,
 				83784ECE1FEC618300693DF0 /* AppDelegate.swift */,
+				8397168F1FEFCC2200C44131 /* Model */,
 				83784ED01FEC618300693DF0 /* TramsTableViewController.swift */,
 				8397168A1FED46A800C44131 /* AddStationTableViewController.swift */,
 				8397168C1FED578A00C44131 /* SettingsTableViewController.swift */,
+				839716941FEFCDEA00C44131 /* PageViewController.swift */,
+				836E7ABB1FF031EA005BE455 /* ContainingViewController.swift */,
 				83784ED21FEC618300693DF0 /* Main.storyboard */,
 				83784EF61FED444700693DF0 /* Resources */,
 			);
@@ -232,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */,
+				839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */,
+				836E7ABC1FF031EA005BE455 /* ContainingViewController.swift in Sources */,
 				839716911FEFCC4800C44131 /* Station.swift in Sources */,
 				83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */,
 				839716931FEFCC6D00C44131 /* Tram.swift in Sources */,

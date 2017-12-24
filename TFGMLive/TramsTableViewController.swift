@@ -2,33 +2,20 @@ import UIKit
 
 class TramsTableViewController: UITableViewController {
     
-    var trams: [Tram] = []
+    var station: Station!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         refreshControl?.addTarget(self, action: #selector(performRequest), for: UIControlEvents.valueChanged)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         performRequest()
     }
 
     @objc func performRequest() {
-        var requestId = 1
-        var stations: [Station] = []
-        do {
-            let data = UserDefaults.standard.value(forKey:"stations") as? Data
-            let decoder = PropertyListDecoder()
-            stations = try decoder.decode(Array<Station>.self, from: data!)
-            
-        } catch {
-            print(error.localizedDescription)
-        }
-        if let requestIdentifier = stations.first?.identifier {
-            requestId = requestIdentifier
-        }
-        let urlString = "https://api.tfgm.com/odata/Metrolinks(\(requestId))"
+        let urlString = "https://api.tfgm.com/odata/Metrolinks(\(station.identifier))"
         guard let escapedUrl = urlString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed),
             let url = URL(string: escapedUrl) else {
                 return
@@ -40,11 +27,9 @@ class TramsTableViewController: UITableViewController {
             if error != nil {
                 self.showError()
             }
-            if let data = data,
-                let station = try? JSONDecoder().decode(Station.self, from: data) {
-                self.trams = station.trams
+            if let data = data {
+                self.station = try? JSONDecoder().decode(Station.self, from: data)
                 DispatchQueue.main.async {
-                    self.title = station.name
                     self.tableView.reloadData()
                     self.refreshControl?.endRefreshing()
                 }
@@ -61,12 +46,12 @@ class TramsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return trams.count
+        return self.station.trams.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TramCell", for: indexPath)
-        let tram = trams[indexPath.row]
+        let tram = self.station.trams[indexPath.row]
         cell.textLabel?.text = tram.destination
         if let waitTime = Int(tram.waitTime) {
             let plural = waitTime > 1 ? "s" : ""
