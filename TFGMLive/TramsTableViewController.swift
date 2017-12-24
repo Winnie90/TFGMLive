@@ -20,33 +20,50 @@ extension Station {
         case thirdTramWaitingTime = "Wait2"
         case fourthTramDestination = "Dest3"
         case fourthTramWaitingTime = "Wait3"
+        case savedStationUid = "stationUid"
+        case savedIdentifier = "identifier"
+        case savedName = "name"
+        case savedTrams = "trams"
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: StationKeys.self)
         
-        let stationUid: String = try container.decode(String.self, forKey: .stationUid)
-        let identifier: Int = try container.decode(Int.self, forKey: .identifier)
-        let name: String = try container.decode(String.self, forKey: .name)
-        let firstTramDestination: String = try container.decode(String.self, forKey: .firstTramDestination)
-        let firstTramWaitingTime: String = try container.decode(String.self, forKey: .firstTramWaitingTime)
-        let secondTramDestination: String = try container.decode(String.self, forKey: .secondTramDestination)
-        let secondTramWaitingTime: String = try container.decode(String.self, forKey: .secondTramWaitingTime)
-        let thirdTramDestination: String = try container.decode(String.self, forKey: .thirdTramDestination)
-        let thirdTramWaitingTime: String = try container.decode(String.self, forKey: .thirdTramWaitingTime)
-        let fourthTramDestination: String = try container.decode(String.self, forKey: .fourthTramDestination)
-        let fourthTramWaitingTime: String = try container.decode(String.self, forKey: .fourthTramWaitingTime)
+        do {
+            let stationUid: String = try container.decode(String.self, forKey: .stationUid)
+            let identifier: Int = try container.decode(Int.self, forKey: .identifier)
+            let name: String = try container.decode(String.self, forKey: .name)
+            let firstTramDestination: String = try container.decode(String.self, forKey: .firstTramDestination)
+            let firstTramWaitingTime: String = try container.decode(String.self, forKey: .firstTramWaitingTime)
+            let secondTramDestination: String = try container.decode(String.self, forKey: .secondTramDestination)
+            let secondTramWaitingTime: String = try container.decode(String.self, forKey: .secondTramWaitingTime)
+            let thirdTramDestination: String = try container.decode(String.self, forKey: .thirdTramDestination)
+            let thirdTramWaitingTime: String = try container.decode(String.self, forKey: .thirdTramWaitingTime)
+            let fourthTramDestination: String = try container.decode(String.self, forKey: .fourthTramDestination)
+            let fourthTramWaitingTime: String = try container.decode(String.self, forKey: .fourthTramWaitingTime)
+            self.init(identifier: identifier,
+                      stationUid: stationUid,
+                      name: name,
+                      trams:[
+                        Tram(destination: firstTramDestination, waitTime: firstTramWaitingTime),
+                        Tram(destination: secondTramDestination, waitTime: secondTramWaitingTime),
+                        Tram(destination: thirdTramDestination, waitTime: thirdTramWaitingTime),
+                        Tram(destination: fourthTramDestination, waitTime: fourthTramWaitingTime)
+                ]
+            )
+        } catch {
+            let stationUid: String = try container.decode(String.self, forKey: .savedStationUid)
+            let identifier: Int = try container.decode(Int.self, forKey: .savedIdentifier)
+            let name: String = try container.decode(String.self, forKey: .savedName)
+            let trams: [Tram] = try container.decode(Array<Tram>.self, forKey: .savedTrams)
+            self.init(identifier: identifier,
+                      stationUid: stationUid,
+                      name: name,
+                      trams:trams
+            )
+        }
         
-        self.init(identifier: identifier,
-                  stationUid: stationUid,
-                  name: name,
-                  trams:[
-                    Tram(destination: firstTramDestination, waitTime: firstTramWaitingTime),
-                    Tram(destination: secondTramDestination, waitTime: secondTramWaitingTime),
-                    Tram(destination: thirdTramDestination, waitTime: thirdTramWaitingTime),
-                    Tram(destination: fourthTramDestination, waitTime: fourthTramWaitingTime)
-            ]
-        )
+        
     }
 }
 
@@ -61,16 +78,26 @@ class TramsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        performRequest()
-        
         refreshControl?.addTarget(self, action: #selector(performRequest), for: UIControlEvents.valueChanged)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        performRequest()
+    }
+
     @objc func performRequest() {
         var requestId = 1
-        if let stations = UserDefaults.standard.array(forKey: "stations") as? [Station],
-            let requestIdentifier = stations.first?.identifier{
+        var stations: [Station] = []
+        do {
+            let data = UserDefaults.standard.value(forKey:"stations") as? Data
+            let decoder = PropertyListDecoder()
+            stations = try decoder.decode(Array<Station>.self, from: data!)
+            
+        } catch {
+            print(error.localizedDescription)
+        }
+        if let requestIdentifier = stations.first?.identifier {
             requestId = requestIdentifier
         }
         let urlString = "https://api.tfgm.com/odata/Metrolinks(\(requestId))"

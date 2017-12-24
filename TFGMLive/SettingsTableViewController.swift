@@ -36,7 +36,7 @@ class SettingsTableViewController: UITableViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: Any) {
-        UserDefaults.standard.set(stations, forKey: "stations")
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(stations), forKey:"stations")
         dismiss(animated: true)
     }
 }
