@@ -57,6 +57,11 @@ class PageViewController: UIPageViewController {
     private func newTramViewController(station: Station) -> UIViewController {
         let containingViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ContainingViewController")  as! ContainingViewController
         containingViewController.station = station
+        containingViewController.editButtonPressed = {
+            let settingsCoordinator = SettingsCoordinator()
+            settingsCoordinator.start()
+            self.present(settingsCoordinator.rootViewController, animated: true)
+        }
         return containingViewController
     }
 }

@@ -13,7 +13,7 @@
         <!--Settings-->
         <scene sceneID="yDM-xX-qQP">
             <objects>
-                <tableViewController title="Settings" id="OYc-Bn-Pyt" customClass="SettingsTableViewController" customModule="TFGMLive" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SettingsTableViewController" title="Settings" id="OYc-Bn-Pyt" customClass="SettingsTableViewController" customModule="TFGMLive" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6up-u1-RP4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +134,7 @@
                                 </constraints>
                                 <state key="normal" title="Edit"/>
                                 <connections>
-                                    <segue destination="1kO-gQ-gOh" kind="presentation" id="T8k-Wo-LNZ"/>
+                                    <action selector="editButtonPressed:" destination="BfT-9a-Wuc" eventType="touchUpInside" id="iqn-2b-gmv"/>
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UeT-kr-ohs">
@@ -217,24 +217,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TIh-XB-nNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-991" y="-571"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="gCs-cL-Ya7">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1kO-gQ-gOh" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0k9-Uu-LAa">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="OYc-Bn-Pyt" kind="relationship" relationship="rootViewController" id="8yX-Gc-cJ2"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qX9-Ly-dlg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="972" y="-568"/>
         </scene>
     </scenes>
 </document>
