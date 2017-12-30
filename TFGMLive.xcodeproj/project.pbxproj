@@ -20,6 +20,8 @@
 		839716931FEFCC6D00C44131 /* Tram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716921FEFCC6D00C44131 /* Tram.swift */; };
 		839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716941FEFCDEA00C44131 /* PageViewController.swift */; };
 		83C718B71FF83008001C399F /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718B61FF83008001C399F /* SettingsCoordinator.swift */; };
+		83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BA1FF83E87001C399F /* AppCoordinator.swift */; };
+		83C718BD1FF84DC3001C399F /* TramsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		839716921FEFCC6D00C44131 /* Tram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tram.swift; sourceTree = "<group>"; };
 		839716941FEFCDEA00C44131 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		83C718B61FF83008001C399F /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		83C718BA1FF83E87001C399F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,11 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				83784ECE1FEC618300693DF0 /* AppDelegate.swift */,
+				83C718BA1FF83E87001C399F /* AppCoordinator.swift */,
 				8397168F1FEFCC2200C44131 /* Model */,
+				83C718B91FF83DEA001C399F /* Trams */,
 				83C718B81FF8318E001C399F /* Settings */,
-				83784ED01FEC618300693DF0 /* TramsTableViewController.swift */,
-				839716941FEFCDEA00C44131 /* PageViewController.swift */,
-				836E7ABB1FF031EA005BE455 /* ContainingViewController.swift */,
 				83784ED21FEC618300693DF0 /* Main.storyboard */,
 				83784EF61FED444700693DF0 /* Resources */,
 			);
@@ -141,6 +144,17 @@
 				8397168A1FED46A800C44131 /* AddStationTableViewController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		83C718B91FF83DEA001C399F /* Trams */ = {
+			isa = PBXGroup;
+			children = (
+				83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */,
+				839716941FEFCDEA00C44131 /* PageViewController.swift */,
+				836E7ABB1FF031EA005BE455 /* ContainingViewController.swift */,
+				83784ED01FEC618300693DF0 /* TramsTableViewController.swift */,
+			);
+			path = Trams;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,11 +264,13 @@
 			files = (
 				8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */,
 				839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */,
+				83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */,
 				836E7ABC1FF031EA005BE455 /* ContainingViewController.swift in Sources */,
 				839716911FEFCC4800C44131 /* Station.swift in Sources */,
 				83C718B71FF83008001C399F /* SettingsCoordinator.swift in Sources */,
 				83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */,
 				839716931FEFCC6D00C44131 /* Tram.swift in Sources */,
+				83C718BD1FF84DC3001C399F /* TramsCoordinator.swift in Sources */,
 				83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */,
 				8397168B1FED46A800C44131 /* AddStationTableViewController.swift in Sources */,
 			);

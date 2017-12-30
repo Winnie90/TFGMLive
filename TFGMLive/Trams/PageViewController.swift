@@ -2,17 +2,17 @@ import UIKit
 
 class PageViewController: UIPageViewController {
 
-    var stations: [Station] = []
+    var orderedViewControllers: [UIViewController] = []
     var pageControl = UIPageControl()
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
         delegate = self
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController],
                                direction: .forward,
@@ -30,39 +30,6 @@ class PageViewController: UIPageViewController {
         pageControl.pageIndicatorTintColor = UIColor.white
         pageControl.currentPageIndicatorTintColor = UIColor.black
         view.addSubview(pageControl)
-    }
-    
-    private(set) lazy var orderedViewControllers: [UIViewController] = {
-        do {
-            if let data = UserDefaults.standard.value(forKey:"stations") as? Data {
-                let decoder = PropertyListDecoder()
-                stations = try decoder.decode(Array<Station>.self, from: data)
-            } else {
-                stations = [Station(identifier: 1,
-                                    stationUid: "",
-                                    name: "Media City UK",
-                                    trams: [])]
-            }
-            
-        } catch {
-            print(error.localizedDescription)
-        }
-        var viewControllers: [UIViewController] = []
-        for station in stations {
-            viewControllers.append(newTramViewController(station: station))
-        }
-        return viewControllers
-    }()
-    
-    private func newTramViewController(station: Station) -> UIViewController {
-        let containingViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ContainingViewController")  as! ContainingViewController
-        containingViewController.station = station
-        containingViewController.editButtonPressed = {
-            let settingsCoordinator = SettingsCoordinator()
-            settingsCoordinator.start()
-            self.present(settingsCoordinator.rootViewController, animated: true)
-        }
-        return containingViewController
     }
 }
 

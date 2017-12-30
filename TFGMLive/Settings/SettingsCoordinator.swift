@@ -4,6 +4,8 @@ class SettingsCoordinator {
     
     private var stations: [Station] = []
     
+    var finish: ()->() = {}
+    
     var rootViewController: UIViewController {
         return self.navigationController
     }
@@ -47,6 +49,6 @@ class SettingsCoordinator {
     
     func save() {
         UserDefaults.standard.set(try? PropertyListEncoder().encode(stations), forKey:"stations")
-        navigationController.dismiss(animated: true)
+        finish()
     }
 }
