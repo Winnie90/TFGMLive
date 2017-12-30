@@ -2,13 +2,16 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
     
-    var stations: [Station] = []
+    private var stations: [Station] = []
+
+    var addStationsPressed: ()->() = {}
+    var deletedItem: (Int)->() = {_ in}
+    var savePressed: ()->() = {}
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        if let data = UserDefaults.standard.value(forKey:"stations") as? Data {
-            let decoder = PropertyListDecoder()
-            stations = try! decoder.decode(Array<Station>.self, from: data)
+    public func dataRefreshed(stations: [Station]) {
+        self.stations = stations
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
         }
     }
     
@@ -29,19 +32,11 @@ class SettingsTableViewController: UITableViewController {
     }
     
     @IBAction func stationButtonPressed(_ sender: Any) {
-        let addStationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddStation") as! AddStationTableViewController
-        addStationVC.stationSelected = { station in
-            self.stations.append(station)
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-        navigationController?.pushViewController(addStationVC, animated: true)
+        addStationsPressed()
     }
     
     @IBAction func saveButtonPressed(_ sender: Any) {
-        save()
-        dismiss(animated: true)
+        savePressed()
     }
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -50,13 +45,9 @@ class SettingsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            stations.remove(at: indexPath.row)
-            save()
+            deletedItem(indexPath.row)
+            self.stations.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
-    }
-    
-    func save() {
-        UserDefaults.standard.set(try? PropertyListEncoder().encode(stations), forKey:"stations")
     }
 }
