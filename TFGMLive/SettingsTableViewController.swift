@@ -6,6 +6,10 @@ class SettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let data = UserDefaults.standard.value(forKey:"stations") as? Data {
+            let decoder = PropertyListDecoder()
+            stations = try! decoder.decode(Array<Station>.self, from: data)
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -36,7 +40,23 @@ class SettingsTableViewController: UITableViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: Any) {
-        UserDefaults.standard.set(try? PropertyListEncoder().encode(stations), forKey:"stations")
+        save()
         dismiss(animated: true)
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            stations.remove(at: indexPath.row)
+            save()
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
+    func save() {
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(stations), forKey:"stations")
     }
 }
