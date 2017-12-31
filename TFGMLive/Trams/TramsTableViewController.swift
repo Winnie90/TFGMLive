@@ -15,6 +15,8 @@ class TramsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(UINib.init(nibName: "LargeTramTableViewCell", bundle: nil), forCellReuseIdentifier: "LargeTramTableViewCell")
         refreshControl?.addTarget(self, action: #selector(refreshStation), for: UIControlEvents.valueChanged)
     }
     
@@ -41,16 +43,34 @@ class TramsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if let station = station {
+            if indexPath.row == 0 {
+                let largeCell = tableView.dequeueReusableCell(withIdentifier: "LargeTramTableViewCell", for: indexPath) as? LargeTramTableViewCell
+                largeCell?.stationNameLabel.text = station.name
+                let tram = station.trams[0]
+                largeCell?.destinationLabel.text = tram.destination
+                largeCell?.timeLabel.text = tram.waitTime
+                return largeCell!
+            }
+        }
         let cell = tableView.dequeueReusableCell(withIdentifier: "TramCell", for: indexPath)
-        let tram = station?.trams[indexPath.row]
-        cell.textLabel?.text = tram?.destination
-        if let waitTime = Int((tram?.waitTime)!) {
+        let tram = station!.trams[indexPath.row]
+        cell.textLabel?.text = tram.destination
+        if let waitTime = Int(tram.waitTime) {
             let plural = waitTime > 1 ? "s" : ""
-            cell.detailTextLabel?.text = "\(tram?.waitTime) minute\(plural) to go"
+            cell.detailTextLabel?.text = "\(tram.waitTime) min\(plural)"
         } else {
             cell.detailTextLabel?.text = ""
         }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 165
+        }
+        return 60
     }
 }
 

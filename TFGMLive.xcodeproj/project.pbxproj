@@ -22,6 +22,8 @@
 		83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BA1FF83E87001C399F /* AppCoordinator.swift */; };
 		83C718BD1FF84DC3001C399F /* TramsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */; };
 		83C718C01FF8575F001C399F /* StationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BF1FF8575F001C399F /* StationService.swift */; };
+		83C718C31FF8EE18001C399F /* LargeTramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718C21FF8EE18001C399F /* LargeTramTableViewCell.swift */; };
+		83C718C51FF8F1E6001C399F /* LargeTramTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C718C41FF8F1E6001C399F /* LargeTramTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		83C718BA1FF83E87001C399F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramsCoordinator.swift; sourceTree = "<group>"; };
 		83C718BF1FF8575F001C399F /* StationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationService.swift; sourceTree = "<group>"; };
+		83C718C21FF8EE18001C399F /* LargeTramTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTramTableViewCell.swift; sourceTree = "<group>"; };
+		83C718C41FF8F1E6001C399F /* LargeTramTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeTramTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				8397168F1FEFCC2200C44131 /* Model */,
 				83C718B91FF83DEA001C399F /* Trams */,
 				83C718B81FF8318E001C399F /* Settings */,
+				83C718C11FF8EDE5001C399F /* Cells */,
 				83784ED21FEC618300693DF0 /* Main.storyboard */,
 				83784EF61FED444700693DF0 /* Resources */,
 			);
@@ -163,6 +168,15 @@
 				83C718BF1FF8575F001C399F /* StationService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		83C718C11FF8EDE5001C399F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				83C718C21FF8EE18001C399F /* LargeTramTableViewCell.swift */,
+				83C718C41FF8F1E6001C399F /* LargeTramTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +267,7 @@
 				83784ED61FEC618300693DF0 /* Assets.xcassets in Resources */,
 				839716891FED468600C44131 /* stations.json in Resources */,
 				83784ED41FEC618300693DF0 /* Main.storyboard in Resources */,
+				83C718C51FF8F1E6001C399F /* LargeTramTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +294,7 @@
 				83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */,
 				839716931FEFCC6D00C44131 /* Tram.swift in Sources */,
 				83C718BD1FF84DC3001C399F /* TramsCoordinator.swift in Sources */,
+				83C718C31FF8EE18001C399F /* LargeTramTableViewCell.swift in Sources */,
 				83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */,
 				8397168B1FED46A800C44131 /* AddStationTableViewController.swift in Sources */,
 			);
