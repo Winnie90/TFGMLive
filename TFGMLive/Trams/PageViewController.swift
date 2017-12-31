@@ -4,6 +4,7 @@ class PageViewController: UIPageViewController {
 
     var orderedViewControllers: [UIViewController] = []
     var pageControl = UIPageControl()
+    var editButtonPressed: ()->() = {}
     
     required init?(coder aDecoder: NSCoder) {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
@@ -30,11 +31,19 @@ class PageViewController: UIPageViewController {
         pageControl.pageIndicatorTintColor = UIColor.gray
         pageControl.currentPageIndicatorTintColor = UIColor.black
         
-        let editButton = UIButton(frame: CGRect(x: UIScreen.main.bounds.maxX - 50,y: 0, width: 50, height: 40))
-        editButton.titleLabel?.text = "Edit"
+        let editButton = UIButton(type: .custom)
+        editButton.frame = CGRect(x: UIScreen.main.bounds.maxX - 50,y: 0, width: 50, height: 50)
+        editButton.setTitle("Edit", for: .normal)
+        editButton.setTitleColor(UIColor.blue, for: .normal)
+        editButton.addTarget(self, action: #selector(editButtonTapped), for: .touchUpInside)
+
         pageControl.addSubview(editButton)
         
         view.addSubview(pageControl)
+    }
+    
+    @objc func editButtonTapped() {
+        editButtonPressed()
     }
 }
 

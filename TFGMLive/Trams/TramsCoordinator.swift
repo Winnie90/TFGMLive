@@ -13,6 +13,7 @@ class TramsCoordinator {
     
     func start() {
         pageViewController.orderedViewControllers = orderedViewControllers
+        pageViewController.editButtonPressed = editButtonPressed
     }
     
     private(set) lazy var orderedViewControllers: [UIViewController] = {
