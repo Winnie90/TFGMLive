@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		836E7ABC1FF031EA005BE455 /* ContainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E7ABB1FF031EA005BE455 /* ContainingViewController.swift */; };
 		83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ECE1FEC618300693DF0 /* AppDelegate.swift */; };
 		83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ED01FEC618300693DF0 /* TramsTableViewController.swift */; };
 		83784ED41FEC618300693DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED21FEC618300693DF0 /* Main.storyboard */; };
@@ -22,6 +21,7 @@
 		83C718B71FF83008001C399F /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718B61FF83008001C399F /* SettingsCoordinator.swift */; };
 		83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BA1FF83E87001C399F /* AppCoordinator.swift */; };
 		83C718BD1FF84DC3001C399F /* TramsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */; };
+		83C718C01FF8575F001C399F /* StationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BF1FF8575F001C399F /* StationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		836E7ABB1FF031EA005BE455 /* ContainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainingViewController.swift; sourceTree = "<group>"; };
 		83784ECB1FEC618300693DF0 /* TFGMLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFGMLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83784ECE1FEC618300693DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83784ED01FEC618300693DF0 /* TramsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramsTableViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		83C718B61FF83008001C399F /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		83C718BA1FF83E87001C399F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramsCoordinator.swift; sourceTree = "<group>"; };
+		83C718BF1FF8575F001C399F /* StationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +98,7 @@
 			children = (
 				83784ECE1FEC618300693DF0 /* AppDelegate.swift */,
 				83C718BA1FF83E87001C399F /* AppCoordinator.swift */,
+				83C718BE1FF85747001C399F /* Services */,
 				8397168F1FEFCC2200C44131 /* Model */,
 				83C718B91FF83DEA001C399F /* Trams */,
 				83C718B81FF8318E001C399F /* Settings */,
@@ -151,10 +152,17 @@
 			children = (
 				83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */,
 				839716941FEFCDEA00C44131 /* PageViewController.swift */,
-				836E7ABB1FF031EA005BE455 /* ContainingViewController.swift */,
 				83784ED01FEC618300693DF0 /* TramsTableViewController.swift */,
 			);
 			path = Trams;
+			sourceTree = "<group>";
+		};
+		83C718BE1FF85747001C399F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				83C718BF1FF8575F001C399F /* StationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */,
+				83C718C01FF8575F001C399F /* StationService.swift in Sources */,
 				839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */,
 				83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */,
-				836E7ABC1FF031EA005BE455 /* ContainingViewController.swift in Sources */,
 				839716911FEFCC4800C44131 /* Station.swift in Sources */,
 				83C718B71FF83008001C399F /* SettingsCoordinator.swift in Sources */,
 				83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */,

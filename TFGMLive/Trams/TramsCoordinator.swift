@@ -3,6 +3,7 @@ import UIKit
 class TramsCoordinator {
     
     var editButtonPressed: ()->() = {}
+    private var stationService = StationService()
     
     var rootViewController: UIViewController {
         return pageViewController
@@ -37,13 +38,13 @@ class TramsCoordinator {
     }()
     
     private func newTramViewController(station: Station) -> UIViewController {
-        let containingViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ContainingViewController")  as! ContainingViewController
-        containingViewController.station = station
-        containingViewController.editButtonPressed = {
-            self.editButtonPressed()
+        let tramsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TramsTableViewController") as! TramsTableViewController
+        tramsViewController.refreshData = {
+            self.stationService.retrieveStationData(identifier: station.identifier, completion: { station in
+                tramsViewController.dataRefreshed(station: station)
+            })
         }
-        return containingViewController
+        return tramsViewController
     }
-    
     
 }

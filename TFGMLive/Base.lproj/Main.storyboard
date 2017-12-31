@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BfT-9a-Wuc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DKO-f6-I3p">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -124,57 +123,14 @@
                 <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="DKO-f6-I3p" customClass="PageViewController" customModule="TFGMLive" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nu9-kC-2Mc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1068" y="-409"/>
-        </scene>
-        <!--Containing View Controller-->
-        <scene sceneID="Yp1-HS-jeW">
-            <objects>
-                <viewController storyboardIdentifier="ContainingViewController" id="BfT-9a-Wuc" customClass="ContainingViewController" customModule="TFGMLive" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mWK-Pw-V16">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkX-51-dm2">
-                                <rect key="frame" x="329" y="16" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="78Y-gy-sda"/>
-                                    <constraint firstAttribute="height" constant="30" id="H1A-tD-J54"/>
-                                </constraints>
-                                <state key="normal" title="Edit"/>
-                                <connections>
-                                    <action selector="editButtonPressed:" destination="BfT-9a-Wuc" eventType="touchUpInside" id="iqn-2b-gmv"/>
-                                </connections>
-                            </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UeT-kr-ohs">
-                                <rect key="frame" x="0.0" y="54" width="375" height="578"/>
-                                <connections>
-                                    <segue destination="Cif-qw-n9X" kind="embed" id="OMW-ek-SZR"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="HkX-51-dm2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mWK-Pw-V16" secondAttribute="leading" constant="20" symbolic="YES" id="4Ko-YF-LtL"/>
-                            <constraint firstItem="UeT-kr-ohs" firstAttribute="top" secondItem="HkX-51-dm2" secondAttribute="bottom" constant="8" id="57t-xn-oGv"/>
-                            <constraint firstItem="UeT-kr-ohs" firstAttribute="leading" secondItem="efD-6V-aOE" secondAttribute="leading" id="Kl9-Zu-Oas"/>
-                            <constraint firstItem="UeT-kr-ohs" firstAttribute="trailing" secondItem="efD-6V-aOE" secondAttribute="trailing" id="Vfy-Lu-nA5"/>
-                            <constraint firstItem="HkX-51-dm2" firstAttribute="top" secondItem="mWK-Pw-V16" secondAttribute="top" constant="16" id="Z5R-Ah-4MS"/>
-                            <constraint firstItem="efD-6V-aOE" firstAttribute="trailing" secondItem="HkX-51-dm2" secondAttribute="trailing" constant="16" id="qcs-0p-xgB"/>
-                            <constraint firstItem="efD-6V-aOE" firstAttribute="bottom" secondItem="UeT-kr-ohs" secondAttribute="bottom" constant="35" id="sPp-22-ZBK"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="efD-6V-aOE"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CzZ-0K-asN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-319.19999999999999" y="-572.56371814092961"/>
+            <point key="canvasLocation" x="-306" y="-585"/>
         </scene>
         <!--Trams Table View Controller-->
         <scene sceneID="GEt-wv-PlL">
             <objects>
                 <tableViewController storyboardIdentifier="TramsTableViewController" id="Cif-qw-n9X" customClass="TramsTableViewController" customModule="TFGMLive" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ooi-UL-Qcv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="578"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -215,7 +171,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf4-Vj-zqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="100"/>
+            <point key="canvasLocation" x="378" y="-568"/>
         </scene>
     </scenes>
 </document>

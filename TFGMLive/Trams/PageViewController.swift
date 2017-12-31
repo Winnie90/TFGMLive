@@ -27,8 +27,13 @@ class PageViewController: UIPageViewController {
         pageControl.numberOfPages = orderedViewControllers.count
         pageControl.currentPage = 0
         pageControl.tintColor = UIColor.gray
-        pageControl.pageIndicatorTintColor = UIColor.white
+        pageControl.pageIndicatorTintColor = UIColor.gray
         pageControl.currentPageIndicatorTintColor = UIColor.black
+        
+        let editButton = UIButton(frame: CGRect(x: UIScreen.main.bounds.maxX - 50,y: 0, width: 50, height: 40))
+        editButton.titleLabel?.text = "Edit"
+        pageControl.addSubview(editButton)
+        
         view.addSubview(pageControl)
     }
 }
