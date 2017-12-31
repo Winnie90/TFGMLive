@@ -5,6 +5,7 @@ struct Station: Codable {
     let stationUid: String
     let name: String
     let trams: [Tram]
+    let retrievedAt: Date
 }
 
 extension Station {
@@ -24,6 +25,7 @@ extension Station {
         case savedIdentifier = "identifier"
         case savedName = "name"
         case savedTrams = "trams"
+        case savedRetrievedAt = "retrievedAt"
     }
     
     init(from decoder: Decoder) throws {
@@ -49,20 +51,21 @@ extension Station {
                         Tram(destination: secondTramDestination, waitTime: secondTramWaitingTime),
                         Tram(destination: thirdTramDestination, waitTime: thirdTramWaitingTime),
                         Tram(destination: fourthTramDestination, waitTime: fourthTramWaitingTime)
-                ]
+                        ],
+                      retrievedAt: Date()
             )
         } catch {
             let stationUid: String = try container.decode(String.self, forKey: .savedStationUid)
             let identifier: Int = try container.decode(Int.self, forKey: .savedIdentifier)
             let name: String = try container.decode(String.self, forKey: .savedName)
             let trams: [Tram] = try container.decode(Array<Tram>.self, forKey: .savedTrams)
+            let retrievedAt: Date = try container.decode(Date.self, forKey: .savedRetrievedAt)
             self.init(identifier: identifier,
                       stationUid: stationUid,
                       name: name,
-                      trams:trams
+                      trams: trams,
+                      retrievedAt: retrievedAt
             )
         }
-        
-        
     }
 }

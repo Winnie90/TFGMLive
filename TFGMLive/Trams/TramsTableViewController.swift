@@ -51,6 +51,8 @@ class TramsTableViewController: UITableViewController {
                 let tram = station.trams[0]
                 largeCell?.destinationLabel.text = tram.destination
                 largeCell?.timeLabel.text = tram.waitTime
+                let dateString = DateFormatter.localizedString(from: station.retrievedAt, dateStyle: .none, timeStyle: .short)
+                largeCell?.retrievedAtLabel.text = "Retrieved at \(dateString), pull down to refresh"
                 return largeCell!
             }
         }
@@ -68,7 +70,7 @@ class TramsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return 165
+            return 175
         }
         return 60
     }

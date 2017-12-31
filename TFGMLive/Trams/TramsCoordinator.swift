@@ -12,11 +12,11 @@ class TramsCoordinator {
     private var pageViewController: PageViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PageViewController")  as! PageViewController
     
     func start() {
-        pageViewController.orderedViewControllers = orderedViewControllers
+        pageViewController.orderedViewControllers = viewControllers()
         pageViewController.editButtonPressed = editButtonPressed
     }
     
-    private(set) lazy var orderedViewControllers: [UIViewController] = {
+    private func viewControllers() -> [UIViewController] {
         var stations: [Station] = []
         do {
             if let data = UserDefaults.standard.value(forKey:"stations") as? Data {
@@ -29,14 +29,15 @@ class TramsCoordinator {
             stations = [Station(identifier: 1,
                                 stationUid: "",
                                 name: "Media City UK",
-                                trams: [])]
+                                trams: [],
+                                retrievedAt: Date())]
         }
         var viewControllers: [UIViewController] = []
         for station in stations {
             viewControllers.append(newTramViewController(station: station))
         }
         return viewControllers
-    }()
+    }
     
     private func newTramViewController(station: Station) -> UIViewController {
         let tramsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TramsTableViewController") as! TramsTableViewController

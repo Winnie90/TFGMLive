@@ -14,6 +14,11 @@ class PageViewController: UIPageViewController {
         super.viewDidLoad()
         dataSource = self
         delegate = self
+        createPageControl()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController],
                                direction: .forward,
@@ -23,7 +28,7 @@ class PageViewController: UIPageViewController {
         configurePageControl()
     }
     
-    func configurePageControl() {
+    func createPageControl() {
         pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 50,width: UIScreen.main.bounds.width,height: 50))
         pageControl.numberOfPages = orderedViewControllers.count
         pageControl.currentPage = 0
@@ -36,10 +41,15 @@ class PageViewController: UIPageViewController {
         editButton.setTitle("Edit", for: .normal)
         editButton.setTitleColor(UIColor.blue, for: .normal)
         editButton.addTarget(self, action: #selector(editButtonTapped), for: .touchUpInside)
-
+        
         pageControl.addSubview(editButton)
         
         view.addSubview(pageControl)
+    }
+    
+    func configurePageControl() {
+        pageControl.numberOfPages = orderedViewControllers.count
+        pageControl.currentPage = 0
     }
     
     @objc func editButtonTapped() {
@@ -115,6 +125,10 @@ extension PageViewController: UIPageViewControllerDelegate {
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         let pageContentViewController = pageViewController.viewControllers![0]
-        pageControl.currentPage = orderedViewControllers.index(of: pageContentViewController)!
+        if let currentPage = orderedViewControllers.index(of: pageContentViewController) {
+            pageControl.currentPage = currentPage
+        } else {
+            pageControl.currentPage = 0
+        }
     }
 }
