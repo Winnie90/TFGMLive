@@ -1,34 +1,29 @@
-//
-//  TodayViewController.swift
-//  TramTimesWidget
-//
-//  Created by Christopher Winstanley on 31/12/2017.
-//  Copyright © 2017 Winstanley. All rights reserved.
-//
-
 import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
-    }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    let stationService = StationServiceAdapter()
+    
+    @IBOutlet weak var stationName: UILabel!
+    @IBOutlet weak var firstDestinationLabel: UILabel!
+    @IBOutlet weak var firstDestinationTime: UILabel!
+    @IBOutlet weak var secondDestinationLabel: UILabel!
+    @IBOutlet weak var secondDestinationTime: UILabel!
+    @IBOutlet weak var retrievedAtLabel: UILabel!
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
+        stationService.getLatestData(completion: { station in
+            DispatchQueue.main.async {
+                self.stationName.text = station.name
+                self.firstDestinationLabel.text = station.firstDestination
+                self.firstDestinationTime.text = station.firstWaitTime
+                self.secondDestinationLabel.text = station.secondDestination
+                self.secondDestinationTime.text = station.secondWaitTime
+                self.retrievedAtLabel.text = station.retrievedAt
+            }
+            completionHandler(NCUpdateResult.newData)
+        })
         
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
-        completionHandler(NCUpdateResult.newData)
     }
-    
 }

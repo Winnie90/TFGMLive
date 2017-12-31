@@ -37,6 +37,10 @@
 		83C7190A1FF96D39001C399F /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719091FF96D39001C399F /* UserDefaultsService.swift */; };
 		83C7190C1FF97E20001C399F /* AllStationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7190B1FF97E20001C399F /* AllStationsRequest.swift */; };
 		83C7190D1FF98B3E001C399F /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 839716881FED468600C44131 /* stations.json */; };
+		83C7190F1FF991A7001C399F /* TodayStationServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7190E1FF991A7001C399F /* TodayStationServiceAdapter.swift */; };
+		83C719121FF991C9001C399F /* StationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719111FF991C9001C399F /* StationRecord.swift */; };
+		83C719141FF991F1001C399F /* StationPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719131FF991F1001C399F /* StationPresentable.swift */; };
+		83C719161FF99227001C399F /* TramPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719151FF99227001C399F /* TramPresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +144,12 @@
 		83C719051FF96BDF001C399F /* StationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationService.swift; sourceTree = "<group>"; };
 		83C719091FF96D39001C399F /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		83C7190B1FF97E20001C399F /* AllStationsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStationsRequest.swift; sourceTree = "<group>"; };
+		83C7190E1FF991A7001C399F /* TodayStationServiceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayStationServiceAdapter.swift; sourceTree = "<group>"; };
+		83C719111FF991C9001C399F /* StationRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRecord.swift; sourceTree = "<group>"; };
+		83C719131FF991F1001C399F /* StationPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPresentable.swift; sourceTree = "<group>"; };
+		83C719151FF99227001C399F /* TramPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramPresentable.swift; sourceTree = "<group>"; };
+		83C719171FF99CBA001C399F /* TramTimesWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TramTimesWidget.entitlements; sourceTree = "<group>"; };
+		83C719181FF99D42001C399F /* TFGMLive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TFGMLive.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +222,7 @@
 		83784ECD1FEC618300693DF0 /* TFGMLive */ = {
 			isa = PBXGroup;
 			children = (
+				83C719181FF99D42001C399F /* TFGMLive.entitlements */,
 				83784ECE1FEC618300693DF0 /* AppDelegate.swift */,
 				83C718BA1FF83E87001C399F /* AppCoordinator.swift */,
 				83C719021FF969FC001C399F /* StationServiceAdapter */,
@@ -283,7 +294,9 @@
 		83C718CE1FF9669F001C399F /* TramTimesWidget */ = {
 			isa = PBXGroup;
 			children = (
+				83C719171FF99CBA001C399F /* TramTimesWidget.entitlements */,
 				83C718CF1FF9669F001C399F /* TodayViewController.swift */,
+				83C7190E1FF991A7001C399F /* TodayStationServiceAdapter.swift */,
 				83C718D11FF9669F001C399F /* MainInterface.storyboard */,
 				83C718D41FF9669F001C399F /* Info.plist */,
 			);
@@ -318,9 +331,20 @@
 		83C719021FF969FC001C399F /* StationServiceAdapter */ = {
 			isa = PBXGroup;
 			children = (
+				83C719101FF991B9001C399F /* Model */,
 				83C719031FF96A39001C399F /* StationServiceAdapter.swift */,
 			);
 			path = StationServiceAdapter;
+			sourceTree = "<group>";
+		};
+		83C719101FF991B9001C399F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83C719111FF991C9001C399F /* StationRecord.swift */,
+				83C719131FF991F1001C399F /* StationPresentable.swift */,
+				83C719151FF99227001C399F /* TramPresentable.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,6 +467,11 @@
 					83784ECA1FEC618300693DF0 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					83784EDE1FEC618300693DF0 = {
 						CreatedOnToolsVersion = 9.2;
@@ -453,6 +482,11 @@
 					83C718C91FF9669F001C399F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					83C718E01FF96831001C399F = {
 						CreatedOnToolsVersion = 9.2;
@@ -538,11 +572,14 @@
 			files = (
 				8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */,
 				839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */,
+				83C719141FF991F1001C399F /* StationPresentable.swift in Sources */,
 				83C719041FF96A39001C399F /* StationServiceAdapter.swift in Sources */,
 				83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */,
+				83C719161FF99227001C399F /* TramPresentable.swift in Sources */,
 				83C718B71FF83008001C399F /* SettingsCoordinator.swift in Sources */,
 				83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */,
 				83C718BD1FF84DC3001C399F /* TramsCoordinator.swift in Sources */,
+				83C719121FF991C9001C399F /* StationRecord.swift in Sources */,
 				83C718C31FF8EE18001C399F /* LargeTramTableViewCell.swift in Sources */,
 				83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */,
 				8397168B1FED46A800C44131 /* AddStationTableViewController.swift in Sources */,
@@ -560,6 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C7190F1FF991A7001C399F /* TodayStationServiceAdapter.swift in Sources */,
 				83C718D01FF9669F001C399F /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -755,6 +793,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TFGMLive/TFGMLive.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
 				INFOPLIST_FILE = "$(SRCROOT)/TFGMLive/Resources/Info.plist";
@@ -771,6 +810,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TFGMLive/TFGMLive.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
 				INFOPLIST_FILE = "$(SRCROOT)/TFGMLive/Resources/Info.plist";
@@ -824,6 +864,7 @@
 		83C718D91FF9669F001C399F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TramTimesWidget/TramTimesWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
 				INFOPLIST_FILE = TramTimesWidget/Info.plist;
@@ -839,6 +880,7 @@
 		83C718DA1FF9669F001C399F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TramTimesWidget/TramTimesWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
 				INFOPLIST_FILE = TramTimesWidget/Info.plist;

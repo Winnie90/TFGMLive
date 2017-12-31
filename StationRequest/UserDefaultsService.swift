@@ -2,9 +2,11 @@ import Foundation
 
 struct UserDefaultsService {
     
+    let userDefaults = UserDefaults.init(suiteName: "group.winstanley.SharingDefaults")!
+    
     func getUserStations() -> [Station] {
         do {
-            if let data = UserDefaults.standard.value(forKey:"stations") as? Data {
+            if let data = userDefaults.value(forKey:"stations") as? Data {
                 return try PropertyListDecoder().decode(Array<Station>.self, from: data)
             }
         } catch {
@@ -14,6 +16,6 @@ struct UserDefaultsService {
     }
     
     func saveUserStations(stations: [Station]) {
-        UserDefaults.standard.set(try? PropertyListEncoder().encode(stations), forKey:"stations")
+        userDefaults.set(try? PropertyListEncoder().encode(stations), forKey:"stations")
     }
 }
