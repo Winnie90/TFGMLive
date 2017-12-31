@@ -1,11 +1,23 @@
 import Foundation
 
-struct Station: Codable {
-    let identifier: Int
-    let stationUid: String
-    let name: String
-    let trams: [Tram]
-    let retrievedAt: Date
+public struct Station: Codable {
+    public let identifier: Int
+    public let stationUid: String
+    public let name: String
+    public let trams: [Tram]
+    public let retrievedAt: Date
+    
+    public init(identifier: Int,
+                stationUid: String,
+                name: String,
+                trams: [Tram],
+                retrievedAt: Date) {
+        self.identifier = identifier
+        self.stationUid = stationUid
+        self.name = name
+        self.trams = trams
+        self.retrievedAt = retrievedAt
+    }
 }
 
 extension Station {
@@ -28,7 +40,7 @@ extension Station {
         case savedRetrievedAt = "retrievedAt"
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: StationKeys.self)
         
         do {
@@ -68,4 +80,6 @@ extension Station {
             )
         }
     }
+    
+    
 }

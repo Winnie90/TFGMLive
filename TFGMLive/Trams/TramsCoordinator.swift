@@ -3,7 +3,7 @@ import UIKit
 class TramsCoordinator {
     
     var editButtonPressed: ()->() = {}
-    private var stationService = StationService()
+    private var stationService = StationServiceAdapter()
     
     var rootViewController: UIViewController {
         return pageViewController
@@ -17,21 +17,7 @@ class TramsCoordinator {
     }
     
     private func viewControllers() -> [UIViewController] {
-        var stations: [Station] = []
-        do {
-            if let data = UserDefaults.standard.value(forKey:"stations") as? Data {
-                stations = try PropertyListDecoder().decode(Array<Station>.self, from: data)
-            }
-        } catch {
-            print(error.localizedDescription)
-        }
-        if stations.count == 0 {
-            stations = [Station(identifier: 1,
-                                stationUid: "",
-                                name: "Media City UK",
-                                trams: [],
-                                retrievedAt: Date())]
-        }
+        let stations: [StationPresentable] = stationService.getUserStations()
         var viewControllers: [UIViewController] = []
         for station in stations {
             viewControllers.append(newTramViewController(station: station))
@@ -39,10 +25,10 @@ class TramsCoordinator {
         return viewControllers
     }
     
-    private func newTramViewController(station: Station) -> UIViewController {
+    private func newTramViewController(station: StationPresentable) -> UIViewController {
         let tramsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TramsTableViewController") as! TramsTableViewController
         tramsViewController.refreshData = {
-            self.stationService.retrieveStationData(identifier: station.identifier, completion: { station in
+            self.stationService.getLatestDataForStations(station: station, completion: { station in
                 tramsViewController.dataRefreshed(station: station)
             })
         }

@@ -1,6 +1,6 @@
 import Foundation
 
-struct StationService {
+struct StationRequest {
     
     func retrieveStationData(identifier: Int, completion: @escaping (Station)->()) {
         let urlString = "https://api.tfgm.com/odata/Metrolinks(\(identifier))"

@@ -2,13 +2,13 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
     
-    private var stations: [Station] = []
+    private var stations: [StationRecord] = []
 
     var addStationsPressed: ()->() = {}
     var deletedItem: (Int)->() = {_ in}
     var savePressed: ()->() = {}
     
-    public func dataRefreshed(stations: [Station]) {
+    public func dataRefreshed(stations: [StationRecord]) {
         self.stations = stations
         DispatchQueue.main.async {
             self.tableView.reloadData()
@@ -23,11 +23,7 @@ class SettingsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsStationCell", for: indexPath)
         let station = stations[indexPath.row]
         cell.textLabel?.text = station.name
-        if let destination = station.trams.first?.destination {
-            cell.detailTextLabel?.text = "towards \(destination)"
-        } else {
-            cell.detailTextLabel?.text = ""
-        }
+        cell.detailTextLabel?.text = station.destination
         return cell
     }
     

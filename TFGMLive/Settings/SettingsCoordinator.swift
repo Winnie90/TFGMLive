@@ -2,9 +2,10 @@ import UIKit
 
 class SettingsCoordinator {
     
-    private var stations: [Station] = []
+    private var stations: [StationRecord] = []
+    private var allStations: [StationRecord] = []
     
-    var finish: ()->() = {}
+    var finish: ([StationRecord])->() = {_ in }
     
     var rootViewController: UIViewController {
         return self.navigationController
@@ -23,12 +24,9 @@ class SettingsCoordinator {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddStation") as! AddStationTableViewController
     }()
     
-    func start() {
-        if let data = UserDefaults.standard.value(forKey:"stations") as? Data {
-            let decoder = PropertyListDecoder()
-            stations = try! decoder.decode(Array<Station>.self, from: data)
-        }
-        
+    func start(stations: [StationRecord], allStations: [StationRecord]) {
+        self.stations = stations
+        self.allStations = allStations
         settingsTableViewController.dataRefreshed(stations: stations)
         settingsTableViewController.addStationsPressed = addStation
         settingsTableViewController.savePressed = save
@@ -39,6 +37,7 @@ class SettingsCoordinator {
     }
     
     func addStation() {
+        addStationsTableViewController.stations = allStations
         addStationsTableViewController.stationSelected = { station in
             self.stations.append(station)
             self.settingsTableViewController.dataRefreshed(stations: self.stations)
@@ -48,7 +47,6 @@ class SettingsCoordinator {
     }
     
     func save() {
-        UserDefaults.standard.set(try? PropertyListEncoder().encode(stations), forKey:"stations")
-        finish()
+        finish(stations)
     }
 }

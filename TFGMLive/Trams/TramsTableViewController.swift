@@ -2,10 +2,10 @@ import UIKit
 
 class TramsTableViewController: UITableViewController {
     
-    var station: Station?
+    var station: StationPresentable?
     var refreshData: ()->() = {}
     
-    public func dataRefreshed(station: Station) {
+    public func dataRefreshed(station: StationPresentable) {
         self.station = station
         DispatchQueue.main.async {
             self.refreshControl?.endRefreshing()
@@ -15,7 +15,6 @@ class TramsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.register(UINib.init(nibName: "LargeTramTableViewCell", bundle: nil), forCellReuseIdentifier: "LargeTramTableViewCell")
         refreshControl?.addTarget(self, action: #selector(refreshStation), for: UIControlEvents.valueChanged)
     }
@@ -51,8 +50,7 @@ class TramsTableViewController: UITableViewController {
                 let tram = station.trams[0]
                 largeCell?.destinationLabel.text = tram.destination
                 largeCell?.timeLabel.text = tram.waitTime
-                let dateString = DateFormatter.localizedString(from: station.retrievedAt, dateStyle: .none, timeStyle: .short)
-                largeCell?.retrievedAtLabel.text = "Retrieved at \(dateString), pull down to refresh"
+                largeCell?.retrievedAtLabel.text = station.retrievedAt
                 return largeCell!
             }
         }

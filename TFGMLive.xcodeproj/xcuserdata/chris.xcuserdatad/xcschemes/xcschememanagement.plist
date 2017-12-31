@@ -4,10 +4,43 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>StationRequest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>TFGMLive.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>TramTimesWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>83784ECA1FEC618300693DF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83784EDE1FEC618300693DF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83C718C91FF9669F001C399F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83C718E81FF96831001C399F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -1,43 +1,19 @@
 import UIKit
 
-struct Response: Decodable {
-    let value: [Station]
-}
-
 class AddStationTableViewController: UITableViewController {
     
-    var stationSelected: (Station) -> () = { _ in }
-    var stations: [Station] = []
-    var filteredStations: [Station] = []
+    var stationSelected: (StationRecord) -> () = { _ in }
+    var stations: [StationRecord] = []
+    var filteredStations: [StationRecord] = []
     var searchActive = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        performRequest()
-    }
-    
-    @objc func performRequest() {
-        let path = Bundle.main.path(forResource: "stations", ofType: "json")
-        let url = URL(fileURLWithPath: path!)
-        let data = try! Data(contentsOf: url, options: .uncached)
-        let parsedStationData = try? JSONDecoder().decode(Response.self, from: data)
-        stations = (parsedStationData?.value)!
-        stations = stations.filterDuplicates { (station1, station2) -> Bool in
-            return station1.stationUid == station2.stationUid
-            }.sorted(by: { (station1, station2) -> Bool in
-                station1.name < station2.name
-            })
         filteredStations = stations
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
     }
     
-    func showError() {
-        let alert = UIAlertController(title: "Loading Problem", message: "There was a problem loading the feed; check your connection and try again", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        present(alert, animated: true)
-    }
+    
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searchActive {
@@ -50,11 +26,7 @@ class AddStationTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StationCell", for: indexPath)
         let station = searchActive ? filteredStations[indexPath.row] : stations[indexPath.row]
         cell.textLabel?.text = station.name
-        if let destination = station.trams.first?.destination {
-            cell.detailTextLabel?.text = "towards \(destination)"
-        } else {
-            cell.detailTextLabel?.text = ""
-        }
+        cell.detailTextLabel?.text = station.destination
         return cell
     }
     
@@ -62,6 +34,13 @@ class AddStationTableViewController: UITableViewController {
         let station = searchActive ? filteredStations[indexPath.row] : stations[indexPath.row]
         stationSelected(station)
         navigationController?.popViewController(animated: true)
+    }
+    
+    //TODO show error
+    func showError() {
+        let alert = UIAlertController(title: "Loading Problem", message: "There was a problem loading the feed; check your connection and try again", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
     }
 }
 
@@ -91,21 +70,3 @@ extension AddStationTableViewController: UISearchBarDelegate {
         tableView.reloadData()
     }
 }
-
-
-extension Array {
-    
-    func filterDuplicates(includeElement: @escaping (_ lhs: Element, _ rhs: Element) -> Bool) -> [Element] {
-        var results = [Element]()
-        forEach { (element) in
-            let existingElements = results.filter {
-                return includeElement(element, $0)
-            }
-            if existingElements.count == 0 {
-                results.append(element)
-            }
-        }
-        return results
-    }
-}
-

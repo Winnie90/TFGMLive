@@ -12,18 +12,31 @@
 		83784ED41FEC618300693DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED21FEC618300693DF0 /* Main.storyboard */; };
 		83784ED61FEC618300693DF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED51FEC618300693DF0 /* Assets.xcassets */; };
 		83784ED91FEC618300693DF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED71FEC618300693DF0 /* LaunchScreen.storyboard */; };
-		839716891FED468600C44131 /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 839716881FED468600C44131 /* stations.json */; };
 		8397168B1FED46A800C44131 /* AddStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397168A1FED46A800C44131 /* AddStationTableViewController.swift */; };
 		8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397168C1FED578A00C44131 /* SettingsTableViewController.swift */; };
-		839716911FEFCC4800C44131 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716901FEFCC4800C44131 /* Station.swift */; };
-		839716931FEFCC6D00C44131 /* Tram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716921FEFCC6D00C44131 /* Tram.swift */; };
 		839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716941FEFCDEA00C44131 /* PageViewController.swift */; };
 		83C718B71FF83008001C399F /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718B61FF83008001C399F /* SettingsCoordinator.swift */; };
 		83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BA1FF83E87001C399F /* AppCoordinator.swift */; };
 		83C718BD1FF84DC3001C399F /* TramsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */; };
-		83C718C01FF8575F001C399F /* StationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BF1FF8575F001C399F /* StationService.swift */; };
 		83C718C31FF8EE18001C399F /* LargeTramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718C21FF8EE18001C399F /* LargeTramTableViewCell.swift */; };
 		83C718C51FF8F1E6001C399F /* LargeTramTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C718C41FF8F1E6001C399F /* LargeTramTableViewCell.xib */; };
+		83C718CD1FF9669F001C399F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C718CC1FF9669F001C399F /* NotificationCenter.framework */; };
+		83C718D01FF9669F001C399F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718CF1FF9669F001C399F /* TodayViewController.swift */; };
+		83C718D31FF9669F001C399F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C718D11FF9669F001C399F /* MainInterface.storyboard */; };
+		83C718D71FF9669F001C399F /* TramTimesWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83C718CA1FF9669F001C399F /* TramTimesWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		83C718EA1FF96832001C399F /* StationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C718E11FF96831001C399F /* StationRequest.framework */; };
+		83C718F11FF96832001C399F /* StationRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718F01FF96832001C399F /* StationRequestTests.swift */; };
+		83C718F31FF96832001C399F /* StationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 83C718E31FF96831001C399F /* StationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83C718F61FF96832001C399F /* StationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C718E11FF96831001C399F /* StationRequest.framework */; };
+		83C718F71FF96832001C399F /* StationRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83C718E11FF96831001C399F /* StationRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83C718FF1FF96865001C399F /* StationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BF1FF8575F001C399F /* StationRequest.swift */; };
+		83C719001FF968E3001C399F /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716901FEFCC4800C44131 /* Station.swift */; };
+		83C719011FF968E3001C399F /* Tram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716921FEFCC6D00C44131 /* Tram.swift */; };
+		83C719041FF96A39001C399F /* StationServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719031FF96A39001C399F /* StationServiceAdapter.swift */; };
+		83C719061FF96BDF001C399F /* StationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719051FF96BDF001C399F /* StationService.swift */; };
+		83C7190A1FF96D39001C399F /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719091FF96D39001C399F /* UserDefaultsService.swift */; };
+		83C7190C1FF97E20001C399F /* AllStationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7190B1FF97E20001C399F /* AllStationsRequest.swift */; };
+		83C7190D1FF98B3E001C399F /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 839716881FED468600C44131 /* stations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +47,60 @@
 			remoteGlobalIDString = 83784ECA1FEC618300693DF0;
 			remoteInfo = TFGMLive;
 		};
+		83C718D51FF9669F001C399F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83784EC31FEC618300693DF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83C718C91FF9669F001C399F;
+			remoteInfo = TramTimesWidget;
+		};
+		83C718EB1FF96832001C399F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83784EC31FEC618300693DF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83C718E01FF96831001C399F;
+			remoteInfo = StationRequest;
+		};
+		83C718ED1FF96832001C399F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83784EC31FEC618300693DF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83784ECA1FEC618300693DF0;
+			remoteInfo = TFGMLive;
+		};
+		83C718F41FF96832001C399F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83784EC31FEC618300693DF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83C718E01FF96831001C399F;
+			remoteInfo = StationRequest;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83C718DB1FF9669F001C399F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				83C718D71FF9669F001C399F /* TramTimesWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C718FB1FF96832001C399F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83C718F71FF96832001C399F /* StationRequest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		83784ECB1FEC618300693DF0 /* TFGMLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFGMLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,9 +122,24 @@
 		83C718B61FF83008001C399F /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		83C718BA1FF83E87001C399F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramsCoordinator.swift; sourceTree = "<group>"; };
-		83C718BF1FF8575F001C399F /* StationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationService.swift; sourceTree = "<group>"; };
+		83C718BF1FF8575F001C399F /* StationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRequest.swift; sourceTree = "<group>"; };
 		83C718C21FF8EE18001C399F /* LargeTramTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTramTableViewCell.swift; sourceTree = "<group>"; };
 		83C718C41FF8F1E6001C399F /* LargeTramTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeTramTableViewCell.xib; sourceTree = "<group>"; };
+		83C718CA1FF9669F001C399F /* TramTimesWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TramTimesWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C718CC1FF9669F001C399F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		83C718CF1FF9669F001C399F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		83C718D21FF9669F001C399F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		83C718D41FF9669F001C399F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C718E11FF96831001C399F /* StationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StationRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C718E31FF96831001C399F /* StationRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StationRequest.h; sourceTree = "<group>"; };
+		83C718E41FF96831001C399F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C718E91FF96831001C399F /* StationRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StationRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C718F01FF96832001C399F /* StationRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRequestTests.swift; sourceTree = "<group>"; };
+		83C718F21FF96832001C399F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C719031FF96A39001C399F /* StationServiceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationServiceAdapter.swift; sourceTree = "<group>"; };
+		83C719051FF96BDF001C399F /* StationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationService.swift; sourceTree = "<group>"; };
+		83C719091FF96D39001C399F /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		83C7190B1FF97E20001C399F /* AllStationsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStationsRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C718F61FF96832001C399F /* StationRequest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +155,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C718C71FF9669F001C399F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C718CD1FF9669F001C399F /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C718DD1FF96831001C399F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C718E61FF96831001C399F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C718EA1FF96832001C399F /* StationRequest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +189,10 @@
 			children = (
 				83784ECD1FEC618300693DF0 /* TFGMLive */,
 				83784EE21FEC618300693DF0 /* TFGMLiveTests */,
+				83C718CE1FF9669F001C399F /* TramTimesWidget */,
+				83C718E21FF96831001C399F /* StationRequest */,
+				83C718EF1FF96832001C399F /* StationRequestTests */,
+				83C718CB1FF9669F001C399F /* Frameworks */,
 				83784ECC1FEC618300693DF0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +202,9 @@
 			children = (
 				83784ECB1FEC618300693DF0 /* TFGMLive.app */,
 				83784EDF1FEC618300693DF0 /* TFGMLiveTests.xctest */,
+				83C718CA1FF9669F001C399F /* TramTimesWidget.appex */,
+				83C718E11FF96831001C399F /* StationRequest.framework */,
+				83C718E91FF96831001C399F /* StationRequestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,8 +214,7 @@
 			children = (
 				83784ECE1FEC618300693DF0 /* AppDelegate.swift */,
 				83C718BA1FF83E87001C399F /* AppCoordinator.swift */,
-				83C718BE1FF85747001C399F /* Services */,
-				8397168F1FEFCC2200C44131 /* Model */,
+				83C719021FF969FC001C399F /* StationServiceAdapter */,
 				83C718B91FF83DEA001C399F /* Trams */,
 				83C718B81FF8318E001C399F /* Settings */,
 				83C718C11FF8EDE5001C399F /* Cells */,
@@ -125,21 +236,11 @@
 		83784EF61FED444700693DF0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				839716881FED468600C44131 /* stations.json */,
 				83784ED51FEC618300693DF0 /* Assets.xcassets */,
 				83784ED71FEC618300693DF0 /* LaunchScreen.storyboard */,
 				83784EDA1FEC618300693DF0 /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		8397168F1FEFCC2200C44131 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				839716901FEFCC4800C44131 /* Station.swift */,
-				839716921FEFCC6D00C44131 /* Tram.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		83C718B81FF8318E001C399F /* Settings */ = {
@@ -162,14 +263,6 @@
 			path = Trams;
 			sourceTree = "<group>";
 		};
-		83C718BE1FF85747001C399F /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				83C718BF1FF8575F001C399F /* StationService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		83C718C11FF8EDE5001C399F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +272,69 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		83C718CB1FF9669F001C399F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83C718CC1FF9669F001C399F /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83C718CE1FF9669F001C399F /* TramTimesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				83C718CF1FF9669F001C399F /* TodayViewController.swift */,
+				83C718D11FF9669F001C399F /* MainInterface.storyboard */,
+				83C718D41FF9669F001C399F /* Info.plist */,
+			);
+			path = TramTimesWidget;
+			sourceTree = "<group>";
+		};
+		83C718E21FF96831001C399F /* StationRequest */ = {
+			isa = PBXGroup;
+			children = (
+				83C718E41FF96831001C399F /* Info.plist */,
+				83C718E31FF96831001C399F /* StationRequest.h */,
+				83C719051FF96BDF001C399F /* StationService.swift */,
+				839716901FEFCC4800C44131 /* Station.swift */,
+				839716921FEFCC6D00C44131 /* Tram.swift */,
+				83C719091FF96D39001C399F /* UserDefaultsService.swift */,
+				83C718BF1FF8575F001C399F /* StationRequest.swift */,
+				83C7190B1FF97E20001C399F /* AllStationsRequest.swift */,
+				839716881FED468600C44131 /* stations.json */,
+			);
+			path = StationRequest;
+			sourceTree = "<group>";
+		};
+		83C718EF1FF96832001C399F /* StationRequestTests */ = {
+			isa = PBXGroup;
+			children = (
+				83C718F01FF96832001C399F /* StationRequestTests.swift */,
+				83C718F21FF96832001C399F /* Info.plist */,
+			);
+			path = StationRequestTests;
+			sourceTree = "<group>";
+		};
+		83C719021FF969FC001C399F /* StationServiceAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				83C719031FF96A39001C399F /* StationServiceAdapter.swift */,
+			);
+			path = StationServiceAdapter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		83C718DE1FF96831001C399F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C718F31FF96832001C399F /* StationRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		83784ECA1FEC618300693DF0 /* TFGMLive */ = {
@@ -189,10 +344,14 @@
 				83784EC71FEC618300693DF0 /* Sources */,
 				83784EC81FEC618300693DF0 /* Frameworks */,
 				83784EC91FEC618300693DF0 /* Resources */,
+				83C718DB1FF9669F001C399F /* Embed App Extensions */,
+				83C718FB1FF96832001C399F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				83C718D61FF9669F001C399F /* PBXTargetDependency */,
+				83C718F51FF96832001C399F /* PBXTargetDependency */,
 			);
 			name = TFGMLive;
 			productName = TFGMLive;
@@ -217,6 +376,60 @@
 			productReference = 83784EDF1FEC618300693DF0 /* TFGMLiveTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		83C718C91FF9669F001C399F /* TramTimesWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C718D81FF9669F001C399F /* Build configuration list for PBXNativeTarget "TramTimesWidget" */;
+			buildPhases = (
+				83C718C61FF9669F001C399F /* Sources */,
+				83C718C71FF9669F001C399F /* Frameworks */,
+				83C718C81FF9669F001C399F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TramTimesWidget;
+			productName = TramTimesWidget;
+			productReference = 83C718CA1FF9669F001C399F /* TramTimesWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		83C718E01FF96831001C399F /* StationRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C718F81FF96832001C399F /* Build configuration list for PBXNativeTarget "StationRequest" */;
+			buildPhases = (
+				83C718DC1FF96831001C399F /* Sources */,
+				83C718DD1FF96831001C399F /* Frameworks */,
+				83C718DE1FF96831001C399F /* Headers */,
+				83C718DF1FF96831001C399F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StationRequest;
+			productName = StationRequest;
+			productReference = 83C718E11FF96831001C399F /* StationRequest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83C718E81FF96831001C399F /* StationRequestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C718FC1FF96832001C399F /* Build configuration list for PBXNativeTarget "StationRequestTests" */;
+			buildPhases = (
+				83C718E51FF96831001C399F /* Sources */,
+				83C718E61FF96831001C399F /* Frameworks */,
+				83C718E71FF96831001C399F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83C718EC1FF96832001C399F /* PBXTargetDependency */,
+				83C718EE1FF96832001C399F /* PBXTargetDependency */,
+			);
+			name = StationRequestTests;
+			productName = StationRequestTests;
+			productReference = 83C718E91FF96831001C399F /* StationRequestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -237,6 +450,19 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 83784ECA1FEC618300693DF0;
 					};
+					83C718C91FF9669F001C399F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					83C718E01FF96831001C399F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					83C718E81FF96831001C399F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 83784ECA1FEC618300693DF0;
+					};
 				};
 			};
 			buildConfigurationList = 83784EC61FEC618300693DF0 /* Build configuration list for PBXProject "TFGMLive" */;
@@ -254,6 +480,9 @@
 			targets = (
 				83784ECA1FEC618300693DF0 /* TFGMLive */,
 				83784EDE1FEC618300693DF0 /* TFGMLiveTests */,
+				83C718C91FF9669F001C399F /* TramTimesWidget */,
+				83C718E01FF96831001C399F /* StationRequest */,
+				83C718E81FF96831001C399F /* StationRequestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,13 +494,35 @@
 			files = (
 				83784ED91FEC618300693DF0 /* LaunchScreen.storyboard in Resources */,
 				83784ED61FEC618300693DF0 /* Assets.xcassets in Resources */,
-				839716891FED468600C44131 /* stations.json in Resources */,
 				83784ED41FEC618300693DF0 /* Main.storyboard in Resources */,
 				83C718C51FF8F1E6001C399F /* LargeTramTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		83784EDD1FEC618300693DF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C718C81FF9669F001C399F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C718D31FF9669F001C399F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C718DF1FF96831001C399F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C7190D1FF98B3E001C399F /* stations.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C718E71FF96831001C399F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,13 +537,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */,
-				83C718C01FF8575F001C399F /* StationService.swift in Sources */,
 				839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */,
+				83C719041FF96A39001C399F /* StationServiceAdapter.swift in Sources */,
 				83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */,
-				839716911FEFCC4800C44131 /* Station.swift in Sources */,
 				83C718B71FF83008001C399F /* SettingsCoordinator.swift in Sources */,
 				83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */,
-				839716931FEFCC6D00C44131 /* Tram.swift in Sources */,
 				83C718BD1FF84DC3001C399F /* TramsCoordinator.swift in Sources */,
 				83C718C31FF8EE18001C399F /* LargeTramTableViewCell.swift in Sources */,
 				83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */,
@@ -307,6 +556,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83C718C61FF9669F001C399F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C718D01FF9669F001C399F /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C718DC1FF96831001C399F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C7190A1FF96D39001C399F /* UserDefaultsService.swift in Sources */,
+				83C719011FF968E3001C399F /* Tram.swift in Sources */,
+				83C719001FF968E3001C399F /* Station.swift in Sources */,
+				83C719061FF96BDF001C399F /* StationService.swift in Sources */,
+				83C7190C1FF97E20001C399F /* AllStationsRequest.swift in Sources */,
+				83C718FF1FF96865001C399F /* StationRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C718E51FF96831001C399F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C718F11FF96832001C399F /* StationRequestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -314,6 +592,26 @@
 			isa = PBXTargetDependency;
 			target = 83784ECA1FEC618300693DF0 /* TFGMLive */;
 			targetProxy = 83784EE01FEC618300693DF0 /* PBXContainerItemProxy */;
+		};
+		83C718D61FF9669F001C399F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83C718C91FF9669F001C399F /* TramTimesWidget */;
+			targetProxy = 83C718D51FF9669F001C399F /* PBXContainerItemProxy */;
+		};
+		83C718EC1FF96832001C399F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83C718E01FF96831001C399F /* StationRequest */;
+			targetProxy = 83C718EB1FF96832001C399F /* PBXContainerItemProxy */;
+		};
+		83C718EE1FF96832001C399F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83784ECA1FEC618300693DF0 /* TFGMLive */;
+			targetProxy = 83C718ED1FF96832001C399F /* PBXContainerItemProxy */;
+		};
+		83C718F51FF96832001C399F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83C718E01FF96831001C399F /* StationRequest */;
+			targetProxy = 83C718F41FF96832001C399F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -332,6 +630,14 @@
 				83784ED81FEC618300693DF0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		83C718D11FF9669F001C399F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83C718D21FF9669F001C399F /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -447,6 +753,7 @@
 		83784EE91FEC618300693DF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
@@ -462,6 +769,7 @@
 		83784EEA1FEC618300693DF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
@@ -513,6 +821,116 @@
 			};
 			name = Release;
 		};
+		83C718D91FF9669F001C399F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
+				INFOPLIST_FILE = TramTimesWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.TramTimesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83C718DA1FF9669F001C399F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
+				INFOPLIST_FILE = TramTimesWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.TramTimesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83C718F91FF96832001C399F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StationRequest/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequest;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83C718FA1FF96832001C399F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StationRequest/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequest;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83C718FD1FF96832001C399F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
+				INFOPLIST_FILE = StationRequestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFGMLive.app/TFGMLive";
+			};
+			name = Debug;
+		};
+		83C718FE1FF96832001C399F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
+				INFOPLIST_FILE = StationRequestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFGMLive.app/TFGMLive";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -539,6 +957,33 @@
 			buildConfigurations = (
 				83784EEC1FEC618300693DF0 /* Debug */,
 				83784EED1FEC618300693DF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C718D81FF9669F001C399F /* Build configuration list for PBXNativeTarget "TramTimesWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C718D91FF9669F001C399F /* Debug */,
+				83C718DA1FF9669F001C399F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C718F81FF96832001C399F /* Build configuration list for PBXNativeTarget "StationRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C718F91FF96832001C399F /* Debug */,
+				83C718FA1FF96832001C399F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C718FC1FF96832001C399F /* Build configuration list for PBXNativeTarget "StationRequestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C718FD1FF96832001C399F /* Debug */,
+				83C718FE1FF96832001C399F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
