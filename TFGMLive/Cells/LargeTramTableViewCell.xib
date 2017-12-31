@@ -12,11 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LargeTramTableViewCell" rowHeight="175" id="6k2-YK-eH0" customClass="LargeTramTableViewCell" customModule="TFGMLive" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LargeTramTableViewCell" rowHeight="187" id="6k2-YK-eH0" customClass="LargeTramTableViewCell" customModule="TFGMLive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6k2-YK-eH0" id="80P-8B-kOS">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="174.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="186.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgT-ch-Ymc">
@@ -47,7 +47,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retrieved at 10:53 12/03/2017, pull down to refresh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQ3-5R-hCi">
-                        <rect key="frame" x="8" y="156.5" width="359" height="12"/>
+                        <rect key="frame" x="8" y="166.5" width="359" height="12"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -63,7 +63,7 @@
                     <constraint firstItem="SgT-ch-Ymc" firstAttribute="top" secondItem="80P-8B-kOS" secondAttribute="topMargin" constant="20" id="NBq-oK-LlD"/>
                     <constraint firstItem="xZL-21-zth" firstAttribute="bottom" secondItem="j9N-5l-3ZU" secondAttribute="bottom" id="Slk-Ai-nQJ"/>
                     <constraint firstItem="wQ3-5R-hCi" firstAttribute="leading" secondItem="80P-8B-kOS" secondAttribute="leading" constant="8" id="ULz-7H-XbJ"/>
-                    <constraint firstAttribute="bottom" secondItem="wQ3-5R-hCi" secondAttribute="bottom" constant="6" id="acC-vL-7Mh"/>
+                    <constraint firstAttribute="bottom" secondItem="wQ3-5R-hCi" secondAttribute="bottom" constant="8" id="acC-vL-7Mh"/>
                     <constraint firstItem="SgT-ch-Ymc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="80P-8B-kOS" secondAttribute="leadingMargin" constant="8" id="fiq-9E-94H"/>
                     <constraint firstItem="xZL-21-zth" firstAttribute="leading" secondItem="j9N-5l-3ZU" secondAttribute="trailing" constant="4" id="frb-1F-7zA"/>
                     <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="SgT-ch-Ymc" secondAttribute="trailing" constant="8" id="qcq-z6-0S6"/>
@@ -77,7 +77,7 @@
                 <outlet property="stationNameLabel" destination="SgT-ch-Ymc" id="BOT-97-ecv"/>
                 <outlet property="timeLabel" destination="j9N-5l-3ZU" id="DaG-4w-h20"/>
             </connections>
-            <point key="canvasLocation" x="82.5" y="187.5"/>
+            <point key="canvasLocation" x="82.5" y="193.5"/>
         </tableViewCell>
     </objects>
 </document>

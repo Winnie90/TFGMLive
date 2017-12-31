@@ -70,7 +70,7 @@ class TramsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return 175
+            return 186
         }
         return 60
     }
