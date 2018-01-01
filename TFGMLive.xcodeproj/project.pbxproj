@@ -41,6 +41,15 @@
 		83C719121FF991C9001C399F /* StationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719111FF991C9001C399F /* StationRecord.swift */; };
 		83C719141FF991F1001C399F /* StationPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719131FF991F1001C399F /* StationPresentable.swift */; };
 		83C719161FF99227001C399F /* TramPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719151FF99227001C399F /* TramPresentable.swift */; };
+		83C997C61FF9ACE40034F8E1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C997C41FF9ACE40034F8E1 /* Interface.storyboard */; };
+		83C997C81FF9ACE40034F8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C997C71FF9ACE40034F8E1 /* Assets.xcassets */; };
+		83C997CF1FF9ACE40034F8E1 /* TramTimesWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83C997CE1FF9ACE40034F8E1 /* TramTimesWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		83C997D41FF9ACE40034F8E1 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C997D31FF9ACE40034F8E1 /* InterfaceController.swift */; };
+		83C997D61FF9ACE40034F8E1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C997D51FF9ACE40034F8E1 /* ExtensionDelegate.swift */; };
+		83C997D81FF9ACE40034F8E1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C997D71FF9ACE40034F8E1 /* NotificationController.swift */; };
+		83C997DA1FF9ACE40034F8E1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C997D91FF9ACE40034F8E1 /* ComplicationController.swift */; };
+		83C997DC1FF9ACE40034F8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C997DB1FF9ACE40034F8E1 /* Assets.xcassets */; };
+		83C997E11FF9ACE40034F8E1 /* TramTimesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 83C997C21FF9ACE40034F8E1 /* TramTimesWatch.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +88,20 @@
 			remoteGlobalIDString = 83C718E01FF96831001C399F;
 			remoteInfo = StationRequest;
 		};
+		83C997D01FF9ACE40034F8E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83784EC31FEC618300693DF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83C997CD1FF9ACE40034F8E1;
+			remoteInfo = "TramTimesWatch Extension";
+		};
+		83C997DF1FF9ACE40034F8E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83784EC31FEC618300693DF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83C997C11FF9ACE40034F8E1;
+			remoteInfo = TramTimesWatch;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -102,6 +125,28 @@
 				83C718F71FF96832001C399F /* StationRequest.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C997E51FF9ACE40034F8E1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				83C997CF1FF9ACE40034F8E1 /* TramTimesWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C997E91FF9ACE40034F8E1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				83C997E11FF9ACE40034F8E1 /* TramTimesWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -150,6 +195,18 @@
 		83C719151FF99227001C399F /* TramPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramPresentable.swift; sourceTree = "<group>"; };
 		83C719171FF99CBA001C399F /* TramTimesWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TramTimesWidget.entitlements; sourceTree = "<group>"; };
 		83C719181FF99D42001C399F /* TFGMLive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TFGMLive.entitlements; sourceTree = "<group>"; };
+		83C997C21FF9ACE40034F8E1 /* TramTimesWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TramTimesWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C997C51FF9ACE40034F8E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		83C997C71FF9ACE40034F8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83C997C91FF9ACE40034F8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C997CE1FF9ACE40034F8E1 /* TramTimesWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TramTimesWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C997D31FF9ACE40034F8E1 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		83C997D51FF9ACE40034F8E1 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		83C997D71FF9ACE40034F8E1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		83C997D91FF9ACE40034F8E1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		83C997DB1FF9ACE40034F8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83C997DD1FF9ACE40034F8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C997DE1FF9ACE40034F8E1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +248,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83C997CB1FF9ACE40034F8E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -202,6 +266,8 @@
 				83C718CE1FF9669F001C399F /* TramTimesWidget */,
 				83C718E21FF96831001C399F /* StationRequest */,
 				83C718EF1FF96832001C399F /* StationRequestTests */,
+				83C997C31FF9ACE40034F8E1 /* TramTimesWatch */,
+				83C997D21FF9ACE40034F8E1 /* TramTimesWatch Extension */,
 				83C718CB1FF9669F001C399F /* Frameworks */,
 				83784ECC1FEC618300693DF0 /* Products */,
 			);
@@ -215,6 +281,8 @@
 				83C718CA1FF9669F001C399F /* TramTimesWidget.appex */,
 				83C718E11FF96831001C399F /* StationRequest.framework */,
 				83C718E91FF96831001C399F /* StationRequestTests.xctest */,
+				83C997C21FF9ACE40034F8E1 /* TramTimesWatch.app */,
+				83C997CE1FF9ACE40034F8E1 /* TramTimesWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -347,6 +415,30 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		83C997C31FF9ACE40034F8E1 /* TramTimesWatch */ = {
+			isa = PBXGroup;
+			children = (
+				83C997C41FF9ACE40034F8E1 /* Interface.storyboard */,
+				83C997C71FF9ACE40034F8E1 /* Assets.xcassets */,
+				83C997C91FF9ACE40034F8E1 /* Info.plist */,
+			);
+			path = TramTimesWatch;
+			sourceTree = "<group>";
+		};
+		83C997D21FF9ACE40034F8E1 /* TramTimesWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				83C997D31FF9ACE40034F8E1 /* InterfaceController.swift */,
+				83C997D51FF9ACE40034F8E1 /* ExtensionDelegate.swift */,
+				83C997D71FF9ACE40034F8E1 /* NotificationController.swift */,
+				83C997D91FF9ACE40034F8E1 /* ComplicationController.swift */,
+				83C997DB1FF9ACE40034F8E1 /* Assets.xcassets */,
+				83C997DD1FF9ACE40034F8E1 /* Info.plist */,
+				83C997DE1FF9ACE40034F8E1 /* PushNotificationPayload.apns */,
+			);
+			path = "TramTimesWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -370,12 +462,14 @@
 				83784EC91FEC618300693DF0 /* Resources */,
 				83C718DB1FF9669F001C399F /* Embed App Extensions */,
 				83C718FB1FF96832001C399F /* Embed Frameworks */,
+				83C997E91FF9ACE40034F8E1 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				83C718D61FF9669F001C399F /* PBXTargetDependency */,
 				83C718F51FF96832001C399F /* PBXTargetDependency */,
+				83C997E01FF9ACE40034F8E1 /* PBXTargetDependency */,
 			);
 			name = TFGMLive;
 			productName = TFGMLive;
@@ -454,6 +548,40 @@
 			productReference = 83C718E91FF96831001C399F /* StationRequestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		83C997C11FF9ACE40034F8E1 /* TramTimesWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C997E61FF9ACE40034F8E1 /* Build configuration list for PBXNativeTarget "TramTimesWatch" */;
+			buildPhases = (
+				83C997C01FF9ACE40034F8E1 /* Resources */,
+				83C997E51FF9ACE40034F8E1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83C997D11FF9ACE40034F8E1 /* PBXTargetDependency */,
+			);
+			name = TramTimesWatch;
+			productName = TramTimesWatch;
+			productReference = 83C997C21FF9ACE40034F8E1 /* TramTimesWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		83C997CD1FF9ACE40034F8E1 /* TramTimesWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C997E21FF9ACE40034F8E1 /* Build configuration list for PBXNativeTarget "TramTimesWatch Extension" */;
+			buildPhases = (
+				83C997CA1FF9ACE40034F8E1 /* Sources */,
+				83C997CB1FF9ACE40034F8E1 /* Frameworks */,
+				83C997CC1FF9ACE40034F8E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TramTimesWatch Extension";
+			productName = "TramTimesWatch Extension";
+			productReference = 83C997CE1FF9ACE40034F8E1 /* TramTimesWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -497,6 +625,14 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 83784ECA1FEC618300693DF0;
 					};
+					83C997C11FF9ACE40034F8E1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					83C997CD1FF9ACE40034F8E1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 83784EC61FEC618300693DF0 /* Build configuration list for PBXProject "TFGMLive" */;
@@ -515,6 +651,8 @@
 				83784ECA1FEC618300693DF0 /* TFGMLive */,
 				83784EDE1FEC618300693DF0 /* TFGMLiveTests */,
 				83C718C91FF9669F001C399F /* TramTimesWidget */,
+				83C997C11FF9ACE40034F8E1 /* TramTimesWatch */,
+				83C997CD1FF9ACE40034F8E1 /* TramTimesWatch Extension */,
 				83C718E01FF96831001C399F /* StationRequest */,
 				83C718E81FF96831001C399F /* StationRequestTests */,
 			);
@@ -560,6 +698,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C997C01FF9ACE40034F8E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C997C81FF9ACE40034F8E1 /* Assets.xcassets in Resources */,
+				83C997C61FF9ACE40034F8E1 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C997CC1FF9ACE40034F8E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C997DC1FF9ACE40034F8E1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +778,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83C997CA1FF9ACE40034F8E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C997D81FF9ACE40034F8E1 /* NotificationController.swift in Sources */,
+				83C997DA1FF9ACE40034F8E1 /* ComplicationController.swift in Sources */,
+				83C997D61FF9ACE40034F8E1 /* ExtensionDelegate.swift in Sources */,
+				83C997D41FF9ACE40034F8E1 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -651,6 +817,16 @@
 			target = 83C718E01FF96831001C399F /* StationRequest */;
 			targetProxy = 83C718F41FF96832001C399F /* PBXContainerItemProxy */;
 		};
+		83C997D11FF9ACE40034F8E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83C997CD1FF9ACE40034F8E1 /* TramTimesWatch Extension */;
+			targetProxy = 83C997D01FF9ACE40034F8E1 /* PBXContainerItemProxy */;
+		};
+		83C997E01FF9ACE40034F8E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83C997C11FF9ACE40034F8E1 /* TramTimesWatch */;
+			targetProxy = 83C997DF1FF9ACE40034F8E1 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -676,6 +852,14 @@
 				83C718D21FF9669F001C399F /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		83C997C41FF9ACE40034F8E1 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83C997C51FF9ACE40034F8E1 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -733,6 +917,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -783,6 +968,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -973,6 +1159,80 @@
 			};
 			name = Release;
 		};
+		83C997E31FF9ACE40034F8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
+				INFOPLIST_FILE = "TramTimesWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		83C997E41FF9ACE40034F8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
+				INFOPLIST_FILE = "TramTimesWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		83C997E71FF9ACE40034F8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
+				IBSC_MODULE = TramTimesWatch_Extension;
+				INFOPLIST_FILE = TramTimesWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		83C997E81FF9ACE40034F8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87UEWGZE24;
+				IBSC_MODULE = TramTimesWatch_Extension;
+				INFOPLIST_FILE = TramTimesWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1026,6 +1286,24 @@
 			buildConfigurations = (
 				83C718FD1FF96832001C399F /* Debug */,
 				83C718FE1FF96832001C399F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C997E21FF9ACE40034F8E1 /* Build configuration list for PBXNativeTarget "TramTimesWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C997E31FF9ACE40034F8E1 /* Debug */,
+				83C997E41FF9ACE40034F8E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C997E61FF9ACE40034F8E1 /* Build configuration list for PBXNativeTarget "TramTimesWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C997E71FF9ACE40034F8E1 /* Debug */,
+				83C997E81FF9ACE40034F8E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
