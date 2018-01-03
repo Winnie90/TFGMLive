@@ -25,12 +25,6 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
             self?.dataSourceChangedDelegates.forEach { $0.dataSourceDidUpdate(dataSource: DataSource(data: applicationContext))}
         }
     }
-    
-    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
-        DispatchQueue.main.async() { [weak self] in
-            self?.dataSourceChangedDelegates.forEach { $0.dataSourceDidUpdate(dataSource: DataSource(data: userInfo))}
-        }
-    }
 
     func updateData() {
         session.sendMessage(["stationIdentifiers":Date()],

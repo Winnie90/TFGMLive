@@ -26,6 +26,10 @@ class StationInterfaceController: WKInterfaceController {
                     let row = self.tramTable.rowController(at: index) as! TramRowController
                     row.destinationLabel.setText(tram.destination)
                     row.waitTimeLabel.setText(tram.waitTime)
+                    row.minsLabel.setText(tram.minSpecifier)
+                    if tram.minSpecifier.count == 0 {
+                        row.waitTimeLabel.setRelativeHeight(1.0, withAdjustment: 0)
+                    }
                 }
             })
         }

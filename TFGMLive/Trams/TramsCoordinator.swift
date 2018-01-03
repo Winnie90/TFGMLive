@@ -3,7 +3,12 @@ import UIKit
 class TramsCoordinator {
     
     var editButtonPressed: ()->() = {}
-    private var stationService = StationServiceAdapter()
+    
+    let stationService: StationServiceAdapter
+    
+    init(stationService: StationServiceAdapter) {
+        self.stationService = stationService
+    }
     
     var rootViewController: UIViewController {
         return pageViewController

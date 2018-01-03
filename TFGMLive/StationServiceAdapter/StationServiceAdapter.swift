@@ -2,7 +2,7 @@ import Foundation
 import StationRequest
 
 struct StationServiceAdapter: DataSourceChangedDelegate {
-    
+        
     init() {
         WatchSessionManager.sharedManager.addDataSourceChangedDelegate(delegate: self)
     }
@@ -35,6 +35,7 @@ struct StationServiceAdapter: DataSourceChangedDelegate {
             stationsToSave.append(station.toStation())
         }
         StationService.saveUserStations(stations: stationsToSave)
+        WatchSessionManager.sharedManager.updateUserStation()
     }
     
     func getUsersStationRecords() -> [StationRecord] {

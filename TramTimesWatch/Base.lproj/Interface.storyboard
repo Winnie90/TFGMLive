@@ -21,12 +21,12 @@
                         <separator alignment="left" alpha="0.0" id="nt6-0e-pME"/>
                         <table alignment="left" id="Rr6-8H-WqF">
                             <items>
-                                <tableRow identifier="TramRowController" id="PeU-3g-69d" customClass="TramRowController" customModule="TramTimesWatch_Extension">
+                                <tableRow identifier="TramRowController" selectable="NO" id="PeU-3g-69d" customClass="TramRowController" customModule="TramTimesWatch_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="MHE-Zh-hJ8">
                                         <items>
-                                            <group width="34" alignment="left" layout="vertical" id="DK6-GM-51v">
+                                            <group width="0.29999999999999999" height="1" alignment="left" layout="vertical" spacing="1" id="DK6-GM-51v">
                                                 <items>
-                                                    <label width="49" height="18" alignment="left" text="24" textAlignment="center" id="D9L-Uz-Rvq">
+                                                    <label width="49" height="0.5" alignment="left" text="24" textAlignment="center" id="D9L-Uz-Rvq">
                                                         <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                                                     </label>
                                                     <label width="52" alignment="left" text="mins" textAlignment="center" id="SlW-OC-0ts">
@@ -34,7 +34,7 @@
                                                     </label>
                                                 </items>
                                             </group>
-                                            <label width="91" height="43" alignment="left" text="Ashton-under lyne" textAlignment="right" numberOfLines="0" id="t5V-ej-w3w">
+                                            <label width="0.69999999999999996" height="100" alignment="right" text="Ashton-under lyne" textAlignment="right" numberOfLines="0" id="t5V-ej-w3w">
                                                 <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                             </label>
                                         </items>

@@ -19,7 +19,10 @@ class AppCoordinator {
     
     public init(window: UIWindow) {
         self.window = window
-        tramsCoordinator = TramsCoordinator()
+        
+        WatchSessionManager.sharedManager.startSession()
+        
+        tramsCoordinator = TramsCoordinator(stationService: stationsService)
         tramsCoordinator.editButtonPressed = editTrams
         tramsCoordinator.start()
         navigationController.viewControllers = [tramsCoordinator.rootViewController]
@@ -30,7 +33,7 @@ class AppCoordinator {
     func editTrams() {
         let settingsCoordinator = SettingsCoordinator()
         settingsCoordinator.finish = { stations in
-            StationServiceAdapter().saveUsersStationRecords(stations: stations)
+            self.stationsService.saveUsersStationRecords(stations: stations)
             DispatchQueue.main.async {
                 self.tramsCoordinator.start()
                 self.navigationController.dismiss(animated: true)

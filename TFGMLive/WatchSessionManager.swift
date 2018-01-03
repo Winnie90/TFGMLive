@@ -41,31 +41,29 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
 
 extension WatchSessionManager {
     
-    func updateApplicationContext(applicationContext: [String : AnyObject]) throws {
-        if let session = validSession {
-            do {
-                try session.updateApplicationContext(applicationContext)
-            } catch let error {
-                throw error
-            }
-        }
-    }
-    
-    func transferUserInfo(applicationContext: [String : AnyObject]) {
-        if let session = validSession {
-            session.transferUserInfo(applicationContext)
-        }
-    }
-    
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
         if message["stationIdentifiers"] != nil {
-            let userStations = self.dataSourceChangedDelegate?.getUserStations()
-            let identifiers = userStations?.flatMap{$0.identifier} ?? []
-            var applicationContext: [String: Any] = [:]
-            for identifier in identifiers {
-                applicationContext["\(identifier)"] = ""
+            replyHandler(updateStationIdentifiers())
+        }
+    }
+    
+    private func updateStationIdentifiers() -> [String: Any] {
+        let userStations = self.dataSourceChangedDelegate?.getUserStations()
+        let identifiers = userStations?.flatMap{$0.identifier} ?? []
+        var applicationContext: [String: Any] = [:]
+        for identifier in identifiers {
+            applicationContext["\(identifier)"] = ""
+        }
+        return applicationContext
+    }
+    
+    func updateUserStation() {
+        if let session = validSession {
+            do {
+                try session.updateApplicationContext(self.updateStationIdentifiers())
+            } catch let error {
+                print(error.localizedDescription)
             }
-            replyHandler(applicationContext)
         }
     }
 }

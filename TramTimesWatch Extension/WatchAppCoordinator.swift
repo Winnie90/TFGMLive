@@ -13,10 +13,11 @@ class WatchAppCoordinator: WKInterfaceController, DataSourceChangedDelegate {
             for identifier in stationIdentifiers {
                 interfaceControllers.append((name: "StationInterfaceController", context: identifier as AnyObject))
             }
-            WatchAppCoordinator.reloadRootControllers(withNamesAndContexts: interfaceControllers)
-        } else {
-            WatchSessionManager.sharedManager.updateData()
+            DispatchQueue.main.async {
+                WatchAppCoordinator.reloadRootControllers(withNamesAndContexts: interfaceControllers)
+            }
         }
+        WatchSessionManager.sharedManager.updateData()
     }
     
     func dataSourceDidUpdate(dataSource: DataSource) {
