@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lDj-in-KCw">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,39 +9,62 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--StationInterfaceController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TramTimesWatch" customModuleProvider="target">
+                <controller identifier="StationInterfaceController" id="AgC-eL-Hgc" customClass="StationInterfaceController" customModule="TramTimesWatch_Extension">
                     <items>
                         <label alignment="left" text="Station Name" id="j3E-a5-wk3"/>
+                        <label alignment="left" text="Label" id="awe-vS-WaR">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <separator alignment="left" alpha="0.0" id="nt6-0e-pME"/>
+                        <table alignment="left" id="Rr6-8H-WqF">
+                            <items>
+                                <tableRow identifier="TramRowController" id="PeU-3g-69d" customClass="TramRowController" customModule="TramTimesWatch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="MHE-Zh-hJ8">
+                                        <items>
+                                            <group width="34" alignment="left" layout="vertical" id="DK6-GM-51v">
+                                                <items>
+                                                    <label width="49" height="18" alignment="left" text="24" textAlignment="center" id="D9L-Uz-Rvq">
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                                    </label>
+                                                    <label width="52" alignment="left" text="mins" textAlignment="center" id="SlW-OC-0ts">
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <label width="91" height="43" alignment="left" text="Ashton-under lyne" textAlignment="right" numberOfLines="0" id="t5V-ej-w3w">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="destinationLabel" destination="t5V-ej-w3w" id="nKD-jT-ZcV"/>
+                                        <outlet property="minsLabel" destination="SlW-OC-0ts" id="WgF-ES-DA7"/>
+                                        <outlet property="waitTimeLabel" destination="D9L-Uz-Rvq" id="TaG-pm-pnm"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
+                    <connections>
+                        <outlet property="retrievedLabel" destination="awe-vS-WaR" id="Ztx-Jo-dXb"/>
+                        <outlet property="stationLabel" destination="j3E-a5-wk3" id="bUi-YI-GZX"/>
+                        <outlet property="tramTable" destination="Rr6-8H-WqF" id="aI6-D0-TLI"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="704" y="348"/>
         </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <!--WatchAppCoordinator-->
+        <scene sceneID="JDg-qZ-oUH">
             <objects>
-                <notificationController id="YCC-NB-fut">
-                    <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
-                    </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
-                    <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
-                    </connections>
-                </notificationController>
+                <controller identifier="WatchAppCoordinator" id="lDj-in-KCw" customClass="WatchAppCoordinator" customModule="TramTimesWatch_Extension">
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
-            <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="TramTimesWatch" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="446" y="348"/>
         </scene>
     </scenes>
 </document>

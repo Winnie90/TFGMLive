@@ -1,7 +1,26 @@
 import Foundation
 import StationRequest
 
-struct StationServiceAdapter {
+struct StationServiceAdapter: DataSourceChangedDelegate {
+    
+    init() {
+        WatchSessionManager.sharedManager.addDataSourceChangedDelegate(delegate: self)
+    }
+    
+    func watchUpdateRequested() {
+        if let station = StationService.getUserStations().first {
+            getLatestDataForStation(station: StationPresentable(station: station), completion: { stationData in
+                var appContext = ["name": stationData.name]
+                var i = 0
+                for tram in stationData.trams {
+                    appContext["\(i)TramDestination"] = tram.destination
+                    appContext["\(i)TramWaitTime"] = tram.waitTime
+                    i += 1
+                }
+                WatchSessionManager.sharedManager.transferUserInfo(applicationContext: appContext as [String : AnyObject])
+            })
+        }
+    }
     
     func getAllStationRecords() -> [StationRecord] {
         var stations: [StationRecord] = []
@@ -19,7 +38,7 @@ struct StationServiceAdapter {
         return stations
     }
     
-    func getLatestDataForStations(station: StationPresentable, completion: @escaping (StationPresentable)->()) {
+    func getLatestDataForStation(station: StationPresentable, completion: @escaping (StationPresentable)->()) {
         return StationService.getLatestDataForStation(identifier: station.identifier, completion: { station in
             completion(StationPresentable(station: station))
         })

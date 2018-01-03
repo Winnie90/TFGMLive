@@ -28,7 +28,7 @@ class TramsCoordinator {
     private func newTramViewController(station: StationPresentable) -> UIViewController {
         let tramsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TramsTableViewController") as! TramsTableViewController
         tramsViewController.refreshData = {
-            self.stationService.getLatestDataForStations(station: station, completion: { station in
+            self.stationService.getLatestDataForStation(station: station, completion: { station in
                 tramsViewController.dataRefreshed(station: station)
             })
         }

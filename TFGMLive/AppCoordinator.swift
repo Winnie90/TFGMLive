@@ -41,3 +41,13 @@ class AppCoordinator {
         self.navigationController.present(settingsCoordinator.rootViewController, animated: true)
     }
 }
+
+extension Array {
+    public func toDictionary<Key: Hashable>(with selectKey: (Element) -> Key) -> [String:AnyObject] {
+        var dict = [String:AnyObject]()
+        for element in self {
+            dict["\(selectKey(element))"] = "\(NSUUID().uuidString)" as AnyObject
+        }
+        return dict
+    }
+}
