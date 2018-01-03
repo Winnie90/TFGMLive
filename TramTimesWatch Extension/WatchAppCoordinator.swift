@@ -1,7 +1,8 @@
 import Foundation
 import WatchKit
 
-class WatchAppCoordinator: WKInterfaceController {
+class WatchAppCoordinator: WKInterfaceController, DataSourceChangedDelegate {
+    
     
     let dataService = UserDataService()
     
@@ -13,11 +14,20 @@ class WatchAppCoordinator: WKInterfaceController {
                 interfaceControllers.append((name: "StationInterfaceController", context: identifier as AnyObject))
             }
             WatchAppCoordinator.reloadRootControllers(withNamesAndContexts: interfaceControllers)
+        } else {
+            WatchSessionManager.sharedManager.updateData()
+        }
+    }
+    
+    func dataSourceDidUpdate(dataSource: DataSource) {
+        if dataService.updatedIdentifiers(stationIdentifiers: dataSource.stationIdentifiers) {
+            setupInterfaces()
         }
     }
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        WatchSessionManager.sharedManager.addDataSourceChangedDelegate(delegate: self)
         setupInterfaces()
     }
     
@@ -27,5 +37,6 @@ class WatchAppCoordinator: WKInterfaceController {
     
     override func didDeactivate() {
         super.didDeactivate()
+        WatchSessionManager.sharedManager.addDataSourceChangedDelegate(delegate: self)
     }
 }

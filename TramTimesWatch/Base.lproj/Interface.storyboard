@@ -14,8 +14,8 @@
             <objects>
                 <controller identifier="StationInterfaceController" id="AgC-eL-Hgc" customClass="StationInterfaceController" customModule="TramTimesWatch_Extension">
                     <items>
-                        <label alignment="left" text="Station Name" id="j3E-a5-wk3"/>
-                        <label alignment="left" text="Label" id="awe-vS-WaR">
+                        <label alignment="left" text="Fetching..." id="j3E-a5-wk3"/>
+                        <label alignment="left" id="awe-vS-WaR">
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
                         <separator alignment="left" alpha="0.0" id="nt6-0e-pME"/>
@@ -61,7 +61,9 @@
         <scene sceneID="JDg-qZ-oUH">
             <objects>
                 <controller identifier="WatchAppCoordinator" id="lDj-in-KCw" customClass="WatchAppCoordinator" customModule="TramTimesWatch_Extension">
-                    <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <label width="136" height="100" alignment="left" text="Please add stations to your phone app to be displayed here" textAlignment="center" numberOfLines="0" id="4UK-q1-fnH"/>
+                    </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="446" y="348"/>

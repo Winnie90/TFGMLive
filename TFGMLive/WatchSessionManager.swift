@@ -58,8 +58,14 @@ extension WatchSessionManager {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-        if message["refresh"] != nil {
-            self.dataSourceChangedDelegate?.watchUpdateRequested()
+        if message["stationIdentifiers"] != nil {
+            let userStations = self.dataSourceChangedDelegate?.getUserStations()
+            let identifiers = userStations?.flatMap{$0.identifier} ?? []
+            var applicationContext: [String: Any] = [:]
+            for identifier in identifiers {
+                applicationContext["\(identifier)"] = ""
+            }
+            replyHandler(applicationContext)
         }
     }
 }
@@ -71,5 +77,5 @@ extension WatchSessionManager {
 }
 
 protocol DataSourceChangedDelegate {
-    func watchUpdateRequested()
+    func getUserStations() -> [StationPresentable]
 }

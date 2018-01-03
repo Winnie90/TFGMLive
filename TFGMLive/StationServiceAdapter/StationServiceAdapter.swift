@@ -7,21 +7,6 @@ struct StationServiceAdapter: DataSourceChangedDelegate {
         WatchSessionManager.sharedManager.addDataSourceChangedDelegate(delegate: self)
     }
     
-    func watchUpdateRequested() {
-        if let station = StationService.getUserStations().first {
-            getLatestDataForStation(station: StationPresentable(station: station), completion: { stationData in
-                var appContext = ["name": stationData.name]
-                var i = 0
-                for tram in stationData.trams {
-                    appContext["\(i)TramDestination"] = tram.destination
-                    appContext["\(i)TramWaitTime"] = tram.waitTime
-                    i += 1
-                }
-                WatchSessionManager.sharedManager.transferUserInfo(applicationContext: appContext as [String : AnyObject])
-            })
-        }
-    }
-    
     func getAllStationRecords() -> [StationRecord] {
         var stations: [StationRecord] = []
         for station in StationService.getAllStations() {

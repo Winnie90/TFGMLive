@@ -33,7 +33,7 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
     }
 
     func updateData() {
-        session.sendMessage(["refresh":Date()],
+        session.sendMessage(["stationIdentifiers":Date()],
         replyHandler: { data in
             self.dataSourceChangedDelegates.forEach { $0.dataSourceDidUpdate(dataSource: DataSource(data: data))}
         }) { error in
@@ -57,20 +57,10 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
 
 struct DataSource {
     
-    let name: String
-    let tramDestination: String
-    let tramWaitTime: String
+    let stationIdentifiers: [String]
     
     init(data: [String : Any]) {
-        self.name = data["name"] as! String
-        if let tramDestination = data["0TramDestination"] as? String,
-            let tramWaitTime = data["0TramWaitTime"] as? String {
-            self.tramDestination = tramDestination
-            self.tramWaitTime = tramWaitTime
-        } else {
-            self.tramDestination = ""
-            self.tramWaitTime = ""
-        }
+        self.stationIdentifiers = Array(data.keys)
     }
 }
 

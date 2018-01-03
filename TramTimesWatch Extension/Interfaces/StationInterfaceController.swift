@@ -8,11 +8,11 @@ class StationInterfaceController: WKInterfaceController {
     @IBOutlet var retrievedLabel: WKInterfaceLabel!
     @IBOutlet var tramTable: WKInterfaceTable!
     
-    var stationIdentifier: Int?
+    var stationIdentifier: String?
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        stationIdentifier = context as! Int?
+        stationIdentifier = context as? String
     }
     
     override func willActivate() {

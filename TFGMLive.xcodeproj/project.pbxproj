@@ -481,9 +481,9 @@
 			children = (
 				83C997D51FF9ACE40034F8E1 /* ExtensionDelegate.swift */,
 				83D639821FFCD56C001B4EA7 /* WatchAppCoordinator.swift */,
+				83C997D91FF9ACE40034F8E1 /* ComplicationController.swift */,
 				83D639861FFCD6F9001B4EA7 /* DataServices */,
 				83D6398B1FFCE740001B4EA7 /* Interfaces */,
-				83C997D91FF9ACE40034F8E1 /* ComplicationController.swift */,
 				83C997DB1FF9ACE40034F8E1 /* Assets.xcassets */,
 				83C997DD1FF9ACE40034F8E1 /* Info.plist */,
 			);

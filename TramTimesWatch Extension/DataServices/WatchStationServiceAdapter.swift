@@ -2,10 +2,12 @@ import WatchStationRequest
 
 struct StationServiceAdapter {
     
-    static func getLatestDataForStationIdentifier(identifier: Int, completion: @escaping (WatchStationPresentable)->()) {
-        StationService.getLatestDataForStation(identifier: identifier, completion: { station in
-            completion(WatchStationPresentable(station: station))
-        })
+    static func getLatestDataForStationIdentifier(identifier: String, completion: @escaping (WatchStationPresentable)->()) {
+        if let identifier = Int(identifier) {
+            StationService.getLatestDataForStation(identifier: identifier, completion: { station in
+                completion(WatchStationPresentable(station: station))
+            })
+        }
     }
     
 }
