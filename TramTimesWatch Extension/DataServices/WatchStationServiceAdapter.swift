@@ -1,6 +1,6 @@
 import WatchStationRequest
 
-struct StationServiceAdapter {
+struct WatchStationServiceAdapter {
     
     static func getLatestDataForStationIdentifier(identifier: String, completion: @escaping (WatchStationPresentable)->()) {
         if let identifier = Int(identifier) {

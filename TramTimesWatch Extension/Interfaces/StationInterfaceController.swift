@@ -18,7 +18,7 @@ class StationInterfaceController: WKInterfaceController {
     override func willActivate() {
         super.willActivate()
         if let identifier = stationIdentifier {
-            StationServiceAdapter.getLatestDataForStationIdentifier(identifier: identifier, completion: { station in
+            WatchStationServiceAdapter.getLatestDataForStationIdentifier(identifier: identifier, completion: { station in
                 self.stationLabel.setText(station.name)
                 self.retrievedLabel.setText(station.retrievedAt)
                 self.tramTable.setNumberOfRows(station.trams.count, withRowType: "TramRowController")

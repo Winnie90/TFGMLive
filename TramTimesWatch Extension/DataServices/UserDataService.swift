@@ -14,4 +14,13 @@ struct UserDataService {
             return false
         }
     }
+    
+    func getComplicationRetrievalDate() -> Date {
+        return UserDefaults.standard.object(forKey: "retrievalDate") as? Date ?? Date.init(timeIntervalSince1970: 0)
+    }
+    
+    func setComplicationRetrievalDate() {
+        UserDefaults.standard.set(Date(), forKey: "retrievalDate")
+    }
+    
 }
