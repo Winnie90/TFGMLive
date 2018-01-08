@@ -88,15 +88,16 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        retrieveUpdate {
-            if let tram = self.retrievedStation?.trams[0],
-                let template = self.templateFor(complicationFamily: complication.family, tramDestination: tram.destination, tramWaitTime: self.convertWaitTime(waitTime: tram.waitTime)){
-                let timeLineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
-                handler(timeLineEntry)
-            } else {
-                handler(nil)
-            }
-        }
+//        retrieveUpdate {
+//            if let tram = self.retrievedStation?.trams[0],
+//                let template = self.templateFor(complicationFamily: complication.family, tramDestination: tram.destination, tramWaitTime: self.convertWaitTime(waitTime: tram.waitTime)){
+//                let timeLineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+//                handler(timeLineEntry)
+//            } else {
+//                handler(nil)
+//            }
+//        }
+        handler(nil)
     }
     
     func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
@@ -105,7 +106,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
     
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-        retrieveUpdate {
+        /*retrieveUpdate {
             if let tram = self.retrievedStation?.trams[0],
                 let waitTime = Int(tram.waitTime) {
                 var timeLineEntries:[CLKComplicationTimelineEntry] = []
@@ -121,13 +122,14 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             } else {
                 handler(nil)
             }
-        }
+        }*/
+        handler(nil)
     }
     
     // MARK: - Placeholder Templates
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
-        var template: CLKComplicationTemplate? = nil
+        /*var template: CLKComplicationTemplate? = nil
         switch complication.family {
         case .modularSmall:
             let modularTemplate = CLKComplicationTemplateModularSmallStackText()
@@ -165,7 +167,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             modularTemplate.line1TextProvider = CLKSimpleTextProvider(text: "Eccles:")
             modularTemplate.line2TextProvider = CLKSimpleTextProvider(text: "6 mins")
             template = modularTemplate
-        }
-        handler(template)
+        }*/
+        handler(nil)
     }
 }
