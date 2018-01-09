@@ -14,6 +14,7 @@ FOUNDATION_EXPORT double WatchStationRequestVersionNumber;
 //! Project version string for WatchStationRequest.
 FOUNDATION_EXPORT const unsigned char WatchStationRequestVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <WatchStationRequest/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like
+#import "WatchStationRequest/StationRequest.h"
 
 
