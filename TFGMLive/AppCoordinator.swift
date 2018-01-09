@@ -1,5 +1,5 @@
-
 import UIKit
+import Firebase
 
 class AppCoordinator {
     
@@ -20,14 +20,27 @@ class AppCoordinator {
     public init(window: UIWindow) {
         self.window = window
         
-        WatchSessionManager.sharedManager.startSession()
-        
         tramsCoordinator = TramsCoordinator(stationService: stationsService)
+
+        setupAnalytics()
+        setupWatchConnection()
+        setupNavigation()
+    }
+    
+    func setupAnalytics() {
+        FirebaseApp.configure()
+    }
+    
+    func setupWatchConnection() {
+        WatchSessionManager.sharedManager.startSession()
+    }
+    
+    func setupNavigation() {
         tramsCoordinator.editButtonPressed = editTrams
         tramsCoordinator.start()
         navigationController.viewControllers = [tramsCoordinator.rootViewController]
-        self.window.rootViewController = navigationController
-        self.window.makeKeyAndVisible()
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
     }
     
     func editTrams() {

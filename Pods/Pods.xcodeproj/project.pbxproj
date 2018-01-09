@@ -1,0 +1,1982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04FD2A8447C3A8513ECA2F34ACA0312E /* Pods-TramTimesWatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C532E77EAA433378465E0DE3A9DC3B /* Pods-TramTimesWatch-dummy.m */; };
+		05B1F02560378D28FEBD4E8F6D293216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		17B79096EF6FD424DE0AA46B6AF8BF49 /* Pods-TramTimesWatch Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1583F2D25F85FFBF54E9512CE3D09877 /* Pods-TramTimesWatch Extension-dummy.m */; };
+		216BC2DC92E49E876B6D633C2125B1BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		25682BBCE00DE51F91664DA071A320F1 /* Pods-TramTimesWatch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFB5D92F7B89A55D2F3B7111E4199C8 /* Pods-TramTimesWatch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B41D7DB8B460A06722EC93293B3A7A7 /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 48FE0033A88C05424DF6DA0C09F6D13E /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = FAC651D177C05BB774AA2F2F100AB3B2 /* pb_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc -fno-objc-arc"; }; };
+		3E3711D20F077D203AE9D16573E9A0CA /* Pods-StationRequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC799117676B02925EFF025D5F435BB /* Pods-StationRequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4110B226DB9391BFD158947AD05DFDBA /* Pods-TFGMLiveTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DFE478542B565982E3A5B4D23C5F9 /* Pods-TFGMLiveTests-dummy.m */; };
+		4292E2974B1C40E637874F28AE8A2D1E /* Pods-TFGMLiveTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB15F181F678161DF614D8710BFADB6 /* Pods-TFGMLiveTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4503390D2B6CAECB81A15A844D22A038 /* Pods-TramTimesWidget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2463C6010196006836C1915D32BC2E4A /* Pods-TramTimesWidget-dummy.m */; };
+		468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D9A8674153AD6C554AF25F350947E /* nanopb-dummy.m */; };
+		4F6510CACF4CBE6E2B261BBDDFF96ABA /* Pods-TramTimesWidget-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C428555012A59451E76B18E8A664A33A /* Pods-TramTimesWidget-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = E11EEB176E032581D752CA82F360BEDC /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = E7EC51EAC74BD8C25EAA5287068702A8 /* pb_decode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = A034E55619E4F7F753FD82F9C636E5D9 /* pb_encode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		59C513BA657340CD5EBFE88B8C3406FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		62D5FDF2548CA568FC7C2E452E237EF1 /* Pods-WatchStationRequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAAF49ED4C06328932B55562045D2D94 /* Pods-WatchStationRequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70A9D2A001C9213CEED3BC8A1578431D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76720B026417625FB62285B73CECF0BF /* Foundation.framework */; };
+		70C8D9A616795767E288E665C16E51E3 /* Pods-TramTimesWatch Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 512A068970CA39D14274B62E74A075C5 /* Pods-TramTimesWatch Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		772C850F29D529B58BD2C724039C8E89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		795163F6D9BE668876C3ED8C432BDA36 /* Pods-StationRequestTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F017D1E3A9BDE261FED9A4D5DEED89 /* Pods-StationRequestTests-dummy.m */; };
+		7E0DBD95407F5EA11F575955E5F34553 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = D6714F3250272792B3E2C3339A3EFD83 /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC924E61CD46C849C5C6CA1523A7214 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EDB7A9B6C65E5194C42B88932E9DABE /* Pods-TFGMLive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5067D56723E2BA9D2BB551DD3E5F6AB2 /* Pods-TFGMLive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9305AA2DF64FC08A2A911912101615E4 /* Pods-WatchStationRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F533E121F9FAC03A650AFFCAB8D4882 /* Pods-WatchStationRequest-dummy.m */; };
+		93D51748565CFEB9490FBA7DA993C5C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		AC2718640983B20C5EE24026FD595C39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76720B026417625FB62285B73CECF0BF /* Foundation.framework */; };
+		B136BFF5EE6B41E129C2D220F7A20EEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76720B026417625FB62285B73CECF0BF /* Foundation.framework */; };
+		DBBD9455DB52E327EAACCBC60CBAD9B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DBDA1689D73B0D507F18326CA5591B4 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 18537095DB2347C47190BA1CCD769342 /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F19C3A53F9828EEE0CF9A1BA5F86B850 /* Pods-StationRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED81E88272AE1DF23B0C2E25B0CB2 /* Pods-StationRequest-dummy.m */; };
+		F3D8C6570EDDE616B6AAFA568D6129D5 /* Pods-StationRequestTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC35CCCD395F6D51F16051C813F0EEA /* Pods-StationRequestTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9086FE4276DE152DA39E37884780C /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F89E57B047D5EAC5AD774608F0B33C1F /* Pods-TFGMLive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B3616862906C425B18D58534D3AC49 /* Pods-TFGMLive-dummy.m */; };
+		F9D92BA503505CB48EF4ECF0DDF57686 /* nanopb-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA6E1BA1FAB339158FACB50A50997DB /* nanopb-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F60214F69936D9862C728A426E184C /* GoogleToolboxForMac-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25C9AA75A3E1DCFBA6C6772397D60C60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4DD95323C54A78F879DAB0F1508B8E7;
+			remoteInfo = nanopb;
+		};
+		EC8D613A1F63AA6E7237A1D875C99688 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
+			remoteInfo = GoogleToolboxForMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A4B8C77809DBA9E4735D03E656A060 /* Pods_TFGMLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TFGMLive.framework; path = "Pods-TFGMLive.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0259DA2F2FDD37AEA3CB1FD9231FB77C /* Pods-TFGMLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFGMLiveTests.release.xcconfig"; sourceTree = "<group>"; };
+		07664F5577BB67704E26FBEF9B9E6FC4 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		09378CC797D03E09E9DC4BDB1384CA36 /* Pods-TFGMLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFGMLive.release.xcconfig"; sourceTree = "<group>"; };
+		0AFB5D92F7B89A55D2F3B7111E4199C8 /* Pods-TramTimesWatch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TramTimesWatch-umbrella.h"; sourceTree = "<group>"; };
+		0B41D7DB8B460A06722EC93293B3A7A7 /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
+		0BA187A4A96A410C90333EE5FE4CB8DA /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		0EDE8DC156488A35537F225FE0DFDA95 /* Pods-TramTimesWatch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TramTimesWatch-resources.sh"; sourceTree = "<group>"; };
+		0F5C3C5EE05A4E9C8D01A5896AD4BA78 /* Pods-StationRequestTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-StationRequestTests.modulemap"; sourceTree = "<group>"; };
+		114978E3185093091A7653F0B5A5A8D8 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		13C532E77EAA433378465E0DE3A9DC3B /* Pods-TramTimesWatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TramTimesWatch-dummy.m"; sourceTree = "<group>"; };
+		1583F2D25F85FFBF54E9512CE3D09877 /* Pods-TramTimesWatch Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TramTimesWatch Extension-dummy.m"; sourceTree = "<group>"; };
+		1837F262CD62ACF9F262AC484DC71E17 /* Pods-WatchStationRequest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchStationRequest-acknowledgements.plist"; sourceTree = "<group>"; };
+		18537095DB2347C47190BA1CCD769342 /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
+		1AD8E93217DC8C3DB12CF50886C36B58 /* Pods_StationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StationRequest.framework; path = "Pods-StationRequest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3449432E19D1BBAA1A364C7218DACD /* Pods-WatchStationRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WatchStationRequest.modulemap"; sourceTree = "<group>"; };
+		1D48C633EC85BE627C7E9F2FF2775B96 /* Pods-StationRequestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StationRequestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1EB664BE6AB00DAF71FCB9656EAEDF6C /* Pods_TramTimesWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TramTimesWidget.framework; path = "Pods-TramTimesWidget.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20BB54479618A12331A2A4D3892FE802 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F65FB5F18A00CEBCE7DC421CD4154F /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22118000C880024C41E46729934F4B6E /* Pods-TFGMLiveTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFGMLiveTests-resources.sh"; sourceTree = "<group>"; };
+		2463C6010196006836C1915D32BC2E4A /* Pods-TramTimesWidget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TramTimesWidget-dummy.m"; sourceTree = "<group>"; };
+		28FC58485FBCCA50AB1442E6466628DE /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		2A7864304BA85EB7259F36C994A51E57 /* Pods-TramTimesWatch Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TramTimesWatch Extension-frameworks.sh"; sourceTree = "<group>"; };
+		2E440734E98E06A916561EB3E44FB9D5 /* Pods-TFGMLive-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFGMLive-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E56AF2D0B55E00C2754CED0031CADCB /* Pods-TramTimesWatch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TramTimesWatch-acknowledgements.markdown"; sourceTree = "<group>"; };
+		372EAF593E9EBE090FED94250BAD885C /* Pods-WatchStationRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchStationRequest.debug.xcconfig"; sourceTree = "<group>"; };
+		3AC9A7E5183AE319C6B739664065D677 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		3E3C31F23CEF4544E28D0289A1BAB4C3 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		42719F18F68E01286739C8224FD07593 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		44515004AE1812F5E8D95DDD909D4B29 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		46060CDF0DE6A5B42DABAFDD555E70E2 /* Pods-TramTimesWatch Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TramTimesWatch Extension.modulemap"; sourceTree = "<group>"; };
+		46458DD4DC1DFD641FDFCA46DE8C2E11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4754511AAF63297AA2E0CD94C5C9ED7F /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		47F60214F69936D9862C728A426E184C /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		48FE0033A88C05424DF6DA0C09F6D13E /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
+		4AB8F00EBB498C612597B6118795A1E6 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		4C0DFE478542B565982E3A5B4D23C5F9 /* Pods-TFGMLiveTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TFGMLiveTests-dummy.m"; sourceTree = "<group>"; };
+		4F533E121F9FAC03A650AFFCAB8D4882 /* Pods-WatchStationRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchStationRequest-dummy.m"; sourceTree = "<group>"; };
+		5067D56723E2BA9D2BB551DD3E5F6AB2 /* Pods-TFGMLive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TFGMLive-umbrella.h"; sourceTree = "<group>"; };
+		512A068970CA39D14274B62E74A075C5 /* Pods-TramTimesWatch Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TramTimesWatch Extension-umbrella.h"; sourceTree = "<group>"; };
+		5189BC1BF6475522319BE76D1C78A20F /* Pods-TramTimesWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TramTimesWatch.release.xcconfig"; sourceTree = "<group>"; };
+		5A7D9A8674153AD6C554AF25F350947E /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
+		5F381C3A9AD438802F6D7510C293E739 /* Pods-TramTimesWatch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TramTimesWatch.modulemap"; sourceTree = "<group>"; };
+		61314601700C51C28F72121C2EDA2866 /* Pods_TramTimesWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TramTimesWatch.framework; path = "Pods-TramTimesWatch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		643FCF2AED167003F9E4668F373A1423 /* Pods-TramTimesWatch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TramTimesWatch-acknowledgements.plist"; sourceTree = "<group>"; };
+		678E1A0EEA934F1E7D1421A69EB27423 /* Pods-TramTimesWatch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TramTimesWatch-frameworks.sh"; sourceTree = "<group>"; };
+		68485D8D471F7C73AA0926096B7DD391 /* Pods-StationRequest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StationRequest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6BD6A7FD07898152CD2A0B04A4EBF7C7 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		6DBDA1689D73B0D507F18326CA5591B4 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		6EE269AB1A588FC12281EB6A0591B335 /* Pods-TramTimesWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TramTimesWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		71322151CD28DE5C5C838601C57E872D /* Pods-StationRequestTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StationRequestTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		72B9411BA79729014EA3FE7954DBD954 /* Pods_WatchStationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WatchStationRequest.framework; path = "Pods-WatchStationRequest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7349D2D070BEC563AF4E93D912B0AABF /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74EA429B2165B96BB754EE01B48FF3D5 /* Pods-TFGMLive-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFGMLive-frameworks.sh"; sourceTree = "<group>"; };
+		74EAE3258767DC1037ACA16AC7F2B9BB /* Pods-TramTimesWidget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TramTimesWidget.modulemap"; sourceTree = "<group>"; };
+		763B6B75AE10133697A142AF8C8549EC /* Pods-WatchStationRequest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchStationRequest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		76720B026417625FB62285B73CECF0BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		793A6D32EA6093573F54917AFDE5F34A /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = nanopb.modulemap; sourceTree = "<group>"; };
+		7E7AFB03BC31C838E09A06EE58FAEFEE /* Pods-StationRequestTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StationRequestTests-resources.sh"; sourceTree = "<group>"; };
+		8057930A1A2F899FE45CF16AADD47FC1 /* Pods-TFGMLiveTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFGMLiveTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		83869BB2B7327AEDC6FD5DFD5B4145DA /* Pods-TramTimesWidget-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TramTimesWidget-acknowledgements.markdown"; sourceTree = "<group>"; };
+		83DA234A22432CB073113AC54794B038 /* Pods-TFGMLive-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TFGMLive-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C06808E65EE2C52A8166AE3DA2F8E7C /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		8D7ED81E88272AE1DF23B0C2E25B0CB2 /* Pods-StationRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StationRequest-dummy.m"; sourceTree = "<group>"; };
+		8DC3D9DEC64B8E27B0BD9AA31F11F4AF /* Pods-TramTimesWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TramTimesWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		8EC9086FE4276DE152DA39E37884780C /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		8FE7908F4F083B6C12DC52A50F13E0D7 /* Pods-StationRequest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StationRequest-acknowledgements.plist"; sourceTree = "<group>"; };
+		913189910F1F17DE9A4E5DA1DBD29D09 /* Pods-TramTimesWidget-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TramTimesWidget-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99CFFB62DFD65E8FBB5A46BB75AFE2AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99FA7E0B2C58F5633DCB83B37F0EBE3A /* Pods-TFGMLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFGMLive.debug.xcconfig"; sourceTree = "<group>"; };
+		9FE4B1A265247DD4A7F45E6DC5D21C75 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
+		9FFC09B96052334E77AA941D5FD69749 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
+		A034E55619E4F7F753FD82F9C636E5D9 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		A43105F19021A7740EAA7959E3A3DD07 /* Pods_TramTimesWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TramTimesWatch_Extension.framework; path = "Pods-TramTimesWatch Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A53656AA7432FCDF74E44E3CE578E232 /* Pods-TramTimesWidget-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TramTimesWidget-resources.sh"; sourceTree = "<group>"; };
+		A59ED6AA4B417A0CDD1F5E6C254B7CDB /* Pods-StationRequestTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StationRequestTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A5FBEB8E5ADECA36C8114E2BF1710EEA /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		A6DE92A6AD978B533AFE435E39A41EB4 /* Pods-TFGMLiveTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TFGMLiveTests.modulemap"; sourceTree = "<group>"; };
+		A82AFED430FAC1A1B3082AEAF50F1978 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AABE4DFFBA7C18FA27EFCAC57AFA4DC8 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		ACB2C7784E373BB48B2AAA28ED8E848D /* Pods-TFGMLive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TFGMLive.modulemap"; sourceTree = "<group>"; };
+		ACC35CCCD395F6D51F16051C813F0EEA /* Pods-StationRequestTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StationRequestTests-umbrella.h"; sourceTree = "<group>"; };
+		AE315CD178E2153F890FDD15C902A9E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA6E1BA1FAB339158FACB50A50997DB /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
+		B0E6FE43370ABC79D6D8385833F99ED0 /* Pods-WatchStationRequest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchStationRequest-resources.sh"; sourceTree = "<group>"; };
+		B1813D48E20606D30B92ED2569E69E5D /* Pods-TFGMLiveTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TFGMLiveTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BAAF49ED4C06328932B55562045D2D94 /* Pods-WatchStationRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatchStationRequest-umbrella.h"; sourceTree = "<group>"; };
+		BE5ADBE5746547D37EE0DD2E30286516 /* Pods-WatchStationRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchStationRequest.release.xcconfig"; sourceTree = "<group>"; };
+		BEA4A28CCCDFE0C4226E0346116334E5 /* Pods-TramTimesWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TramTimesWidget.release.xcconfig"; sourceTree = "<group>"; };
+		C214C0775D18F8177411FA06AEDEDEB1 /* Pods_StationRequestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StationRequestTests.framework; path = "Pods-StationRequestTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C428555012A59451E76B18E8A664A33A /* Pods-TramTimesWidget-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TramTimesWidget-umbrella.h"; sourceTree = "<group>"; };
+		C90CE162C000228792F268156EFC4D30 /* Pods-TFGMLive-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFGMLive-resources.sh"; sourceTree = "<group>"; };
+		CAF1CD2EEA955F4D536CB86C3EFE35F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9281FEADD4ED9D3A036F865248CBA7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4390F2C7055B67A8A686837EF83FC6 /* Pods-TramTimesWatch Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TramTimesWatch Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		CEF13793881861E1E4BA5B6CC3117F79 /* Pods-TFGMLiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFGMLiveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D169476A3981058DE1B50E78A43325B5 /* Pods-StationRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StationRequest.release.xcconfig"; sourceTree = "<group>"; };
+		D53FA6A545A0632F5668FC9A2D6E4A10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6482329836C8D49FD6025E47B01470B /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		D6714F3250272792B3E2C3339A3EFD83 /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
+		D7B3616862906C425B18D58534D3AC49 /* Pods-TFGMLive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TFGMLive-dummy.m"; sourceTree = "<group>"; };
+		D82B8DFB678C884644CC68124E24E513 /* Pods-StationRequest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StationRequest-resources.sh"; sourceTree = "<group>"; };
+		DBCAE53DC1AF3892D8704A3A56C3F537 /* Pods-TFGMLiveTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFGMLiveTests-frameworks.sh"; sourceTree = "<group>"; };
+		DE50CB33B0E682439CFC82DA90B15904 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E02FBA95A40DBFDEFE5FA04A96FEA1B0 /* Pods-StationRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-StationRequest.modulemap"; sourceTree = "<group>"; };
+		E10972F2E58FE070F53C69F5DB77CD0C /* Pods-StationRequestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StationRequestTests.release.xcconfig"; sourceTree = "<group>"; };
+		E11EEB176E032581D752CA82F360BEDC /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		E2055C55A180165B34C0FD4A2CBDF147 /* Pods-TramTimesWatch Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TramTimesWatch Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2FB4A43B5DE73CE9C96AD123C5BB955 /* Pods-StationRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StationRequest.debug.xcconfig"; sourceTree = "<group>"; };
+		E3D653195E7859D63F02CF78C322B418 /* Pods_TFGMLiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TFGMLiveTests.framework; path = "Pods-TFGMLiveTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CC6A65A222DDF81A3EED881C866C37 /* Pods-TramTimesWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TramTimesWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		E57B66F4F8A84E0B5FB91B26D249A905 /* Pods-StationRequestTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StationRequestTests-frameworks.sh"; sourceTree = "<group>"; };
+		E7EC51EAC74BD8C25EAA5287068702A8 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		E806D691266722E6BD192880DA1F9B3B /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		E85F1FECF62110C98EC087462F9B0EF8 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		E8F017D1E3A9BDE261FED9A4D5DEED89 /* Pods-StationRequestTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StationRequestTests-dummy.m"; sourceTree = "<group>"; };
+		EBFDAE1F78F2F53642B823587D289130 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE87FA8B91F6523099A22D8A716B96E9 /* Pods-TramTimesWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TramTimesWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		EEC924E61CD46C849C5C6CA1523A7214 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		EEE061C7A7229C7E0B9C1D8582A3018E /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		F8DED048140C9E56FDA1FA0013405965 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		FAC651D177C05BB774AA2F2F100AB3B2 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		FAC799117676B02925EFF025D5F435BB /* Pods-StationRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StationRequest-umbrella.h"; sourceTree = "<group>"; };
+		FBF7B17824BEFC3CAD684853119D6D1F /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		FDB15F181F678161DF614D8710BFADB6 /* Pods-TFGMLiveTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TFGMLiveTests-umbrella.h"; sourceTree = "<group>"; };
+		FEE66B9AE35FC0108C82745E26AA5E9D /* Pods-TramTimesWatch Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TramTimesWatch Extension-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A413FC65C146ED904D3D5AE7BDD07F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC2718640983B20C5EE24026FD595C39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DC1FB866592F1BAEA0EF323959D3626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBD9455DB52E327EAACCBC60CBAD9B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8336AA71F5BB9253564A0D1EBA635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0DBD95407F5EA11F575955E5F34553 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9459B038013CAF59BADFF5980E12928A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772C850F29D529B58BD2C724039C8E89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971041836592E28ADEEDA495A96A62A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B1F02560378D28FEBD4E8F6D293216 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19234C3EA2C8D9DF6BB7287CD5718F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59C513BA657340CD5EBFE88B8C3406FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2527CB15B900A7197306C983DC50DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A9D2A001C9213CEED3BC8A1578431D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2A4D66379C1F2EEC727C5304C89BEA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B136BFF5EE6B41E129C2D220F7A20EEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5388DCFB0DE0D4EB231E00C6CE19C06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				216BC2DC92E49E876B6D633C2125B1BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D51748565CFEB9490FBA7DA993C5C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AC67979AF2DB23CB1F8D521167187C4 /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				6DBDA1689D73B0D507F18326CA5591B4 /* GTMNSData+zlib.h */,
+				8EC9086FE4276DE152DA39E37884780C /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		0CC7415A579EDFFBE58BC3E2F4DE24A8 /* encode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = encode;
+			sourceTree = "<group>";
+		};
+		10131FE2830FC5EDCE1F1481A641E3DB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADF425C951CD06AA778820F57C66C695 /* Pods-StationRequest */,
+				88117786B4679646BFFB95436BC78569 /* Pods-StationRequestTests */,
+				3C1BCCACC672C350D1229EDFF05AF962 /* Pods-TFGMLive */,
+				BC1A98BA80EAB9A0B216D414C638AB73 /* Pods-TFGMLiveTests */,
+				B36B243E4D9B3E9C6FE48FE7BD517A30 /* Pods-TramTimesWatch */,
+				FB72F2710FC15A932E856ED587E91CB3 /* Pods-TramTimesWatch Extension */,
+				39B72280B8E3A305B18834866EE19A1C /* Pods-TramTimesWidget */,
+				B259BDE79ACCE90C23D30DC7082172CE /* Pods-WatchStationRequest */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		10E6878D5159323B363BF58B08C38307 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E806D691266722E6BD192880DA1F9B3B /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		154E068D5084E10D35BE3FD4E8F00296 /* decode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = decode;
+			sourceTree = "<group>";
+		};
+		258CF71077289A938D461AC88F3984B0 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				3E3C31F23CEF4544E28D0289A1BAB4C3 /* ANSCompatibility.h */,
+				4754511AAF63297AA2E0CD94C5C9ED7F /* Answers.h */,
+				6BD6A7FD07898152CD2A0B04A4EBF7C7 /* CLSAttributes.h */,
+				114978E3185093091A7653F0B5A5A8D8 /* CLSLogging.h */,
+				4AB8F00EBB498C612597B6118795A1E6 /* CLSReport.h */,
+				FBF7B17824BEFC3CAD684853119D6D1F /* CLSStackFrame.h */,
+				44515004AE1812F5E8D95DDD909D4B29 /* Crashlytics.h */,
+				BB9E0B632530C71031FADB64BAE96CF3 /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		2729CB11D3ADCB1E84DE4F3523B6ECB7 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				10E6878D5159323B363BF58B08C38307 /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		307C7AD60395C96DEC5313BFE350C3D7 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				D3CF7F84AFE4F0BEE8A4A204E4457236 /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		380FD3BD986D4D88ECBDC1F6F593D6C9 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				87F12300E927D9D2D7562444FDE6CF3B /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		38EE0A8203EBA2B30EF775B1A8572D86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20F65FB5F18A00CEBCE7DC421CD4154F /* GoogleToolboxForMac.framework */,
+				7349D2D070BEC563AF4E93D912B0AABF /* nanopb.framework */,
+				1AD8E93217DC8C3DB12CF50886C36B58 /* Pods_StationRequest.framework */,
+				C214C0775D18F8177411FA06AEDEDEB1 /* Pods_StationRequestTests.framework */,
+				01A4B8C77809DBA9E4735D03E656A060 /* Pods_TFGMLive.framework */,
+				E3D653195E7859D63F02CF78C322B418 /* Pods_TFGMLiveTests.framework */,
+				61314601700C51C28F72121C2EDA2866 /* Pods_TramTimesWatch.framework */,
+				A43105F19021A7740EAA7959E3A3DD07 /* Pods_TramTimesWatch_Extension.framework */,
+				1EB664BE6AB00DAF71FCB9656EAEDF6C /* Pods_TramTimesWidget.framework */,
+				72B9411BA79729014EA3FE7954DBD954 /* Pods_WatchStationRequest.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39B72280B8E3A305B18834866EE19A1C /* Pods-TramTimesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A82AFED430FAC1A1B3082AEAF50F1978 /* Info.plist */,
+				74EAE3258767DC1037ACA16AC7F2B9BB /* Pods-TramTimesWidget.modulemap */,
+				83869BB2B7327AEDC6FD5DFD5B4145DA /* Pods-TramTimesWidget-acknowledgements.markdown */,
+				913189910F1F17DE9A4E5DA1DBD29D09 /* Pods-TramTimesWidget-acknowledgements.plist */,
+				2463C6010196006836C1915D32BC2E4A /* Pods-TramTimesWidget-dummy.m */,
+				A53656AA7432FCDF74E44E3CE578E232 /* Pods-TramTimesWidget-resources.sh */,
+				C428555012A59451E76B18E8A664A33A /* Pods-TramTimesWidget-umbrella.h */,
+				EE87FA8B91F6523099A22D8A716B96E9 /* Pods-TramTimesWidget.debug.xcconfig */,
+				BEA4A28CCCDFE0C4226E0346116334E5 /* Pods-TramTimesWidget.release.xcconfig */,
+			);
+			name = "Pods-TramTimesWidget";
+			path = "Target Support Files/Pods-TramTimesWidget";
+			sourceTree = "<group>";
+		};
+		3C1BCCACC672C350D1229EDFF05AF962 /* Pods-TFGMLive */ = {
+			isa = PBXGroup;
+			children = (
+				99CFFB62DFD65E8FBB5A46BB75AFE2AD /* Info.plist */,
+				ACB2C7784E373BB48B2AAA28ED8E848D /* Pods-TFGMLive.modulemap */,
+				83DA234A22432CB073113AC54794B038 /* Pods-TFGMLive-acknowledgements.markdown */,
+				2E440734E98E06A916561EB3E44FB9D5 /* Pods-TFGMLive-acknowledgements.plist */,
+				D7B3616862906C425B18D58534D3AC49 /* Pods-TFGMLive-dummy.m */,
+				74EA429B2165B96BB754EE01B48FF3D5 /* Pods-TFGMLive-frameworks.sh */,
+				C90CE162C000228792F268156EFC4D30 /* Pods-TFGMLive-resources.sh */,
+				5067D56723E2BA9D2BB551DD3E5F6AB2 /* Pods-TFGMLive-umbrella.h */,
+				99FA7E0B2C58F5633DCB83B37F0EBE3A /* Pods-TFGMLive.debug.xcconfig */,
+				09378CC797D03E09E9DC4BDB1384CA36 /* Pods-TFGMLive.release.xcconfig */,
+			);
+			name = "Pods-TFGMLive";
+			path = "Target Support Files/Pods-TFGMLive";
+			sourceTree = "<group>";
+		};
+		40C904852E6204011CB3B13696932072 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				E11EEB176E032581D752CA82F360BEDC /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		410B319846E3D06D1D69B191A5748E7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5FBEB8E5ADECA36C8114E2BF1710EEA /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		482EA88B9136A5A573514953C7FCB52D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4FC5FD358A57EA6B136767B8BB14FD11 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				BB601B199CF7BDA25D2EE265F37CE12C /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		73AC9F9DA399F101887CDDF9A2C0DC9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				258CF71077289A938D461AC88F3984B0 /* Crashlytics */,
+				DFC485FB61D122993F1212B6AEACECF4 /* Fabric */,
+				2729CB11D3ADCB1E84DE4F3523B6ECB7 /* Firebase */,
+				380FD3BD986D4D88ECBDC1F6F593D6C9 /* FirebaseAnalytics */,
+				307C7AD60395C96DEC5313BFE350C3D7 /* FirebaseCore */,
+				4FC5FD358A57EA6B136767B8BB14FD11 /* FirebaseInstanceID */,
+				7CB64011862E0FEFF6E94161C1BC18C8 /* GoogleToolboxForMac */,
+				80AEA7020D435F5A96DA2260B2A53533 /* nanopb */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		747B85C51027265713CD29B8F9667421 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AC9A7E5183AE319C6B739664065D677 /* GoogleToolboxForMac.modulemap */,
+				D6482329836C8D49FD6025E47B01470B /* GoogleToolboxForMac.xcconfig */,
+				47F60214F69936D9862C728A426E184C /* GoogleToolboxForMac-dummy.m */,
+				EEE061C7A7229C7E0B9C1D8582A3018E /* GoogleToolboxForMac-prefix.pch */,
+				EEC924E61CD46C849C5C6CA1523A7214 /* GoogleToolboxForMac-umbrella.h */,
+				D53FA6A545A0632F5668FC9A2D6E4A10 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		7CB64011862E0FEFF6E94161C1BC18C8 /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				40C904852E6204011CB3B13696932072 /* Defines */,
+				0AC67979AF2DB23CB1F8D521167187C4 /* NSData+zlib */,
+				747B85C51027265713CD29B8F9667421 /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8F91EE078EA3977443D1BDC2601132EF /* Frameworks */,
+				73AC9F9DA399F101887CDDF9A2C0DC9D /* Pods */,
+				38EE0A8203EBA2B30EF775B1A8572D86 /* Products */,
+				10131FE2830FC5EDCE1F1481A641E3DB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80AEA7020D435F5A96DA2260B2A53533 /* nanopb */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0033A88C05424DF6DA0C09F6D13E /* pb.h */,
+				FAC651D177C05BB774AA2F2F100AB3B2 /* pb_common.c */,
+				D6714F3250272792B3E2C3339A3EFD83 /* pb_common.h */,
+				E7EC51EAC74BD8C25EAA5287068702A8 /* pb_decode.c */,
+				0B41D7DB8B460A06722EC93293B3A7A7 /* pb_decode.h */,
+				A034E55619E4F7F753FD82F9C636E5D9 /* pb_encode.c */,
+				18537095DB2347C47190BA1CCD769342 /* pb_encode.h */,
+				154E068D5084E10D35BE3FD4E8F00296 /* decode */,
+				0CC7415A579EDFFBE58BC3E2F4DE24A8 /* encode */,
+				B86369B03C984546AD5842FE7AE28062 /* Support Files */,
+			);
+			name = nanopb;
+			path = nanopb;
+			sourceTree = "<group>";
+		};
+		87F12300E927D9D2D7562444FDE6CF3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BA187A4A96A410C90333EE5FE4CB8DA /* FirebaseAnalytics.framework */,
+				28FC58485FBCCA50AB1442E6466628DE /* FirebaseCoreDiagnostics.framework */,
+				AABE4DFFBA7C18FA27EFCAC57AFA4DC8 /* FirebaseNanoPB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88117786B4679646BFFB95436BC78569 /* Pods-StationRequestTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE50CB33B0E682439CFC82DA90B15904 /* Info.plist */,
+				0F5C3C5EE05A4E9C8D01A5896AD4BA78 /* Pods-StationRequestTests.modulemap */,
+				A59ED6AA4B417A0CDD1F5E6C254B7CDB /* Pods-StationRequestTests-acknowledgements.markdown */,
+				71322151CD28DE5C5C838601C57E872D /* Pods-StationRequestTests-acknowledgements.plist */,
+				E8F017D1E3A9BDE261FED9A4D5DEED89 /* Pods-StationRequestTests-dummy.m */,
+				E57B66F4F8A84E0B5FB91B26D249A905 /* Pods-StationRequestTests-frameworks.sh */,
+				7E7AFB03BC31C838E09A06EE58FAEFEE /* Pods-StationRequestTests-resources.sh */,
+				ACC35CCCD395F6D51F16051C813F0EEA /* Pods-StationRequestTests-umbrella.h */,
+				1D48C633EC85BE627C7E9F2FF2775B96 /* Pods-StationRequestTests.debug.xcconfig */,
+				E10972F2E58FE070F53C69F5DB77CD0C /* Pods-StationRequestTests.release.xcconfig */,
+			);
+			name = "Pods-StationRequestTests";
+			path = "Target Support Files/Pods-StationRequestTests";
+			sourceTree = "<group>";
+		};
+		8F91EE078EA3977443D1BDC2601132EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				482EA88B9136A5A573514953C7FCB52D /* iOS */,
+				FD9E2CBABDA1AB35BAD3C3F041262069 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADF425C951CD06AA778820F57C66C695 /* Pods-StationRequest */ = {
+			isa = PBXGroup;
+			children = (
+				46458DD4DC1DFD641FDFCA46DE8C2E11 /* Info.plist */,
+				E02FBA95A40DBFDEFE5FA04A96FEA1B0 /* Pods-StationRequest.modulemap */,
+				68485D8D471F7C73AA0926096B7DD391 /* Pods-StationRequest-acknowledgements.markdown */,
+				8FE7908F4F083B6C12DC52A50F13E0D7 /* Pods-StationRequest-acknowledgements.plist */,
+				8D7ED81E88272AE1DF23B0C2E25B0CB2 /* Pods-StationRequest-dummy.m */,
+				D82B8DFB678C884644CC68124E24E513 /* Pods-StationRequest-resources.sh */,
+				FAC799117676B02925EFF025D5F435BB /* Pods-StationRequest-umbrella.h */,
+				E2FB4A43B5DE73CE9C96AD123C5BB955 /* Pods-StationRequest.debug.xcconfig */,
+				D169476A3981058DE1B50E78A43325B5 /* Pods-StationRequest.release.xcconfig */,
+			);
+			name = "Pods-StationRequest";
+			path = "Target Support Files/Pods-StationRequest";
+			sourceTree = "<group>";
+		};
+		B259BDE79ACCE90C23D30DC7082172CE /* Pods-WatchStationRequest */ = {
+			isa = PBXGroup;
+			children = (
+				20BB54479618A12331A2A4D3892FE802 /* Info.plist */,
+				1B3449432E19D1BBAA1A364C7218DACD /* Pods-WatchStationRequest.modulemap */,
+				763B6B75AE10133697A142AF8C8549EC /* Pods-WatchStationRequest-acknowledgements.markdown */,
+				1837F262CD62ACF9F262AC484DC71E17 /* Pods-WatchStationRequest-acknowledgements.plist */,
+				4F533E121F9FAC03A650AFFCAB8D4882 /* Pods-WatchStationRequest-dummy.m */,
+				B0E6FE43370ABC79D6D8385833F99ED0 /* Pods-WatchStationRequest-resources.sh */,
+				BAAF49ED4C06328932B55562045D2D94 /* Pods-WatchStationRequest-umbrella.h */,
+				372EAF593E9EBE090FED94250BAD885C /* Pods-WatchStationRequest.debug.xcconfig */,
+				BE5ADBE5746547D37EE0DD2E30286516 /* Pods-WatchStationRequest.release.xcconfig */,
+			);
+			name = "Pods-WatchStationRequest";
+			path = "Target Support Files/Pods-WatchStationRequest";
+			sourceTree = "<group>";
+		};
+		B36B243E4D9B3E9C6FE48FE7BD517A30 /* Pods-TramTimesWatch */ = {
+			isa = PBXGroup;
+			children = (
+				CAF1CD2EEA955F4D536CB86C3EFE35F6 /* Info.plist */,
+				5F381C3A9AD438802F6D7510C293E739 /* Pods-TramTimesWatch.modulemap */,
+				2E56AF2D0B55E00C2754CED0031CADCB /* Pods-TramTimesWatch-acknowledgements.markdown */,
+				643FCF2AED167003F9E4668F373A1423 /* Pods-TramTimesWatch-acknowledgements.plist */,
+				13C532E77EAA433378465E0DE3A9DC3B /* Pods-TramTimesWatch-dummy.m */,
+				678E1A0EEA934F1E7D1421A69EB27423 /* Pods-TramTimesWatch-frameworks.sh */,
+				0EDE8DC156488A35537F225FE0DFDA95 /* Pods-TramTimesWatch-resources.sh */,
+				0AFB5D92F7B89A55D2F3B7111E4199C8 /* Pods-TramTimesWatch-umbrella.h */,
+				8DC3D9DEC64B8E27B0BD9AA31F11F4AF /* Pods-TramTimesWatch.debug.xcconfig */,
+				5189BC1BF6475522319BE76D1C78A20F /* Pods-TramTimesWatch.release.xcconfig */,
+			);
+			name = "Pods-TramTimesWatch";
+			path = "Target Support Files/Pods-TramTimesWatch";
+			sourceTree = "<group>";
+		};
+		B86369B03C984546AD5842FE7AE28062 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBFDAE1F78F2F53642B823587D289130 /* Info.plist */,
+				793A6D32EA6093573F54917AFDE5F34A /* nanopb.modulemap */,
+				9FE4B1A265247DD4A7F45E6DC5D21C75 /* nanopb.xcconfig */,
+				5A7D9A8674153AD6C554AF25F350947E /* nanopb-dummy.m */,
+				9FFC09B96052334E77AA941D5FD69749 /* nanopb-prefix.pch */,
+				AFA6E1BA1FAB339158FACB50A50997DB /* nanopb-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/nanopb";
+			sourceTree = "<group>";
+		};
+		BB601B199CF7BDA25D2EE265F37CE12C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42719F18F68E01286739C8224FD07593 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB9E0B632530C71031FADB64BAE96CF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E85F1FECF62110C98EC087462F9B0EF8 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC1A98BA80EAB9A0B216D414C638AB73 /* Pods-TFGMLiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE315CD178E2153F890FDD15C902A9E3 /* Info.plist */,
+				A6DE92A6AD978B533AFE435E39A41EB4 /* Pods-TFGMLiveTests.modulemap */,
+				B1813D48E20606D30B92ED2569E69E5D /* Pods-TFGMLiveTests-acknowledgements.markdown */,
+				8057930A1A2F899FE45CF16AADD47FC1 /* Pods-TFGMLiveTests-acknowledgements.plist */,
+				4C0DFE478542B565982E3A5B4D23C5F9 /* Pods-TFGMLiveTests-dummy.m */,
+				DBCAE53DC1AF3892D8704A3A56C3F537 /* Pods-TFGMLiveTests-frameworks.sh */,
+				22118000C880024C41E46729934F4B6E /* Pods-TFGMLiveTests-resources.sh */,
+				FDB15F181F678161DF614D8710BFADB6 /* Pods-TFGMLiveTests-umbrella.h */,
+				CEF13793881861E1E4BA5B6CC3117F79 /* Pods-TFGMLiveTests.debug.xcconfig */,
+				0259DA2F2FDD37AEA3CB1FD9231FB77C /* Pods-TFGMLiveTests.release.xcconfig */,
+			);
+			name = "Pods-TFGMLiveTests";
+			path = "Target Support Files/Pods-TFGMLiveTests";
+			sourceTree = "<group>";
+		};
+		D3CF7F84AFE4F0BEE8A4A204E4457236 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C06808E65EE2C52A8166AE3DA2F8E7C /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFC485FB61D122993F1212B6AEACECF4 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				F8DED048140C9E56FDA1FA0013405965 /* FABAttributes.h */,
+				07664F5577BB67704E26FBEF9B9E6FC4 /* Fabric.h */,
+				410B319846E3D06D1D69B191A5748E7A /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		FB72F2710FC15A932E856ED587E91CB3 /* Pods-TramTimesWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CB9281FEADD4ED9D3A036F865248CBA7 /* Info.plist */,
+				46060CDF0DE6A5B42DABAFDD555E70E2 /* Pods-TramTimesWatch Extension.modulemap */,
+				E2055C55A180165B34C0FD4A2CBDF147 /* Pods-TramTimesWatch Extension-acknowledgements.markdown */,
+				CC4390F2C7055B67A8A686837EF83FC6 /* Pods-TramTimesWatch Extension-acknowledgements.plist */,
+				1583F2D25F85FFBF54E9512CE3D09877 /* Pods-TramTimesWatch Extension-dummy.m */,
+				2A7864304BA85EB7259F36C994A51E57 /* Pods-TramTimesWatch Extension-frameworks.sh */,
+				FEE66B9AE35FC0108C82745E26AA5E9D /* Pods-TramTimesWatch Extension-resources.sh */,
+				512A068970CA39D14274B62E74A075C5 /* Pods-TramTimesWatch Extension-umbrella.h */,
+				6EE269AB1A588FC12281EB6A0591B335 /* Pods-TramTimesWatch Extension.debug.xcconfig */,
+				E4CC6A65A222DDF81A3EED881C866C37 /* Pods-TramTimesWatch Extension.release.xcconfig */,
+			);
+			name = "Pods-TramTimesWatch Extension";
+			path = "Target Support Files/Pods-TramTimesWatch Extension";
+			sourceTree = "<group>";
+		};
+		FD9E2CBABDA1AB35BAD3C3F041262069 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				76720B026417625FB62285B73CECF0BF /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14486F61D5EBCEEBA70C50DC683166B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3711D20F077D203AE9D16573E9A0CA /* Pods-StationRequest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EE26F2CCCD85AD62165C076299CDAB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F6510CACF4CBE6E2B261BBDDFF96ABA /* Pods-TramTimesWidget-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4547B9AF8085A499AA35614798F8F9E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D92BA503505CB48EF4ECF0DDF57686 /* nanopb-umbrella.h in Headers */,
+				392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */,
+				806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */,
+				29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */,
+				E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4816E73E02248CC5871EB30A884D03AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4292E2974B1C40E637874F28AE8A2D1E /* Pods-TFGMLiveTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D218B2D215960E4CCA9868F3979FD34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25682BBCE00DE51F91664DA071A320F1 /* Pods-TramTimesWatch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6693F0979187235192A6B3E66CAEFE10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EDB7A9B6C65E5194C42B88932E9DABE /* Pods-TFGMLive-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		821BFEEA67C202ED15505AFC5232B2FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D5FDF2548CA568FC7C2E452E237EF1 /* Pods-WatchStationRequest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE8593F14372BE5902DF615E80759AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D8C6570EDDE616B6AAFA568D6129D5 /* Pods-StationRequestTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A839E263EAA4CB2E0A5D5492C6E0C4E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C8D9A616795767E288E665C16E51E3 /* Pods-TramTimesWatch Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */,
+				541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */,
+				DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
+			buildPhases = (
+				63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */,
+				F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */,
+				FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = 20F65FB5F18A00CEBCE7DC421CD4154F /* GoogleToolboxForMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0661CACACEEE0CB7EE5C29DB3BA3E797 /* Pods-TramTimesWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C15AD83950494BA77ABE2E7F4B891845 /* Build configuration list for PBXNativeTarget "Pods-TramTimesWidget" */;
+			buildPhases = (
+				D49CDEF041BC34B37596A86B2C9C6204 /* Sources */,
+				85C8336AA71F5BB9253564A0D1EBA635 /* Frameworks */,
+				2EE26F2CCCD85AD62165C076299CDAB2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TramTimesWidget";
+			productName = "Pods-TramTimesWidget";
+			productReference = 1EB664BE6AB00DAF71FCB9656EAEDF6C /* Pods_TramTimesWidget.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1625C927E1C0D7C6B78081712C0D0DCB /* Pods-TFGMLiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69273EAC4824202811C33B999792D671 /* Build configuration list for PBXNativeTarget "Pods-TFGMLiveTests" */;
+			buildPhases = (
+				DA291E8D90ADEF617563479801679E96 /* Sources */,
+				9459B038013CAF59BADFF5980E12928A /* Frameworks */,
+				4816E73E02248CC5871EB30A884D03AB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TFGMLiveTests";
+			productName = "Pods-TFGMLiveTests";
+			productReference = E3D653195E7859D63F02CF78C322B418 /* Pods_TFGMLiveTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C5620A98CF7AE799914732ADF5094CE /* Pods-StationRequestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC95531CE5BD83AC7757D7E3D8971379 /* Build configuration list for PBXNativeTarget "Pods-StationRequestTests" */;
+			buildPhases = (
+				9F40ACB32C8C2AADB98FAB25BF9A116C /* Sources */,
+				D5388DCFB0DE0D4EB231E00C6CE19C06 /* Frameworks */,
+				9EE8593F14372BE5902DF615E80759AE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-StationRequestTests";
+			productName = "Pods-StationRequestTests";
+			productReference = C214C0775D18F8177411FA06AEDEDEB1 /* Pods_StationRequestTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41DFC66AEC4204F40ECABC509C4AA23D /* Pods-TramTimesWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15B8814D080A64D98E503B5B33750E8 /* Build configuration list for PBXNativeTarget "Pods-TramTimesWatch Extension" */;
+			buildPhases = (
+				192A35AC6D054230E0DA26779B946BBE /* Sources */,
+				C2527CB15B900A7197306C983DC50DF7 /* Frameworks */,
+				A839E263EAA4CB2E0A5D5492C6E0C4E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TramTimesWatch Extension";
+			productName = "Pods-TramTimesWatch Extension";
+			productReference = A43105F19021A7740EAA7959E3A3DD07 /* Pods_TramTimesWatch_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		56DF80AFE558CF410BBF0BB25A237FE5 /* Pods-StationRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E4FDE821E0E06AA43165AAF798B989 /* Build configuration list for PBXNativeTarget "Pods-StationRequest" */;
+			buildPhases = (
+				9F2FF291CDE1E1C4EC87EA9FE4E7F414 /* Sources */,
+				B19234C3EA2C8D9DF6BB7287CD5718F8 /* Frameworks */,
+				14486F61D5EBCEEBA70C50DC683166B2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-StationRequest";
+			productName = "Pods-StationRequest";
+			productReference = 1AD8E93217DC8C3DB12CF50886C36B58 /* Pods_StationRequest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		59C353381933CD5A83B8A8A15AE96A68 /* Pods-WatchStationRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 395BA9A6E6317FA24D06E6A0D9FD2B8F /* Build configuration list for PBXNativeTarget "Pods-WatchStationRequest" */;
+			buildPhases = (
+				6844CDC2477EC8FEF4C09780C54F7A4F /* Sources */,
+				2A413FC65C146ED904D3D5AE7BDD07F4 /* Frameworks */,
+				821BFEEA67C202ED15505AFC5232B2FC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WatchStationRequest";
+			productName = "Pods-WatchStationRequest";
+			productReference = 72B9411BA79729014EA3FE7954DBD954 /* Pods_WatchStationRequest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B232E66C7A032172F02D5652E24CF149 /* Pods-TramTimesWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D15ACE4840420AD2B3C3EC22467ED0A /* Build configuration list for PBXNativeTarget "Pods-TramTimesWatch" */;
+			buildPhases = (
+				1CD6CE4D174C9B1B5C6A340917D0C2F7 /* Sources */,
+				C2A4D66379C1F2EEC727C5304C89BEA6 /* Frameworks */,
+				5D218B2D215960E4CCA9868F3979FD34 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TramTimesWatch";
+			productName = "Pods-TramTimesWatch";
+			productReference = 61314601700C51C28F72121C2EDA2866 /* Pods_TramTimesWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F118B0FA84AC9116AB2E480C302C3999 /* Build configuration list for PBXNativeTarget "nanopb" */;
+			buildPhases = (
+				238527BE8D494586023F2A2B8A60D242 /* Sources */,
+				971041836592E28ADEEDA495A96A62A2 /* Frameworks */,
+				4547B9AF8085A499AA35614798F8F9E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nanopb;
+			productName = nanopb;
+			productReference = 7349D2D070BEC563AF4E93D912B0AABF /* nanopb.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAC2BEE1166C17BA529AAE7957C4C686 /* Pods-TFGMLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0B0AA7E8AB0962BB8FEAAA3D93D00C8 /* Build configuration list for PBXNativeTarget "Pods-TFGMLive" */;
+			buildPhases = (
+				2A68A307E6357A2F81DEE1AE25BA4EFA /* Sources */,
+				7DC1FB866592F1BAEA0EF323959D3626 /* Frameworks */,
+				6693F0979187235192A6B3E66CAEFE10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F09016E33B5B87AD5872399C392536E /* PBXTargetDependency */,
+				7477597B1E5C3BDC09F1CFAB9286BC1E /* PBXTargetDependency */,
+			);
+			name = "Pods-TFGMLive";
+			productName = "Pods-TFGMLive";
+			productReference = 01A4B8C77809DBA9E4735D03E656A060 /* Pods_TFGMLive.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 38EE0A8203EBA2B30EF775B1A8572D86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
+				E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */,
+				56DF80AFE558CF410BBF0BB25A237FE5 /* Pods-StationRequest */,
+				2C5620A98CF7AE799914732ADF5094CE /* Pods-StationRequestTests */,
+				EAC2BEE1166C17BA529AAE7957C4C686 /* Pods-TFGMLive */,
+				1625C927E1C0D7C6B78081712C0D0DCB /* Pods-TFGMLiveTests */,
+				B232E66C7A032172F02D5652E24CF149 /* Pods-TramTimesWatch */,
+				41DFC66AEC4204F40ECABC509C4AA23D /* Pods-TramTimesWatch Extension */,
+				0661CACACEEE0CB7EE5C29DB3BA3E797 /* Pods-TramTimesWidget */,
+				59C353381933CD5A83B8A8A15AE96A68 /* Pods-WatchStationRequest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		192A35AC6D054230E0DA26779B946BBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B79096EF6FD424DE0AA46B6AF8BF49 /* Pods-TramTimesWatch Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD6CE4D174C9B1B5C6A340917D0C2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FD2A8447C3A8513ECA2F34ACA0312E /* Pods-TramTimesWatch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238527BE8D494586023F2A2B8A60D242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */,
+				3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */,
+				54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */,
+				55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A68A307E6357A2F81DEE1AE25BA4EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89E57B047D5EAC5AD774608F0B33C1F /* Pods-TFGMLive-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */,
+				F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6844CDC2477EC8FEF4C09780C54F7A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9305AA2DF64FC08A2A911912101615E4 /* Pods-WatchStationRequest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F2FF291CDE1E1C4EC87EA9FE4E7F414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19C3A53F9828EEE0CF9A1BA5F86B850 /* Pods-StationRequest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F40ACB32C8C2AADB98FAB25BF9A116C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				795163F6D9BE668876C3ED8C432BDA36 /* Pods-StationRequestTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D49CDEF041BC34B37596A86B2C9C6204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4503390D2B6CAECB81A15A844D22A038 /* Pods-TramTimesWidget-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA291E8D90ADEF617563479801679E96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4110B226DB9391BFD158947AD05DFDBA /* Pods-TFGMLiveTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F09016E33B5B87AD5872399C392536E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
+			targetProxy = EC8D613A1F63AA6E7237A1D875C99688 /* PBXContainerItemProxy */;
+		};
+		7477597B1E5C3BDC09F1CFAB9286BC1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = nanopb;
+			target = E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */;
+			targetProxy = 25C9AA75A3E1DCFBA6C6772397D60C60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D022C621FF5ADF874E2B1CF4E1D5BC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5ADBE5746547D37EE0DD2E30286516 /* Pods-WatchStationRequest.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchStationRequest/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchStationRequest/Pods-WatchStationRequest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WatchStationRequest;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		15C069F155AD7CFEFD1E42E043D24C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FE4B1A265247DD4A7F45E6DC5D21C75 /* nanopb.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/nanopb/nanopb.modulemap";
+				PRODUCT_NAME = nanopb;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		212A4BCD0DEB8E551EDCF600078D4628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09378CC797D03E09E9DC4BDB1384CA36 /* Pods-TFGMLive.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFGMLive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFGMLive/Pods-TFGMLive.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TFGMLive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		261E3E8CCA000227EAB1BC6DAC939645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D169476A3981058DE1B50E78A43325B5 /* Pods-StationRequest.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StationRequest/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StationRequest/Pods-StationRequest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_StationRequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3648BF627C2878177964BA92B8C67212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D48C633EC85BE627C7E9F2FF2775B96 /* Pods-StationRequestTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StationRequestTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StationRequestTests/Pods-StationRequestTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_StationRequestTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3D9B89F14CB576BB91EF803B8CBAA6A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5189BC1BF6475522319BE76D1C78A20F /* Pods-TramTimesWatch.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TramTimesWatch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TramTimesWatch/Pods-TramTimesWatch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TramTimesWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		3EFDF5625511AE65B38D585FBFA84C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE87FA8B91F6523099A22D8A716B96E9 /* Pods-TramTimesWidget.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TramTimesWidget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TramTimesWidget/Pods-TramTimesWidget.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TramTimesWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4FD46B2551582DF47CD95CD77DDF6B34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6482329836C8D49FD6025E47B01470B /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5FACB928DDE11C22D58E1786B6BC82BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0259DA2F2FDD37AEA3CB1FD9231FB77C /* Pods-TFGMLiveTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFGMLiveTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFGMLiveTests/Pods-TFGMLiveTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TFGMLiveTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7426BDDA969FDAFFF45680F2E1D22EF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FB4A43B5DE73CE9C96AD123C5BB955 /* Pods-StationRequest.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StationRequest/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StationRequest/Pods-StationRequest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_StationRequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		772B220C7BCACC93A3ADF8E27FE3B3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372EAF593E9EBE090FED94250BAD885C /* Pods-WatchStationRequest.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchStationRequest/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchStationRequest/Pods-WatchStationRequest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WatchStationRequest;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		835BAEED212F0937A002AC567046D9C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E10972F2E58FE070F53C69F5DB77CD0C /* Pods-StationRequestTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StationRequestTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StationRequestTests/Pods-StationRequestTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_StationRequestTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		91073C3D19D5CC01A87EFCBEE8382BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEF13793881861E1E4BA5B6CC3117F79 /* Pods-TFGMLiveTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFGMLiveTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFGMLiveTests/Pods-TFGMLiveTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TFGMLiveTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97358B6D840D2B88ECBE04360BA474C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE269AB1A588FC12281EB6A0591B335 /* Pods-TramTimesWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TramTimesWatch Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TramTimesWatch Extension/Pods-TramTimesWatch Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TramTimesWatch_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		9B08F59FF51AFF627CB714A7411CD158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FE4B1A265247DD4A7F45E6DC5D21C75 /* nanopb.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/nanopb/nanopb.modulemap";
+				PRODUCT_NAME = nanopb;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD7F7372484B91E177BD2A91B5765943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC3D9DEC64B8E27B0BD9AA31F11F4AF /* Pods-TramTimesWatch.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TramTimesWatch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TramTimesWatch/Pods-TramTimesWatch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TramTimesWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		B414AD14332BEC222A22340F30740FD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA4A28CCCDFE0C4226E0346116334E5 /* Pods-TramTimesWidget.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TramTimesWidget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TramTimesWidget/Pods-TramTimesWidget.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TramTimesWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C194B5D4ACF8B04A07BE92A7B6451D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		C5D3F232F80E9D4937650A5440E3F994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		D19459BBA4D29829D7678D9CDFE01E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6482329836C8D49FD6025E47B01470B /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5400C2988D1D3D73C66ACA701DF544B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99FA7E0B2C58F5633DCB83B37F0EBE3A /* Pods-TFGMLive.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFGMLive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFGMLive/Pods-TFGMLive.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TFGMLive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DCD7B0AC3764BDE03E7E57F5EF956F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4CC6A65A222DDF81A3EED881C866C37 /* Pods-TramTimesWatch Extension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TramTimesWatch Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TramTimesWatch Extension/Pods-TramTimesWatch Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TramTimesWatch_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C194B5D4ACF8B04A07BE92A7B6451D21 /* Debug */,
+				C5D3F232F80E9D4937650A5440E3F994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		395BA9A6E6317FA24D06E6A0D9FD2B8F /* Build configuration list for PBXNativeTarget "Pods-WatchStationRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772B220C7BCACC93A3ADF8E27FE3B3D1 /* Debug */,
+				0D022C621FF5ADF874E2B1CF4E1D5BC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69273EAC4824202811C33B999792D671 /* Build configuration list for PBXNativeTarget "Pods-TFGMLiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91073C3D19D5CC01A87EFCBEE8382BAB /* Debug */,
+				5FACB928DDE11C22D58E1786B6BC82BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D15ACE4840420AD2B3C3EC22467ED0A /* Build configuration list for PBXNativeTarget "Pods-TramTimesWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD7F7372484B91E177BD2A91B5765943 /* Debug */,
+				3D9B89F14CB576BB91EF803B8CBAA6A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C15AD83950494BA77ABE2E7F4B891845 /* Build configuration list for PBXNativeTarget "Pods-TramTimesWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EFDF5625511AE65B38D585FBFA84C46 /* Debug */,
+				B414AD14332BEC222A22340F30740FD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19459BBA4D29829D7678D9CDFE01E64 /* Debug */,
+				4FD46B2551582DF47CD95CD77DDF6B34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0B0AA7E8AB0962BB8FEAAA3D93D00C8 /* Build configuration list for PBXNativeTarget "Pods-TFGMLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5400C2988D1D3D73C66ACA701DF544B /* Debug */,
+				212A4BCD0DEB8E551EDCF600078D4628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2E4FDE821E0E06AA43165AAF798B989 /* Build configuration list for PBXNativeTarget "Pods-StationRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7426BDDA969FDAFFF45680F2E1D22EF0 /* Debug */,
+				261E3E8CCA000227EAB1BC6DAC939645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC95531CE5BD83AC7757D7E3D8971379 /* Build configuration list for PBXNativeTarget "Pods-StationRequestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3648BF627C2878177964BA92B8C67212 /* Debug */,
+				835BAEED212F0937A002AC567046D9C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F118B0FA84AC9116AB2E480C302C3999 /* Build configuration list for PBXNativeTarget "nanopb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B08F59FF51AFF627CB714A7411CD158 /* Debug */,
+				15C069F155AD7CFEFD1E42E043D24C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15B8814D080A64D98E503B5B33750E8 /* Build configuration list for PBXNativeTarget "Pods-TramTimesWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97358B6D840D2B88ECBE04360BA474C2 /* Debug */,
+				DCD7B0AC3764BDE03E7E57F5EF956F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

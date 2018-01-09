@@ -1,0 +1,6 @@
+framework module Pods_TramTimesWatch {
+  umbrella header "Pods-TramTimesWatch-umbrella.h"
+
+  export *
+  module * { export * }
+}

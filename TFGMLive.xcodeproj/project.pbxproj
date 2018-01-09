@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018068A9B86A7E8B0F281BFC /* Pods_TFGMLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F965C0E3E1D5F72545BE041 /* Pods_TFGMLive.framework */; };
+		5246658D81B6EA5E48A1FCAE /* Pods_TramTimesWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041D3EF0D376FFF9B2F4D3E3 /* Pods_TramTimesWatch.framework */; };
+		6FC83529363AFD96E2BA786A /* Pods_StationRequestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01C87D12718CEC1000304FB /* Pods_StationRequestTests.framework */; };
+		83677EEA20056517000D1D26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83677EE920056517000D1D26 /* GoogleService-Info.plist */; };
 		83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ECE1FEC618300693DF0 /* AppDelegate.swift */; };
 		83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ED01FEC618300693DF0 /* TramsTableViewController.swift */; };
 		83784ED41FEC618300693DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED21FEC618300693DF0 /* Main.storyboard */; };
@@ -65,6 +69,11 @@
 		83D639851FFCD6F4001B4EA7 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639841FFCD6F4001B4EA7 /* UserDataService.swift */; };
 		83D639881FFCE191001B4EA7 /* WatchStationServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639871FFCE191001B4EA7 /* WatchStationServiceAdapter.swift */; };
 		83D6398A1FFCE54D001B4EA7 /* TramRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639891FFCE54D001B4EA7 /* TramRowController.swift */; };
+		8BE43D4592FD7EEEADA9F9AD /* Pods_TramTimesWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9789CF3A5F84BF88E78F2BD0 /* Pods_TramTimesWidget.framework */; };
+		A946608FEAECADAFAE6FFF26 /* Pods_WatchStationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606F7CBEB4ED70A4E3FCCD0A /* Pods_WatchStationRequest.framework */; };
+		D28CCBE3C30E9FB2A66335FB /* Pods_TramTimesWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D64D97D77C4A4E60B6E075 /* Pods_TramTimesWatch_Extension.framework */; };
+		D65D67B4F916153B466240C2 /* Pods_StationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C5D45938C78CC94BAF817C /* Pods_StationRequest.framework */; };
+		DAC9F97139FA390A6A059631 /* Pods_TFGMLiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BE20BE1053C4D8B1100DBC /* Pods_TFGMLiveTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +194,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		041D3EF0D376FFF9B2F4D3E3 /* Pods_TramTimesWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TramTimesWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C5D45938C78CC94BAF817C /* Pods_StationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StationRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E8C6D3704E7FBC589F1366B /* Pods-TramTimesWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TramTimesWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-TramTimesWatch Extension/Pods-TramTimesWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		17FF5859641403EFF6535C6C /* Pods-TramTimesWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TramTimesWatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TramTimesWatch/Pods-TramTimesWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		261350CAAB2BF9E5F7895929 /* Pods-StationRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StationRequest.release.xcconfig"; path = "Pods/Target Support Files/Pods-StationRequest/Pods-StationRequest.release.xcconfig"; sourceTree = "<group>"; };
+		26BD9BEA1768F678E0E4005D /* Pods-StationRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StationRequest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StationRequest/Pods-StationRequest.debug.xcconfig"; sourceTree = "<group>"; };
+		398C7CF7C6C808B24CAEA9C7 /* Pods-TFGMLiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFGMLiveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TFGMLiveTests/Pods-TFGMLiveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F965C0E3E1D5F72545BE041 /* Pods_TFGMLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFGMLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		448E8DC71F4553D8BD51AF8F /* Pods-TramTimesWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TramTimesWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-TramTimesWidget/Pods-TramTimesWidget.release.xcconfig"; sourceTree = "<group>"; };
+		50701A03CAAE7ECB4679FCB4 /* Pods-TFGMLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFGMLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TFGMLive/Pods-TFGMLive.debug.xcconfig"; sourceTree = "<group>"; };
+		51AD421BD6FF862E26E0379C /* Pods-StationRequestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StationRequestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StationRequestTests/Pods-StationRequestTests.release.xcconfig"; sourceTree = "<group>"; };
+		606F7CBEB4ED70A4E3FCCD0A /* Pods_WatchStationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchStationRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		626ED043A019A40D7F70D100 /* Pods-TFGMLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFGMLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFGMLive/Pods-TFGMLive.release.xcconfig"; sourceTree = "<group>"; };
+		6B90ADB7E5EED25FBA91BEB2 /* Pods-TramTimesWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TramTimesWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TramTimesWatch Extension/Pods-TramTimesWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		6CCB20F8DE214026DE801A2F /* Pods-TFGMLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFGMLiveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFGMLiveTests/Pods-TFGMLiveTests.release.xcconfig"; sourceTree = "<group>"; };
+		83677EE920056517000D1D26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83784ECB1FEC618300693DF0 /* TFGMLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFGMLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83784ECE1FEC618300693DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83784ED01FEC618300693DF0 /* TramsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramsTableViewController.swift; sourceTree = "<group>"; };
@@ -247,14 +272,32 @@
 		83D639841FFCD6F4001B4EA7 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		83D639871FFCE191001B4EA7 /* WatchStationServiceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchStationServiceAdapter.swift; sourceTree = "<group>"; };
 		83D639891FFCE54D001B4EA7 /* TramRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramRowController.swift; sourceTree = "<group>"; };
+		89E388F4F9F2E8FDA7A5486A /* Pods-TramTimesWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TramTimesWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TramTimesWidget/Pods-TramTimesWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		96BE20BE1053C4D8B1100DBC /* Pods_TFGMLiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFGMLiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9789CF3A5F84BF88E78F2BD0 /* Pods_TramTimesWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TramTimesWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F8F8237205629D31A3BC568 /* Pods-TramTimesWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TramTimesWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-TramTimesWatch/Pods-TramTimesWatch.release.xcconfig"; sourceTree = "<group>"; };
+		A01C87D12718CEC1000304FB /* Pods_StationRequestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StationRequestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF17934E0963109CAE887589 /* Pods-WatchStationRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchStationRequest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchStationRequest/Pods-WatchStationRequest.debug.xcconfig"; sourceTree = "<group>"; };
+		C9D64D97D77C4A4E60B6E075 /* Pods_TramTimesWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TramTimesWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEEE7B3439F055B005A497A5 /* Pods-WatchStationRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchStationRequest.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchStationRequest/Pods-WatchStationRequest.release.xcconfig"; sourceTree = "<group>"; };
+		EDFB76717709B8484597A899 /* Pods-StationRequestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StationRequestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StationRequestTests/Pods-StationRequestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		52DB0763268E85826B5D89C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5246658D81B6EA5E48A1FCAE /* Pods_TramTimesWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83784EC81FEC618300693DF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				83C718F61FF96832001C399F /* StationRequest.framework in Frameworks */,
+				018068A9B86A7E8B0F281BFC /* Pods_TFGMLive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +305,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC9F97139FA390A6A059631 /* Pods_TFGMLiveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83C718CD1FF9669F001C399F /* NotificationCenter.framework in Frameworks */,
+				8BE43D4592FD7EEEADA9F9AD /* Pods_TramTimesWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +322,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65D67B4F916153B466240C2 /* Pods_StationRequest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83C718EA1FF96832001C399F /* StationRequest.framework in Frameworks */,
+				6FC83529363AFD96E2BA786A /* Pods_StationRequestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83D639741FFC2D8F001B4EA7 /* WatchStationRequest.framework in Frameworks */,
+				D28CCBE3C30E9FB2A66335FB /* Pods_TramTimesWatch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +348,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A946608FEAECADAFAE6FFF26 /* Pods_WatchStationRequest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +368,7 @@
 				83D6396E1FFC2D8F001B4EA7 /* WatchStationRequest */,
 				83C718CB1FF9669F001C399F /* Frameworks */,
 				83784ECC1FEC618300693DF0 /* Products */,
+				D7A2AD238BFE80425FC29D47 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -366,6 +416,7 @@
 		83784EF61FED444700693DF0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				83677EE920056517000D1D26 /* GoogleService-Info.plist */,
 				83784ED51FEC618300693DF0 /* Assets.xcassets */,
 				83784ED71FEC618300693DF0 /* LaunchScreen.storyboard */,
 				83784EDA1FEC618300693DF0 /* Info.plist */,
@@ -406,6 +457,14 @@
 			isa = PBXGroup;
 			children = (
 				83C718CC1FF9669F001C399F /* NotificationCenter.framework */,
+				05C5D45938C78CC94BAF817C /* Pods_StationRequest.framework */,
+				A01C87D12718CEC1000304FB /* Pods_StationRequestTests.framework */,
+				3F965C0E3E1D5F72545BE041 /* Pods_TFGMLive.framework */,
+				96BE20BE1053C4D8B1100DBC /* Pods_TFGMLiveTests.framework */,
+				041D3EF0D376FFF9B2F4D3E3 /* Pods_TramTimesWatch.framework */,
+				C9D64D97D77C4A4E60B6E075 /* Pods_TramTimesWatch_Extension.framework */,
+				9789CF3A5F84BF88E78F2BD0 /* Pods_TramTimesWidget.framework */,
+				606F7CBEB4ED70A4E3FCCD0A /* Pods_WatchStationRequest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -518,6 +577,29 @@
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
+		D7A2AD238BFE80425FC29D47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26BD9BEA1768F678E0E4005D /* Pods-StationRequest.debug.xcconfig */,
+				261350CAAB2BF9E5F7895929 /* Pods-StationRequest.release.xcconfig */,
+				EDFB76717709B8484597A899 /* Pods-StationRequestTests.debug.xcconfig */,
+				51AD421BD6FF862E26E0379C /* Pods-StationRequestTests.release.xcconfig */,
+				50701A03CAAE7ECB4679FCB4 /* Pods-TFGMLive.debug.xcconfig */,
+				626ED043A019A40D7F70D100 /* Pods-TFGMLive.release.xcconfig */,
+				398C7CF7C6C808B24CAEA9C7 /* Pods-TFGMLiveTests.debug.xcconfig */,
+				6CCB20F8DE214026DE801A2F /* Pods-TFGMLiveTests.release.xcconfig */,
+				17FF5859641403EFF6535C6C /* Pods-TramTimesWatch.debug.xcconfig */,
+				9F8F8237205629D31A3BC568 /* Pods-TramTimesWatch.release.xcconfig */,
+				6B90ADB7E5EED25FBA91BEB2 /* Pods-TramTimesWatch Extension.debug.xcconfig */,
+				0E8C6D3704E7FBC589F1366B /* Pods-TramTimesWatch Extension.release.xcconfig */,
+				89E388F4F9F2E8FDA7A5486A /* Pods-TramTimesWidget.debug.xcconfig */,
+				448E8DC71F4553D8BD51AF8F /* Pods-TramTimesWidget.release.xcconfig */,
+				AF17934E0963109CAE887589 /* Pods-WatchStationRequest.debug.xcconfig */,
+				DEEE7B3439F055B005A497A5 /* Pods-WatchStationRequest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -545,12 +627,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83784EE81FEC618300693DF0 /* Build configuration list for PBXNativeTarget "TFGMLive" */;
 			buildPhases = (
+				EC0D550105152AC8376E42F8 /* [CP] Check Pods Manifest.lock */,
 				83784EC71FEC618300693DF0 /* Sources */,
 				83784EC81FEC618300693DF0 /* Frameworks */,
 				83784EC91FEC618300693DF0 /* Resources */,
 				83C718DB1FF9669F001C399F /* Embed App Extensions */,
 				83C718FB1FF96832001C399F /* Embed Frameworks */,
 				83C997E91FF9ACE40034F8E1 /* Embed Watch Content */,
+				2014C8971A2053430A16FB17 /* [CP] Embed Pods Frameworks */,
+				3D318802714A6B66C3D5DE53 /* [CP] Copy Pods Resources */,
+				83677EF22005699C000D1D26 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -568,9 +654,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83784EEB1FEC618300693DF0 /* Build configuration list for PBXNativeTarget "TFGMLiveTests" */;
 			buildPhases = (
+				2E28E00FBB073D4C88C21A2A /* [CP] Check Pods Manifest.lock */,
 				83784EDB1FEC618300693DF0 /* Sources */,
 				83784EDC1FEC618300693DF0 /* Frameworks */,
 				83784EDD1FEC618300693DF0 /* Resources */,
+				6DF0C796A7889236C5A4882F /* [CP] Embed Pods Frameworks */,
+				933E6BF5346F52C9FA6E278D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -586,9 +675,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83C718D81FF9669F001C399F /* Build configuration list for PBXNativeTarget "TramTimesWidget" */;
 			buildPhases = (
+				A3793B28896662C3FA6F4485 /* [CP] Check Pods Manifest.lock */,
 				83C718C61FF9669F001C399F /* Sources */,
 				83C718C71FF9669F001C399F /* Frameworks */,
 				83C718C81FF9669F001C399F /* Resources */,
+				9C7B116828E4E460630EEBD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -603,10 +694,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83C718F81FF96832001C399F /* Build configuration list for PBXNativeTarget "StationRequest" */;
 			buildPhases = (
+				83CA2CAD6E8B1C9A613A36A1 /* [CP] Check Pods Manifest.lock */,
 				83C718DC1FF96831001C399F /* Sources */,
 				83C718DD1FF96831001C399F /* Frameworks */,
 				83C718DE1FF96831001C399F /* Headers */,
 				83C718DF1FF96831001C399F /* Resources */,
+				860592F17170BEBC58250B11 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -621,9 +714,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83C718FC1FF96832001C399F /* Build configuration list for PBXNativeTarget "StationRequestTests" */;
 			buildPhases = (
+				7C169ED6C20A43F8A19CEA56 /* [CP] Check Pods Manifest.lock */,
 				83C718E51FF96831001C399F /* Sources */,
 				83C718E61FF96831001C399F /* Frameworks */,
 				83C718E71FF96831001C399F /* Resources */,
+				7EED417EFACED9EC276F103E /* [CP] Embed Pods Frameworks */,
+				C0A861B57C1488F0AC11646E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -640,8 +736,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83C997E61FF9ACE40034F8E1 /* Build configuration list for PBXNativeTarget "TramTimesWatch" */;
 			buildPhases = (
+				D619A1DBB7D5636C8D3709FE /* [CP] Check Pods Manifest.lock */,
 				83C997C01FF9ACE40034F8E1 /* Resources */,
 				83C997E51FF9ACE40034F8E1 /* Embed App Extensions */,
+				52DB0763268E85826B5D89C5 /* Frameworks */,
+				706DDF538B55952115C01325 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -657,10 +756,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83C997E21FF9ACE40034F8E1 /* Build configuration list for PBXNativeTarget "TramTimesWatch Extension" */;
 			buildPhases = (
+				959BCB09DF7BA61E2EA0F637 /* [CP] Check Pods Manifest.lock */,
 				83C997CA1FF9ACE40034F8E1 /* Sources */,
 				83C997CB1FF9ACE40034F8E1 /* Frameworks */,
 				83C997CC1FF9ACE40034F8E1 /* Resources */,
 				83D639791FFC2D8F001B4EA7 /* Embed Frameworks */,
+				907C545ECB67D148DF319951 /* [CP] Embed Pods Frameworks */,
+				F8386DDF675403921DAABD2D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -676,10 +778,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83D639761FFC2D8F001B4EA7 /* Build configuration list for PBXNativeTarget "WatchStationRequest" */;
 			buildPhases = (
+				E88F032021C1CE17F13350B0 /* [CP] Check Pods Manifest.lock */,
 				83D639681FFC2D8F001B4EA7 /* Sources */,
 				83D639691FFC2D8F001B4EA7 /* Frameworks */,
 				83D6396A1FFC2D8F001B4EA7 /* Headers */,
 				83D6396B1FFC2D8F001B4EA7 /* Resources */,
+				EC04E621ED11DAA5DD4B133F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -779,6 +883,7 @@
 			files = (
 				83784ED91FEC618300693DF0 /* LaunchScreen.storyboard in Resources */,
 				83784ED61FEC618300693DF0 /* Assets.xcassets in Resources */,
+				83677EEA20056517000D1D26 /* GoogleService-Info.plist in Resources */,
 				83784ED41FEC618300693DF0 /* Main.storyboard in Resources */,
 				83C718C51FF8F1E6001C399F /* LargeTramTableViewCell.xib in Resources */,
 			);
@@ -839,6 +944,356 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2014C8971A2053430A16FB17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TFGMLive/Pods-TFGMLive-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TFGMLive/Pods-TFGMLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E28E00FBB073D4C88C21A2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TFGMLiveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D318802714A6B66C3D5DE53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TFGMLive/Pods-TFGMLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DF0C796A7889236C5A4882F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TFGMLiveTests/Pods-TFGMLiveTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		706DDF538B55952115C01325 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TramTimesWatch/Pods-TramTimesWatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C169ED6C20A43F8A19CEA56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StationRequestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EED417EFACED9EC276F103E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StationRequestTests/Pods-StationRequestTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StationRequestTests/Pods-StationRequestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83677EF22005699C000D1D26 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
+		};
+		83CA2CAD6E8B1C9A613A36A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StationRequest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		860592F17170BEBC58250B11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StationRequest/Pods-StationRequest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		907C545ECB67D148DF319951 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TramTimesWatch Extension/Pods-TramTimesWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		933E6BF5346F52C9FA6E278D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TFGMLiveTests/Pods-TFGMLiveTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959BCB09DF7BA61E2EA0F637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TramTimesWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C7B116828E4E460630EEBD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TramTimesWidget/Pods-TramTimesWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3793B28896662C3FA6F4485 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TramTimesWidget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0A861B57C1488F0AC11646E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StationRequestTests/Pods-StationRequestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D619A1DBB7D5636C8D3709FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TramTimesWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E88F032021C1CE17F13350B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchStationRequest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC04E621ED11DAA5DD4B133F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchStationRequest/Pods-WatchStationRequest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC0D550105152AC8376E42F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TFGMLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8386DDF675403921DAABD2D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TramTimesWatch Extension/Pods-TramTimesWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83784EC71FEC618300693DF0 /* Sources */ = {
@@ -1119,6 +1574,7 @@
 		};
 		83784EE91FEC618300693DF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50701A03CAAE7ECB4679FCB4 /* Pods-TFGMLive.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1136,6 +1592,7 @@
 		};
 		83784EEA1FEC618300693DF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 626ED043A019A40D7F70D100 /* Pods-TFGMLive.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1153,6 +1610,7 @@
 		};
 		83784EEC1FEC618300693DF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 398C7CF7C6C808B24CAEA9C7 /* Pods-TFGMLiveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1173,6 +1631,7 @@
 		};
 		83784EED1FEC618300693DF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CCB20F8DE214026DE801A2F /* Pods-TFGMLiveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1192,6 +1651,7 @@
 		};
 		83C718D91FF9669F001C399F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89E388F4F9F2E8FDA7A5486A /* Pods-TramTimesWidget.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TramTimesWidget/TramTimesWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1208,6 +1668,7 @@
 		};
 		83C718DA1FF9669F001C399F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448E8DC71F4553D8BD51AF8F /* Pods-TramTimesWidget.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TramTimesWidget/TramTimesWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1224,6 +1685,7 @@
 		};
 		83C718F91FF96832001C399F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26BD9BEA1768F678E0E4005D /* Pods-StationRequest.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1240,6 +1702,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequest;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1249,6 +1712,7 @@
 		};
 		83C718FA1FF96832001C399F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 261350CAAB2BF9E5F7895929 /* Pods-StationRequest.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1265,6 +1729,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequest;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1274,6 +1739,7 @@
 		};
 		83C718FD1FF96832001C399F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDFB76717709B8484597A899 /* Pods-StationRequestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1290,6 +1756,7 @@
 		};
 		83C718FE1FF96832001C399F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51AD421BD6FF862E26E0379C /* Pods-StationRequestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1306,6 +1773,7 @@
 		};
 		83C997E31FF9ACE40034F8E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B90ADB7E5EED25FBA91BEB2 /* Pods-TramTimesWatch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -1324,6 +1792,7 @@
 		};
 		83C997E41FF9ACE40034F8E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E8C6D3704E7FBC589F1366B /* Pods-TramTimesWatch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -1342,6 +1811,7 @@
 		};
 		83C997E71FF9ACE40034F8E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FF5859641403EFF6535C6C /* Pods-TramTimesWatch.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1361,6 +1831,7 @@
 		};
 		83C997E81FF9ACE40034F8E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F8F8237205629D31A3BC568 /* Pods-TramTimesWatch.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1380,6 +1851,7 @@
 		};
 		83D639771FFC2D8F001B4EA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF17934E0963109CAE887589 /* Pods-WatchStationRequest.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1407,6 +1879,7 @@
 		};
 		83D639781FFC2D8F001B4EA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEEE7B3439F055B005A497A5 /* Pods-WatchStationRequest.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";

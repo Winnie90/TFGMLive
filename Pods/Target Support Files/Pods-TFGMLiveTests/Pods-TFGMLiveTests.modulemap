@@ -1,0 +1,6 @@
+framework module Pods_TFGMLiveTests {
+  umbrella header "Pods-TFGMLiveTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
