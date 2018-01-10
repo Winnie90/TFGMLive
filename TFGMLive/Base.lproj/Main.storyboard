@@ -17,6 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="wiQ-ij-LVK">
+                            <rect key="frame" x="0.0" y="72" width="375" height="167"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Contains Transport for Greater Manchester data All icons provided by Icons8" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FAj-b8-wr1">
+                                    <rect key="frame" x="8" y="63" width="359" height="104"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                </textView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUY-gg-YhX">
+                                    <rect key="frame" x="0.0" y="21" width="375" height="34"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="CcG-ND-PlL"/>
+                                    </constraints>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Data">
+                                            <attributes>
+                                                <color key="NSColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system" size="17"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="8" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="FAj-b8-wr1" firstAttribute="leading" secondItem="wiQ-ij-LVK" secondAttribute="leading" constant="8" id="8so-Bm-bLm"/>
+                                <constraint firstAttribute="trailing" secondItem="FAj-b8-wr1" secondAttribute="trailing" constant="8" id="NKy-4C-y50"/>
+                                <constraint firstItem="FAj-b8-wr1" firstAttribute="top" secondItem="NUY-gg-YhX" secondAttribute="bottom" constant="8" id="R0d-tk-uh6"/>
+                                <constraint firstItem="NUY-gg-YhX" firstAttribute="leading" secondItem="wiQ-ij-LVK" secondAttribute="leading" id="Rl9-NF-Aic"/>
+                                <constraint firstItem="NUY-gg-YhX" firstAttribute="top" secondItem="wiQ-ij-LVK" secondAttribute="top" constant="21" id="Rzx-c5-1cH"/>
+                                <constraint firstItem="FAj-b8-wr1" firstAttribute="top" secondItem="NUY-gg-YhX" secondAttribute="bottom" constant="8" id="WZG-9F-ngl"/>
+                                <constraint firstAttribute="trailing" secondItem="NUY-gg-YhX" secondAttribute="trailing" id="tic-uY-GrO"/>
+                                <constraint firstAttribute="bottom" secondItem="FAj-b8-wr1" secondAttribute="bottom" id="uxy-zt-cG2"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsStationCell" textLabel="A3p-vv-FuX" detailTextLabel="JnX-7y-tx3" style="IBUITableViewCellStyleSubtitle" id="TMp-Sk-X7Q">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -60,10 +101,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="licenseTextArea" destination="FAj-b8-wr1" id="Vlb-YP-zB8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hj8-kF-PNv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="-568"/>
+            <point key="canvasLocation" x="1624.8" y="-568.06596701649175"/>
         </scene>
         <!--Add Station-->
         <scene sceneID="v5L-Mg-UL2">

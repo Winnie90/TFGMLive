@@ -2,6 +2,7 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
     
+    @IBOutlet weak var licenseTextArea: UITextView!
     private var stations: [StationRecord] = []
 
     var addStationsPressed: ()->() = {}
@@ -18,6 +19,7 @@ class SettingsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Edit Stations"
+        licenseTextArea.text = "Contains Transport for Greater Manchester data\nhttps://developer.tfgm.com/\n\nAll icons provided by Icons8\nhttps://icons8.com"
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
