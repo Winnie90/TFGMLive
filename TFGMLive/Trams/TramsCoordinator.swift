@@ -14,10 +14,17 @@ class TramsCoordinator {
         return pageViewController
     }
     
-    private var pageViewController: PageViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PageViewController")  as! PageViewController
+    private var pageViewController: PageViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PageViewController") as! PageViewController
     
     func start() {
-        pageViewController.orderedViewControllers = viewControllers()
+        let vcs = viewControllers()
+        pageViewController.orderedViewControllers = vcs
+        if let viewController = vcs.first {
+            pageViewController.setViewControllers([viewController],
+                                                  direction: .forward,
+                                                  animated: true,
+                                                  completion: nil)
+        }
         pageViewController.editButtonPressed = editButtonPressed
     }
     
@@ -40,4 +47,16 @@ class TramsCoordinator {
         return tramsViewController
     }
     
+    public func moveToIndex(_ index: Int) -> Bool {
+        let vcs = viewControllers()
+        if index < vcs.count {
+            pageViewController.orderedViewControllers = vcs
+            pageViewController.setViewControllers([vcs[index]],
+                                                  direction: .forward,
+                                                  animated: true,
+                                                  completion: nil)
+            return true
+        }
+        return false
+    }
 }

@@ -6,6 +6,7 @@ class AppCoordinator {
     let window: UIWindow
     let tramsCoordinator: TramsCoordinator
     let stationsService = StationServiceAdapter()
+    var dynamicLinksUpdated: ([UIApplicationShortcutItem])->() = { _ in }
     
     var rootViewController: UIViewController {
         return self.navigationController
@@ -27,15 +28,15 @@ class AppCoordinator {
         setupNavigation()
     }
     
-    func setupAnalytics() {
+    private func setupAnalytics() {
         FirebaseApp.configure()
     }
     
-    func setupWatchConnection() {
+    private func setupWatchConnection() {
         WatchSessionManager.sharedManager.startSession()
     }
     
-    func setupNavigation() {
+    private func setupNavigation() {
         tramsCoordinator.editButtonPressed = editTrams
         tramsCoordinator.start()
         navigationController.viewControllers = [tramsCoordinator.rootViewController]
@@ -43,10 +44,11 @@ class AppCoordinator {
         window.makeKeyAndVisible()
     }
     
-    func editTrams() {
+    private func editTrams() {
         let settingsCoordinator = SettingsCoordinator()
         settingsCoordinator.finish = { stations in
             self.stationsService.saveUsersStationRecords(stations: stations)
+            self.dynamicLinksUpdated(self.createShortcutItems(stations: stations))
             DispatchQueue.main.async {
                 self.tramsCoordinator.start()
                 self.navigationController.dismiss(animated: true)
@@ -55,6 +57,20 @@ class AppCoordinator {
         settingsCoordinator.start(stations: stationsService.getUsersStationRecords(),
                                   allStations: stationsService.getAllStationRecords())
         self.navigationController.present(settingsCoordinator.rootViewController, animated: true)
+    }
+    
+    private func createShortcutItems(stations: [StationRecord])->([UIApplicationShortcutItem]) {
+        var shortcutItems: [UIApplicationShortcutItem] = []
+        for (i, station) in stations.enumerated() {
+            let shortcutItem = UIApplicationShortcutItem(type: "\(i)", localizedTitle: station.name, localizedSubtitle: "\(station.destination)", icon: nil, userInfo: nil)
+            shortcutItems.append(shortcutItem)
+        }
+        return shortcutItems
+    }
+    
+    public func handleShortcut(shortcutItem: UIApplicationShortcutItem) -> Bool {
+        guard let shortcutIndex = Int(shortcutItem.type) else { return false }
+        return tramsCoordinator.moveToIndex(shortcutIndex)
     }
 }
 

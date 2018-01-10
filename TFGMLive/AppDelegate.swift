@@ -16,8 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         appCoordinator = AppCoordinator.init(window: window!)
+        appCoordinator?.dynamicLinksUpdated = { shortcutItems in
+            DispatchQueue.main.async {
+                application.shortcutItems = shortcutItems
+            }
+        }
+        
+        if let shortcutItem =
+            launchOptions?[UIApplicationLaunchOptionsKey.shortcutItem]
+                as? UIApplicationShortcutItem {
+            if let app = appCoordinator {
+                let _ = app.handleShortcut(shortcutItem: shortcutItem)
+            }
+            return false
+        }
+        
         return true
     }
 
@@ -43,6 +59,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        if let app = appCoordinator {
+            completionHandler(app.handleShortcut(shortcutItem: shortcutItem))
+        } else {
+            completionHandler(false)
+        }
+    }
 }
 
