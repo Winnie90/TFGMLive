@@ -62,7 +62,7 @@ class AppCoordinator {
     private func createShortcutItems(stations: [StationRecord])->([UIApplicationShortcutItem]) {
         var shortcutItems: [UIApplicationShortcutItem] = []
         for (i, station) in stations.enumerated() {
-            let shortcutItem = UIApplicationShortcutItem(type: "\(i)", localizedTitle: station.name, localizedSubtitle: "\(station.destination)", icon: nil, userInfo: nil)
+            let shortcutItem = UIApplicationShortcutItem(type: "\(i)", localizedTitle: station.name, localizedSubtitle: "\(station.destination)", icon: UIApplicationShortcutIcon(templateImageName:"shortcutIcon"), userInfo: nil)
             shortcutItems.append(shortcutItem)
         }
         return shortcutItems
