@@ -8,6 +8,8 @@ struct TramPresentable {
     
     init(tram: Tram) {
         self.destination = tram.destination
-        self.waitTime = tram.waitTime
+        self.waitTime = TimeConverter.longString(for: tram.waitTime)
     }
+    
+    
 }

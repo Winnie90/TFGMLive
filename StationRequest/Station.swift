@@ -55,15 +55,24 @@ extension Station {
             let thirdTramWaitingTime: String = try container.decode(String.self, forKey: .thirdTramWaitingTime)
             let fourthTramDestination: String = try container.decode(String.self, forKey: .fourthTramDestination)
             let fourthTramWaitingTime: String = try container.decode(String.self, forKey: .fourthTramWaitingTime)
+            
+            var trams: [Tram] = []
+            if firstTramDestination != "" {
+                trams.append(Tram(destination: firstTramDestination, waitTime: firstTramWaitingTime))
+            }
+            if secondTramDestination != "" {
+                trams.append(Tram(destination: secondTramDestination, waitTime: secondTramWaitingTime))
+            }
+            if thirdTramDestination != "" {
+                trams.append(Tram(destination: thirdTramDestination, waitTime: thirdTramWaitingTime))
+            }
+            if fourthTramDestination != "" {
+                trams.append(Tram(destination: fourthTramDestination, waitTime: fourthTramWaitingTime))
+            }
             self.init(identifier: identifier,
                       stationUid: stationUid,
                       name: name,
-                      trams:[
-                        Tram(destination: firstTramDestination, waitTime: firstTramWaitingTime),
-                        Tram(destination: secondTramDestination, waitTime: secondTramWaitingTime),
-                        Tram(destination: thirdTramDestination, waitTime: thirdTramWaitingTime),
-                        Tram(destination: fourthTramDestination, waitTime: fourthTramWaitingTime)
-                        ],
+                      trams:trams,
                       retrievedAt: Date()
             )
         } catch {

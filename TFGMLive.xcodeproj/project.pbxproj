@@ -16,6 +16,8 @@
 		83784ED41FEC618300693DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED21FEC618300693DF0 /* Main.storyboard */; };
 		83784ED61FEC618300693DF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED51FEC618300693DF0 /* Assets.xcassets */; };
 		83784ED91FEC618300693DF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED71FEC618300693DF0 /* LaunchScreen.storyboard */; };
+		8386AFB9200816D00042A7C3 /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386AFB8200816D00042A7C3 /* TimeConverter.swift */; };
+		8386AFBA200816D00042A7C3 /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386AFB8200816D00042A7C3 /* TimeConverter.swift */; };
 		8397168B1FED46A800C44131 /* AddStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397168A1FED46A800C44131 /* AddStationTableViewController.swift */; };
 		8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397168C1FED578A00C44131 /* SettingsTableViewController.swift */; };
 		839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716941FEFCDEA00C44131 /* PageViewController.swift */; };
@@ -220,6 +222,7 @@
 		83784EDF1FEC618300693DF0 /* TFGMLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFGMLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83784EE51FEC618300693DF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83784EF31FEC80C400693DF0 /* TFGMLiveTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TFGMLiveTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		8386AFB8200816D00042A7C3 /* TimeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverter.swift; sourceTree = "<group>"; };
 		839716881FED468600C44131 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
 		8397168A1FED46A800C44131 /* AddStationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStationTableViewController.swift; sourceTree = "<group>"; };
 		8397168C1FED578A00C44131 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -493,6 +496,7 @@
 				83C718BF1FF8575F001C399F /* StationRequest.swift */,
 				83C7190B1FF97E20001C399F /* AllStationsRequest.swift */,
 				839716881FED468600C44131 /* stations.json */,
+				8386AFB8200816D00042A7C3 /* TimeConverter.swift */,
 			);
 			path = StationRequest;
 			sourceTree = "<group>";
@@ -1339,6 +1343,7 @@
 			files = (
 				83C7190A1FF96D39001C399F /* UserDefaultsService.swift in Sources */,
 				83C719011FF968E3001C399F /* Tram.swift in Sources */,
+				8386AFB9200816D00042A7C3 /* TimeConverter.swift in Sources */,
 				83C719001FF968E3001C399F /* Station.swift in Sources */,
 				83C719061FF96BDF001C399F /* StationService.swift in Sources */,
 				83C7190C1FF97E20001C399F /* AllStationsRequest.swift in Sources */,
@@ -1375,6 +1380,7 @@
 			files = (
 				83D6397E1FFC2DB0001B4EA7 /* UserDefaultsService.swift in Sources */,
 				83D6397D1FFC2DAC001B4EA7 /* Tram.swift in Sources */,
+				8386AFBA200816D00042A7C3 /* TimeConverter.swift in Sources */,
 				83D6397F1FFC2DB3001B4EA7 /* StationRequest.swift in Sources */,
 				83D6397C1FFC2DA9001B4EA7 /* Station.swift in Sources */,
 				83D639811FFC2DCE001B4EA7 /* AllStationsRequest.swift in Sources */,

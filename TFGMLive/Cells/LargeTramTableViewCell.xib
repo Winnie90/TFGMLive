@@ -29,14 +29,8 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9N-5l-3ZU">
-                        <rect key="frame" x="155" y="77.5" width="25.5" height="26.5"/>
+                        <rect key="frame" x="175" y="77.5" width="25.5" height="26.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZL-21-zth">
-                        <rect key="frame" x="184.5" y="81" width="40.5" height="23"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -54,18 +48,16 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="4u9-Xz-O8J" firstAttribute="top" secondItem="xZL-21-zth" secondAttribute="bottom" constant="13" id="09U-J7-C7X"/>
                     <constraint firstItem="j9N-5l-3ZU" firstAttribute="top" secondItem="SgT-ch-Ymc" secondAttribute="bottom" constant="13" id="6fA-rg-Tu7"/>
+                    <constraint firstItem="4u9-Xz-O8J" firstAttribute="top" secondItem="j9N-5l-3ZU" secondAttribute="bottom" constant="13" id="ADX-dV-Vir"/>
                     <constraint firstItem="4u9-Xz-O8J" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="80P-8B-kOS" secondAttribute="leadingMargin" constant="8" id="Bxd-LI-qyM"/>
-                    <constraint firstItem="j9N-5l-3ZU" firstAttribute="centerX" secondItem="80P-8B-kOS" secondAttribute="centerX" constant="-20" id="CTK-LR-NSC"/>
+                    <constraint firstItem="j9N-5l-3ZU" firstAttribute="centerX" secondItem="80P-8B-kOS" secondAttribute="centerX" id="CTK-LR-NSC"/>
                     <constraint firstItem="4u9-Xz-O8J" firstAttribute="centerX" secondItem="80P-8B-kOS" secondAttribute="centerX" id="DXV-ee-zri"/>
                     <constraint firstAttribute="trailing" secondItem="wQ3-5R-hCi" secondAttribute="trailing" constant="8" id="HiQ-b4-bAx"/>
                     <constraint firstItem="SgT-ch-Ymc" firstAttribute="top" secondItem="80P-8B-kOS" secondAttribute="topMargin" constant="20" id="NBq-oK-LlD"/>
-                    <constraint firstItem="xZL-21-zth" firstAttribute="bottom" secondItem="j9N-5l-3ZU" secondAttribute="bottom" id="Slk-Ai-nQJ"/>
                     <constraint firstItem="wQ3-5R-hCi" firstAttribute="leading" secondItem="80P-8B-kOS" secondAttribute="leading" constant="8" id="ULz-7H-XbJ"/>
                     <constraint firstAttribute="bottom" secondItem="wQ3-5R-hCi" secondAttribute="bottom" constant="8" id="acC-vL-7Mh"/>
                     <constraint firstItem="SgT-ch-Ymc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="80P-8B-kOS" secondAttribute="leadingMargin" constant="8" id="fiq-9E-94H"/>
-                    <constraint firstItem="xZL-21-zth" firstAttribute="leading" secondItem="j9N-5l-3ZU" secondAttribute="trailing" constant="4" id="frb-1F-7zA"/>
                     <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="SgT-ch-Ymc" secondAttribute="trailing" constant="8" id="qcq-z6-0S6"/>
                     <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="4u9-Xz-O8J" secondAttribute="trailing" constant="8" id="rol-nT-A8p"/>
                     <constraint firstItem="SgT-ch-Ymc" firstAttribute="centerX" secondItem="80P-8B-kOS" secondAttribute="centerX" id="vnt-kF-D6E"/>

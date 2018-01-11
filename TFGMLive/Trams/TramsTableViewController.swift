@@ -36,33 +36,39 @@ class TramsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let station = station else {
-            return 0
+            return 1
         }
-        return station.trams.count
+        return station.trams.count > 0 ? station.trams.count : 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         if let station = station {
             if indexPath.row == 0 {
                 let largeCell = tableView.dequeueReusableCell(withIdentifier: "LargeTramTableViewCell", for: indexPath) as? LargeTramTableViewCell
                 largeCell?.stationNameLabel.text = station.name
-                let tram = station.trams[0]
-                largeCell?.destinationLabel.text = tram.destination
-                largeCell?.timeLabel.text = tram.waitTime
+                if station.trams.count > 0 {
+                    let tram = station.trams[0]
+                    largeCell?.destinationLabel.text = tram.destination
+                    largeCell?.timeLabel.text = tram.waitTime
+                } else {
+                    largeCell?.timeLabel.text = "No Trams Due"
+                }
                 largeCell?.retrievedAtLabel.text = station.retrievedAt
                 return largeCell!
             }
         }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "TramCell", for: indexPath)
-        let tram = station!.trams[indexPath.row]
-        cell.textLabel?.text = tram.destination
-        if let waitTime = Int(tram.waitTime) {
-            let plural = waitTime > 1 ? "s" : ""
-            cell.detailTextLabel?.text = "\(tram.waitTime) min\(plural)"
-        } else {
-            cell.detailTextLabel?.text = ""
+        cell.textLabel?.text = ""
+        cell.detailTextLabel?.text = ""
+        
+        if let station = station {
+            let tram = station.trams[indexPath.row]
+            cell.textLabel?.text = tram.destination
+            cell.detailTextLabel?.text = tram.waitTime
         }
+        
         return cell
     }
     

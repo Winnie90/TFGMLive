@@ -16,9 +16,7 @@ struct StationPresentable {
             stationTrams.append(TramPresentable(tram: tram))
         }
         self.trams = stationTrams
-        let dateString = DateFormatter.localizedString(from: station.retrievedAt, dateStyle: .none, timeStyle: .short)
-        
-        self.retrievedAt = "Retrieved at \(dateString), pull down to refresh"
+        self.retrievedAt = "\(TimeConverter.string(for: station.retrievedAt)), pull down to refresh"
     }
     
 }
