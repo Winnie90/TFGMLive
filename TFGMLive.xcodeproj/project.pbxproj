@@ -10,6 +10,8 @@
 		018068A9B86A7E8B0F281BFC /* Pods_TFGMLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F965C0E3E1D5F72545BE041 /* Pods_TFGMLive.framework */; };
 		5246658D81B6EA5E48A1FCAE /* Pods_TramTimesWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041D3EF0D376FFF9B2F4D3E3 /* Pods_TramTimesWatch.framework */; };
 		6FC83529363AFD96E2BA786A /* Pods_StationRequestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01C87D12718CEC1000304FB /* Pods_StationRequestTests.framework */; };
+		79760AFA2008BC910056C202 /* MessageBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79760AF82008BC910056C202 /* MessageBoardTableViewCell.swift */; };
+		79760AFB2008BC910056C202 /* MessageBoardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */; };
 		83677EEA20056517000D1D26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83677EE920056517000D1D26 /* GoogleService-Info.plist */; };
 		83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ECE1FEC618300693DF0 /* AppDelegate.swift */; };
 		83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ED01FEC618300693DF0 /* TramsTableViewController.swift */; };
@@ -211,6 +213,8 @@
 		626ED043A019A40D7F70D100 /* Pods-TFGMLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFGMLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFGMLive/Pods-TFGMLive.release.xcconfig"; sourceTree = "<group>"; };
 		6B90ADB7E5EED25FBA91BEB2 /* Pods-TramTimesWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TramTimesWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TramTimesWatch Extension/Pods-TramTimesWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		6CCB20F8DE214026DE801A2F /* Pods-TFGMLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFGMLiveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFGMLiveTests/Pods-TFGMLiveTests.release.xcconfig"; sourceTree = "<group>"; };
+		79760AF82008BC910056C202 /* MessageBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoardTableViewCell.swift; sourceTree = "<group>"; };
+		79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageBoardTableViewCell.xib; sourceTree = "<group>"; };
 		83677EE920056517000D1D26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83784ECB1FEC618300693DF0 /* TFGMLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFGMLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83784ECE1FEC618300693DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -452,6 +456,8 @@
 			children = (
 				83C718C21FF8EE18001C399F /* LargeTramTableViewCell.swift */,
 				83C718C41FF8F1E6001C399F /* LargeTramTableViewCell.xib */,
+				79760AF82008BC910056C202 /* MessageBoardTableViewCell.swift */,
+				79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -885,6 +891,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79760AFB2008BC910056C202 /* MessageBoardTableViewCell.xib in Resources */,
 				83784ED91FEC618300693DF0 /* LaunchScreen.storyboard in Resources */,
 				83784ED61FEC618300693DF0 /* Assets.xcassets in Resources */,
 				83677EEA20056517000D1D26 /* GoogleService-Info.plist in Resources */,
@@ -1309,6 +1316,7 @@
 				83C719141FF991F1001C399F /* StationPresentable.swift in Sources */,
 				83C719041FF96A39001C399F /* StationServiceAdapter.swift in Sources */,
 				83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */,
+				79760AFA2008BC910056C202 /* MessageBoardTableViewCell.swift in Sources */,
 				83C719161FF99227001C399F /* TramPresentable.swift in Sources */,
 				83D639651FFC2547001B4EA7 /* WatchSessionManager.swift in Sources */,
 				83C718B71FF83008001C399F /* SettingsCoordinator.swift in Sources */,

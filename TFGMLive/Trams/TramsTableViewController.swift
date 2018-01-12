@@ -16,6 +16,7 @@ class TramsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib.init(nibName: "LargeTramTableViewCell", bundle: nil), forCellReuseIdentifier: "LargeTramTableViewCell")
+        tableView.register(UINib.init(nibName: "MessageBoardTableViewCell", bundle: nil), forCellReuseIdentifier: "MessageBoardTableViewCell")
         refreshControl?.addTarget(self, action: #selector(refreshStation), for: UIControlEvents.valueChanged)
     }
     
@@ -36,9 +37,9 @@ class TramsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let station = station else {
-            return 1
+            return 2
         }
-        return station.trams.count > 0 ? station.trams.count : 1
+        return station.trams.count > 0 ? station.trams.count+1 : 2
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,6 +57,10 @@ class TramsTableViewController: UITableViewController {
                 }
                 largeCell?.retrievedAtLabel.text = station.retrievedAt
                 return largeCell!
+            } else if indexPath.row == station.trams.count {
+                let messageBoardCell = tableView.dequeueReusableCell(withIdentifier: "MessageBoardTableViewCell", for: indexPath) as? MessageBoardTableViewCell
+                messageBoardCell?.messageBoardLabel.text = station.messageBoard
+                return messageBoardCell!
             }
         }
         
@@ -75,8 +80,10 @@ class TramsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
             return 186
+        } else if indexPath.row == station?.trams.count {
+            return 100
         }
-        return 60
+        return 80
     }
 }
 

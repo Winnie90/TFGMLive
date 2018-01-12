@@ -21,6 +21,7 @@ struct StationRecord {
         return Station(identifier: identifier, stationUid: "",
                        name: name,
                        trams: [Tram(destination: destination, waitTime:"0")],
-                       retrievedAt: Date())
+                       retrievedAt: Date(),
+                       messageBoard: "")
     }
 }

@@ -6,17 +6,20 @@ public struct Station: Codable {
     public let name: String
     public let trams: [Tram]
     public let retrievedAt: Date
+    public let messageBoard: String
     
     public init(identifier: Int,
                 stationUid: String,
                 name: String,
                 trams: [Tram],
-                retrievedAt: Date) {
+                retrievedAt: Date,
+                messageBoard: String) {
         self.identifier = identifier
         self.stationUid = stationUid
         self.name = name
         self.trams = trams
         self.retrievedAt = retrievedAt
+        self.messageBoard = messageBoard
     }
 }
 
@@ -38,6 +41,8 @@ extension Station {
         case savedName = "name"
         case savedTrams = "trams"
         case savedRetrievedAt = "retrievedAt"
+        case messageBoard = "MessageBoard"
+        case savedMessageBoard = "messageBoard"
     }
     
     public init(from decoder: Decoder) throws {
@@ -55,6 +60,7 @@ extension Station {
             let thirdTramWaitingTime: String = try container.decode(String.self, forKey: .thirdTramWaitingTime)
             let fourthTramDestination: String = try container.decode(String.self, forKey: .fourthTramDestination)
             let fourthTramWaitingTime: String = try container.decode(String.self, forKey: .fourthTramWaitingTime)
+            let messageBoard: String = try container.decode(String.self, forKey: .messageBoard)
             
             var trams: [Tram] = []
             if firstTramDestination != "" {
@@ -73,7 +79,8 @@ extension Station {
                       stationUid: stationUid,
                       name: name,
                       trams:trams,
-                      retrievedAt: Date()
+                      retrievedAt: Date(),
+                      messageBoard: messageBoard
             )
         } catch {
             let stationUid: String = try container.decode(String.self, forKey: .savedStationUid)
@@ -81,11 +88,13 @@ extension Station {
             let name: String = try container.decode(String.self, forKey: .savedName)
             let trams: [Tram] = try container.decode(Array<Tram>.self, forKey: .savedTrams)
             let retrievedAt: Date = try container.decode(Date.self, forKey: .savedRetrievedAt)
+            let messageBoard: String = try container.decode(String.self, forKey: .savedMessageBoard)
             self.init(identifier: identifier,
                       stationUid: stationUid,
                       name: name,
                       trams: trams,
-                      retrievedAt: retrievedAt
+                      retrievedAt: retrievedAt,
+                      messageBoard: messageBoard
             )
         }
     }
