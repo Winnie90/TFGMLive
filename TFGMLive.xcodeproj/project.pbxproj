@@ -1588,6 +1588,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
 				INFOPLIST_FILE = "$(SRCROOT)/TFGMLive/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1606,6 +1607,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
 				INFOPLIST_FILE = "$(SRCROOT)/TFGMLive/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1663,6 +1665,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
 				INFOPLIST_FILE = TramTimesWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.TramTimesWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1680,6 +1683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87UEWGZE24;
 				INFOPLIST_FILE = TramTimesWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.TramTimesWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1704,6 +1708,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = StationRequest/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequest;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1731,6 +1736,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = StationRequest/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequest;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
