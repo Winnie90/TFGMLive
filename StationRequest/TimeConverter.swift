@@ -13,7 +13,10 @@ public struct TimeConverter {
     }
     
     public static func longString(for waitTime: String) -> String {
-        guard let waitTime = Int(waitTime) else { return "Due" }
+        if waitTime == "Due" {
+            return waitTime
+        }
+        guard let waitTime = Int(waitTime) else { return "" }
         
         if waitTime < 2 {
             return "Due in 1 min at \(DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .short))"

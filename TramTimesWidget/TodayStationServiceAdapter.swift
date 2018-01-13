@@ -29,22 +29,16 @@ struct TodayStationPresentable {
         self.firstWaitTime = ""
         self.secondDestination = ""
         self.secondWaitTime = ""
-        self.retrievedAt = ""
-        self.retrievedAt = stringForRetrievalDate(retrievedAt: Date())
+        self.retrievedAt = TimeConverter.string(for: Date())
     }
     
     init(station: Station) {
         self.name = station.name
         self.firstDestination = station.trams[0].destination
-        self.firstWaitTime = "\(station.trams[0].waitTime) mins"
+        self.firstWaitTime = TimeConverter.longString(for: station.trams[0].waitTime)
         self.secondDestination = station.trams[1].destination
-        self.secondWaitTime = "\(station.trams[1].waitTime) mins"
-        self.retrievedAt = ""
-        self.retrievedAt = stringForRetrievalDate(retrievedAt: station.retrievedAt)
+        self.secondWaitTime = TimeConverter.longString(for: station.trams[1].waitTime)
+        self.retrievedAt = TimeConverter.string(for: station.retrievedAt)
     }
-    
-    func stringForRetrievalDate(retrievedAt: Date) -> String {
-        let dateString = DateFormatter.localizedString(from: retrievedAt, dateStyle: .none, timeStyle: .short)
-        return "Retrieved at \(dateString)"
-    }
+
 }
