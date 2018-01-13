@@ -57,6 +57,8 @@
 		83C997DA1FF9ACE40034F8E1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C997D91FF9ACE40034F8E1 /* ComplicationController.swift */; };
 		83C997DC1FF9ACE40034F8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C997DB1FF9ACE40034F8E1 /* Assets.xcassets */; };
 		83C997E11FF9ACE40034F8E1 /* TramTimesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 83C997C21FF9ACE40034F8E1 /* TramTimesWatch.app */; };
+		83D4F0C6200A620D00D458FD /* apikey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83D4F0C5200A620D00D458FD /* apikey.txt */; };
+		83D4F0C7200A620D00D458FD /* apikey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83D4F0C5200A620D00D458FD /* apikey.txt */; };
 		83D639651FFC2547001B4EA7 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639641FFC2547001B4EA7 /* WatchSessionManager.swift */; };
 		83D639671FFC25C4001B4EA7 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639661FFC25C4001B4EA7 /* WatchSessionManager.swift */; };
 		83D639711FFC2D8F001B4EA7 /* WatchStationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D6396F1FFC2D8F001B4EA7 /* WatchStationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -270,6 +272,7 @@
 		83C997D91FF9ACE40034F8E1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		83C997DB1FF9ACE40034F8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83C997DD1FF9ACE40034F8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D4F0C5200A620D00D458FD /* apikey.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = apikey.txt; sourceTree = "<group>"; };
 		83D639641FFC2547001B4EA7 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		83D639661FFC25C4001B4EA7 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		83D6396D1FFC2D8F001B4EA7 /* WatchStationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WatchStationRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -503,6 +506,7 @@
 				83C7190B1FF97E20001C399F /* AllStationsRequest.swift */,
 				839716881FED468600C44131 /* stations.json */,
 				8386AFB8200816D00042A7C3 /* TimeConverter.swift */,
+				83D4F0C5200A620D00D458FD /* apikey.txt */,
 			);
 			path = StationRequest;
 			sourceTree = "<group>";
@@ -920,6 +924,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83C7190D1FF98B3E001C399F /* stations.json in Resources */,
+				83D4F0C6200A620D00D458FD /* apikey.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -951,6 +956,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D4F0C7200A620D00D458FD /* apikey.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
