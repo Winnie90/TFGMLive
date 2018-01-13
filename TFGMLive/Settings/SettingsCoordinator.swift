@@ -49,4 +49,11 @@ class SettingsCoordinator {
     func save() {
         finish(stations)
     }
+    
+    func noStationsError() {
+        let ac = UIAlertController(title: "No Stations", message: "Please add at least one station", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default)
+        ac.addAction(action)
+        navigationController.viewControllers.first?.present(ac, animated: true)
+    }
 }

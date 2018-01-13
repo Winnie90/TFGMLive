@@ -47,11 +47,15 @@ class AppCoordinator {
     private func editTrams() {
         let settingsCoordinator = SettingsCoordinator()
         settingsCoordinator.finish = { stations in
-            self.stationsService.saveUsersStationRecords(stations: stations)
-            self.dynamicLinksUpdated(self.createShortcutItems(stations: stations))
-            DispatchQueue.main.async {
-                self.tramsCoordinator.start()
-                self.navigationController.dismiss(animated: true)
+            if stations.count > 0 {
+                self.stationsService.saveUsersStationRecords(stations: stations)
+                self.dynamicLinksUpdated(self.createShortcutItems(stations: stations))
+                DispatchQueue.main.async {
+                    self.tramsCoordinator.start()
+                    self.navigationController.dismiss(animated: true)
+                }
+            } else {
+                settingsCoordinator.noStationsError()
             }
         }
         settingsCoordinator.start(stations: stationsService.getUsersStationRecords(),
