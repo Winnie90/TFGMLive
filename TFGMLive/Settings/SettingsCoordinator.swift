@@ -42,7 +42,11 @@ class SettingsCoordinator {
     func addStation() {
         addStationsTableViewController.stations = allStations
         addStationsTableViewController.stationSelected = { station in
-            self.stations.append(station)
+            if !self.stations.contains(where: { stationArr in
+                return station.identifier == stationArr.identifier
+            }) {
+                self.stations.append(station)
+            }
             self.settingsTableViewController.dataRefreshed(stations: self.stations)
             self.navigationController.popToRootViewController(animated: true)
         }
