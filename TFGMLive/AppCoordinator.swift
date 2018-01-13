@@ -26,6 +26,7 @@ class AppCoordinator {
         setupAnalytics()
         setupWatchConnection()
         setupNavigation()
+        coldStartCheck()
     }
     
     private func setupAnalytics() {
@@ -40,11 +41,18 @@ class AppCoordinator {
         tramsCoordinator.editButtonPressed = editTrams
         tramsCoordinator.start()
         navigationController.viewControllers = [tramsCoordinator.rootViewController]
+
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
     
-    private func editTrams() {
+    private func coldStartCheck() {
+        if stationsService.getUsersStationRecords().count < 1 {
+            editTrams(coldStart: true)
+        }
+    }
+    
+    private func editTrams(coldStart: Bool = false) {
         let settingsCoordinator = SettingsCoordinator()
         settingsCoordinator.finish = { stations in
             if stations.count > 0 {
@@ -59,7 +67,8 @@ class AppCoordinator {
             }
         }
         settingsCoordinator.start(stations: stationsService.getUsersStationRecords(),
-                                  allStations: stationsService.getAllStationRecords())
+                                  allStations: stationsService.getAllStationRecords(),
+                                  coldStart: coldStart)
         self.navigationController.present(settingsCoordinator.rootViewController, animated: true)
     }
     

@@ -4,7 +4,7 @@ class PageViewController: UIPageViewController {
 
     var orderedViewControllers: [UIViewController] = []
     var pageControl = UIPageControl()
-    var editButtonPressed: ()->() = {}
+    var editButtonPressed: (Bool)->() = {_ in}
     
     required init?(coder aDecoder: NSCoder) {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
@@ -47,7 +47,7 @@ class PageViewController: UIPageViewController {
     }
     
     @objc func editButtonTapped() {
-        editButtonPressed()
+        editButtonPressed(false)
     }
 }
 

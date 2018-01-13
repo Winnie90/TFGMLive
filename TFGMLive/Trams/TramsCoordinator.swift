@@ -2,7 +2,7 @@ import UIKit
 
 class TramsCoordinator {
     
-    var editButtonPressed: ()->() = {}
+    var editButtonPressed: (Bool)->() = {_ in}
     
     let stationService: StationServiceAdapter
     

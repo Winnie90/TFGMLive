@@ -24,7 +24,7 @@ class SettingsCoordinator {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddStation") as! AddStationTableViewController
     }()
     
-    func start(stations: [StationRecord], allStations: [StationRecord]) {
+    func start(stations: [StationRecord], allStations: [StationRecord], coldStart: Bool) {
         self.stations = stations
         self.allStations = allStations
         settingsTableViewController.dataRefreshed(stations: stations)
@@ -34,6 +34,9 @@ class SettingsCoordinator {
             self.stations.remove(at: index)
         }
         navigationController.viewControllers = [settingsTableViewController]
+        if coldStart {
+            addStation()
+        }
     }
     
     func addStation() {
