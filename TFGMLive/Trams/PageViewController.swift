@@ -27,13 +27,14 @@ class PageViewController: UIPageViewController {
         pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 42,width: UIScreen.main.bounds.width,height: 42))
         pageControl.numberOfPages = orderedViewControllers.count
         pageControl.currentPage = 0
-        pageControl.tintColor = UIColor.gray
-        pageControl.pageIndicatorTintColor = UIColor.gray
+        pageControl.tintColor = UIColor.white
+        pageControl.pageIndicatorTintColor = UIColor.white
         pageControl.currentPageIndicatorTintColor = UIColor.black
         
         let editButton = UIButton(type: .custom)
-        editButton.frame = CGRect(x: UIScreen.main.bounds.maxX - 58, y: 0, width: 34, height: 34)
+        editButton.frame = CGRect(x: UIScreen.main.bounds.maxX - 42, y: 0, width: 34, height: 34)
         editButton.setImage(UIImage(named: "settings"), for: .normal)
+
         editButton.addTarget(self, action: #selector(editButtonTapped), for: .touchUpInside)
         
         pageControl.addSubview(editButton)

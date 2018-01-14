@@ -12,6 +12,8 @@
 		6FC83529363AFD96E2BA786A /* Pods_StationRequestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01C87D12718CEC1000304FB /* Pods_StationRequestTests.framework */; };
 		79760AFA2008BC910056C202 /* MessageBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79760AF82008BC910056C202 /* MessageBoardTableViewCell.swift */; };
 		79760AFB2008BC910056C202 /* MessageBoardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */; };
+		834A3B85200C046400B900BF /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A3B84200C046400B900BF /* ColorConverter.swift */; };
+		834A3B86200C046400B900BF /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A3B84200C046400B900BF /* ColorConverter.swift */; };
 		83677EEA20056517000D1D26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83677EE920056517000D1D26 /* GoogleService-Info.plist */; };
 		83784ECF1FEC618300693DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ECE1FEC618300693DF0 /* AppDelegate.swift */; };
 		83784ED11FEC618300693DF0 /* TramsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83784ED01FEC618300693DF0 /* TramsTableViewController.swift */; };
@@ -217,6 +219,7 @@
 		6CCB20F8DE214026DE801A2F /* Pods-TFGMLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFGMLiveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFGMLiveTests/Pods-TFGMLiveTests.release.xcconfig"; sourceTree = "<group>"; };
 		79760AF82008BC910056C202 /* MessageBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoardTableViewCell.swift; sourceTree = "<group>"; };
 		79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageBoardTableViewCell.xib; sourceTree = "<group>"; };
+		834A3B84200C046400B900BF /* ColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConverter.swift; sourceTree = "<group>"; };
 		83677EE920056517000D1D26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83784ECB1FEC618300693DF0 /* TFGMLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFGMLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83784ECE1FEC618300693DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -505,6 +508,7 @@
 				83C718BF1FF8575F001C399F /* StationRequest.swift */,
 				83C7190B1FF97E20001C399F /* AllStationsRequest.swift */,
 				8386AFB8200816D00042A7C3 /* TimeConverter.swift */,
+				834A3B84200C046400B900BF /* ColorConverter.swift */,
 				839716881FED468600C44131 /* stations.json */,
 				83D4F0C5200A620D00D458FD /* apikey.txt */,
 			);
@@ -1361,6 +1365,7 @@
 				83C719001FF968E3001C399F /* Station.swift in Sources */,
 				83C719061FF96BDF001C399F /* StationService.swift in Sources */,
 				83C7190C1FF97E20001C399F /* AllStationsRequest.swift in Sources */,
+				834A3B85200C046400B900BF /* ColorConverter.swift in Sources */,
 				83C718FF1FF96865001C399F /* StationRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1398,6 +1403,7 @@
 				83D6397F1FFC2DB3001B4EA7 /* StationRequest.swift in Sources */,
 				83D6397C1FFC2DA9001B4EA7 /* Station.swift in Sources */,
 				83D639811FFC2DCE001B4EA7 /* AllStationsRequest.swift in Sources */,
+				834A3B86200C046400B900BF /* ColorConverter.swift in Sources */,
 				83D6397B1FFC2DA6001B4EA7 /* StationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

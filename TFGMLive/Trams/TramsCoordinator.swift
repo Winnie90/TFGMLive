@@ -1,4 +1,5 @@
 import UIKit
+import StationRequest
 
 class TramsCoordinator {
     
@@ -31,19 +32,20 @@ class TramsCoordinator {
     private func viewControllers() -> [UIViewController] {
         let stations: [StationPresentable] = stationService.getUserStations()
         var viewControllers: [UIViewController] = []
-        for station in stations {
-            viewControllers.append(newTramViewController(station: station))
+        for (key, station) in stations.enumerated() {
+            viewControllers.append(newTramViewController(station: station, color: ColorConverter.colorFor(index: key)))
         }
         return viewControllers
     }
     
-    private func newTramViewController(station: StationPresentable) -> UIViewController {
+    private func newTramViewController(station: StationPresentable, color: UIColor) -> UIViewController {
         let tramsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TramsTableViewController") as! TramsTableViewController
         tramsViewController.refreshData = {
             self.stationService.getLatestDataForStation(station: station, completion: { station, error in
                 tramsViewController.dataRefreshed(station: station, error: error)
             })
         }
+        tramsViewController.color = color
         return tramsViewController
     }
     

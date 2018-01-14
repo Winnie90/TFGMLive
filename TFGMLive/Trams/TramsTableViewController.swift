@@ -4,6 +4,7 @@ class TramsTableViewController: UITableViewController {
     
     var station: StationPresentable?
     var refreshData: ()->() = {}
+    var color: UIColor = UIColor.black
     
     public func dataRefreshed(station: StationPresentable, error: Error?) {
         if let error = error {
@@ -18,6 +19,7 @@ class TramsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        applyStyles()
         tableView.register(UINib.init(nibName: "LargeTramTableViewCell", bundle: nil), forCellReuseIdentifier: "LargeTramTableViewCell")
         tableView.register(UINib.init(nibName: "MessageBoardTableViewCell", bundle: nil), forCellReuseIdentifier: "MessageBoardTableViewCell")
         refreshControl?.addTarget(self, action: #selector(refreshStation), for: UIControlEvents.valueChanged)
@@ -30,6 +32,11 @@ class TramsTableViewController: UITableViewController {
     
     @objc func refreshStation() {
         refreshData()
+    }
+    
+    func applyStyles() {
+        view.backgroundColor = self.color
+        tableView.backgroundColor = self.color
     }
     
     func showError(error: Error) {
@@ -61,19 +68,21 @@ class TramsTableViewController: UITableViewController {
             } else {
                 largeCell?.stationNameLabel.text = ""
             }
-            
+            largeCell?.backgroundColor = color
             return largeCell!
         }
         if let station = station {
             if indexPath.row == station.trams.count {
                 let messageBoardCell = tableView.dequeueReusableCell(withIdentifier: "MessageBoardTableViewCell", for: indexPath) as? MessageBoardTableViewCell
                 messageBoardCell?.messageBoardLabel.text = station.messageBoard
+                messageBoardCell?.backgroundColor = color
                 return messageBoardCell!
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "TramCell", for: indexPath)
                 let tram = station.trams[indexPath.row]
                 cell.textLabel?.text = tram.destination
                 cell.detailTextLabel?.text = tram.waitTime
+                cell.backgroundColor = color
                 return cell
             }
         }
