@@ -23,9 +23,13 @@ struct StationServiceAdapter: DataSourceChangedDelegate {
         return stations
     }
     
-    func getLatestDataForStation(station: StationPresentable, completion: @escaping (StationPresentable)->()) {
-        return StationService.getLatestDataForStation(identifier: station.identifier, completion: { station in
-            completion(StationPresentable(station: station))
+    func getLatestDataForStation(station: StationPresentable, completion: @escaping (StationPresentable, Error?)->()) {
+        return StationService.getLatestDataForStation(identifier: station.identifier, completion: { station, error in
+            if let station = station {
+                completion(StationPresentable(station: station), nil)
+            } else {
+                completion(StationPresentable(), error)
+            }
         })
     }
     

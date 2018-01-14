@@ -68,19 +68,19 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         return template
     }
     
-    func retrieveUpdate(completion: @escaping ()->()) {
-        let userDataService = UserDataService()
-        if Date().timeIntervalSince(userDataService.getComplicationRetrievalDate()) > 60 {
-            if let identifier = UserDataService().getStationIdentifiers().first {
-                WatchStationServiceAdapter.getLatestDataForStationIdentifier(identifier: identifier, completion: { station in
-                    userDataService.setComplicationRetrievalDate()
-                    self.retrievedStation = station
-                    completion()
-                })
-            }
-        }
-        completion()
-    }
+//    func retrieveUpdate(completion: @escaping ()->()) {
+//        let userDataService = UserDataService()
+//        if Date().timeIntervalSince(userDataService.getComplicationRetrievalDate()) > 60 {
+//            if let identifier = UserDataService().getStationIdentifiers().first {
+//                WatchStationServiceAdapter.getLatestDataForStationIdentifier(identifier: identifier, completion: { station, error  in
+//                    userDataService.setComplicationRetrievalDate()
+//                    self.retrievedStation = station
+//                    completion()
+//                })
+//            }
+//        }
+//        completion()
+//    }
     
     func convertWaitTime(waitTime: String) -> Int {
         return Int(waitTime) ?? 0

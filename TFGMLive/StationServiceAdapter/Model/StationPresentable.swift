@@ -9,6 +9,14 @@ struct StationPresentable {
     let retrievedAt: String
     let messageBoard: String
     
+    init () {
+        self.identifier = 0
+        self.name = "Could not fetch data"
+        self.trams = []
+        self.retrievedAt = "\(TimeConverter.string(for: Date())), pull down to refresh"
+        self.messageBoard = ""
+    }
+    
     init(station: Station) {
         self.identifier = station.identifier
         self.name = station.name

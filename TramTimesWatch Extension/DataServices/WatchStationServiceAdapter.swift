@@ -2,10 +2,14 @@ import WatchStationRequest
 
 struct WatchStationServiceAdapter {
     
-    static func getLatestDataForStationIdentifier(identifier: String, completion: @escaping (WatchStationPresentable)->()) {
+    static func getLatestDataForStationIdentifier(identifier: String, completion: @escaping (WatchStationPresentable?, Error?)->()) {
         if let identifier = Int(identifier) {
-            StationService.getLatestDataForStation(identifier: identifier, completion: { station in
-                completion(WatchStationPresentable(station: station))
+            StationService.getLatestDataForStation(identifier: identifier, completion: { station, error in
+                if let station = station{
+                    completion(WatchStationPresentable(station: station), nil)
+                } else {
+                    completion(nil, error)
+                }
             })
         }
     }
@@ -16,6 +20,12 @@ struct WatchStationPresentable {
     let name: String
     var trams: [WatchTramPresentable]
     var retrievedAt: String
+    
+    init() {
+        self.name = "Could not retrieve data"
+        self.trams = []
+        self.retrievedAt = TimeConverter.string(for: Date())
+    }
     
     init(station: Station) {
         self.name = station.name

@@ -4,7 +4,7 @@ import StationRequest
 struct StationServiceAdapter {
     
     func getLatestData(completion: @escaping (TodayStationPresentable)->()) {
-        StationService.getLatestDataForUserFavouriteStation(completion: { station in
+        StationService.getLatestDataForUserFavouriteStation(completion: { station, error in
             if let station = station {
                 completion(TodayStationPresentable(station: station))
             } else {
@@ -24,7 +24,7 @@ struct TodayStationPresentable {
     var retrievedAt: String
     
     init() {
-        self.name = "Could not retrieve data"
+        self.name = "Could not fetch station data"
         self.firstDestination = ""
         self.firstWaitTime = ""
         self.secondDestination = ""

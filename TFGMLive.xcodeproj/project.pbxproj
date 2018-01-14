@@ -504,8 +504,8 @@
 				83C719091FF96D39001C399F /* UserDefaultsService.swift */,
 				83C718BF1FF8575F001C399F /* StationRequest.swift */,
 				83C7190B1FF97E20001C399F /* AllStationsRequest.swift */,
-				839716881FED468600C44131 /* stations.json */,
 				8386AFB8200816D00042A7C3 /* TimeConverter.swift */,
+				839716881FED468600C44131 /* stations.json */,
 				83D4F0C5200A620D00D458FD /* apikey.txt */,
 			);
 			path = StationRequest;

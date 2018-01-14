@@ -9,7 +9,7 @@ struct StationRequest {
         return apiKey.replacingOccurrences(of:"\n", with:"")
     }
     
-    func retrieveStationData(identifier: Int, completion: @escaping (Station)->()) {
+    func retrieveStationData(identifier: Int, completion: @escaping (Station?, Error?)->()) {
         let urlString = "https://api.tfgm.com/odata/Metrolinks(\(identifier))"
         if let escapedUrl = urlString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed),
             let url = URL(string: escapedUrl) {
@@ -17,18 +17,21 @@ struct StationRequest {
             request.setValue(retrieveStationsApiKey(), forHTTPHeaderField: "Ocp-Apim-Subscription-Key")
             URLSession.shared.dataTask(with: request) { data, response, error in
                 if error != nil {
-                    //return error
+                    let parsedError = NSError(domain: "StationRequest", code: RequestError.responseError.rawValue, userInfo: [NSUnderlyingErrorKey: error as Any])
+                    completion(nil, parsedError)
                 }
                 if let data = data {
                     do {
                         let station = try JSONDecoder().decode(Station.self, from: data)
-                        completion(station)
+                        completion(station, nil)
                     }
-                    catch {
-                        //return error
+                    catch { 
+                        let parsedError = NSError(domain: "StationRequest", code: RequestError.parseError.rawValue, userInfo: [NSUnderlyingErrorKey: error])
+                        completion(nil, parsedError)
                     }
                 } else {
-                    //return error
+                    let parsedError = NSError(domain: "StationRequest", code: RequestError.noData.rawValue, userInfo: [NSUnderlyingErrorKey: error as Any])
+                    completion(nil, parsedError)
                 }
             }.resume()
         }
