@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="wiQ-ij-LVK">
-                            <rect key="frame" x="0.0" y="72" width="375" height="167"/>
+                            <rect key="frame" x="0.0" y="72" width="375" height="280"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Contains Transport for Greater Manchester data All icons provided by Icons8" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FAj-b8-wr1">
-                                    <rect key="frame" x="8" y="63" width="359" height="104"/>
+                                    <rect key="frame" x="8" y="63" width="359" height="217"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
