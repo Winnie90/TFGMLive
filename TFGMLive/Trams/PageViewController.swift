@@ -14,7 +14,7 @@ class PageViewController: UIPageViewController {
         super.viewDidLoad()
         dataSource = self
         delegate = self
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor(red:0.20, green:0.60, blue:0.86, alpha:1.0) //blue
         createPageControl()
     }
     
