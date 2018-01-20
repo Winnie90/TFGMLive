@@ -26,7 +26,7 @@ struct StationPresentable {
         }
         self.trams = stationTrams
         self.retrievedAt = "\(TimeConverter.string(for: station.retrievedAt)), pull down to refresh"
-        self.messageBoard = station.messageBoard != "<no-message-data>" ? station.messageBoard : ""
+        self.messageBoard = station.messageBoard != "<no message>" ? station.messageBoard : ""
     }
     
 }

@@ -12,8 +12,9 @@ class AddStationTableViewController: UITableViewController {
         filteredStations = stations
     }
     
-    
-    
+    override func viewWillAppear(_ animated: Bool) {
+        searchActive = false
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searchActive {
@@ -47,6 +48,7 @@ class AddStationTableViewController: UITableViewController {
 extension AddStationTableViewController: UISearchBarDelegate {
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.text = ""
         searchActive = true
     }
     
@@ -64,7 +66,7 @@ extension AddStationTableViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredStations = stations.filter({ station in
-            return station.name.contains(searchText)
+            return station.name.lowercased().contains(searchText.lowercased())
         })
         searchActive = filteredStations.count > 0
         tableView.reloadData()
