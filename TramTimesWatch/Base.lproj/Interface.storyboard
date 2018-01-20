@@ -47,6 +47,9 @@
                                 </tableRow>
                             </items>
                         </table>
+                        <label alignment="left" text="No more trams, hard press to refresh data" numberOfLines="0" id="bNZ-cI-363">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
                     </items>
                     <menu key="menu" id="wf4-3j-u9v">
                         <items>
