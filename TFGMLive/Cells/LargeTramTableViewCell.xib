@@ -41,7 +41,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQ3-5R-hCi">
-                        <rect key="frame" x="8" y="178.5" width="359" height="0.0"/>
+                        <rect key="frame" x="8" y="170.5" width="359" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -56,7 +56,7 @@
                     <constraint firstAttribute="trailing" secondItem="wQ3-5R-hCi" secondAttribute="trailing" constant="8" id="HiQ-b4-bAx"/>
                     <constraint firstItem="SgT-ch-Ymc" firstAttribute="top" secondItem="80P-8B-kOS" secondAttribute="topMargin" constant="20" id="NBq-oK-LlD"/>
                     <constraint firstItem="wQ3-5R-hCi" firstAttribute="leading" secondItem="80P-8B-kOS" secondAttribute="leading" constant="8" id="ULz-7H-XbJ"/>
-                    <constraint firstAttribute="bottom" secondItem="wQ3-5R-hCi" secondAttribute="bottom" constant="8" id="acC-vL-7Mh"/>
+                    <constraint firstAttribute="bottom" secondItem="wQ3-5R-hCi" secondAttribute="bottom" constant="16" id="acC-vL-7Mh"/>
                     <constraint firstItem="SgT-ch-Ymc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="80P-8B-kOS" secondAttribute="leadingMargin" constant="8" id="fiq-9E-94H"/>
                     <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="SgT-ch-Ymc" secondAttribute="trailing" constant="8" id="qcq-z6-0S6"/>
                     <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="4u9-Xz-O8J" secondAttribute="trailing" constant="8" id="rol-nT-A8p"/>
