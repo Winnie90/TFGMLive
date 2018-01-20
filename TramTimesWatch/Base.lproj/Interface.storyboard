@@ -14,7 +14,7 @@
             <objects>
                 <controller identifier="StationInterfaceController" id="AgC-eL-Hgc" customClass="StationInterfaceController" customModule="TramTimesWatch_Extension">
                     <items>
-                        <label alignment="left" text="Fetching..." id="j3E-a5-wk3"/>
+                        <label alignment="left" text="Fetching..." numberOfLines="0" id="j3E-a5-wk3"/>
                         <label alignment="left" id="awe-vS-WaR">
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
@@ -48,6 +48,15 @@
                             </items>
                         </table>
                     </items>
+                    <menu key="menu" id="wf4-3j-u9v">
+                        <items>
+                            <menuItem title="Refresh" icon="resume" id="Xb1-aU-UPv">
+                                <connections>
+                                    <action selector="refreshTapped" destination="AgC-eL-Hgc" id="HDF-cP-raA"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="retrievedLabel" destination="awe-vS-WaR" id="Ztx-Jo-dXb"/>
                         <outlet property="stationLabel" destination="j3E-a5-wk3" id="bUi-YI-GZX"/>

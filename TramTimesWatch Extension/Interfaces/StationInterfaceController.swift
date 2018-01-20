@@ -17,6 +17,10 @@ class StationInterfaceController: WKInterfaceController {
     
     override func willActivate() {
         super.willActivate()
+        performRequest()
+    }
+    
+    func performRequest() {
         if let identifier = stationIdentifier {
             WatchStationServiceAdapter.getLatestDataForStationIdentifier(identifier: identifier, completion: { station, error in
                 if let station = station {
@@ -39,12 +43,15 @@ class StationInterfaceController: WKInterfaceController {
                         row.destinationLabel.setText("No more trams")
                     }
                 } else {
-                    self.stationLabel.setText("Could not fetch station data")
+                    self.stationLabel.setText("Could not fetch station data, hard press to refresh...")
                     self.retrievedLabel.setText("")
                     self.tramTable.setNumberOfRows(0, withRowType: "TramRowController")
                 }
             })
         }
-        
+    }
+    
+    @IBAction func refreshTapped() {
+        performRequest()
     }
 }
