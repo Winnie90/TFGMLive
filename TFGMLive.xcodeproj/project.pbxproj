@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		018068A9B86A7E8B0F281BFC /* Pods_TFGMLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F965C0E3E1D5F72545BE041 /* Pods_TFGMLive.framework */; };
-		5246658D81B6EA5E48A1FCAE /* Pods_TramTimesWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041D3EF0D376FFF9B2F4D3E3 /* Pods_TramTimesWatch.framework */; };
 		6FC83529363AFD96E2BA786A /* Pods_StationRequestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01C87D12718CEC1000304FB /* Pods_StationRequestTests.framework */; };
 		79760AFA2008BC910056C202 /* MessageBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79760AF82008BC910056C202 /* MessageBoardTableViewCell.swift */; };
 		79760AFB2008BC910056C202 /* MessageBoardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */; };
@@ -80,10 +79,11 @@
 		83D639851FFCD6F4001B4EA7 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639841FFCD6F4001B4EA7 /* UserDataService.swift */; };
 		83D639881FFCE191001B4EA7 /* WatchStationServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639871FFCE191001B4EA7 /* WatchStationServiceAdapter.swift */; };
 		83D6398A1FFCE54D001B4EA7 /* TramRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639891FFCE54D001B4EA7 /* TramRowController.swift */; };
-		8BE43D4592FD7EEEADA9F9AD /* Pods_TramTimesWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9789CF3A5F84BF88E78F2BD0 /* Pods_TramTimesWidget.framework */; };
 		A946608FEAECADAFAE6FFF26 /* Pods_WatchStationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606F7CBEB4ED70A4E3FCCD0A /* Pods_WatchStationRequest.framework */; };
+		B9B5261D4E6E8A1DDCDFFDD4 /* Pods_TramTimesWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9789CF3A5F84BF88E78F2BD0 /* Pods_TramTimesWidget.framework */; };
+		CAAFF58CBA0BD8AF326425E4 /* Pods_StationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C5D45938C78CC94BAF817C /* Pods_StationRequest.framework */; };
 		D28CCBE3C30E9FB2A66335FB /* Pods_TramTimesWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D64D97D77C4A4E60B6E075 /* Pods_TramTimesWatch_Extension.framework */; };
-		D65D67B4F916153B466240C2 /* Pods_StationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C5D45938C78CC94BAF817C /* Pods_StationRequest.framework */; };
+		D62CF030393927D51F633AFF /* Pods_TramTimesWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041D3EF0D376FFF9B2F4D3E3 /* Pods_TramTimesWatch.framework */; };
 		DAC9F97139FA390A6A059631 /* Pods_TFGMLiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BE20BE1053C4D8B1100DBC /* Pods_TFGMLiveTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -315,7 +315,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5246658D81B6EA5E48A1FCAE /* Pods_TramTimesWatch.framework in Frameworks */,
+				D62CF030393927D51F633AFF /* Pods_TramTimesWatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +349,7 @@
 			files = (
 				834A3BAA2013D90100B900BF /* StationRequest.framework in Frameworks */,
 				83C718CD1FF9669F001C399F /* NotificationCenter.framework in Frameworks */,
-				8BE43D4592FD7EEEADA9F9AD /* Pods_TramTimesWidget.framework in Frameworks */,
+				B9B5261D4E6E8A1DDCDFFDD4 /* Pods_TramTimesWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +357,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D65D67B4F916153B466240C2 /* Pods_StationRequest.framework in Frameworks */,
+				CAAFF58CBA0BD8AF326425E4 /* Pods_StationRequest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1715,11 +1715,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TFGMLive/TFGMLive.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				INFOPLIST_FILE = "$(SRCROOT)/TFGMLive/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1734,11 +1734,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TFGMLive/TFGMLive.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				INFOPLIST_FILE = "$(SRCROOT)/TFGMLive/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1753,7 +1753,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				INFOPLIST_FILE = TFGMLiveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLiveTests;
@@ -1774,7 +1774,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				INFOPLIST_FILE = TFGMLiveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLiveTests;
@@ -1792,11 +1792,11 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TramTimesWidget/TramTimesWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				INFOPLIST_FILE = TramTimesWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.TramTimesWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.TramTimesWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -1810,11 +1810,11 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TramTimesWidget/TramTimesWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				INFOPLIST_FILE = TramTimesWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.TramTimesWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.TramTimesWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -1831,7 +1831,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1859,7 +1859,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1884,7 +1884,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				INFOPLIST_FILE = StationRequestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequestTests;
@@ -1901,7 +1901,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				INFOPLIST_FILE = StationRequestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequestTests;
@@ -1918,10 +1918,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				INFOPLIST_FILE = "TramTimesWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1937,10 +1937,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				INFOPLIST_FILE = "TramTimesWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1957,10 +1957,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				IBSC_MODULE = TramTimesWatch_Extension;
 				INFOPLIST_FILE = TramTimesWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1977,10 +1977,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				IBSC_MODULE = TramTimesWatch_Extension;
 				INFOPLIST_FILE = TramTimesWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLive.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1999,7 +1999,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2028,7 +2028,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 87UEWGZE24;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

@@ -1,0 +1,10 @@
+View Manchester Metrolink tram departure times in realtime on your phone.
+Perfect for the commute!
+
+• Add your favourite stops to the app to access the tram times quickly.
+• Departure message board for the latest information on your tram line.
+• Quickly access your first stop using the Today Widget.
+• Quickly access your saved stops using 3D Touch.
+• View the latest tram times for your saved stops on your Apple Watch.
+
+Data is realtime and updated live direct from Metrolink.

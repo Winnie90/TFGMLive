@@ -14,11 +14,11 @@ scheme "TFGMLiveUITests"
 app_identifier "TFGMLive"
 
 # Where should the resulting screenshots be stored?
-output_directory "./screenshots"
+#output_directory "./screenshots"
 
 # remove the '#' to clear all previously generated screenshots before creating new ones
 clear_previous_screenshots true
-erase_simulator true   
+erase_simulator true
 reinstall_app true
 
 # Arguments to pass to the app on launch. See https://docs.fastlane.tools/actions/snapshot/#launch-arguments
