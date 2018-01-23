@@ -41,7 +41,10 @@ class PageViewController: UIPageViewController {
         pageControl.translatesAutoresizingMaskIntoConstraints = false
 
         view.addSubview(pageControl)
-        
+        setupConstraints(editButton: editButton)
+    }
+    
+    func setupConstraints(editButton: UIButton) {
         let margins = view.layoutMarginsGuide
         NSLayoutConstraint.activate([
             pageControl.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
@@ -56,13 +59,13 @@ class PageViewController: UIPageViewController {
             let guide = view.safeAreaLayoutGuide
             NSLayoutConstraint.activate([
                 guide.bottomAnchor.constraintEqualToSystemSpacingBelow(pageControl.bottomAnchor, multiplier: 1.0)
-            ])
+                ])
             
         } else {
             let standardSpacing: CGFloat = 8.0
             NSLayoutConstraint.activate([
                 bottomLayoutGuide.topAnchor.constraint(equalTo: pageControl.bottomAnchor, constant: standardSpacing)
-            ])
+                ])
         }
     }
     
