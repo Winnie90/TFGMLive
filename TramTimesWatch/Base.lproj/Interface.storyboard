@@ -19,7 +19,7 @@
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
                         <separator alignment="left" alpha="0.0" id="nt6-0e-pME"/>
-                        <table alignment="left" id="Rr6-8H-WqF">
+                        <table alignment="center" id="Rr6-8H-WqF">
                             <items>
                                 <tableRow identifier="TramRowController" selectable="NO" id="PeU-3g-69d" customClass="TramRowController" customModule="TramTimesWatch_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="MHE-Zh-hJ8">
@@ -47,7 +47,7 @@
                                 </tableRow>
                             </items>
                         </table>
-                        <label alignment="left" text="No more trams, hard press to refresh data" numberOfLines="0" id="bNZ-cI-363">
+                        <label alignment="center" text="No more trams, hard press to refresh data" numberOfLines="0" id="bNZ-cI-363">
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
                     </items>
@@ -74,7 +74,7 @@
             <objects>
                 <controller identifier="WatchAppCoordinator" id="lDj-in-KCw" customClass="WatchAppCoordinator" customModule="TramTimesWatch_Extension">
                     <items>
-                        <label width="136" height="100" alignment="left" text="Please add stations to your phone app to be displayed here" textAlignment="center" numberOfLines="0" id="4UK-q1-fnH"/>
+                        <label width="1" height="100" alignment="center" text="Please save stations to your phone app to be displayed here" textAlignment="center" numberOfLines="0" id="4UK-q1-fnH"/>
                     </items>
                 </controller>
             </objects>
