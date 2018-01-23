@@ -32,14 +32,38 @@ class PageViewController: UIPageViewController {
         pageControl.currentPageIndicatorTintColor = UIColor.black
         
         let editButton = UIButton(type: .custom)
-        editButton.frame = CGRect(x: UIScreen.main.bounds.maxX - 42, y: 0, width: 34, height: 34)
         editButton.setImage(UIImage(named: "settings"), for: .normal)
 
         editButton.addTarget(self, action: #selector(editButtonTapped), for: .touchUpInside)
         
         pageControl.addSubview(editButton)
-        
+        editButton.translatesAutoresizingMaskIntoConstraints = false
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
+
         view.addSubview(pageControl)
+        
+        let margins = view.layoutMarginsGuide
+        NSLayoutConstraint.activate([
+            pageControl.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
+            pageControl.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
+            editButton.trailingAnchor.constraint(equalTo: pageControl.trailingAnchor),
+            editButton.widthAnchor.constraint(equalToConstant: 32),
+            editButton.topAnchor.constraint(equalTo: pageControl.topAnchor),
+            editButton.bottomAnchor.constraint(equalTo: pageControl.bottomAnchor)
+            ])
+        
+        if #available(iOS 11, *) {
+            let guide = view.safeAreaLayoutGuide
+            NSLayoutConstraint.activate([
+                guide.bottomAnchor.constraintEqualToSystemSpacingBelow(pageControl.bottomAnchor, multiplier: 1.0)
+            ])
+            
+        } else {
+            let standardSpacing: CGFloat = 8.0
+            NSLayoutConstraint.activate([
+                bottomLayoutGuide.topAnchor.constraint(equalTo: pageControl.bottomAnchor, constant: standardSpacing)
+            ])
+        }
     }
     
     func configurePageControl() {
