@@ -27,7 +27,7 @@ class AddStationTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StationCell", for: indexPath)
         let station = searchActive ? filteredStations[indexPath.row] : stations[indexPath.row]
         cell.textLabel?.text = station.name
-        cell.detailTextLabel?.text = station.destination
+        cell.detailTextLabel?.text = "towards \(station.destination)"
         return cell
     }
     
