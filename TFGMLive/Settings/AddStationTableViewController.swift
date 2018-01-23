@@ -37,12 +37,6 @@ class AddStationTableViewController: UITableViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    //TODO show error
-    func showError() {
-        let alert = UIAlertController(title: "Loading Problem", message: "There was a problem loading the feed; check your connection and try again", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        present(alert, animated: true)
-    }
 }
 
 extension AddStationTableViewController: UISearchBarDelegate {

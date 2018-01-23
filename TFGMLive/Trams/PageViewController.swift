@@ -50,6 +50,10 @@ class PageViewController: UIPageViewController {
     @objc func editButtonTapped() {
         editButtonPressed(false)
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
 }
 
 extension PageViewController: UIPageViewControllerDataSource {
