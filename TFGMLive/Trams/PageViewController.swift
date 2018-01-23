@@ -150,9 +150,9 @@ extension PageViewController: UIPageViewControllerDataSource {
 extension PageViewController: UIPageViewControllerDelegate {
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        let pageContentViewController = pageViewController.viewControllers![0]
-        if let currentPage = orderedViewControllers.index(of: pageContentViewController) {
-            pageControl.currentPage = currentPage
+        if let pageContentViewController = pageViewController.viewControllers?[0],
+            let currentPage = orderedViewControllers.index(of: pageContentViewController) {
+                pageControl.currentPage = currentPage
         } else {
             pageControl.currentPage = 0
         }

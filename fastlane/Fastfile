@@ -12,7 +12,8 @@ lane :beta do
   increment_build_number
   build_app
   upload_to_testflight(
-    username: "imboredkidsapp@gmail.com"
+    username: "imboredkidsapp@gmail.com",
+    skip_waiting_for_build_processing: true
   )
 end
 

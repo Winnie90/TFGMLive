@@ -33,13 +33,17 @@ struct StationServiceAdapter: DataSourceChangedDelegate {
         })
     }
     
-    func saveUsersStationRecords(stations: [StationRecord]) {
+    func saveUsersStationRecords(stations: [StationRecord]) -> Bool {
         var stationsToSave: [Station] = []
         for station in stations {
             stationsToSave.append(station.toStation())
         }
+        if stationsToSave == StationService.getUserStations() {
+            return false
+        }
         StationService.saveUserStations(stations: stationsToSave)
         WatchSessionManager.sharedManager.updateUserStation()
+        return true
     }
     
     func getUsersStationRecords() -> [StationRecord] {

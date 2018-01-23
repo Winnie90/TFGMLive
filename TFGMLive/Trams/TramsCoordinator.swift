@@ -20,12 +20,11 @@ class TramsCoordinator {
     func start() {
         let vcs = viewControllers()
         pageViewController.orderedViewControllers = vcs
-        if let viewController = vcs.first {
-            pageViewController.setViewControllers([viewController],
-                                                  direction: .forward,
-                                                  animated: true,
-                                                  completion: nil)
-        }
+        pageViewController.setViewControllers([vcs[0]],
+                                              direction: .forward,
+                                              animated: true,
+                                              completion: nil)
+    
         pageViewController.editButtonPressed = editButtonPressed
     }
     

@@ -56,10 +56,11 @@ class AppCoordinator {
         let settingsCoordinator = SettingsCoordinator()
         settingsCoordinator.finish = { stations in
             if stations.count > 0 {
-                self.stationsService.saveUsersStationRecords(stations: stations)
-                self.dynamicLinksUpdated(self.createShortcutItems(stations: stations))
-                DispatchQueue.main.async {
+                if self.stationsService.saveUsersStationRecords(stations: stations) {
+                    self.dynamicLinksUpdated(self.createShortcutItems(stations: stations))
                     self.tramsCoordinator.start()
+                }
+                DispatchQueue.main.async {
                     self.navigationController.dismiss(animated: true)
                 }
             } else {
