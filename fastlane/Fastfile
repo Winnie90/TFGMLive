@@ -1,3 +1,13 @@
+def build_app
+  gym(
+    scheme: 'TFGMLive'
+  )
+end
+
+def upload_to_testflight
+  username "imboredkidsapp@gmail.com"
+end
+
 lane :beta do
   increment_build_number
   build_app
