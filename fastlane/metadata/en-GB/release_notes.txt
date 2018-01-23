@@ -1,4 +1,8 @@
-- Cleared up add station screen
-- Fixed issue with today widget
-- Fixed light status bar on settings screen
-- Fixed display issues on the watch
+Apologies, with the update you will have to re-add your stations. Promise it wont happen again :S
+
+- Fixed issue with today widget.
+- Cleared up add station screen.
+- Fixed settings button layout for iPhone X.
+- Fixed light status bar on settings screen.
+- Fixed display issues on the watch.
+- Fixed page control bug.
