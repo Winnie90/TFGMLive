@@ -2,7 +2,7 @@ import Foundation
 
 struct UserDefaultsService {
     
-    let userDefaults = UserDefaults.init(suiteName: "group.winstanley.SharingDefaults")!
+    let userDefaults = UserDefaults.init(suiteName: "group.com.winstanley.TramTimesManchester.SharingDefaults")!
     
     func getUserStations() -> [Station] {
         do {
