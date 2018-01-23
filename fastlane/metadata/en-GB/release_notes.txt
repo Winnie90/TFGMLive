@@ -1,1 +1,4 @@
-
+- Cleared up add station screen
+- Fixed issue with today widget
+- Fixed light status bar on settings screen
+- Fixed display issues on the watch
