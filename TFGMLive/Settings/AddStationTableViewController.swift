@@ -6,10 +6,22 @@ class AddStationTableViewController: UITableViewController {
     var stations: [StationRecord] = []
     var filteredStations: [StationRecord] = []
     var searchActive = false
+    var refreshData: ()->() = {}
+    
+    public func dataRefreshed(resultStations: [StationRecord], error: Error?) {
+        if let error = error {
+            showError(error: error)
+        }
+        stations = resultStations
+        filteredStations = stations
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        filteredStations = stations
+        refreshData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,6 +49,11 @@ class AddStationTableViewController: UITableViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    func showError(error: Error) {
+        let alert = UIAlertController(title: "Loading Problem", message: "There was a problem loading the feed; check your connection and try again, error code:\(error._code)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
 }
 
 extension AddStationTableViewController: UISearchBarDelegate {

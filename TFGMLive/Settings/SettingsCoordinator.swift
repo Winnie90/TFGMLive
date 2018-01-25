@@ -3,9 +3,10 @@ import UIKit
 class SettingsCoordinator {
     
     private var stations: [StationRecord] = []
-    private var allStations: [StationRecord] = []
     
+    typealias Response = (stations: [StationRecord], error: Error?)
     var finish: ([StationRecord])->() = {_ in }
+    let stationsService: StationServiceAdapter
     
     var rootViewController: UIViewController {
         return self.navigationController
@@ -24,9 +25,12 @@ class SettingsCoordinator {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddStation") as! AddStationTableViewController
     }()
     
-    func start(stations: [StationRecord], allStations: [StationRecord], coldStart: Bool) {
+    init(stationsService: StationServiceAdapter){
+        self.stationsService = stationsService
+    }
+    
+    func start(stations: [StationRecord], coldStart: Bool) {
         self.stations = stations
-        self.allStations = allStations
         settingsTableViewController.dataRefreshed(stations: stations)
         settingsTableViewController.addStationsPressed = addStation
         settingsTableViewController.savePressed = save
@@ -40,7 +44,14 @@ class SettingsCoordinator {
     }
     
     func addStation() {
-        addStationsTableViewController.stations = allStations
+        addStationsTableViewController.refreshData = {
+            self.stationsService.getAllStationRecords(completion: { (stations, error) in
+                self.addStationsTableViewController.dataRefreshed(
+                    resultStations: stations,
+                    error: error
+                )
+            })
+        }
         addStationsTableViewController.stationSelected = { station in
             if !self.stations.contains(where: { stationArr in
                 return station.identifier == stationArr.identifier

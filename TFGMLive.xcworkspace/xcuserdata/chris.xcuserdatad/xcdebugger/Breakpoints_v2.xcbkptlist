@@ -124,7 +124,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StationRequest/StationService.swift"
-            timestampString = "538428650.15398"
+            timestampString = "538584345.83156"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
@@ -178,22 +178,6 @@
             startingLineNumber = "153"
             endingLineNumber = "153"
             landmarkName = "pageViewController(_:didFinishAnimating:previousViewControllers:transitionCompleted:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TFGMLive/StationServiceAdapter/StationServiceAdapter.swift"
-            timestampString = "538437988.2139111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "saveUsersStationRecords(stations:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

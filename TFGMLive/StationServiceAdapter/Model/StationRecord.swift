@@ -18,10 +18,12 @@ struct StationRecord {
     }
     
     func toStation() -> Station {
-        return Station(identifier: identifier, stationUid: "",
+        return Station(identifier: identifier,
+                       stationUid: "",
                        name: name,
                        trams: [Tram(destination: destination, waitTime:"0")],
                        retrievedAt: Date(),
-                       messageBoard: "")
+                       messageBoard: "",
+                       direction: "")
     }
 }

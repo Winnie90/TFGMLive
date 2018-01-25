@@ -7,12 +7,15 @@ struct StationServiceAdapter: DataSourceChangedDelegate {
         WatchSessionManager.sharedManager.addDataSourceChangedDelegate(delegate: self)
     }
     
-    func getAllStationRecords() -> [StationRecord] {
-        var stations: [StationRecord] = []
-        for station in StationService.getAllStations() {
-            stations.append(StationRecord(station: station))
+    func getAllStationRecords(completion: @escaping ([StationRecord], Error?)->()) {
+        StationService.getAllStations { (resultStations, error) in
+            if let error = error{
+                completion([], error)
+            }
+            if let resultStations = resultStations {
+                completion(resultStations.map{StationRecord(station: $0)}, nil)
+            }
         }
-        return stations
     }
     
     func getUserStations() -> [StationPresentable] {

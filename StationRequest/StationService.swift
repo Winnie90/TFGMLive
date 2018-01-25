@@ -9,8 +9,8 @@ enum RequestError: Int {
 
 public struct StationService {
     
-    public static func getAllStations() -> [Station] {
-        return AllStationsRequest().retrieveStationsData()
+    public static func getAllStations(completion: @escaping ([Station]?, Error?)->()) {
+        return AllStationsRequest().retrieveStationsData(completion: completion)
     }
     
     public static func getUserStations() -> [Station] {

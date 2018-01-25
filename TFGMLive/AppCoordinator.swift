@@ -53,7 +53,7 @@ class AppCoordinator {
     }
     
     private func editTrams(coldStart: Bool = false) {
-        let settingsCoordinator = SettingsCoordinator()
+        let settingsCoordinator = SettingsCoordinator(stationsService: stationsService)
         settingsCoordinator.finish = { stations in
             if stations.count > 0 {
                 if self.stationsService.saveUsersStationRecords(stations: stations) {
@@ -68,7 +68,6 @@ class AppCoordinator {
             }
         }
         settingsCoordinator.start(stations: stationsService.getUsersStationRecords(),
-                                  allStations: stationsService.getAllStationRecords(),
                                   coldStart: coldStart)
         self.navigationController.present(settingsCoordinator.rootViewController, animated: true)
     }
