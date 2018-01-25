@@ -27,6 +27,7 @@ class AddStationTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         searchActive = false
         filteredStations = stations
+        self.tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
