@@ -93,7 +93,7 @@ class TramsTableViewController: UITableViewController {
         if indexPath.row == 0 {
             return 194
         } else if indexPath.row == station?.trams.count {
-            return 100
+            return 84
         }
         return 80
     }

@@ -8,6 +8,7 @@ public struct Station: Codable {
     public let retrievedAt: Date
     public let messageBoard: String
     public let direction: String
+    public let destinations: String
     
     public init(identifier: Int,
                 stationUid: String,
@@ -15,7 +16,8 @@ public struct Station: Codable {
                 trams: [Tram],
                 retrievedAt: Date,
                 messageBoard: String,
-                direction: String) {
+                direction: String,
+                destinations: String) {
         self.identifier = identifier
         self.stationUid = stationUid
         self.name = name
@@ -23,6 +25,7 @@ public struct Station: Codable {
         self.retrievedAt = retrievedAt
         self.messageBoard = messageBoard
         self.direction = direction
+        self.destinations = destinations
     }
 }
 
@@ -48,6 +51,7 @@ extension Station {
         case savedMessageBoard = "messageBoard"
         case direction = "Direction"
         case savedDirection = "direction"
+        case savedDestinations = "destinations"
     }
     
     public init(from decoder: Decoder) throws {
@@ -66,7 +70,7 @@ extension Station {
             let fourthTramDestination: String = try container.decode(String.self, forKey: .fourthTramDestination)
             let fourthTramWaitingTime: String = try container.decode(String.self, forKey: .fourthTramWaitingTime)
             let messageBoard: String = try container.decode(String.self, forKey: .messageBoard)
-            let direction: String = try container.decode(String.self, forKey: .direction)
+            var direction: String = try container.decode(String.self, forKey: .direction)
             
             var trams: [Tram] = []
             if firstTramDestination != "" {
@@ -81,13 +85,41 @@ extension Station {
             if fourthTramDestination != "" {
                 trams.append(Tram(destination: fourthTramDestination, waitTime: fourthTramWaitingTime))
             }
+            
+            if direction == "Incoming" {
+                direction = "towards Manchester"
+            } else {
+                direction = "leaving Manchester"
+            }
+            
+            var destinations = ""
+            if trams.count > 0 {
+                destinations = " to "
+            } else {
+                destinations = " 2nd platform"
+            }
+            
+            let destinationNames = trams.map{$0.destination}.filterDuplicates{ (station1, station2) -> Bool in
+                return station1 == station2
+            }
+            
+            for (i, destination) in destinationNames.enumerated() {
+                if destination.lowercased() != "see tram front" {
+                    destinations.append(destination)
+                }
+                if i+1 < destinationNames.count {
+                    destinations.append(", ")
+                }
+            }
+            
             self.init(identifier: identifier,
                     stationUid: stationUid,
                     name: name,
                     trams:trams,
                     retrievedAt: Date(),
                     messageBoard: messageBoard,
-                    direction: direction
+                    direction: direction,
+                    destinations: destinations
             )
         } catch {
             let stationUid: String = try container.decode(String.self, forKey: .savedStationUid)
@@ -103,13 +135,21 @@ extension Station {
             } else {
                 direction = ""
             }
+            
+            var destinations = ""
+            if let decodedDestinations = try container.decodeIfPresent(String.self, forKey: .savedDestinations) {
+                destinations = decodedDestinations
+            } else {
+                destinations = ""
+            }
             self.init(identifier: identifier,
                       stationUid: stationUid,
                       name: name,
                       trams: trams,
                       retrievedAt: retrievedAt,
                       messageBoard: messageBoard,
-                      direction: direction
+                      direction: direction,
+                      destinations: destinations
             )
         }
     }

@@ -13,7 +13,7 @@ class AddStationTableViewController: UITableViewController {
             showError(error: error)
         }
         stations = resultStations
-        filteredStations = stations
+        filteredStations = resultStations
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
@@ -26,6 +26,7 @@ class AddStationTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         searchActive = false
+        filteredStations = stations
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,8 +39,8 @@ class AddStationTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StationCell", for: indexPath)
         let station = searchActive ? filteredStations[indexPath.row] : stations[indexPath.row]
-        cell.textLabel?.text = station.name
-        cell.detailTextLabel?.text = "towards \(station.destination)"
+        cell.textLabel?.text = "\(station.name)"
+        cell.detailTextLabel?.text = "\(station.direction)\(station.destinations)"
         return cell
     }
     
