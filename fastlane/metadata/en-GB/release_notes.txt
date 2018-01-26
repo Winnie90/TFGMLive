@@ -1,4 +1,4 @@
-Apologies, with the new routes being added to the network you will have to re-add your stations. 
+Apologies, with the new routes being added to the network you will have to re-add your stations. Sorry for the inconvenience.
 
 - Fixed issue with today widget.
 - Cleared up add station screen.

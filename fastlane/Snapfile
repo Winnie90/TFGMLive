@@ -6,7 +6,7 @@
 # ])
 
 languages([
-  "en-US"
+  "en-GB"
 ])
 
 # The name of the scheme which contains the UI Tests
