@@ -30,16 +30,17 @@ class PageViewController: UIPageViewController {
         pageControl.tintColor = UIColor.white
         pageControl.pageIndicatorTintColor = UIColor.white
         pageControl.currentPageIndicatorTintColor = UIColor.black
+        pageControl.isAccessibilityElement = true
         
         let editButton = UIButton(type: .custom)
         editButton.setImage(UIImage(named: "settings"), for: .normal)
-
         editButton.addTarget(self, action: #selector(editButtonTapped), for: .touchUpInside)
+        editButton.setAccessibility()
         
-        pageControl.addSubview(editButton)
         editButton.translatesAutoresizingMaskIntoConstraints = false
         pageControl.translatesAutoresizingMaskIntoConstraints = false
 
+        view.addSubview(editButton)
         view.addSubview(pageControl)
         setupConstraints(editButton: editButton)
     }
@@ -49,8 +50,8 @@ class PageViewController: UIPageViewController {
         NSLayoutConstraint.activate([
             pageControl.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
             pageControl.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
-            editButton.trailingAnchor.constraint(equalTo: pageControl.trailingAnchor),
-            editButton.widthAnchor.constraint(equalToConstant: 32),
+            editButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
+            editButton.widthAnchor.constraint(equalTo: pageControl.heightAnchor),
             editButton.topAnchor.constraint(equalTo: pageControl.topAnchor),
             editButton.bottomAnchor.constraint(equalTo: pageControl.bottomAnchor)
             ])
@@ -156,5 +157,14 @@ extension PageViewController: UIPageViewControllerDelegate {
         } else {
             pageControl.currentPage = 0
         }
+    }
+}
+
+extension UIButton {
+    func setAccessibility() {
+        self.isAccessibilityElement = true
+        self.accessibilityTraits = UIAccessibilityTraitButton
+        self.accessibilityLabel = "settings button"
+        self.accessibilityHint = "access settings"
     }
 }

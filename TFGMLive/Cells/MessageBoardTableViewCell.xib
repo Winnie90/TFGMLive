@@ -48,6 +48,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="messageBoardHeader" destination="Vya-DR-mlD" id="f8m-Ur-XsP"/>
                 <outlet property="messageBoardLabel" destination="SiI-Ya-HH4" id="HZa-Ga-dEa"/>
             </connections>
             <point key="canvasLocation" x="26" y="85"/>

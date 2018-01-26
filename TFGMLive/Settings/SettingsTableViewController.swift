@@ -3,6 +3,8 @@ import UIKit
 class SettingsTableViewController: UITableViewController {
     
     @IBOutlet weak var licenseTextArea: UITextView!
+    @IBOutlet weak var dataHeader: UILabel!
+    
     private var stations: [StationRecord] = []
 
     var addStationsPressed: ()->() = {}
@@ -18,8 +20,12 @@ class SettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupAccessibility()
         title = "Edit Stations"
+        licenseTextArea.accessibilityTraits = UIAccessibilityTraitHeader
         licenseTextArea.text = "Contains Transport for Greater Manchester data\nhttps://developer.tfgm.com/\n\nIcons provided by Icons8\nhttps://icons8.com\n\nIcons made by Pixel perfect from Flaticon\nhttp://www.flaticon.com/authors/pixel-perfect"
+        dataHeader.isAccessibilityElement = true
+        dataHeader.accessibilityTraits = UIAccessibilityTraitHeader
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,8 +35,20 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsStationCell", for: indexPath)
         let station = stations[indexPath.row]
+        cell.accessibilityLabel = "added station"
+        
         cell.textLabel?.text = station.name
+        cell.textLabel?.isAccessibilityElement = true
+        cell.textLabel?.accessibilityTraits = UIAccessibilityTraitNone
+        cell.textLabel?.accessibilityLabel = "station name"
+        cell.textLabel?.accessibilityValue = station.name
+        
         cell.detailTextLabel?.text = "\(station.direction)\(station.destinations)"
+        cell.detailTextLabel?.isAccessibilityElement = true
+        cell.detailTextLabel?.accessibilityTraits = UIAccessibilityTraitNone
+        cell.detailTextLabel?.accessibilityLabel = "station direction and destinations"
+        cell.detailTextLabel?.accessibilityValue = "\(station.direction)\(station.destinations)"
+        
         return cell
     }
     
@@ -52,5 +70,9 @@ class SettingsTableViewController: UITableViewController {
             self.stations.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+    
+    func setupAccessibility(){
+        navigationItem.rightBarButtonItem?.accessibilityLabel = "Add a station"
     }
 }

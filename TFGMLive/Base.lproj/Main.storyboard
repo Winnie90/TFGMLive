@@ -102,6 +102,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="dataHeader" destination="NUY-gg-YhX" id="C8a-hV-Xcs"/>
                         <outlet property="licenseTextArea" destination="FAj-b8-wr1" id="Vlb-YP-zB8"/>
                     </connections>
                 </tableViewController>

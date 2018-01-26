@@ -68,6 +68,7 @@ class TramsTableViewController: UITableViewController {
             } else {
                 largeCell?.stationNameLabel.text = ""
             }
+            largeCell?.applyAccessibility(station)
             largeCell?.backgroundColor = color
             return largeCell!
         }
@@ -76,19 +77,33 @@ class TramsTableViewController: UITableViewController {
                 let messageBoardCell = tableView.dequeueReusableCell(withIdentifier: "MessageBoardTableViewCell", for: indexPath) as? MessageBoardTableViewCell
                 messageBoardCell?.messageBoardLabel.text = station.messageBoard
                 messageBoardCell?.backgroundColor = color
+                messageBoardCell?.applyAccessibility()
                 return messageBoardCell!
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "TramCell", for: indexPath)
                 let tram = station.trams[indexPath.row]
+                cell.accessibilityLabel = "next tram"
+                
                 cell.textLabel?.text = tram.destination
+                
+                cell.textLabel?.isAccessibilityElement = true
+                cell.textLabel?.accessibilityTraits = UIAccessibilityTraitNone
+                cell.textLabel?.accessibilityLabel = "destination name"
+                cell.textLabel?.accessibilityValue = tram.destination
+                
                 cell.detailTextLabel?.text = tram.waitTime
+                
+                cell.detailTextLabel?.isAccessibilityElement = true
+                cell.detailTextLabel?.accessibilityTraits = UIAccessibilityTraitNone
+                cell.detailTextLabel?.accessibilityValue = tram.waitTime
+                
                 cell.backgroundColor = color
                 return cell
             }
         }
         return UITableViewCell(style: .default, reuseIdentifier: "Cell")
     }
-    
+
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
             return 194

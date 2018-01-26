@@ -40,8 +40,18 @@ class AddStationTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StationCell", for: indexPath)
         let station = searchActive ? filteredStations[indexPath.row] : stations[indexPath.row]
+        cell.accessibilityLabel = "station"
         cell.textLabel?.text = "\(station.name)"
+        cell.textLabel?.isAccessibilityElement = true
+        cell.textLabel?.accessibilityTraits = UIAccessibilityTraitNone
+        cell.textLabel?.accessibilityLabel = "station name"
+        cell.textLabel?.accessibilityValue = station.name
+        
         cell.detailTextLabel?.text = "\(station.direction)\(station.destinations)"
+        cell.detailTextLabel?.isAccessibilityElement = true
+        cell.detailTextLabel?.accessibilityTraits = UIAccessibilityTraitNone
+        cell.detailTextLabel?.accessibilityLabel = "station direction and destinations"
+        cell.detailTextLabel?.accessibilityValue = "\(station.direction)\(station.destinations)"
         return cell
     }
     
