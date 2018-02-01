@@ -40,8 +40,8 @@ class PageViewController: UIPageViewController {
         editButton.translatesAutoresizingMaskIntoConstraints = false
         pageControl.translatesAutoresizingMaskIntoConstraints = false
 
-        view.addSubview(editButton)
         view.addSubview(pageControl)
+        view.addSubview(editButton)
         setupConstraints(editButton: editButton)
     }
     
