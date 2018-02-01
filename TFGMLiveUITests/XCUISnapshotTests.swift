@@ -32,7 +32,7 @@ class XCUISnapshotTests: XCTestCase {
         tablesQuery.children(matching: .cell).element(boundBy: 0).tap()
         
         let editStationsNavigationBar = app.navigationBars["Edit Stations"]
-        let addButton = editStationsNavigationBar.buttons["Add"]
+        let addButton = editStationsNavigationBar.buttons["Add a station"]
         
         addButton.tap()
         searchField.typeText("MediaCityUK")
