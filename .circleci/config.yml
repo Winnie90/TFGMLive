@@ -14,9 +14,9 @@ jobs:
       - checkout
 
       # Install CocoaPods
-      - run:
-          name: Install CocoaPods
-          command: pod install
+      # - run:
+      #     name: Install CocoaPods
+      #     command: pod install
 
       # Build the app and run tests
       # - run:
@@ -28,7 +28,8 @@ jobs:
 
       - run:
           name: Danger
-          command: bundle exec danger
+          command: gem 'danger'
+            bundle exec danger
 
       # Collect XML test results data to show in the UI,
       # and save the same XML files under test-results folder
