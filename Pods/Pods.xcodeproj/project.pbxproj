@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -67,7 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01A4B8C77809DBA9E4735D03E656A060 /* Pods_TFGMLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TFGMLive.framework; path = "Pods-TFGMLive.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01A4B8C77809DBA9E4735D03E656A060 /* Pods_TFGMLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFGMLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0259DA2F2FDD37AEA3CB1FD9231FB77C /* Pods-TFGMLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFGMLiveTests.release.xcconfig"; sourceTree = "<group>"; };
 		07664F5577BB67704E26FBEF9B9E6FC4 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
 		09378CC797D03E09E9DC4BDB1384CA36 /* Pods-TFGMLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFGMLive.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,18 +75,18 @@
 		0B41D7DB8B460A06722EC93293B3A7A7 /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
 		0BA187A4A96A410C90333EE5FE4CB8DA /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		0EDE8DC156488A35537F225FE0DFDA95 /* Pods-TramTimesWatch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TramTimesWatch-resources.sh"; sourceTree = "<group>"; };
-		0F5C3C5EE05A4E9C8D01A5896AD4BA78 /* Pods-StationRequestTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-StationRequestTests.modulemap"; sourceTree = "<group>"; };
+		0F5C3C5EE05A4E9C8D01A5896AD4BA78 /* Pods-StationRequestTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-StationRequestTests.modulemap"; sourceTree = "<group>"; };
 		114978E3185093091A7653F0B5A5A8D8 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
 		13C532E77EAA433378465E0DE3A9DC3B /* Pods-TramTimesWatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TramTimesWatch-dummy.m"; sourceTree = "<group>"; };
 		1583F2D25F85FFBF54E9512CE3D09877 /* Pods-TramTimesWatch Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TramTimesWatch Extension-dummy.m"; sourceTree = "<group>"; };
 		1837F262CD62ACF9F262AC484DC71E17 /* Pods-WatchStationRequest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchStationRequest-acknowledgements.plist"; sourceTree = "<group>"; };
 		18537095DB2347C47190BA1CCD769342 /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
-		1AD8E93217DC8C3DB12CF50886C36B58 /* Pods_StationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StationRequest.framework; path = "Pods-StationRequest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B3449432E19D1BBAA1A364C7218DACD /* Pods-WatchStationRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WatchStationRequest.modulemap"; sourceTree = "<group>"; };
+		1AD8E93217DC8C3DB12CF50886C36B58 /* Pods_StationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StationRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3449432E19D1BBAA1A364C7218DACD /* Pods-WatchStationRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WatchStationRequest.modulemap"; sourceTree = "<group>"; };
 		1D48C633EC85BE627C7E9F2FF2775B96 /* Pods-StationRequestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StationRequestTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1EB664BE6AB00DAF71FCB9656EAEDF6C /* Pods_TramTimesWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TramTimesWidget.framework; path = "Pods-TramTimesWidget.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB664BE6AB00DAF71FCB9656EAEDF6C /* Pods_TramTimesWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TramTimesWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BB54479618A12331A2A4D3892FE802 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20F65FB5F18A00CEBCE7DC421CD4154F /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F65FB5F18A00CEBCE7DC421CD4154F /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22118000C880024C41E46729934F4B6E /* Pods-TFGMLiveTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFGMLiveTests-resources.sh"; sourceTree = "<group>"; };
 		2463C6010196006836C1915D32BC2E4A /* Pods-TramTimesWidget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TramTimesWidget-dummy.m"; sourceTree = "<group>"; };
 		28FC58485FBCCA50AB1442E6466628DE /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
@@ -94,11 +94,11 @@
 		2E440734E98E06A916561EB3E44FB9D5 /* Pods-TFGMLive-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFGMLive-acknowledgements.plist"; sourceTree = "<group>"; };
 		2E56AF2D0B55E00C2754CED0031CADCB /* Pods-TramTimesWatch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TramTimesWatch-acknowledgements.markdown"; sourceTree = "<group>"; };
 		372EAF593E9EBE090FED94250BAD885C /* Pods-WatchStationRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchStationRequest.debug.xcconfig"; sourceTree = "<group>"; };
-		3AC9A7E5183AE319C6B739664065D677 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		3AC9A7E5183AE319C6B739664065D677 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
 		3E3C31F23CEF4544E28D0289A1BAB4C3 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		42719F18F68E01286739C8224FD07593 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		44515004AE1812F5E8D95DDD909D4B29 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
-		46060CDF0DE6A5B42DABAFDD555E70E2 /* Pods-TramTimesWatch Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TramTimesWatch Extension.modulemap"; sourceTree = "<group>"; };
+		46060CDF0DE6A5B42DABAFDD555E70E2 /* Pods-TramTimesWatch Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TramTimesWatch Extension.modulemap"; sourceTree = "<group>"; };
 		46458DD4DC1DFD641FDFCA46DE8C2E11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4754511AAF63297AA2E0CD94C5C9ED7F /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
 		47F60214F69936D9862C728A426E184C /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 		512A068970CA39D14274B62E74A075C5 /* Pods-TramTimesWatch Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TramTimesWatch Extension-umbrella.h"; sourceTree = "<group>"; };
 		5189BC1BF6475522319BE76D1C78A20F /* Pods-TramTimesWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TramTimesWatch.release.xcconfig"; sourceTree = "<group>"; };
 		5A7D9A8674153AD6C554AF25F350947E /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
-		5F381C3A9AD438802F6D7510C293E739 /* Pods-TramTimesWatch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TramTimesWatch.modulemap"; sourceTree = "<group>"; };
-		61314601700C51C28F72121C2EDA2866 /* Pods_TramTimesWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TramTimesWatch.framework; path = "Pods-TramTimesWatch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F381C3A9AD438802F6D7510C293E739 /* Pods-TramTimesWatch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TramTimesWatch.modulemap"; sourceTree = "<group>"; };
+		61314601700C51C28F72121C2EDA2866 /* Pods_TramTimesWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TramTimesWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		643FCF2AED167003F9E4668F373A1423 /* Pods-TramTimesWatch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TramTimesWatch-acknowledgements.plist"; sourceTree = "<group>"; };
 		678E1A0EEA934F1E7D1421A69EB27423 /* Pods-TramTimesWatch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TramTimesWatch-frameworks.sh"; sourceTree = "<group>"; };
 		68485D8D471F7C73AA0926096B7DD391 /* Pods-StationRequest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StationRequest-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -119,13 +119,13 @@
 		6DBDA1689D73B0D507F18326CA5591B4 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
 		6EE269AB1A588FC12281EB6A0591B335 /* Pods-TramTimesWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TramTimesWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		71322151CD28DE5C5C838601C57E872D /* Pods-StationRequestTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StationRequestTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		72B9411BA79729014EA3FE7954DBD954 /* Pods_WatchStationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WatchStationRequest.framework; path = "Pods-WatchStationRequest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7349D2D070BEC563AF4E93D912B0AABF /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B9411BA79729014EA3FE7954DBD954 /* Pods_WatchStationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchStationRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7349D2D070BEC563AF4E93D912B0AABF /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EA429B2165B96BB754EE01B48FF3D5 /* Pods-TFGMLive-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFGMLive-frameworks.sh"; sourceTree = "<group>"; };
-		74EAE3258767DC1037ACA16AC7F2B9BB /* Pods-TramTimesWidget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TramTimesWidget.modulemap"; sourceTree = "<group>"; };
+		74EAE3258767DC1037ACA16AC7F2B9BB /* Pods-TramTimesWidget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TramTimesWidget.modulemap"; sourceTree = "<group>"; };
 		763B6B75AE10133697A142AF8C8549EC /* Pods-WatchStationRequest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchStationRequest-acknowledgements.markdown"; sourceTree = "<group>"; };
 		76720B026417625FB62285B73CECF0BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		793A6D32EA6093573F54917AFDE5F34A /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = nanopb.modulemap; sourceTree = "<group>"; };
+		793A6D32EA6093573F54917AFDE5F34A /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = nanopb.modulemap; sourceTree = "<group>"; };
 		7E7AFB03BC31C838E09A06EE58FAEFEE /* Pods-StationRequestTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StationRequestTests-resources.sh"; sourceTree = "<group>"; };
 		8057930A1A2F899FE45CF16AADD47FC1 /* Pods-TFGMLiveTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFGMLiveTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		83869BB2B7327AEDC6FD5DFD5B4145DA /* Pods-TramTimesWidget-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TramTimesWidget-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -136,20 +136,20 @@
 		8EC9086FE4276DE152DA39E37884780C /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
 		8FE7908F4F083B6C12DC52A50F13E0D7 /* Pods-StationRequest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StationRequest-acknowledgements.plist"; sourceTree = "<group>"; };
 		913189910F1F17DE9A4E5DA1DBD29D09 /* Pods-TramTimesWidget-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TramTimesWidget-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99CFFB62DFD65E8FBB5A46BB75AFE2AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99FA7E0B2C58F5633DCB83B37F0EBE3A /* Pods-TFGMLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFGMLive.debug.xcconfig"; sourceTree = "<group>"; };
 		9FE4B1A265247DD4A7F45E6DC5D21C75 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
 		9FFC09B96052334E77AA941D5FD69749 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
-		A034E55619E4F7F753FD82F9C636E5D9 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
-		A43105F19021A7740EAA7959E3A3DD07 /* Pods_TramTimesWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TramTimesWatch_Extension.framework; path = "Pods-TramTimesWatch Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A034E55619E4F7F753FD82F9C636E5D9 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_encode.c; sourceTree = "<group>"; };
+		A43105F19021A7740EAA7959E3A3DD07 /* Pods_TramTimesWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TramTimesWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53656AA7432FCDF74E44E3CE578E232 /* Pods-TramTimesWidget-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TramTimesWidget-resources.sh"; sourceTree = "<group>"; };
 		A59ED6AA4B417A0CDD1F5E6C254B7CDB /* Pods-StationRequestTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StationRequestTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A5FBEB8E5ADECA36C8114E2BF1710EEA /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
-		A6DE92A6AD978B533AFE435E39A41EB4 /* Pods-TFGMLiveTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TFGMLiveTests.modulemap"; sourceTree = "<group>"; };
+		A6DE92A6AD978B533AFE435E39A41EB4 /* Pods-TFGMLiveTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TFGMLiveTests.modulemap"; sourceTree = "<group>"; };
 		A82AFED430FAC1A1B3082AEAF50F1978 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AABE4DFFBA7C18FA27EFCAC57AFA4DC8 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
-		ACB2C7784E373BB48B2AAA28ED8E848D /* Pods-TFGMLive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TFGMLive.modulemap"; sourceTree = "<group>"; };
+		ACB2C7784E373BB48B2AAA28ED8E848D /* Pods-TFGMLive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TFGMLive.modulemap"; sourceTree = "<group>"; };
 		ACC35CCCD395F6D51F16051C813F0EEA /* Pods-StationRequestTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StationRequestTests-umbrella.h"; sourceTree = "<group>"; };
 		AE315CD178E2153F890FDD15C902A9E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFA6E1BA1FAB339158FACB50A50997DB /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		BAAF49ED4C06328932B55562045D2D94 /* Pods-WatchStationRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatchStationRequest-umbrella.h"; sourceTree = "<group>"; };
 		BE5ADBE5746547D37EE0DD2E30286516 /* Pods-WatchStationRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchStationRequest.release.xcconfig"; sourceTree = "<group>"; };
 		BEA4A28CCCDFE0C4226E0346116334E5 /* Pods-TramTimesWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TramTimesWidget.release.xcconfig"; sourceTree = "<group>"; };
-		C214C0775D18F8177411FA06AEDEDEB1 /* Pods_StationRequestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StationRequestTests.framework; path = "Pods-StationRequestTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C214C0775D18F8177411FA06AEDEDEB1 /* Pods_StationRequestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StationRequestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C428555012A59451E76B18E8A664A33A /* Pods-TramTimesWidget-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TramTimesWidget-umbrella.h"; sourceTree = "<group>"; };
 		C90CE162C000228792F268156EFC4D30 /* Pods-TFGMLive-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFGMLive-resources.sh"; sourceTree = "<group>"; };
 		CAF1CD2EEA955F4D536CB86C3EFE35F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -174,15 +174,15 @@
 		D82B8DFB678C884644CC68124E24E513 /* Pods-StationRequest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StationRequest-resources.sh"; sourceTree = "<group>"; };
 		DBCAE53DC1AF3892D8704A3A56C3F537 /* Pods-TFGMLiveTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFGMLiveTests-frameworks.sh"; sourceTree = "<group>"; };
 		DE50CB33B0E682439CFC82DA90B15904 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E02FBA95A40DBFDEFE5FA04A96FEA1B0 /* Pods-StationRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-StationRequest.modulemap"; sourceTree = "<group>"; };
+		E02FBA95A40DBFDEFE5FA04A96FEA1B0 /* Pods-StationRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-StationRequest.modulemap"; sourceTree = "<group>"; };
 		E10972F2E58FE070F53C69F5DB77CD0C /* Pods-StationRequestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StationRequestTests.release.xcconfig"; sourceTree = "<group>"; };
 		E11EEB176E032581D752CA82F360BEDC /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		E2055C55A180165B34C0FD4A2CBDF147 /* Pods-TramTimesWatch Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TramTimesWatch Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E2FB4A43B5DE73CE9C96AD123C5BB955 /* Pods-StationRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StationRequest.debug.xcconfig"; sourceTree = "<group>"; };
-		E3D653195E7859D63F02CF78C322B418 /* Pods_TFGMLiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TFGMLiveTests.framework; path = "Pods-TFGMLiveTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D653195E7859D63F02CF78C322B418 /* Pods_TFGMLiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFGMLiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CC6A65A222DDF81A3EED881C866C37 /* Pods-TramTimesWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TramTimesWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		E57B66F4F8A84E0B5FB91B26D249A905 /* Pods-StationRequestTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StationRequestTests-frameworks.sh"; sourceTree = "<group>"; };
-		E7EC51EAC74BD8C25EAA5287068702A8 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		E7EC51EAC74BD8C25EAA5287068702A8 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
 		E806D691266722E6BD192880DA1F9B3B /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
 		E85F1FECF62110C98EC087462F9B0EF8 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		E8F017D1E3A9BDE261FED9A4D5DEED89 /* Pods-StationRequestTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StationRequestTests-dummy.m"; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 		EEC924E61CD46C849C5C6CA1523A7214 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
 		EEE061C7A7229C7E0B9C1D8582A3018E /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
 		F8DED048140C9E56FDA1FA0013405965 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
-		FAC651D177C05BB774AA2F2F100AB3B2 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		FAC651D177C05BB774AA2F2F100AB3B2 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_common.c; sourceTree = "<group>"; };
 		FAC799117676B02925EFF025D5F435BB /* Pods-StationRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StationRequest-umbrella.h"; sourceTree = "<group>"; };
 		FBF7B17824BEFC3CAD684853119D6D1F /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
 		FDB15F181F678161DF614D8710BFADB6 /* Pods-TFGMLiveTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TFGMLiveTests-umbrella.h"; sourceTree = "<group>"; };
@@ -340,7 +340,6 @@
 				44515004AE1812F5E8D95DDD909D4B29 /* Crashlytics.h */,
 				BB9E0B632530C71031FADB64BAE96CF3 /* Frameworks */,
 			);
-			name = Crashlytics;
 			path = Crashlytics;
 			sourceTree = "<group>";
 		};
@@ -349,7 +348,6 @@
 			children = (
 				10E6878D5159323B363BF58B08C38307 /* Core */,
 			);
-			name = Firebase;
 			path = Firebase;
 			sourceTree = "<group>";
 		};
@@ -358,7 +356,6 @@
 			children = (
 				D3CF7F84AFE4F0BEE8A4A204E4457236 /* Frameworks */,
 			);
-			name = FirebaseCore;
 			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
@@ -367,7 +364,6 @@
 			children = (
 				87F12300E927D9D2D7562444FDE6CF3B /* Frameworks */,
 			);
-			name = FirebaseAnalytics;
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
@@ -452,7 +448,6 @@
 			children = (
 				BB601B199CF7BDA25D2EE265F37CE12C /* Frameworks */,
 			);
-			name = FirebaseInstanceID;
 			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
@@ -492,7 +487,6 @@
 				0AC67979AF2DB23CB1F8D521167187C4 /* NSData+zlib */,
 				747B85C51027265713CD29B8F9667421 /* Support Files */,
 			);
-			name = GoogleToolboxForMac;
 			path = GoogleToolboxForMac;
 			sourceTree = "<group>";
 		};
@@ -521,7 +515,6 @@
 				0CC7415A579EDFFBE58BC3E2F4DE24A8 /* encode */,
 				B86369B03C984546AD5842FE7AE28062 /* Support Files */,
 			);
-			name = nanopb;
 			path = nanopb;
 			sourceTree = "<group>";
 		};
@@ -677,7 +670,6 @@
 				07664F5577BB67704E26FBEF9B9E6FC4 /* Fabric.h */,
 				410B319846E3D06D1D69B191A5748E7A /* Frameworks */,
 			);
-			name = Fabric;
 			path = Fabric;
 			sourceTree = "<group>";
 		};
@@ -978,7 +970,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1188,6 +1180,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1195,6 +1188,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1671,6 +1665,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1678,6 +1673,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
