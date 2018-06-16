@@ -11,6 +11,7 @@
 		6FC83529363AFD96E2BA786A /* Pods_StationRequestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01C87D12718CEC1000304FB /* Pods_StationRequestTests.framework */; };
 		79760AFA2008BC910056C202 /* MessageBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79760AF82008BC910056C202 /* MessageBoardTableViewCell.swift */; };
 		79760AFB2008BC910056C202 /* MessageBoardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */; };
+		8317C69920D5C8B700D1AD5E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317C69820D5C8B700D1AD5E /* Test.swift */; };
 		8329ECC9201A128E0025A100 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329ECC8201A128E0025A100 /* APIRequest.swift */; };
 		8329ECCA201A128E0025A100 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329ECC8201A128E0025A100 /* APIRequest.swift */; };
 		834540D720D5BC3500386BBF /* apikey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 834540D620D5BC3500386BBF /* apikey.txt */; };
@@ -230,6 +231,7 @@
 		6CCB20F8DE214026DE801A2F /* Pods-TFGMLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFGMLiveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFGMLiveTests/Pods-TFGMLiveTests.release.xcconfig"; sourceTree = "<group>"; };
 		79760AF82008BC910056C202 /* MessageBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoardTableViewCell.swift; sourceTree = "<group>"; };
 		79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageBoardTableViewCell.xib; sourceTree = "<group>"; };
+		8317C69820D5C8B700D1AD5E /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		8329ECC8201A128E0025A100 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		834540D620D5BC3500386BBF /* apikey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = apikey.txt; sourceTree = "<group>"; };
 		834A3B84200C046400B900BF /* ColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConverter.swift; sourceTree = "<group>"; };
@@ -247,7 +249,6 @@
 		83784EDA1FEC618300693DF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83784EDF1FEC618300693DF0 /* TFGMLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFGMLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83784EE51FEC618300693DF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83784EF31FEC80C400693DF0 /* TFGMLiveTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TFGMLiveTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		8386AFB8200816D00042A7C3 /* TimeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverter.swift; sourceTree = "<group>"; };
 		839716881FED468600C44131 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
 		8397168A1FED46A800C44131 /* AddStationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStationTableViewController.swift; sourceTree = "<group>"; };
@@ -457,7 +458,7 @@
 			isa = PBXGroup;
 			children = (
 				83784EE51FEC618300693DF0 /* Info.plist */,
-				83784EF31FEC80C400693DF0 /* TFGMLiveTests-Bridging-Header.h */,
+				8317C69820D5C8B700D1AD5E /* Test.swift */,
 			);
 			path = TFGMLiveTests;
 			sourceTree = "<group>";
@@ -706,9 +707,9 @@
 				83784EC91FEC618300693DF0 /* Resources */,
 				83C718FB1FF96832001C399F /* Embed Frameworks */,
 				83C997E91FF9ACE40034F8E1 /* Embed Watch Content */,
+				834A3BA92013D33000B900BF /* Embed App Extensions */,
 				2014C8971A2053430A16FB17 /* [CP] Embed Pods Frameworks */,
 				3D318802714A6B66C3D5DE53 /* [CP] Copy Pods Resources */,
-				834A3BA92013D33000B900BF /* Embed App Extensions */,
 				83677EF22005699C000D1D26 /* ShellScript */,
 			);
 			buildRules = (
@@ -879,11 +880,13 @@
 				TargetAttributes = {
 					834A3B992013C3B400B900BF = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 83784ECA1FEC618300693DF0;
 					};
 					83784ECA1FEC618300693DF0 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -893,12 +896,13 @@
 					};
 					83784EDE1FEC618300693DF0 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 83784ECA1FEC618300693DF0;
 					};
 					83C718C91FF9669F001C399F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -908,23 +912,28 @@
 					};
 					83C718E01FF96831001C399F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					83C718E81FF96831001C399F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 83784ECA1FEC618300693DF0;
 					};
 					83C997C11FF9ACE40034F8E1 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					83C997CD1FF9ACE40034F8E1 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					83D6396C1FFC2D8F001B4EA7 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -943,9 +952,9 @@
 			projectRoot = "";
 			targets = (
 				83784ECA1FEC618300693DF0 /* TFGMLive */,
+				83784EDE1FEC618300693DF0 /* TFGMLiveTests */,
 				83C718E01FF96831001C399F /* StationRequest */,
 				83D6396C1FFC2D8F001B4EA7 /* WatchStationRequest */,
-				83784EDE1FEC618300693DF0 /* TFGMLiveTests */,
 				83C718C91FF9669F001C399F /* TramTimesWidget */,
 				83C997C11FF9ACE40034F8E1 /* TramTimesWatch */,
 				83C997CD1FF9ACE40034F8E1 /* TramTimesWatch Extension */,
@@ -1166,7 +1175,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
 		};
 		83CA2CAD6E8B1C9A613A36A1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1419,6 +1428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8317C69920D5C8B700D1AD5E /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1581,7 +1591,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLiveUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TFGMLive;
 			};
@@ -1596,7 +1606,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLiveUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TFGMLive;
 			};
@@ -1729,7 +1739,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1748,7 +1758,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1768,7 +1778,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TFGMLiveTests/TFGMLiveTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFGMLive.app/TFGMLive";
 			};
@@ -1788,7 +1798,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLiveTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TFGMLiveTests/TFGMLiveTests-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFGMLive.app/TFGMLive";
 			};
@@ -1807,7 +1817,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.TramTimesWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1825,7 +1835,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.TramTimesWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1851,7 +1861,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1879,7 +1889,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1897,7 +1907,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFGMLive.app/TFGMLive";
 			};
@@ -1914,7 +1924,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFGMLive.app/TFGMLive";
 			};
@@ -1933,7 +1943,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
@@ -1952,7 +1962,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
@@ -1972,7 +1982,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
@@ -1992,7 +2002,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
@@ -2019,7 +2029,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2048,7 +2058,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

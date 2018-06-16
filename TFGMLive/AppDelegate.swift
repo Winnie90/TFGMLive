@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var appCoordinator: AppCoordinator?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         appCoordinator = AppCoordinator.init(window: window!)
         appCoordinator?.dynamicLinksUpdated = { shortcutItems in
@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         if let shortcutItem =
-            launchOptions?[UIApplicationLaunchOptionsKey.shortcutItem]
+            launchOptions?[UIApplication.LaunchOptionsKey.shortcutItem]
                 as? UIApplicationShortcutItem {
             if let app = appCoordinator {
                 let _ = app.handleShortcut(shortcutItem: shortcutItem)

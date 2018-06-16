@@ -33,8 +33,8 @@ class PageViewController: UIPageViewController {
         pageControl.isAccessibilityElement = true
         
         let editButton = UIButton(type: .custom)
-        editButton.setImage(UIImage(named: "settings"), for: .normal)
-        editButton.addTarget(self, action: #selector(editButtonTapped), for: .touchUpInside)
+        editButton.setImage(UIImage(named: "settings"), for: UIControl.State.normal)
+        editButton.addTarget(self, action: #selector(editButtonTapped), for: UIControl.Event.touchUpInside)
         editButton.setAccessibility()
         
         editButton.translatesAutoresizingMaskIntoConstraints = false
@@ -59,7 +59,7 @@ class PageViewController: UIPageViewController {
         if #available(iOS 11, *) {
             let guide = view.safeAreaLayoutGuide
             NSLayoutConstraint.activate([
-                guide.bottomAnchor.constraintEqualToSystemSpacingBelow(pageControl.bottomAnchor, multiplier: 1.0)
+                guide.bottomAnchor.constraint(equalToSystemSpacingBelow: pageControl.bottomAnchor, multiplier: 1.0)
                 ])
             
         } else {
@@ -163,7 +163,7 @@ extension PageViewController: UIPageViewControllerDelegate {
 extension UIButton {
     func setAccessibility() {
         self.isAccessibilityElement = true
-        self.accessibilityTraits = UIAccessibilityTraitButton
+        self.accessibilityTraits = UIAccessibilityTraits.button
         self.accessibilityLabel = "settings button"
         self.accessibilityHint = "access settings"
     }

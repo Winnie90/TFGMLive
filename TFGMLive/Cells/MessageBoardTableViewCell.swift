@@ -11,11 +11,11 @@ extension MessageBoardTableViewCell {
     
     func applyAccessibility() {
         messageBoardHeader.isAccessibilityElement = true
-        messageBoardHeader.accessibilityTraits = UIAccessibilityTraitHeader
+        messageBoardHeader.accessibilityTraits = UIAccessibilityTraits.header
         messageBoardHeader.accessibilityLabel = "message board"
         
         messageBoardLabel.isAccessibilityElement = true
-        messageBoardLabel.accessibilityTraits = UIAccessibilityTraitNone
+        messageBoardLabel.accessibilityTraits = UIAccessibilityTraits.none
         messageBoardLabel.accessibilityLabel = "message text"
         messageBoardLabel.accessibilityValue = messageBoardLabel.text
     }

@@ -43,13 +43,13 @@ class AddStationTableViewController: UITableViewController {
         cell.accessibilityLabel = "station"
         cell.textLabel?.text = "\(station.name)"
         cell.textLabel?.isAccessibilityElement = true
-        cell.textLabel?.accessibilityTraits = UIAccessibilityTraitNone
+        cell.textLabel?.accessibilityTraits = UIAccessibilityTraits.none
         cell.textLabel?.accessibilityLabel = "station name"
         cell.textLabel?.accessibilityValue = station.name
         
         cell.detailTextLabel?.text = "\(station.direction)\(station.destinations)"
         cell.detailTextLabel?.isAccessibilityElement = true
-        cell.detailTextLabel?.accessibilityTraits = UIAccessibilityTraitNone
+        cell.detailTextLabel?.accessibilityTraits = UIAccessibilityTraits.none
         cell.detailTextLabel?.accessibilityLabel = "station direction and destinations"
         cell.detailTextLabel?.accessibilityValue = "\(station.direction)\(station.destinations)"
         return cell

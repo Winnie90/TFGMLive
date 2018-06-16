@@ -22,7 +22,7 @@ class TramsTableViewController: UITableViewController {
         applyStyles()
         tableView.register(UINib.init(nibName: "LargeTramTableViewCell", bundle: nil), forCellReuseIdentifier: "LargeTramTableViewCell")
         tableView.register(UINib.init(nibName: "MessageBoardTableViewCell", bundle: nil), forCellReuseIdentifier: "MessageBoardTableViewCell")
-        refreshControl?.addTarget(self, action: #selector(refreshStation), for: UIControlEvents.valueChanged)
+        refreshControl?.addTarget(self, action: #selector(refreshStation), for: UIControl.Event.valueChanged)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -87,14 +87,14 @@ class TramsTableViewController: UITableViewController {
                 cell.textLabel?.text = tram.destination
                 
                 cell.textLabel?.isAccessibilityElement = true
-                cell.textLabel?.accessibilityTraits = UIAccessibilityTraitNone
+                cell.textLabel?.accessibilityTraits = UIAccessibilityTraits.none
                 cell.textLabel?.accessibilityLabel = "destination name"
                 cell.textLabel?.accessibilityValue = tram.destination
                 
                 cell.detailTextLabel?.text = tram.waitTime
                 
                 cell.detailTextLabel?.isAccessibilityElement = true
-                cell.detailTextLabel?.accessibilityTraits = UIAccessibilityTraitNone
+                cell.detailTextLabel?.accessibilityTraits = UIAccessibilityTraits.none
                 cell.detailTextLabel?.accessibilityValue = tram.waitTime
                 
                 cell.backgroundColor = color
