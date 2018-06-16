@@ -49,7 +49,7 @@ extension WatchSessionManager {
     
     private func updateStationIdentifiers() -> [String: Any] {
         let userStations = self.dataSourceChangedDelegate?.getUserStations()
-        let identifiers = userStations?.flatMap{$0.identifier} ?? []
+        let identifiers = userStations?.compactMap{$0.identifier} ?? []
         var applicationContext: [String: Any] = [:]
         for identifier in identifiers {
             applicationContext["\(identifier)"] = ""

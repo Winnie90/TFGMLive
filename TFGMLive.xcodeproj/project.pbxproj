@@ -13,6 +13,7 @@
 		79760AFB2008BC910056C202 /* MessageBoardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */; };
 		8329ECC9201A128E0025A100 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329ECC8201A128E0025A100 /* APIRequest.swift */; };
 		8329ECCA201A128E0025A100 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329ECC8201A128E0025A100 /* APIRequest.swift */; };
+		834540D720D5BC3500386BBF /* apikey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 834540D620D5BC3500386BBF /* apikey.txt */; };
 		834A3B85200C046400B900BF /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A3B84200C046400B900BF /* ColorConverter.swift */; };
 		834A3B86200C046400B900BF /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A3B84200C046400B900BF /* ColorConverter.swift */; };
 		834A3B9D2013C3B400B900BF /* XCUISnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A3B9C2013C3B400B900BF /* XCUISnapshotTests.swift */; };
@@ -63,8 +64,6 @@
 		83C997DA1FF9ACE40034F8E1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C997D91FF9ACE40034F8E1 /* ComplicationController.swift */; };
 		83C997DC1FF9ACE40034F8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C997DB1FF9ACE40034F8E1 /* Assets.xcassets */; };
 		83C997E11FF9ACE40034F8E1 /* TramTimesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 83C997C21FF9ACE40034F8E1 /* TramTimesWatch.app */; };
-		83D4F0C6200A620D00D458FD /* apikey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83D4F0C5200A620D00D458FD /* apikey.txt */; };
-		83D4F0C7200A620D00D458FD /* apikey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83D4F0C5200A620D00D458FD /* apikey.txt */; };
 		83D639651FFC2547001B4EA7 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639641FFC2547001B4EA7 /* WatchSessionManager.swift */; };
 		83D639671FFC25C4001B4EA7 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639661FFC25C4001B4EA7 /* WatchSessionManager.swift */; };
 		83D639711FFC2D8F001B4EA7 /* WatchStationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D6396F1FFC2D8F001B4EA7 /* WatchStationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -232,6 +231,7 @@
 		79760AF82008BC910056C202 /* MessageBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoardTableViewCell.swift; sourceTree = "<group>"; };
 		79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageBoardTableViewCell.xib; sourceTree = "<group>"; };
 		8329ECC8201A128E0025A100 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		834540D620D5BC3500386BBF /* apikey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = apikey.txt; sourceTree = "<group>"; };
 		834A3B84200C046400B900BF /* ColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConverter.swift; sourceTree = "<group>"; };
 		834A3B9A2013C3B400B900BF /* TFGMLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFGMLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		834A3B9C2013C3B400B900BF /* XCUISnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUISnapshotTests.swift; sourceTree = "<group>"; };
@@ -292,7 +292,6 @@
 		83C997D91FF9ACE40034F8E1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		83C997DB1FF9ACE40034F8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83C997DD1FF9ACE40034F8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83D4F0C5200A620D00D458FD /* apikey.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = apikey.txt; sourceTree = "<group>"; };
 		83D639641FFC2547001B4EA7 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		83D639661FFC25C4001B4EA7 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		83D6396D1FFC2D8F001B4EA7 /* WatchStationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WatchStationRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -536,6 +535,7 @@
 		83C718E21FF96831001C399F /* StationRequest */ = {
 			isa = PBXGroup;
 			children = (
+				834540D620D5BC3500386BBF /* apikey.txt */,
 				83C718E41FF96831001C399F /* Info.plist */,
 				83C718E31FF96831001C399F /* StationRequest.h */,
 				83C719051FF96BDF001C399F /* StationService.swift */,
@@ -547,7 +547,6 @@
 				8386AFB8200816D00042A7C3 /* TimeConverter.swift */,
 				834A3B84200C046400B900BF /* ColorConverter.swift */,
 				839716881FED468600C44131 /* stations.json */,
-				83D4F0C5200A620D00D458FD /* apikey.txt */,
 				8329ECC8201A128E0025A100 /* APIRequest.swift */,
 			);
 			path = StationRequest;
@@ -709,8 +708,8 @@
 				83C997E91FF9ACE40034F8E1 /* Embed Watch Content */,
 				2014C8971A2053430A16FB17 /* [CP] Embed Pods Frameworks */,
 				3D318802714A6B66C3D5DE53 /* [CP] Copy Pods Resources */,
-				83677EF22005699C000D1D26 /* ShellScript */,
 				834A3BA92013D33000B900BF /* Embed App Extensions */,
+				83677EF22005699C000D1D26 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -996,8 +995,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834540D720D5BC3500386BBF /* apikey.txt in Resources */,
 				83C7190D1FF98B3E001C399F /* stations.json in Resources */,
-				83D4F0C6200A620D00D458FD /* apikey.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1029,7 +1028,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83D4F0C7200A620D00D458FD /* apikey.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1635,7 +1633,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
