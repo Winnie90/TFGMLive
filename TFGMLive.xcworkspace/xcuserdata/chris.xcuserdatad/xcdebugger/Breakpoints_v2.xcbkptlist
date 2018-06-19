@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StationRequest/StationService.swift"
+            timestampString = "551135798.505585"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "donateIntent(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static StationRequest.StationService.(donateIntent in _26B5CD65F43A76EE120D4815855DA28D)(for: StationRequest.Station) -&gt; ()"
+                  moduleName = "StationRequest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chris/Development/personal/tramtimes/StationRequest/StationService.swift"
+                  timestampString = "551135799.221434"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static StationRequest.StationService.(donateIntent in _26B5CD65F43A76EE120D4815855DA28D)(for: StationRequest.Station) -&gt; ()"
+                  moduleName = "StationRequest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chris/Development/personal/tramtimes/StationRequest/StationService.swift"
+                  timestampString = "551135799.224866"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "33">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

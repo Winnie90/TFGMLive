@@ -1,4 +1,5 @@
 import Foundation
+import Intents
 
 public struct Station: Codable {
     public let identifier: Int
@@ -160,5 +161,16 @@ extension Station {
 extension Station: Equatable {
     public static func == (lhs: Station, rhs: Station) -> Bool {
         return lhs.identifier == rhs.identifier
+    }
+}
+
+extension Station {
+    @available(watchOSApplicationExtension 5.0, *)
+    @available(iOSApplicationExtension 12.0, *)
+    public var intent: ViewStationIntent {
+        let viewStationIntent = ViewStationIntent()
+        viewStationIntent.station = INObject(identifier: String(identifier), display: name)
+        viewStationIntent.suggestedInvocationPhrase = "View latest tram times for \(name)"
+        return viewStationIntent
     }
 }
