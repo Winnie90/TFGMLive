@@ -81,9 +81,19 @@ class AppCoordinator {
         return shortcutItems
     }
     
+}
+
+extension AppCoordinator {
+
     public func handleShortcut(shortcutItem: UIApplicationShortcutItem) -> Bool {
         guard let shortcutIndex = Int(shortcutItem.type) else { return false }
         return tramsCoordinator.moveToIndex(shortcutIndex)
+    }
+}
+
+extension AppCoordinator {
+    public func handleIntent(intent: NSUserActivity) {
+        
     }
 }
 
