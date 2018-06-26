@@ -32,7 +32,7 @@
 					<key>INIntentParameterCombinationIsPrimary</key>
 					<true/>
 					<key>INIntentParameterCombinationSubtitle</key>
-					<string></string>
+					<string>See the latest tram times for ${station}</string>
 					<key>INIntentParameterCombinationSubtitleID</key>
 					<string>h8XaV4</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>

@@ -154,8 +154,6 @@ extension Station {
             )
         }
     }
-    
-    
 }
 
 extension Station: Equatable {

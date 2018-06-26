@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StationRequest
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -39,15 +40,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      continue userActivity: NSUserActivity,
                      restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        if let userActivity = userActivity, let app = appCoordinator {
-            app.handleIntent(userActivity)
-            return true
+        if #available(iOS 12.0, *) {
+            if let app = appCoordinator,
+                let stationIntent = userActivity.interaction?.intent as? ViewStationIntent,
+                let identifier = stationIntent.station?.identifier {
+                let intIdent = Int(identifier) ?? 0
+                return app.handle(identifier: intIdent)
+            }
         }
         return false
     }
     
 
-    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+    func application(_ application: UIApplication,
+                     performActionFor shortcutItem: UIApplicationShortcutItem,
+                     completionHandler: @escaping (Bool) -> Void) {
         if let app = appCoordinator {
             completionHandler(app.handleShortcut(shortcutItem: shortcutItem))
         } else {

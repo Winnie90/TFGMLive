@@ -10,6 +10,4 @@ struct TramPresentable {
         self.destination = tram.destination
         self.waitTime = TimeConverter.longString(for: tram.waitTime)
     }
-    
-    
 }
