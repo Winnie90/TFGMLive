@@ -89,6 +89,10 @@
 		83D639851FFCD6F4001B4EA7 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639841FFCD6F4001B4EA7 /* UserDataService.swift */; };
 		83D639881FFCE191001B4EA7 /* WatchStationServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639871FFCE191001B4EA7 /* WatchStationServiceAdapter.swift */; };
 		83D6398A1FFCE54D001B4EA7 /* TramRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639891FFCE54D001B4EA7 /* TramRowController.swift */; };
+		83F6C8CC20E2EA5C007B79B4 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6C8CB20E2EA5C007B79B4 /* IntentHandler.swift */; };
+		83F6C8D020E2EA5C007B79B4 /* TramTimesIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83F6C8C920E2EA5C007B79B4 /* TramTimesIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		83F6C8D520E2EAA0007B79B4 /* SiriIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 839D644E20D99872005A2FB2 /* SiriIntents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		83F6C8D620E2EAA1007B79B4 /* SiriIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 839D644E20D99872005A2FB2 /* SiriIntents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		A946608FEAECADAFAE6FFF26 /* Pods_WatchStationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606F7CBEB4ED70A4E3FCCD0A /* Pods_WatchStationRequest.framework */; };
 		B9B5261D4E6E8A1DDCDFFDD4 /* Pods_TramTimesWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9789CF3A5F84BF88E78F2BD0 /* Pods_TramTimesWidget.framework */; };
 		CAAFF58CBA0BD8AF326425E4 /* Pods_StationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C5D45938C78CC94BAF817C /* Pods_StationRequest.framework */; };
@@ -168,6 +172,13 @@
 			remoteGlobalIDString = 83D6396C1FFC2D8F001B4EA7;
 			remoteInfo = WatchStationRequest;
 		};
+		83F6C8CE20E2EA5C007B79B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83784EC31FEC618300693DF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83F6C8C820E2EA5C007B79B4;
+			remoteInfo = TramTimesIntents;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -179,6 +190,7 @@
 			files = (
 				834A3BA62013D33000B900BF /* TramTimesWidget.appex in Embed App Extensions */,
 				839D646720D9B2C1005A2FB2 /* TramTimesIntentsUI.appex in Embed App Extensions */,
+				83F6C8D020E2EA5C007B79B4 /* TramTimesIntents.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +338,10 @@
 		83D639841FFCD6F4001B4EA7 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		83D639871FFCE191001B4EA7 /* WatchStationServiceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchStationServiceAdapter.swift; sourceTree = "<group>"; };
 		83D639891FFCE54D001B4EA7 /* TramRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramRowController.swift; sourceTree = "<group>"; };
+		83F6C8C920E2EA5C007B79B4 /* TramTimesIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TramTimesIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F6C8CB20E2EA5C007B79B4 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		83F6C8CD20E2EA5C007B79B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F6C8D420E2EA65007B79B4 /* TramTimesIntents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TramTimesIntents.entitlements; sourceTree = "<group>"; };
 		89E388F4F9F2E8FDA7A5486A /* Pods-TramTimesWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TramTimesWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TramTimesWidget/Pods-TramTimesWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		96BE20BE1053C4D8B1100DBC /* Pods_TFGMLiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFGMLiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9789CF3A5F84BF88E78F2BD0 /* Pods_TramTimesWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TramTimesWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -422,6 +438,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83F6C8C620E2EA5C007B79B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -448,6 +471,7 @@
 				83C997D21FF9ACE40034F8E1 /* TramTimesWatch Extension */,
 				83D6396E1FFC2D8F001B4EA7 /* WatchStationRequest */,
 				839D645E20D9B2C1005A2FB2 /* TramTimesIntentsUI */,
+				83F6C8CA20E2EA5C007B79B4 /* TramTimesIntents */,
 				83C718CB1FF9669F001C399F /* Frameworks */,
 				83784ECC1FEC618300693DF0 /* Products */,
 				D7A2AD238BFE80425FC29D47 /* Pods */,
@@ -467,6 +491,7 @@
 				83D6396D1FFC2D8F001B4EA7 /* WatchStationRequest.framework */,
 				834A3B9A2013C3B400B900BF /* TFGMLiveUITests.xctest */,
 				839D645B20D9B2C0005A2FB2 /* TramTimesIntentsUI.appex */,
+				83F6C8C920E2EA5C007B79B4 /* TramTimesIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -681,6 +706,16 @@
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
+		83F6C8CA20E2EA5C007B79B4 /* TramTimesIntents */ = {
+			isa = PBXGroup;
+			children = (
+				83F6C8D420E2EA65007B79B4 /* TramTimesIntents.entitlements */,
+				83F6C8CB20E2EA5C007B79B4 /* IntentHandler.swift */,
+				83F6C8CD20E2EA5C007B79B4 /* Info.plist */,
+			);
+			path = TramTimesIntents;
+			sourceTree = "<group>";
+		};
 		D7A2AD238BFE80425FC29D47 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -767,6 +802,7 @@
 				83C997E01FF9ACE40034F8E1 /* PBXTargetDependency */,
 				834A3BA82013D33000B900BF /* PBXTargetDependency */,
 				839D646620D9B2C1005A2FB2 /* PBXTargetDependency */,
+				83F6C8CF20E2EA5C007B79B4 /* PBXTargetDependency */,
 			);
 			name = TFGMLive;
 			productName = TFGMLive;
@@ -934,6 +970,23 @@
 			productReference = 83D6396D1FFC2D8F001B4EA7 /* WatchStationRequest.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		83F6C8C820E2EA5C007B79B4 /* TramTimesIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83F6C8D120E2EA5C007B79B4 /* Build configuration list for PBXNativeTarget "TramTimesIntents" */;
+			buildPhases = (
+				83F6C8C520E2EA5C007B79B4 /* Sources */,
+				83F6C8C620E2EA5C007B79B4 /* Frameworks */,
+				83F6C8C720E2EA5C007B79B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TramTimesIntents;
+			productName = TramTimesIntents;
+			productReference = 83F6C8C920E2EA5C007B79B4 /* TramTimesIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1014,6 +1067,15 @@
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
+					83F6C8C820E2EA5C007B79B4 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 				};
 			};
 			buildConfigurationList = 83784EC61FEC618300693DF0 /* Build configuration list for PBXProject "TFGMLive" */;
@@ -1039,6 +1101,7 @@
 				83C718E81FF96831001C399F /* StationRequestTests */,
 				834A3B992013C3B400B900BF /* TFGMLiveUITests */,
 				839D645A20D9B2C0005A2FB2 /* TramTimesIntentsUI */,
+				83F6C8C820E2EA5C007B79B4 /* TramTimesIntents */,
 			);
 		};
 /* End PBXProject section */
@@ -1121,6 +1184,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		83D6396B1FFC2D8F001B4EA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F6C8C720E2EA5C007B79B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1525,6 +1595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				839D646020D9B2C1005A2FB2 /* IntentViewController.swift in Sources */,
+				83F6C8D620E2EAA1007B79B4 /* SiriIntents.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1595,6 +1666,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83F6C8C520E2EA5C007B79B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F6C8CC20E2EA5C007B79B4 /* IntentHandler.swift in Sources */,
+				83F6C8D520E2EAA0007B79B4 /* SiriIntents.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1647,6 +1727,11 @@
 			isa = PBXTargetDependency;
 			target = 83D6396C1FFC2D8F001B4EA7 /* WatchStationRequest */;
 			targetProxy = 83D639721FFC2D8F001B4EA7 /* PBXContainerItemProxy */;
+		};
+		83F6C8CF20E2EA5C007B79B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83F6C8C820E2EA5C007B79B4 /* TramTimesIntents */;
+			targetProxy = 83F6C8CE20E2EA5C007B79B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2216,6 +2301,44 @@
 			};
 			name = Release;
 		};
+		83F6C8D220E2EA5C007B79B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = TramTimesIntents/TramTimesIntents.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
+				INFOPLIST_FILE = TramTimesIntents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.TramTimesIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83F6C8D320E2EA5C007B79B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = TramTimesIntents/TramTimesIntents.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
+				INFOPLIST_FILE = TramTimesIntents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.TramTimesIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2314,6 +2437,15 @@
 			buildConfigurations = (
 				83D639771FFC2D8F001B4EA7 /* Debug */,
 				83D639781FFC2D8F001B4EA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83F6C8D120E2EA5C007B79B4 /* Build configuration list for PBXNativeTarget "TramTimesIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F6C8D220E2EA5C007B79B4 /* Debug */,
+				83F6C8D320E2EA5C007B79B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
