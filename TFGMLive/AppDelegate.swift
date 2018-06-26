@@ -44,8 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let app = appCoordinator,
                 let stationIntent = userActivity.interaction?.intent as? ViewStationIntent,
                 let identifier = stationIntent.station?.identifier {
-                let intIdent = Int(identifier) ?? 0
-                return app.handle(identifier: intIdent)
+                return app.handle(identifier: identifier)
             }
         }
         return false
