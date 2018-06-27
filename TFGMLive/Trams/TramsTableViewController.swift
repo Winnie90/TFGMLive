@@ -1,4 +1,5 @@
 import UIKit
+import IntentsUI
 
 class TramsTableViewController: UITableViewController {
     
@@ -111,6 +112,29 @@ class TramsTableViewController: UITableViewController {
             return 84
         }
         return 80
+    }
+    
+    @available(iOS 12.0, *)
+    @IBAction func addToSiriTouched(_ sender: Any) {
+        if let station = station,
+            let shortcut = INShortcut(intent: station.intent) {
+            let addVoiceShortcutVC = INUIAddVoiceShortcutViewController(shortcut: shortcut)
+            addVoiceShortcutVC.delegate = self
+            present(addVoiceShortcutVC, animated: true, completion: nil)
+        }
+
+    }
+}
+
+extension TramsTableViewController: INUIAddVoiceShortcutViewControllerDelegate {
+    @available(iOS 12.0, *)
+    func addVoiceShortcutViewController(_ controller: INUIAddVoiceShortcutViewController, didFinishWith voiceShortcut: INVoiceShortcut?, error: Error?) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @available(iOS 12.0, *)
+    func addVoiceShortcutViewControllerDidCancel(_ controller: INUIAddVoiceShortcutViewController) {
+        dismiss(animated: true, completion: nil)
     }
 }
 

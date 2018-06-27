@@ -26,7 +26,7 @@ public class ViewStationIntentHandler: NSObject, ViewStationIntentHandling {
             }
             if let station = station,
                 let nextTram = station.trams.first {
-                let response = ViewStationIntentResponse.success(destination: nextTram.destination, waitTime: nextTram.waitTime)
+                let response = ViewStationIntentResponse.information(destination: nextTram.destination, waitTime: nextTram.waitTime)
                 completion(response)
             } else {
                 let response = ViewStationIntentResponse(code: .failure, userActivity: nil)

@@ -74,11 +74,21 @@
 					</dict>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>Your next tram to ${destination}is in ${waitTime}minutes</string>
+						<string>Your next tram to ${destination} is in ${waitTime} minutes</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>Za41y2</string>
 						<key>INIntentResponseCodeName</key>
 						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Your next tram to ${destination} is in ${waitTime} minutes</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>C1JNIU</string>
+						<key>INIntentResponseCodeName</key>
+						<string>information</string>
 						<key>INIntentResponseCodeSuccess</key>
 						<true/>
 					</dict>
