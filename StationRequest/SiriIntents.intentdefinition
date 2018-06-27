@@ -74,7 +74,7 @@
 					</dict>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>Your next tram to ${destination}is at ${time}</string>
+						<string>Your next tram to ${destination}is in ${waitTime}minutes</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>Za41y2</string>
 						<key>INIntentResponseCodeName</key>
@@ -84,14 +84,14 @@
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
-				<integer>2</integer>
+				<integer>3</integer>
 				<key>INIntentResponseParameters</key>
 				<array>
 					<dict>
 						<key>INIntentResponseParameterDisplayPriority</key>
 						<integer>1</integer>
 						<key>INIntentResponseParameterName</key>
-						<string>time</string>
+						<string>waitTime</string>
 						<key>INIntentResponseParameterSupportsMultipleValues</key>
 						<false/>
 						<key>INIntentResponseParameterTag</key>
