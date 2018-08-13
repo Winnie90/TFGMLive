@@ -1,5 +1,6 @@
 import Foundation
 import StationRequest
+import CoreSpotlight
 
 struct StationPresentable {
     

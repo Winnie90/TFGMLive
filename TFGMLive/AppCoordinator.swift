@@ -1,5 +1,6 @@
 import UIKit
 import Firebase
+import CoreSpotlight
 
 class AppCoordinator {
     
@@ -84,6 +85,18 @@ class AppCoordinator {
     public func handleShortcut(shortcutItem: UIApplicationShortcutItem) -> Bool {
         guard let shortcutIndex = Int(shortcutItem.type) else { return false }
         return tramsCoordinator.moveToIndex(shortcutIndex)
+    }
+    
+    public func handleUserActivity(_ userActivity: NSUserActivity) {
+        if userActivity.activityType == CSSearchableItemActionType {
+            if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
+                
+                //check if identifier exists
+                    //move to index
+                //add identifier to station service
+                //move to index
+            }
+        }
     }
 }
 

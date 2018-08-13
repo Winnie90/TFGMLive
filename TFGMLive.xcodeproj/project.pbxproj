@@ -13,6 +13,7 @@
 		79760AFB2008BC910056C202 /* MessageBoardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */; };
 		8329ECC9201A128E0025A100 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329ECC8201A128E0025A100 /* APIRequest.swift */; };
 		8329ECCA201A128E0025A100 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329ECC8201A128E0025A100 /* APIRequest.swift */; };
+		83319FC421221DCC00A549B5 /* StationIndexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83319FC321221DCC00A549B5 /* StationIndexer.swift */; };
 		834540D720D5BC3500386BBF /* apikey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 834540D620D5BC3500386BBF /* apikey.txt */; };
 		834A3B85200C046400B900BF /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A3B84200C046400B900BF /* ColorConverter.swift */; };
 		834A3B86200C046400B900BF /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A3B84200C046400B900BF /* ColorConverter.swift */; };
@@ -231,6 +232,7 @@
 		79760AF82008BC910056C202 /* MessageBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoardTableViewCell.swift; sourceTree = "<group>"; };
 		79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageBoardTableViewCell.xib; sourceTree = "<group>"; };
 		8329ECC8201A128E0025A100 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		83319FC321221DCC00A549B5 /* StationIndexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationIndexer.swift; sourceTree = "<group>"; };
 		834540D620D5BC3500386BBF /* apikey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = apikey.txt; sourceTree = "<group>"; };
 		834A3B84200C046400B900BF /* ColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConverter.swift; sourceTree = "<group>"; };
 		834A3B9A2013C3B400B900BF /* TFGMLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFGMLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -479,6 +481,7 @@
 				83C718B61FF83008001C399F /* SettingsCoordinator.swift */,
 				8397168C1FED578A00C44131 /* SettingsTableViewController.swift */,
 				8397168A1FED46A800C44131 /* AddStationTableViewController.swift */,
+				83319FC321221DCC00A549B5 /* StationIndexer.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -1397,6 +1400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83319FC421221DCC00A549B5 /* StationIndexer.swift in Sources */,
 				8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */,
 				839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */,
 				83C719141FF991F1001C399F /* StationPresentable.swift in Sources */,

@@ -1,8 +1,10 @@
 import Foundation
 import StationRequest
+import CoreSpotlight
 
 struct StationRecord {
     
+    public let domainIdentifier = "com.winstanley.TramTimesManchester.station"
     let identifier: Int
     let name: String
     let direction: String
@@ -24,6 +26,23 @@ struct StationRecord {
                        messageBoard: "",
                        direction: direction,
                        destinations: destinations)
+    }
+}
+
+extension StationRecord {
+    
+    private func attributeSet() -> CSSearchableItemAttributeSet {
+        let attributeSet = CSSearchableItemAttributeSet(
+            itemContentType: "Station" as String)
+        attributeSet.title = name
+        attributeSet.contentDescription = "\(direction)\(destinations)"
+        return attributeSet
+    }
+    
+    public var searchableItem: CSSearchableItem {
+        let item = CSSearchableItem(uniqueIdentifier: "\(identifier)", domainIdentifier: domainIdentifier, attributeSet: attributeSet())
+        item.expirationDate = Date.distantFuture
+        return item
     }
 }
 

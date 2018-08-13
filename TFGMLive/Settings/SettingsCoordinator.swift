@@ -46,6 +46,7 @@ class SettingsCoordinator {
     func addStation() {
         addStationsTableViewController.refreshData = {
             self.stationsService.getAllStationRecords(completion: { (stations, error) in
+                StationIndexer.index(stations: stations)
                 self.addStationsTableViewController.dataRefreshed(
                     resultStations: stations,
                     error: error
