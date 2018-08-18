@@ -28,6 +28,7 @@ class AppCoordinator {
         setupWatchConnection()
         setupNavigation()
         coldStartCheck()
+        indexStations()
     }
     
     private func setupAnalytics() {
@@ -51,6 +52,12 @@ class AppCoordinator {
         if stationsService.getUsersStationRecords().count < 1 {
             editTrams(coldStart: true)
         }
+    }
+    
+    private func indexStations() {
+        stationsService.getAllStationRecords(completion: { (stations, error) in
+            StationIndexer.index(stations: stations)
+        })
     }
     
     private func editTrams(coldStart: Bool = false) {
