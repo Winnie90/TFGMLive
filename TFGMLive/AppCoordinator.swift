@@ -90,9 +90,9 @@ class AppCoordinator {
     public func handleUserActivity(_ userActivity: NSUserActivity) {
         if userActivity.activityType == CSSearchableItemActionType {
             if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
-                
-                //check if identifier exists
-                    //move to index
+                if !tramsCoordinator.moveToIdentifier(Int(uniqueIdentifier) ?? 0) {
+                    
+                }
                 //add identifier to station service
                 //move to index
             }
