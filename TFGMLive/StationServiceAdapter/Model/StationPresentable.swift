@@ -30,4 +30,16 @@ struct StationPresentable {
         self.messageBoard = station.messageBoard != "<no message>" ? station.messageBoard : ""
     }
     
+    var userActivity: NSUserActivity {
+        let activity = NSUserActivity(activityType: "com.winstanley.TramTimesManchester.station")
+        
+        activity.isEligibleForSearch = true
+        //orderActivity.isEligibleForPrediction = true
+        activity.title = name
+        //orderActivity.suggestedInvocationPhrase = "Coffee Time"
+        activity.userInfo = ["identifier": identifier]
+        
+        return activity
+    }
+    
 }

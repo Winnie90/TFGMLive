@@ -18,4 +18,9 @@ struct StationIndexer {
                 }
         }
     }
+    
+    static func index(station: StationPresentable) {
+        let userActivity = station.userActivity
+        userActivity.becomeCurrent()
+    }
 }
