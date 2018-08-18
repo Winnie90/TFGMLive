@@ -27,6 +27,7 @@ class SettingsCoordinator {
     
     init(stationsService: StationServiceAdapter){
         self.stationsService = stationsService
+        indexStations()
     }
     
     func start(stations: [StationRecord], coldStart: Bool) {
@@ -43,10 +44,15 @@ class SettingsCoordinator {
         }
     }
     
+    private func indexStations() {
+        self.stationsService.getAllStationRecords(completion: { (stations, error) in
+            StationIndexer.index(stations: stations)
+        })
+    }
+    
     func addStation() {
         addStationsTableViewController.refreshData = {
             self.stationsService.getAllStationRecords(completion: { (stations, error) in
-                StationIndexer.index(stations: stations)
                 self.addStationsTableViewController.dataRefreshed(
                     resultStations: stations,
                     error: error
