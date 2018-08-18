@@ -17,6 +17,25 @@ public struct StationService {
         return UserDefaultsService().getUserStations()
     }
     
+    public static func addStation(identifier: Int, completion: @escaping ()->()) {
+        AllStationsRequest().retrieveStationsData { (allStations, error) in
+            if let _ = error {
+                completion()
+            } else {
+                var stations = getUserStations()
+                guard let stationToAdd = allStations.first(where: {
+                    $0.identifier == identifier
+                }) else {
+                    completion()
+                    return
+                }
+                stations.append(stationToAdd)
+                saveUserStations(stations: stations)
+                completion()
+            }
+        }
+    }
+    
     public static func saveUserStations(stations: [Station]) {
         return UserDefaultsService().saveUserStations(stations: stations)
     }

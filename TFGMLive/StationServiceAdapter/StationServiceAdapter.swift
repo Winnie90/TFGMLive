@@ -56,4 +56,8 @@ struct StationServiceAdapter: DataSourceChangedDelegate {
         }
         return stations
     }
+    
+    func addStation(identifier: Int, completion: @escaping ()->()) {
+        StationService.addStation(identifier: identifier, completion: completion)
+    }
 }

@@ -62,7 +62,7 @@ class TramsCoordinator {
         return false
     }
     
-    public func moveToIdentifier(_ identifier: Int) -> Bool {
+    public func moveToStation(identifier: Int) -> Bool {
         let stations: [StationPresentable] = stationService.getUserStations()
         guard let index = stations.index(where: {
             $0.identifier == identifier
@@ -70,5 +70,7 @@ class TramsCoordinator {
         return moveToIndex(index)
     }
     
-
+    public func addStation(identifier: Int, completion: @escaping () -> ()) {
+        stationService.addStation(identifier: identifier, completion: completion)
+    }
 }
