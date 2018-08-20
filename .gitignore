@@ -4,4 +4,6 @@ fastlane/README.md
 fastlane/report.xml
 StationRequest.app.dSYM.zip
 StationRequest.ipa
+TFGMLive.xcodeproj/xcuserdata/
 TFGMLive.xcodeproj/xcshareddata/
+TFGMLive.xcworkspace/xcuserdata/
