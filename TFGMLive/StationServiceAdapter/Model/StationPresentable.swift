@@ -1,6 +1,6 @@
 import Foundation
 import StationRequest
-import CoreSpotlight
+import Intents
 
 struct StationPresentable {
     
@@ -31,13 +31,14 @@ struct StationPresentable {
     }
     
     var userActivity: NSUserActivity {
-        let activity = NSUserActivity(activityType: "com.winstanley.TramTimesManchester.station")
-        
+        let activity = NSUserActivity(activityType: "com.winstanley.TramTimesManchester.viewStation")
         activity.isEligibleForSearch = true
-        //orderActivity.isEligibleForPrediction = true
         activity.title = name
-        //orderActivity.suggestedInvocationPhrase = "Coffee Time"
         activity.userInfo = ["identifier": identifier]
+        if #available(iOS 12.0, *) {
+            activity.isEligibleForPrediction = true
+            activity.suggestedInvocationPhrase = "Tram Time"
+        }
         
         return activity
     }

@@ -7,6 +7,7 @@
 //
 
 import CoreSpotlight
+import Intents
 
 struct StationIndexer {
     static func index(stations: [StationRecord]) {
@@ -17,10 +18,5 @@ struct StationIndexer {
                     print("Search item successfully indexed!")
                 }
         }
-    }
-    
-    static func index(station: StationPresentable) {
-        let userActivity = station.userActivity
-        userActivity.becomeCurrent()
     }
 }

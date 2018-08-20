@@ -11,6 +11,8 @@ class TramsTableViewController: UITableViewController {
             showError(error: error)
         } 
         self.station = station
+        self.userActivity = self.station?.userActivity
+        self.userActivity?.becomeCurrent()
         DispatchQueue.main.async {
             self.refreshControl?.endRefreshing()
             self.tableView.reloadData()

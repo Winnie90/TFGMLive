@@ -41,7 +41,6 @@ class TramsCoordinator {
     private func newTramViewController(station: StationPresentable, color: UIColor) -> UIViewController {
         let tramsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TramsTableViewController") as! TramsTableViewController
         tramsViewController.refreshData = {
-            StationIndexer.index(station: station)
             self.stationService.getLatestDataForStation(station: station, completion: { station, error in
                 tramsViewController.dataRefreshed(station: station, error: error)
             })
