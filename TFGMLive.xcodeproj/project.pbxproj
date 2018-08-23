@@ -29,9 +29,12 @@
 		83784ED91FEC618300693DF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83784ED71FEC618300693DF0 /* LaunchScreen.storyboard */; };
 		8386AFB9200816D00042A7C3 /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386AFB8200816D00042A7C3 /* TimeConverter.swift */; };
 		8386AFBA200816D00042A7C3 /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386AFB8200816D00042A7C3 /* TimeConverter.swift */; };
+		8389A4B8212B5C1F00FAA3A1 /* SiriIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8389A4B7212B5C1F00FAA3A1 /* SiriIntents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		8389A4B9212B5CB000FAA3A1 /* SiriIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8389A4B7212B5C1F00FAA3A1 /* SiriIntents.intentdefinition */; };
 		8397168B1FED46A800C44131 /* AddStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397168A1FED46A800C44131 /* AddStationTableViewController.swift */; };
 		8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397168C1FED578A00C44131 /* SettingsTableViewController.swift */; };
 		839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716941FEFCDEA00C44131 /* PageViewController.swift */; };
+		83A1A1CF212B65CF00BCF00E /* SiriIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8389A4B7212B5C1F00FAA3A1 /* SiriIntents.intentdefinition */; settings = {ATTRIBUTES = (codegen, ); }; };
 		83C718B71FF83008001C399F /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718B61FF83008001C399F /* SettingsCoordinator.swift */; };
 		83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BA1FF83E87001C399F /* AppCoordinator.swift */; };
 		83C718BD1FF84DC3001C399F /* TramsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */; };
@@ -251,6 +254,7 @@
 		83784EE51FEC618300693DF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83784EF31FEC80C400693DF0 /* TFGMLiveTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TFGMLiveTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		8386AFB8200816D00042A7C3 /* TimeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverter.swift; sourceTree = "<group>"; };
+		8389A4B7212B5C1F00FAA3A1 /* SiriIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SiriIntents.intentdefinition; sourceTree = "<group>"; };
 		839716881FED468600C44131 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
 		8397168A1FED46A800C44131 /* AddStationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStationTableViewController.swift; sourceTree = "<group>"; };
 		8397168C1FED578A00C44131 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -538,6 +542,7 @@
 		83C718E21FF96831001C399F /* StationRequest */ = {
 			isa = PBXGroup;
 			children = (
+				8389A4B7212B5C1F00FAA3A1 /* SiriIntents.intentdefinition */,
 				834540D620D5BC3500386BBF /* apikey.txt */,
 				83C718E41FF96831001C399F /* Info.plist */,
 				83C718E31FF96831001C399F /* StationRequest.h */,
@@ -891,6 +896,9 @@
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 0;
 							};
 						};
 					};
@@ -1403,6 +1411,7 @@
 				83319FC421221DCC00A549B5 /* StationIndexer.swift in Sources */,
 				8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */,
 				839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */,
+				8389A4B8212B5C1F00FAA3A1 /* SiriIntents.intentdefinition in Sources */,
 				83C719141FF991F1001C399F /* StationPresentable.swift in Sources */,
 				83C719041FF96A39001C399F /* StationServiceAdapter.swift in Sources */,
 				83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */,
@@ -1445,6 +1454,7 @@
 				83C719001FF968E3001C399F /* Station.swift in Sources */,
 				83C719061FF96BDF001C399F /* StationService.swift in Sources */,
 				83C7190C1FF97E20001C399F /* AllStationsRequest.swift in Sources */,
+				8389A4B9212B5CB000FAA3A1 /* SiriIntents.intentdefinition in Sources */,
 				834A3B85200C046400B900BF /* ColorConverter.swift in Sources */,
 				8329ECC9201A128E0025A100 /* APIRequest.swift in Sources */,
 				83C718FF1FF96865001C399F /* StationRequest.swift in Sources */,
@@ -1479,6 +1489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83D6397E1FFC2DB0001B4EA7 /* UserDefaultsService.swift in Sources */,
+				83A1A1CF212B65CF00BCF00E /* SiriIntents.intentdefinition in Sources */,
 				83D6397D1FFC2DAC001B4EA7 /* Tram.swift in Sources */,
 				8386AFBA200816D00042A7C3 /* TimeConverter.swift in Sources */,
 				83D6397F1FFC2DB3001B4EA7 /* StationRequest.swift in Sources */,

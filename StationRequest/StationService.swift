@@ -1,4 +1,5 @@
 import Foundation
+import Intents
 
 enum RequestError: Int {
     case noStation = 0
@@ -40,8 +41,11 @@ public struct StationService {
         return UserDefaultsService().saveUserStations(stations: stations)
     }
     
-    public static func getLatestDataForStation(identifier:Int, completion: @escaping (Station?, Error?)->()) {
-        return StationRequest().retrieveStationData(identifier: identifier, completion: completion)
+    public static func getLatestDataForStation(identifier: Int, completion: @escaping (Station?, Error?)->()) {
+        return StationRequest().retrieveStationData(identifier: identifier, completion: { (station, error) in
+            donateIntent(station: station!)
+            completion(station, error)
+        })
     }
     
     public static func getLatestDataForUserFavouriteStation(completion: @escaping (Station?, Error?)->()) {
@@ -51,6 +55,17 @@ public struct StationService {
             let error = NSError(domain: "StationRequest", code: RequestError.noStation.rawValue, userInfo: nil)
             completion(nil, error)
         }
+    }
+    
+    public static func donateIntent(station: Station) {
+        if #available(iOSApplicationExtension 12.0, *), #available(watchOSApplicationExtension 5.0, *) {
+            let viewStationIntent = ViewStationIntent()
+            viewStationIntent.station = INObject(identifier: String(station.identifier), display: station.name)
+            viewStationIntent.suggestedInvocationPhrase = "View latest tram times for \(station.name)"
+            let interaction = INInteraction(intent: station.intent, response: nil)
+            interaction.donate { _ in }
+        }
+
     }
 
 }
