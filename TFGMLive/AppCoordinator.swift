@@ -1,6 +1,7 @@
 import UIKit
 import Firebase
 import CoreSpotlight
+import StationRequest
 
 class AppCoordinator {
     
@@ -95,15 +96,26 @@ class AppCoordinator {
     }
     
     public func handleUserActivity(_ userActivity: NSUserActivity) {
-        if userActivity.activityType == CSSearchableItemActionType {
-            if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String,
-                let ident = Int(uniqueIdentifier) {
-                    if !tramsCoordinator.moveToStation(identifier: ident) {
-                        tramsCoordinator.addStation(identifier: ident, completion: {
-                            _ = self.tramsCoordinator.moveToStation(identifier: ident)
-                        })
-                    }
+        if #available(iOS 12.0, *) {
+            if let stationIntent = userActivity.interaction?.intent as? ViewStationIntent,
+                let identifier = stationIntent.station?.identifier {
+                handleStation(identifier: identifier)
+                return
             }
+        }
+        if userActivity.activityType == CSSearchableItemActionType {
+            if let identifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
+                handleStation(identifier: identifier)
+            }
+        }
+    }
+    
+    private func handleStation(identifier: String) {
+        guard let ident = Int(identifier) else { return }
+        if !tramsCoordinator.moveToStation(identifier: ident) {
+            tramsCoordinator.addStation(identifier: ident, completion: {
+                _ = self.tramsCoordinator.moveToStation(identifier: ident)
+            })
         }
     }
 }
