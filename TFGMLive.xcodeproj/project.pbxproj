@@ -38,6 +38,7 @@
 		83B73FEC212F4E5500C67729 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B73FEB212F4E5500C67729 /* IntentHandler.swift */; };
 		83B73FF0212F4E5500C67729 /* TramTimesIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83B73FE9212F4E5500C67729 /* TramTimesIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		83B73FF4212F4EA700C67729 /* SiriIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8389A4B7212B5C1F00FAA3A1 /* SiriIntents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		83B73FF6212F514400C67729 /* ViewStationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B73FF5212F514400C67729 /* ViewStationIntentHandler.swift */; };
 		83C718B71FF83008001C399F /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718B61FF83008001C399F /* SettingsCoordinator.swift */; };
 		83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BA1FF83E87001C399F /* AppCoordinator.swift */; };
 		83C718BD1FF84DC3001C399F /* TramsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */; };
@@ -275,6 +276,7 @@
 		83B73FE9212F4E5500C67729 /* TramTimesIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TramTimesIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B73FEB212F4E5500C67729 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		83B73FED212F4E5500C67729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B73FF5212F514400C67729 /* ViewStationIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStationIntentHandler.swift; sourceTree = "<group>"; };
 		83C718B61FF83008001C399F /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		83C718BA1FF83E87001C399F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramsCoordinator.swift; sourceTree = "<group>"; };
@@ -588,6 +590,7 @@
 				834A3B84200C046400B900BF /* ColorConverter.swift */,
 				839716881FED468600C44131 /* stations.json */,
 				8329ECC8201A128E0025A100 /* APIRequest.swift */,
+				83B73FF5212F514400C67729 /* ViewStationIntentHandler.swift */,
 			);
 			path = StationRequest;
 			sourceTree = "<group>";
@@ -1526,6 +1529,7 @@
 				83C719061FF96BDF001C399F /* StationService.swift in Sources */,
 				83C7190C1FF97E20001C399F /* AllStationsRequest.swift in Sources */,
 				8389A4B9212B5CB000FAA3A1 /* SiriIntents.intentdefinition in Sources */,
+				83B73FF6212F514400C67729 /* ViewStationIntentHandler.swift in Sources */,
 				834A3B85200C046400B900BF /* ColorConverter.swift in Sources */,
 				8329ECC9201A128E0025A100 /* APIRequest.swift in Sources */,
 				83C718FF1FF96865001C399F /* StationRequest.swift in Sources */,
