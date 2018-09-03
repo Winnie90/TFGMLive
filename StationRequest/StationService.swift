@@ -59,9 +59,6 @@ public struct StationService {
     
     public static func donateIntent(station: Station) {
         if #available(iOSApplicationExtension 12.0, *), #available(watchOSApplicationExtension 5.0, *) {
-            let viewStationIntent = ViewStationIntent()
-            viewStationIntent.station = INObject(identifier: String(station.identifier), display: station.name)
-            viewStationIntent.suggestedInvocationPhrase = "View latest tram times for \(station.name)"
             let interaction = INInteraction(intent: station.intent, response: nil)
             interaction.donate { _ in }
         }
