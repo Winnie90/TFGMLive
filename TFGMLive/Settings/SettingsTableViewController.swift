@@ -22,10 +22,10 @@ class SettingsTableViewController: UITableViewController {
         super.viewDidLoad()
         setupAccessibility()
         title = "Edit Stations"
-        licenseTextArea.accessibilityTraits = UIAccessibilityTraitHeader
+        licenseTextArea.accessibilityTraits = UIAccessibilityTraits.header
         licenseTextArea.text = "Contains Transport for Greater Manchester data\nhttps://developer.tfgm.com/\n\nIcons provided by Icons8\nhttps://icons8.com\n\nIcons made by Pixel perfect from Flaticon\nhttp://www.flaticon.com/authors/pixel-perfect"
         dataHeader.isAccessibilityElement = true
-        dataHeader.accessibilityTraits = UIAccessibilityTraitHeader
+        dataHeader.accessibilityTraits = UIAccessibilityTraits.header
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,13 +39,13 @@ class SettingsTableViewController: UITableViewController {
         
         cell.textLabel?.text = station.name
         cell.textLabel?.isAccessibilityElement = true
-        cell.textLabel?.accessibilityTraits = UIAccessibilityTraitNone
+        cell.textLabel?.accessibilityTraits = UIAccessibilityTraits.none
         cell.textLabel?.accessibilityLabel = "station name"
         cell.textLabel?.accessibilityValue = station.name
         
         cell.detailTextLabel?.text = "\(station.direction)\(station.destinations)"
         cell.detailTextLabel?.isAccessibilityElement = true
-        cell.detailTextLabel?.accessibilityTraits = UIAccessibilityTraitNone
+        cell.detailTextLabel?.accessibilityTraits = UIAccessibilityTraits.none
         cell.detailTextLabel?.accessibilityLabel = "station direction and destinations"
         cell.detailTextLabel?.accessibilityValue = "\(station.direction)\(station.destinations)"
         
@@ -64,7 +64,7 @@ class SettingsTableViewController: UITableViewController {
         return true
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             deletedItem(indexPath.row)
             self.stations.remove(at: indexPath.row)

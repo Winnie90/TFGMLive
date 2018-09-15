@@ -1,4 +1,5 @@
 import UIKit
+import IntentsUI
 
 class TramsTableViewController: UITableViewController {
     
@@ -22,7 +23,7 @@ class TramsTableViewController: UITableViewController {
         applyStyles()
         tableView.register(UINib.init(nibName: "LargeTramTableViewCell", bundle: nil), forCellReuseIdentifier: "LargeTramTableViewCell")
         tableView.register(UINib.init(nibName: "MessageBoardTableViewCell", bundle: nil), forCellReuseIdentifier: "MessageBoardTableViewCell")
-        refreshControl?.addTarget(self, action: #selector(refreshStation), for: UIControlEvents.valueChanged)
+        refreshControl?.addTarget(self, action: #selector(refreshStation), for: UIControl.Event.valueChanged)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -87,14 +88,14 @@ class TramsTableViewController: UITableViewController {
                 cell.textLabel?.text = tram.destination
                 
                 cell.textLabel?.isAccessibilityElement = true
-                cell.textLabel?.accessibilityTraits = UIAccessibilityTraitNone
+                cell.textLabel?.accessibilityTraits = UIAccessibilityTraits.none
                 cell.textLabel?.accessibilityLabel = "destination name"
                 cell.textLabel?.accessibilityValue = tram.destination
                 
                 cell.detailTextLabel?.text = tram.waitTime
                 
                 cell.detailTextLabel?.isAccessibilityElement = true
-                cell.detailTextLabel?.accessibilityTraits = UIAccessibilityTraitNone
+                cell.detailTextLabel?.accessibilityTraits = UIAccessibilityTraits.none
                 cell.detailTextLabel?.accessibilityValue = tram.waitTime
                 
                 cell.backgroundColor = color
@@ -111,6 +112,29 @@ class TramsTableViewController: UITableViewController {
             return 84
         }
         return 80
+    }
+    
+    @available(iOS 12.0, *)
+    @IBAction func addToSiriTouched(_ sender: Any) {
+        if let station = station,
+            let shortcut = INShortcut(intent: station.intent) {
+            let addVoiceShortcutVC = INUIAddVoiceShortcutViewController(shortcut: shortcut)
+            addVoiceShortcutVC.delegate = self
+            present(addVoiceShortcutVC, animated: true, completion: nil)
+        }
+
+    }
+}
+
+extension TramsTableViewController: INUIAddVoiceShortcutViewControllerDelegate {
+    @available(iOS 12.0, *)
+    func addVoiceShortcutViewController(_ controller: INUIAddVoiceShortcutViewController, didFinishWith voiceShortcut: INVoiceShortcut?, error: Error?) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @available(iOS 12.0, *)
+    func addVoiceShortcutViewControllerDidCancel(_ controller: INUIAddVoiceShortcutViewController) {
+        dismiss(animated: true, completion: nil)
     }
 }
 

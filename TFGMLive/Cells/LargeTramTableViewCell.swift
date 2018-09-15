@@ -13,21 +13,21 @@ extension LargeTramTableViewCell {
     func applyAccessibility(_ station: StationPresentable?) {
         
         stationNameLabel.isAccessibilityElement = true
-        stationNameLabel.accessibilityTraits = UIAccessibilityTraitHeader
+        stationNameLabel.accessibilityTraits = UIAccessibilityTraits.header
         stationNameLabel.accessibilityLabel = "station name"
         stationNameLabel.accessibilityValue = stationNameLabel.text
 
         destinationLabel.isAccessibilityElement = true
-        destinationLabel.accessibilityTraits = UIAccessibilityTraitNone
+        destinationLabel.accessibilityTraits = UIAccessibilityTraits.none
         destinationLabel.accessibilityLabel = "destination name"
         destinationLabel.accessibilityValue = destinationLabel.text
         
         timeLabel.isAccessibilityElement = true
-        timeLabel.accessibilityTraits = UIAccessibilityTraitNone
+        timeLabel.accessibilityTraits = UIAccessibilityTraits.none
         timeLabel.accessibilityValue = timeLabel.text
         
         retrievedAtLabel.isAccessibilityElement = true
-        retrievedAtLabel.accessibilityTraits = UIAccessibilityTraitNone
+        retrievedAtLabel.accessibilityTraits = UIAccessibilityTraits.none
         retrievedAtLabel.accessibilityValue = retrievedAtLabel.text
         
         accessibilityElements = [stationNameLabel, destinationLabel, timeLabel, retrievedAtLabel]

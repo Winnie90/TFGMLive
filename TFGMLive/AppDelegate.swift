@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StationRequest
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var appCoordinator: AppCoordinator?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         appCoordinator = AppCoordinator.init(window: window!)
         appCoordinator?.dynamicLinksUpdated = { shortcutItems in
@@ -25,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         if let shortcutItem =
-            launchOptions?[UIApplicationLaunchOptionsKey.shortcutItem]
+            launchOptions?[UIApplication.LaunchOptionsKey.shortcutItem]
                 as? UIApplicationShortcutItem {
             if let app = appCoordinator {
                 let _ = app.handleShortcut(shortcutItem: shortcutItem)
@@ -35,16 +36,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
-    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        if let app = appCoordinator {
-            let _ = app.handleUserActivity(userActivity)
-            return false
+    
+    func application(_ application: UIApplication,
+                     continue userActivity: NSUserActivity,
+                     restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+            if let app = appCoordinator {
+                if #available(iOS 12.0, *) {
+                    if let stationIntent = userActivity.interaction?.intent as? ViewStationIntent,
+                        let identifier = stationIntent.station?.identifier {
+                        return app.handle(identifier: identifier)
+                    }
+                }
+                let _ = app.handleUserActivity(userActivity)
+                return true
+            }
         }
-        return true
+        return false
     }
+    
 
-    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+    func application(_ application: UIApplication,
+                     performActionFor shortcutItem: UIApplicationShortcutItem,
+                     completionHandler: @escaping (Bool) -> Void) {
         if let app = appCoordinator {
             completionHandler(app.handleShortcut(shortcutItem: shortcutItem))
         } else {

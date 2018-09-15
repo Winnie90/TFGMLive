@@ -89,6 +89,9 @@ class AppCoordinator {
         return shortcutItems
     }
     
+}
+
+extension AppCoordinator {
     public func handleShortcut(shortcutItem: UIApplicationShortcutItem) -> Bool {
         guard let shortcutIndex = Int(shortcutItem.type) else { return false }
         return tramsCoordinator.moveToIndex(shortcutIndex)
@@ -105,6 +108,17 @@ class AppCoordinator {
                     }
             }
         }
+    }
+}
+
+extension AppCoordinator {
+    @available(iOS 12.0, *)
+    public func handle(identifier: String) -> Bool {
+        let intIdent = Int(identifier) ?? 0
+        let index = stationsService.getUserStations().index(where: { (station) -> Bool in
+            station.identifier == intIdent
+        })
+        return tramsCoordinator.moveToIndex(index ?? 0)
     }
 }
 

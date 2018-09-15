@@ -29,6 +29,16 @@
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
+		<key>TramTimesIntents.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>TramTimesIntentsUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
 		<key>TramTimesWatch (Complication).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -42,7 +52,7 @@
 		<key>TramTimesWatch.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>13</integer>
 		</dict>
 		<key>TramTimesWatch.xcscheme_^#shared#^_</key>
 		<dict>
@@ -52,7 +62,7 @@
 		<key>TramTimesWidget.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>14</integer>
 		</dict>
 		<key>TramTimesWidget.xcscheme_^#shared#^_</key>
 		<dict>
@@ -73,6 +83,37 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>834A3B992013C3B400B900BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83784ECA1FEC618300693DF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83784EDE1FEC618300693DF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83C718C91FF9669F001C399F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83C718E81FF96831001C399F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83C997C11FF9ACE40034F8E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

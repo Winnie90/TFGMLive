@@ -11,6 +11,7 @@
 		6FC83529363AFD96E2BA786A /* Pods_StationRequestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01C87D12718CEC1000304FB /* Pods_StationRequestTests.framework */; };
 		79760AFA2008BC910056C202 /* MessageBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79760AF82008BC910056C202 /* MessageBoardTableViewCell.swift */; };
 		79760AFB2008BC910056C202 /* MessageBoardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */; };
+		8317C69920D5C8B700D1AD5E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317C69820D5C8B700D1AD5E /* Test.swift */; };
 		8329ECC9201A128E0025A100 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329ECC8201A128E0025A100 /* APIRequest.swift */; };
 		8329ECCA201A128E0025A100 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329ECC8201A128E0025A100 /* APIRequest.swift */; };
 		83319FC421221DCC00A549B5 /* StationIndexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83319FC321221DCC00A549B5 /* StationIndexer.swift */; };
@@ -32,6 +33,11 @@
 		8397168B1FED46A800C44131 /* AddStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397168A1FED46A800C44131 /* AddStationTableViewController.swift */; };
 		8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397168C1FED578A00C44131 /* SettingsTableViewController.swift */; };
 		839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716941FEFCDEA00C44131 /* PageViewController.swift */; };
+		839D645120D99B32005A2FB2 /* SiriIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 839D644E20D99872005A2FB2 /* SiriIntents.intentdefinition */; };
+		839D645220D99B38005A2FB2 /* SiriIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 839D644E20D99872005A2FB2 /* SiriIntents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		839D645320D9A198005A2FB2 /* StationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719051FF96BDF001C399F /* StationService.swift */; };
+		839D645520D9A494005A2FB2 /* ViewStationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D645420D9A494005A2FB2 /* ViewStationIntentHandler.swift */; };
+		839D645620D9A816005A2FB2 /* SiriIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 839D644E20D99872005A2FB2 /* SiriIntents.intentdefinition */; };
 		83C718B71FF83008001C399F /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718B61FF83008001C399F /* SettingsCoordinator.swift */; };
 		83C718BB1FF83E87001C399F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BA1FF83E87001C399F /* AppCoordinator.swift */; };
 		83C718BD1FF84DC3001C399F /* TramsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */; };
@@ -71,7 +77,6 @@
 		83D639741FFC2D8F001B4EA7 /* WatchStationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D6396D1FFC2D8F001B4EA7 /* WatchStationRequest.framework */; };
 		83D639751FFC2D8F001B4EA7 /* WatchStationRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83D6396D1FFC2D8F001B4EA7 /* WatchStationRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		83D6397A1FFC2DA0001B4EA7 /* StationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 83C718E31FF96831001C399F /* StationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83D6397B1FFC2DA6001B4EA7 /* StationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719051FF96BDF001C399F /* StationService.swift */; };
 		83D6397C1FFC2DA9001B4EA7 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716901FEFCC4800C44131 /* Station.swift */; };
 		83D6397D1FFC2DAC001B4EA7 /* Tram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839716921FEFCC6D00C44131 /* Tram.swift */; };
 		83D6397E1FFC2DB0001B4EA7 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C719091FF96D39001C399F /* UserDefaultsService.swift */; };
@@ -81,6 +86,9 @@
 		83D639851FFCD6F4001B4EA7 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639841FFCD6F4001B4EA7 /* UserDataService.swift */; };
 		83D639881FFCE191001B4EA7 /* WatchStationServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639871FFCE191001B4EA7 /* WatchStationServiceAdapter.swift */; };
 		83D6398A1FFCE54D001B4EA7 /* TramRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D639891FFCE54D001B4EA7 /* TramRowController.swift */; };
+		83F6C8CC20E2EA5C007B79B4 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6C8CB20E2EA5C007B79B4 /* IntentHandler.swift */; };
+		83F6C8D020E2EA5C007B79B4 /* TramTimesIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83F6C8C920E2EA5C007B79B4 /* TramTimesIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		83F6C8D520E2EAA0007B79B4 /* SiriIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 839D644E20D99872005A2FB2 /* SiriIntents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		A946608FEAECADAFAE6FFF26 /* Pods_WatchStationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606F7CBEB4ED70A4E3FCCD0A /* Pods_WatchStationRequest.framework */; };
 		B9B5261D4E6E8A1DDCDFFDD4 /* Pods_TramTimesWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9789CF3A5F84BF88E78F2BD0 /* Pods_TramTimesWidget.framework */; };
 		CAAFF58CBA0BD8AF326425E4 /* Pods_StationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C5D45938C78CC94BAF817C /* Pods_StationRequest.framework */; };
@@ -153,6 +161,13 @@
 			remoteGlobalIDString = 83D6396C1FFC2D8F001B4EA7;
 			remoteInfo = WatchStationRequest;
 		};
+		83F6C8CE20E2EA5C007B79B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83784EC31FEC618300693DF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83F6C8C820E2EA5C007B79B4;
+			remoteInfo = TramTimesIntents;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -163,6 +178,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				834A3BA62013D33000B900BF /* TramTimesWidget.appex in Embed App Extensions */,
+				83F6C8D020E2EA5C007B79B4 /* TramTimesIntents.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +247,7 @@
 		6CCB20F8DE214026DE801A2F /* Pods-TFGMLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFGMLiveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFGMLiveTests/Pods-TFGMLiveTests.release.xcconfig"; sourceTree = "<group>"; };
 		79760AF82008BC910056C202 /* MessageBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoardTableViewCell.swift; sourceTree = "<group>"; };
 		79760AF92008BC910056C202 /* MessageBoardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageBoardTableViewCell.xib; sourceTree = "<group>"; };
+		8317C69820D5C8B700D1AD5E /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		8329ECC8201A128E0025A100 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		83319FC321221DCC00A549B5 /* StationIndexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationIndexer.swift; sourceTree = "<group>"; };
 		834540D620D5BC3500386BBF /* apikey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = apikey.txt; sourceTree = "<group>"; };
@@ -249,7 +266,6 @@
 		83784EDA1FEC618300693DF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83784EDF1FEC618300693DF0 /* TFGMLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFGMLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83784EE51FEC618300693DF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83784EF31FEC80C400693DF0 /* TFGMLiveTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TFGMLiveTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		8386AFB8200816D00042A7C3 /* TimeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverter.swift; sourceTree = "<group>"; };
 		839716881FED468600C44131 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
 		8397168A1FED46A800C44131 /* AddStationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStationTableViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +273,9 @@
 		839716901FEFCC4800C44131 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		839716921FEFCC6D00C44131 /* Tram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tram.swift; sourceTree = "<group>"; };
 		839716941FEFCDEA00C44131 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		839D644E20D99872005A2FB2 /* SiriIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SiriIntents.intentdefinition; sourceTree = "<group>"; };
+		839D645420D9A494005A2FB2 /* ViewStationIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStationIntentHandler.swift; sourceTree = "<group>"; };
+		839D645C20D9B2C1005A2FB2 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		83C718B61FF83008001C399F /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		83C718BA1FF83E87001C399F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		83C718BC1FF84DC3001C399F /* TramsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramsCoordinator.swift; sourceTree = "<group>"; };
@@ -303,6 +322,10 @@
 		83D639841FFCD6F4001B4EA7 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		83D639871FFCE191001B4EA7 /* WatchStationServiceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchStationServiceAdapter.swift; sourceTree = "<group>"; };
 		83D639891FFCE54D001B4EA7 /* TramRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramRowController.swift; sourceTree = "<group>"; };
+		83F6C8C920E2EA5C007B79B4 /* TramTimesIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TramTimesIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F6C8CB20E2EA5C007B79B4 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		83F6C8CD20E2EA5C007B79B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F6C8D420E2EA65007B79B4 /* TramTimesIntents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TramTimesIntents.entitlements; sourceTree = "<group>"; };
 		89E388F4F9F2E8FDA7A5486A /* Pods-TramTimesWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TramTimesWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TramTimesWidget/Pods-TramTimesWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		96BE20BE1053C4D8B1100DBC /* Pods_TFGMLiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFGMLiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9789CF3A5F84BF88E78F2BD0 /* Pods_TramTimesWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TramTimesWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -391,6 +414,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83F6C8C620E2EA5C007B79B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -416,6 +446,7 @@
 				83C997C31FF9ACE40034F8E1 /* TramTimesWatch */,
 				83C997D21FF9ACE40034F8E1 /* TramTimesWatch Extension */,
 				83D6396E1FFC2D8F001B4EA7 /* WatchStationRequest */,
+				83F6C8CA20E2EA5C007B79B4 /* TramTimesIntents */,
 				83C718CB1FF9669F001C399F /* Frameworks */,
 				83784ECC1FEC618300693DF0 /* Products */,
 				D7A2AD238BFE80425FC29D47 /* Pods */,
@@ -434,6 +465,7 @@
 				83C997CE1FF9ACE40034F8E1 /* TramTimesWatch Extension.appex */,
 				83D6396D1FFC2D8F001B4EA7 /* WatchStationRequest.framework */,
 				834A3B9A2013C3B400B900BF /* TFGMLiveUITests.xctest */,
+				83F6C8C920E2EA5C007B79B4 /* TramTimesIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -459,7 +491,7 @@
 			isa = PBXGroup;
 			children = (
 				83784EE51FEC618300693DF0 /* Info.plist */,
-				83784EF31FEC80C400693DF0 /* TFGMLiveTests-Bridging-Header.h */,
+				8317C69820D5C8B700D1AD5E /* Test.swift */,
 			);
 			path = TFGMLiveTests;
 			sourceTree = "<group>";
@@ -519,6 +551,7 @@
 				C9D64D97D77C4A4E60B6E075 /* Pods_TramTimesWatch_Extension.framework */,
 				9789CF3A5F84BF88E78F2BD0 /* Pods_TramTimesWidget.framework */,
 				606F7CBEB4ED70A4E3FCCD0A /* Pods_WatchStationRequest.framework */,
+				839D645C20D9B2C1005A2FB2 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -538,6 +571,7 @@
 		83C718E21FF96831001C399F /* StationRequest */ = {
 			isa = PBXGroup;
 			children = (
+				839D644E20D99872005A2FB2 /* SiriIntents.intentdefinition */,
 				834540D620D5BC3500386BBF /* apikey.txt */,
 				83C718E41FF96831001C399F /* Info.plist */,
 				83C718E31FF96831001C399F /* StationRequest.h */,
@@ -551,6 +585,7 @@
 				834A3B84200C046400B900BF /* ColorConverter.swift */,
 				839716881FED468600C44131 /* stations.json */,
 				8329ECC8201A128E0025A100 /* APIRequest.swift */,
+				839D645420D9A494005A2FB2 /* ViewStationIntentHandler.swift */,
 			);
 			path = StationRequest;
 			sourceTree = "<group>";
@@ -635,6 +670,16 @@
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
+		83F6C8CA20E2EA5C007B79B4 /* TramTimesIntents */ = {
+			isa = PBXGroup;
+			children = (
+				83F6C8D420E2EA65007B79B4 /* TramTimesIntents.entitlements */,
+				83F6C8CB20E2EA5C007B79B4 /* IntentHandler.swift */,
+				83F6C8CD20E2EA5C007B79B4 /* Info.plist */,
+			);
+			path = TramTimesIntents;
+			sourceTree = "<group>";
+		};
 		D7A2AD238BFE80425FC29D47 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -709,9 +754,9 @@
 				83784EC91FEC618300693DF0 /* Resources */,
 				83C718FB1FF96832001C399F /* Embed Frameworks */,
 				83C997E91FF9ACE40034F8E1 /* Embed Watch Content */,
+				834A3BA92013D33000B900BF /* Embed App Extensions */,
 				2014C8971A2053430A16FB17 /* [CP] Embed Pods Frameworks */,
 				3D318802714A6B66C3D5DE53 /* [CP] Copy Pods Resources */,
-				834A3BA92013D33000B900BF /* Embed App Extensions */,
 				83677EF22005699C000D1D26 /* ShellScript */,
 			);
 			buildRules = (
@@ -720,6 +765,7 @@
 				83C718F51FF96832001C399F /* PBXTargetDependency */,
 				83C997E01FF9ACE40034F8E1 /* PBXTargetDependency */,
 				834A3BA82013D33000B900BF /* PBXTargetDependency */,
+				83F6C8CF20E2EA5C007B79B4 /* PBXTargetDependency */,
 			);
 			name = TFGMLive;
 			productName = TFGMLive;
@@ -870,38 +916,61 @@
 			productReference = 83D6396D1FFC2D8F001B4EA7 /* WatchStationRequest.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		83F6C8C820E2EA5C007B79B4 /* TramTimesIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83F6C8D120E2EA5C007B79B4 /* Build configuration list for PBXNativeTarget "TramTimesIntents" */;
+			buildPhases = (
+				83F6C8C520E2EA5C007B79B4 /* Sources */,
+				83F6C8C620E2EA5C007B79B4 /* Frameworks */,
+				83F6C8C720E2EA5C007B79B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TramTimesIntents;
+			productName = TramTimesIntents;
+			productReference = 83F6C8C920E2EA5C007B79B4 /* TramTimesIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83784EC31FEC618300693DF0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Winstanley;
 				TargetAttributes = {
 					834A3B992013C3B400B900BF = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 83784ECA1FEC618300693DF0;
 					};
 					83784ECA1FEC618300693DF0 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
 								enabled = 1;
 							};
 						};
 					};
 					83784EDE1FEC618300693DF0 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 83784ECA1FEC618300693DF0;
 					};
 					83C718C91FF9669F001C399F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -911,24 +980,38 @@
 					};
 					83C718E01FF96831001C399F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					83C718E81FF96831001C399F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 83784ECA1FEC618300693DF0;
 					};
 					83C997C11FF9ACE40034F8E1 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					83C997CD1FF9ACE40034F8E1 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					83D6396C1FFC2D8F001B4EA7 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
+					};
+					83F6C8C820E2EA5C007B79B4 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -946,14 +1029,15 @@
 			projectRoot = "";
 			targets = (
 				83784ECA1FEC618300693DF0 /* TFGMLive */,
+				83784EDE1FEC618300693DF0 /* TFGMLiveTests */,
 				83C718E01FF96831001C399F /* StationRequest */,
 				83D6396C1FFC2D8F001B4EA7 /* WatchStationRequest */,
-				83784EDE1FEC618300693DF0 /* TFGMLiveTests */,
 				83C718C91FF9669F001C399F /* TramTimesWidget */,
 				83C997C11FF9ACE40034F8E1 /* TramTimesWatch */,
 				83C997CD1FF9ACE40034F8E1 /* TramTimesWatch Extension */,
 				83C718E81FF96831001C399F /* StationRequestTests */,
 				834A3B992013C3B400B900BF /* TFGMLiveUITests */,
+				83F6C8C820E2EA5C007B79B4 /* TramTimesIntents */,
 			);
 		};
 /* End PBXProject section */
@@ -1028,6 +1112,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		83D6396B1FFC2D8F001B4EA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F6C8C720E2EA5C007B79B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1169,7 +1260,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
 		};
 		83CA2CAD6E8B1C9A613A36A1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1402,6 +1493,7 @@
 			files = (
 				83319FC421221DCC00A549B5 /* StationIndexer.swift in Sources */,
 				8397168D1FED578A00C44131 /* SettingsTableViewController.swift in Sources */,
+				839D645220D99B38005A2FB2 /* SiriIntents.intentdefinition in Sources */,
 				839716951FEFCDEA00C44131 /* PageViewController.swift in Sources */,
 				83C719141FF991F1001C399F /* StationPresentable.swift in Sources */,
 				83C719041FF96A39001C399F /* StationServiceAdapter.swift in Sources */,
@@ -1423,6 +1515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8317C69920D5C8B700D1AD5E /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1440,11 +1533,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				83C7190A1FF96D39001C399F /* UserDefaultsService.swift in Sources */,
+				839D645120D99B32005A2FB2 /* SiriIntents.intentdefinition in Sources */,
 				83C719011FF968E3001C399F /* Tram.swift in Sources */,
 				8386AFB9200816D00042A7C3 /* TimeConverter.swift in Sources */,
 				83C719001FF968E3001C399F /* Station.swift in Sources */,
 				83C719061FF96BDF001C399F /* StationService.swift in Sources */,
 				83C7190C1FF97E20001C399F /* AllStationsRequest.swift in Sources */,
+				839D645520D9A494005A2FB2 /* ViewStationIntentHandler.swift in Sources */,
 				834A3B85200C046400B900BF /* ColorConverter.swift in Sources */,
 				8329ECC9201A128E0025A100 /* APIRequest.swift in Sources */,
 				83C718FF1FF96865001C399F /* StationRequest.swift in Sources */,
@@ -1479,14 +1574,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				83D6397E1FFC2DB0001B4EA7 /* UserDefaultsService.swift in Sources */,
+				839D645620D9A816005A2FB2 /* SiriIntents.intentdefinition in Sources */,
 				83D6397D1FFC2DAC001B4EA7 /* Tram.swift in Sources */,
 				8386AFBA200816D00042A7C3 /* TimeConverter.swift in Sources */,
+				839D645320D9A198005A2FB2 /* StationService.swift in Sources */,
 				83D6397F1FFC2DB3001B4EA7 /* StationRequest.swift in Sources */,
 				83D6397C1FFC2DA9001B4EA7 /* Station.swift in Sources */,
 				83D639811FFC2DCE001B4EA7 /* AllStationsRequest.swift in Sources */,
 				834A3B86200C046400B900BF /* ColorConverter.swift in Sources */,
 				8329ECCA201A128E0025A100 /* APIRequest.swift in Sources */,
-				83D6397B1FFC2DA6001B4EA7 /* StationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F6C8C520E2EA5C007B79B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F6C8CC20E2EA5C007B79B4 /* IntentHandler.swift in Sources */,
+				83F6C8D520E2EAA0007B79B4 /* SiriIntents.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1538,6 +1643,11 @@
 			target = 83D6396C1FFC2D8F001B4EA7 /* WatchStationRequest */;
 			targetProxy = 83D639721FFC2D8F001B4EA7 /* PBXContainerItemProxy */;
 		};
+		83F6C8CF20E2EA5C007B79B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83F6C8C820E2EA5C007B79B4 /* TramTimesIntents */;
+			targetProxy = 83F6C8CE20E2EA5C007B79B4 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1585,7 +1695,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLiveUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TFGMLive;
 			};
@@ -1600,7 +1710,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLiveUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TFGMLive;
 			};
@@ -1733,7 +1843,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1752,7 +1862,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1772,7 +1882,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TFGMLiveTests/TFGMLiveTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFGMLive.app/TFGMLive";
 			};
@@ -1792,7 +1902,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TFGMLiveTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TFGMLiveTests/TFGMLiveTests-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFGMLive.app/TFGMLive";
 			};
@@ -1811,7 +1921,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.TramTimesWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1829,7 +1939,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.TramTimesWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1855,7 +1965,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1883,7 +1993,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1901,7 +2011,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFGMLive.app/TFGMLive";
 			};
@@ -1918,7 +2028,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.StationRequestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFGMLive.app/TFGMLive";
 			};
@@ -1937,7 +2047,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
@@ -1956,7 +2066,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
@@ -1976,7 +2086,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
@@ -1996,7 +2106,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
@@ -2023,7 +2133,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2052,11 +2162,49 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		83F6C8D220E2EA5C007B79B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = TramTimesIntents/TramTimesIntents.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
+				INFOPLIST_FILE = TramTimesIntents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.TramTimesIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83F6C8D320E2EA5C007B79B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = TramTimesIntents/TramTimesIntents.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8N42JX3FL;
+				INFOPLIST_FILE = TramTimesIntents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winstanley.TramTimesManchester.TramTimesIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -2149,6 +2297,15 @@
 			buildConfigurations = (
 				83D639771FFC2D8F001B4EA7 /* Debug */,
 				83D639781FFC2D8F001B4EA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83F6C8D120E2EA5C007B79B4 /* Build configuration list for PBXNativeTarget "TramTimesIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F6C8D220E2EA5C007B79B4 /* Debug */,
+				83F6C8D320E2EA5C007B79B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
