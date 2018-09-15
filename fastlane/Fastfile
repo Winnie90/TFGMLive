@@ -28,11 +28,11 @@ lane :beta do
 end
 
 lane :appstore do
-  # capture_screenshots(
-  #   clear_previous_screenshots: true,
-  #   erase_simulator: true,
-  #   reinstall_app: true
-  # )
+  capture_screenshots(
+    clear_previous_screenshots: true,
+    erase_simulator: true,
+    reinstall_app: true
+  )
   build_app
   upload_to_app_store
   increment_version_number
