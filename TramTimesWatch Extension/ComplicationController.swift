@@ -22,51 +22,59 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         handler(.showOnLockScreen)
     }
     
-    func templateFor(complicationFamily: CLKComplicationFamily, tramDestination: String, tramWaitTime: Int) -> CLKComplicationTemplate? {
-        var template: CLKComplicationTemplate? = nil
-        let minSpecifier = tramWaitTime == 0 ? "" : (tramWaitTime < 2 ? "min" : "mins")
-        let combinedWaitTime = "\(tramWaitTime) \(minSpecifier)"
-        let waitTimeFraction = Float(tramWaitTime)/20
-        switch complicationFamily {
-        case .modularSmall:
-            let modularTemplate = CLKComplicationTemplateModularSmallStackText()
-            modularTemplate.line1TextProvider = CLKSimpleTextProvider(text: "\(tramWaitTime)")
-            modularTemplate.line2TextProvider = CLKSimpleTextProvider(text: minSpecifier)
-            template = modularTemplate
-        case .modularLarge:
-            let modularTemplate = CLKComplicationTemplateModularLargeStandardBody()
-            modularTemplate.headerTextProvider = CLKSimpleTextProvider(text: "Next Tram:")
-            modularTemplate.body1TextProvider = CLKSimpleTextProvider(text: tramDestination)
-            modularTemplate.body2TextProvider = CLKSimpleTextProvider(text: combinedWaitTime)
-            template = modularTemplate
-        case .utilitarianSmall:
-            let modularTemplate = CLKComplicationTemplateUtilitarianSmallRingText()
-            modularTemplate.textProvider = CLKSimpleTextProvider(text: "\(tramWaitTime)")
-            modularTemplate.fillFraction = waitTimeFraction
-            modularTemplate.ringStyle = CLKComplicationRingStyle.closed
-            template = modularTemplate
-        case .utilitarianSmallFlat: /* subset of UtilitarianSmall */
-            let modularTemplate = CLKComplicationTemplateUtilitarianSmallFlat()
-            modularTemplate.textProvider = CLKSimpleTextProvider(text: combinedWaitTime)
-            template = modularTemplate
-        case .utilitarianLarge: /* maybe not include*/
-            let modularTemplate = CLKComplicationTemplateUtilitarianLargeFlat()
-            modularTemplate.textProvider = CLKSimpleTextProvider(text: combinedWaitTime)
-            template = modularTemplate
-        case .circularSmall:
-            let modularTemplate = CLKComplicationTemplateCircularSmallRingText()
-            modularTemplate.textProvider = CLKSimpleTextProvider(text: combinedWaitTime)
-            modularTemplate.fillFraction = waitTimeFraction
-            modularTemplate.ringStyle = CLKComplicationRingStyle.closed
-            template = modularTemplate
-        case .extraLarge:
-            let modularTemplate = CLKComplicationTemplateExtraLargeStackText()
-            modularTemplate.line1TextProvider = CLKSimpleTextProvider(text: tramDestination)
-            modularTemplate.line2TextProvider = CLKSimpleTextProvider(text: combinedWaitTime)
-            template = modularTemplate
-        }
-        return template
-    }
+//    func templateFor(complicationFamily: CLKComplicationFamily, tramDestination: String, tramWaitTime: Int) -> CLKComplicationTemplate? {
+//        var template: CLKComplicationTemplate? = nil
+//        let minSpecifier = tramWaitTime == 0 ? "" : (tramWaitTime < 2 ? "min" : "mins")
+//        let combinedWaitTime = "\(tramWaitTime) \(minSpecifier)"
+//        let waitTimeFraction = Float(tramWaitTime)/20
+//        switch complicationFamily {
+//        case .modularSmall:
+//            let modularTemplate = CLKComplicationTemplateModularSmallStackText()
+//            modularTemplate.line1TextProvider = CLKSimpleTextProvider(text: "\(tramWaitTime)")
+//            modularTemplate.line2TextProvider = CLKSimpleTextProvider(text: minSpecifier)
+//            template = modularTemplate
+//        case .modularLarge:
+//            let modularTemplate = CLKComplicationTemplateModularLargeStandardBody()
+//            modularTemplate.headerTextProvider = CLKSimpleTextProvider(text: "Next Tram:")
+//            modularTemplate.body1TextProvider = CLKSimpleTextProvider(text: tramDestination)
+//            modularTemplate.body2TextProvider = CLKSimpleTextProvider(text: combinedWaitTime)
+//            template = modularTemplate
+//        case .utilitarianSmall:
+//            let modularTemplate = CLKComplicationTemplateUtilitarianSmallRingText()
+//            modularTemplate.textProvider = CLKSimpleTextProvider(text: "\(tramWaitTime)")
+//            modularTemplate.fillFraction = waitTimeFraction
+//            modularTemplate.ringStyle = CLKComplicationRingStyle.closed
+//            template = modularTemplate
+//        case .utilitarianSmallFlat: /* subset of UtilitarianSmall */
+//            let modularTemplate = CLKComplicationTemplateUtilitarianSmallFlat()
+//            modularTemplate.textProvider = CLKSimpleTextProvider(text: combinedWaitTime)
+//            template = modularTemplate
+//        case .utilitarianLarge: /* maybe not include*/
+//            let modularTemplate = CLKComplicationTemplateUtilitarianLargeFlat()
+//            modularTemplate.textProvider = CLKSimpleTextProvider(text: combinedWaitTime)
+//            template = modularTemplate
+//        case .circularSmall:
+//            let modularTemplate = CLKComplicationTemplateCircularSmallRingText()
+//            modularTemplate.textProvider = CLKSimpleTextProvider(text: combinedWaitTime)
+//            modularTemplate.fillFraction = waitTimeFraction
+//            modularTemplate.ringStyle = CLKComplicationRingStyle.closed
+//            template = modularTemplate
+//        case .extraLarge:
+//            let modularTemplate = CLKComplicationTemplateExtraLargeStackText()
+//            modularTemplate.line1TextProvider = CLKSimpleTextProvider(text: tramDestination)
+//            modularTemplate.line2TextProvider = CLKSimpleTextProvider(text: combinedWaitTime)
+//            template = modularTemplate
+//        case .graphicCorner:
+//            CLKComplicationTemplateG
+//        case .graphicBezel:
+//            
+//        case .graphicCircular:
+//            
+//        case .graphicRectangular:
+//            
+//        }
+//        return template
+//    }
     
 //    func retrieveUpdate(completion: @escaping ()->()) {
 //        let userDataService = UserDataService()

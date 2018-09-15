@@ -40,16 +40,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      continue userActivity: NSUserActivity,
                      restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-            if let app = appCoordinator {
-                if #available(iOS 12.0, *) {
-                    if let stationIntent = userActivity.interaction?.intent as? ViewStationIntent,
-                        let identifier = stationIntent.station?.identifier {
-                        return app.handle(identifier: identifier)
-                    }
+        if let app = appCoordinator {
+            if #available(iOS 12.0, *) {
+                if let stationIntent = userActivity.interaction?.intent as? ViewStationIntent,
+                    let identifier = stationIntent.station?.identifier {
+                    return app.handle(identifier: identifier)
                 }
-                let _ = app.handleUserActivity(userActivity)
-                return true
             }
+            let _ = app.handleUserActivity(userActivity)
+            return true
         }
         return false
     }
