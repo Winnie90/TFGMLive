@@ -6,5 +6,7 @@ Perfect for the commute!
 • Quickly access your first stop using the Today Widget.
 • Quickly access your saved stops using 3D Touch.
 • View the latest tram times for your saved stops on your Apple Watch.
+• Search and add your station using Spotlight search.
+• You can get your next tram time through Siri.
 
 Data is realtime and updated live direct from Metrolink.

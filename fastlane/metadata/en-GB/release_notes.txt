@@ -1,8 +1,2 @@
-Apologies, with the new routes being added to the network you will have to re-add your stations. Sorry for the inconvenience.
-
-- Fixed issue with today widget.
-- Cleared up add station screen.
-- Fixed settings button layout for iPhone X.
-- Fixed light status bar on settings screen.
-- Fixed display issues on the watch.
-- Fixed page control bug.
+You can now search for your station in spotlight search.
+Added Siri Shortcuts so that you can get your next tram time through Siri.
